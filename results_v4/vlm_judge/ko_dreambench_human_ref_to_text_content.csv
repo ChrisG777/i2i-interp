@@ -1,0 +1,91 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+customize_dreambench_plus_live_subject_human_04_girl_p5,0,"Image 3 person looks similar to Image 2, both stylized anime versions; identity not notably more lost.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_04_girl_p4,0,"Image 3 person retains same hair, glasses, and face as Image 1, similar to Image 2.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_04_girl_p8,0,"Image 3 retains similar long brown hair, glasses, and facial features matching Image 1.",claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_01_man,0,"Image 3 still depicts the same Rowan Atkinson-like face as Image 1, identity preserved.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_04_girl_p6,0,"Image 3 person looks essentially the same as Image 2, still resembling the reference with similar face and hair.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_04_girl_p1,0,"Image 3 still shows similar long dark hair, glasses, build, and outfit matching Image 1's person.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_04_girl_p2,0,"Person in Image 3 retains similar long brown hair, glasses, and facial features matching Image 1.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_04_girl_p7,0,"Image 3 still shows the same young woman with similar face, glasses, and long brown hair as Image 1.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_04_girl_p3,0,"Image 3 still shows the same young woman with long brown hair and glasses, matching Image 1's identity.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_07_man,0,"Image 3 retains the same long white hair, beard, glasses, and facial features as Image 1.",claude-opus-4-7,4546,49
+customize_dreambench_plus_live_subject_human_01_man_p1,0,"Image 3 still depicts the same recognizable individual as Image 1, nearly identical to Image 2.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_07_man_p2,0,"Person in Image 3 retains the same long gray hair, beard, glasses, and facial features as Image 1.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_07_man_p1,0,"Image 3 person retains same face, hair, beard, and glasses as Image 1; identity preserved.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_07_man_p3,0,"Image 3 person retains same face, hair, beard, and glasses as Image 1; identity preserved.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_07_man_p7,0,"Image 3 person retains the same face, hair, beard, and build as Image 1.",claude-opus-4-7,4546,44
+customize_dreambench_plus_live_subject_human_07_man_p4,0,"Image 3 retains the same elderly man with long gray hair, beard, and glasses as Image 1.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_07_man_p5,0,Image 3 retains the same white-haired bearded man with glasses; identity is preserved.,claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_07_man_p8,0,Image 3 still shows the same long-white-haired bearded man with glasses from Image 1.,claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_07_man_p6,0,"Person in Image 3 still has long white hair, beard, and glasses matching Image 1's identity.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_08_man_p1,0,"Image 3 person looks similar to Image 2, neither closely matches Image 1's identity, so blocking didn't change identity.",claude-opus-4-7,4546,59
+customize_dreambench_plus_live_subject_human_10_man,0,"Image 3 retains the same beard, hair, and facial structure as Image 1.",claude-opus-4-7,4546,44
+customize_dreambench_plus_live_subject_human_08_man,0,Image 3 still resembles the same individual; facial features and build remain similar to Image 1.,claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_08_man_p3,0,"Image 3 person looks essentially identical to Image 2; neither closely matches Image 1, but blocking didn't change identity.",claude-opus-4-7,4546,59
+customize_dreambench_plus_live_subject_human_08_man_p7,0,"Image 3 person still resembles Image 2 and retains similar facial features, not a clearly different individual.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_08_man_p2,1,"Image 3 shows a bearded Western-looking man, clearly different identity from the clean-shaven Asian youth in Image 1.",claude-opus-4-7,4546,61
+customize_dreambench_plus_live_subject_human_08_man_p8,0,Image 3 still shows a similar young Asian man with short dark hair; identity appears preserved relative to Image 1.,claude-opus-4-7,4546,56
+customize_dreambench_plus_live_subject_human_08_man_p4,0,Both Image 2 and Image 3 already depict a Western cartoon man unlike the Asian person in Image 1; no identity change between 2 and 3.,claude-opus-4-7,4546,68
+customize_dreambench_plus_live_subject_human_08_man_p6,0,"Both Image 2 and Image 3 already differ from Image 1; Image 3's person looks similar to Image 2, no additional identity loss.",claude-opus-4-7,4546,64
+customize_dreambench_plus_live_subject_human_10_man_p2,0,"Person in Image 3 retains the same beard, hair, and facial features as Image 1.",claude-opus-4-7,4546,46
+customize_dreambench_plus_live_subject_human_10_man_p3,0,Image 3 still shows the same bearded man with similar hair and features as Image 1.,claude-opus-4-7,4546,45
+customize_dreambench_plus_live_subject_human_08_man_p5,0,Image 3 face is essentially identical to Image 2 and retains similar features to the reference.,claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_10_man_p7,0,Image 3 still shows the same bearded man with similar hair and features as Image 1.,claude-opus-4-7,4546,45
+customize_dreambench_plus_live_subject_human_10_man_p5,0,"Person in Image 3 still has similar dark hair, beard, and overall appearance matching Image 1.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_10_man_p8,0,"Both images 2 and 3 show only a silhouette; identity is not visible in either, so no identity loss is demonstrable.",claude-opus-4-7,4546,58
+customize_dreambench_plus_live_subject_human_10_man_p6,1,"Image 3 shows a much thinner beard/mustache and different facial structure, no longer resembling the heavily bearded man in Image 1.",claude-opus-4-7,4546,63
+customize_dreambench_plus_live_subject_human_10_man_p4,0,Image 3's character looks essentially identical to Image 2 and still resembles the reference's dark hair and beard.,claude-opus-4-7,4546,54
+customize_dreambench_plus_live_subject_human_11_basketball_player,0,"Image 3 still depicts a similar Black male athlete with short hair and comparable build, identity largely preserved.",claude-opus-4-7,4546,54
+customize_dreambench_plus_live_subject_human_11_basketball_player_p1,0,Image 3 person looks essentially identical to Image 2 and matches Image 1's identity.,claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_10_man_p1,0,"Image 3 person retains same face, beard, and hair as Image 1, identity preserved.",claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_11_basketball_player_p2,0,Image 3 person looks essentially identical to Image 2 and still resembles the reference.,claude-opus-4-7,4546,46
+customize_dreambench_plus_live_subject_human_11_basketball_player_p4,0,Image 3 person looks essentially identical to Image 2 and still resembles the reference identity.,claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_11_basketball_player_p3,0,"Image 3 person looks essentially identical to Image 2, retaining the same face and build as the reference.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_11_basketball_player_p5,0,"Image 3 retains the same face, hair, build, and jersey as Image 2/Image 1; identity preserved.",claude-opus-4-7,4546,55
+customize_dreambench_plus_live_subject_human_11_basketball_player_p7,0,"Person in Image 3 still appears to be the same individual with similar face, hair, and build.",claude-opus-4-7,4546,46
+customize_dreambench_plus_live_subject_human_11_basketball_player_p6,0,"Image 3 retains the same facial features, hair, and build as Image 2 and Image 1.",claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_15_woman,0,"Image 3 retains the same face, glasses, locs hairstyle, and build as Image 1.",claude-opus-4-7,4546,49
+customize_dreambench_plus_live_subject_human_11_basketball_player_p8,0,"Image 3 still depicts the same individual with matching face, hair, and build as Image 1.",claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_15_woman_p3,0,"Image 3 person retains same face, glasses, locs, and build as Image 1.",claude-opus-4-7,4546,44
+customize_dreambench_plus_live_subject_human_15_woman_p2,0,"Image 3 still shows the same woman with locs, glasses, hoop earrings, and red shirt as Image 1.",claude-opus-4-7,4546,56
+customize_dreambench_plus_live_subject_human_15_woman_p5,1,"Image 3 shows a different individual with light skin and green eyes, no longer resembling the Black woman in Image 1.",claude-opus-4-7,4546,56
+customize_dreambench_plus_live_subject_human_15_woman_p4,1,"Image 3 shows straighter flowing hair and different facial features, no glasses, losing the locs and bespectacled identity of Image 1.",claude-opus-4-7,4546,63
+customize_dreambench_plus_live_subject_human_15_woman_p7,0,"Image 3 still shows the same woman with glasses, locs, and similar features as Image 1.",claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_15_woman_p6,0,"Image 2 already shows a different individual; Image 3 is essentially identical to Image 2, so no additional identity loss occurred.",claude-opus-4-7,4546,60
+customize_dreambench_plus_live_subject_human_18_basketball_player,0,Image 3 still shows the same short-haired bearded man resembling the reference; identity preserved.,claude-opus-4-7,4546,49
+customize_dreambench_plus_live_subject_human_15_woman_p8,0,"Person in Image 3 retains same face, locs hair, glasses, and build as Image 1.",claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_18_basketball_player_p1,0,"The person in Image 3 still resembles the same individual from Image 1, with similar face, hair, and build.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_15_woman_p1,0,"Image 3 still shows the same person with similar face, locs, glasses, and build as Image 1.",claude-opus-4-7,4546,49
+customize_dreambench_plus_live_subject_human_01_man_p2,0,"Image 3 still resembles the same individual as Image 1, with similar face, hair, and build as Image 2.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_01_man_p3,0,"Person in Image 3 retains the same facial features, hair, and build as Image 1, identity preserved.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_18_basketball_player_p3,0,"Image 3 still depicts the same individual with matching face, hair, and build as Image 1.",claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_18_basketball_player_p2,0,"The person in Image 3 retains the same facial features, hair, and build as in Images 1 and 2.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_18_basketball_player_p4,0,"Image 3 still shows the same recognizable individual with similar face, beard, and build as Image 1.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_18_basketball_player_p5,0,"Image 3 still shows the same short-haired bearded man resembling Image 1, similar to Image 2.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_01_man_p4,1,"Image 3 person has a beard and different facial features, no longer resembling the clean-shaven reference.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_01_man_p7,0,"Person in Image 3 still resembles the same individual from Image 1, nearly identical to Image 2.",claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_18_basketball_player_p6,0,"Both Image 2 and Image 3 are similar line drawings of a bald man; identity is comparable, not newly destroyed.",claude-opus-4-7,4546,59
+customize_dreambench_plus_live_subject_human_18_basketball_player_p7,0,"Image 3 still resembles the same person from Image 1, with similar face, hair, and build as Image 2.",claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_01_man_p5,0,"Both Image 2 and Image 3 show the same stylized cartoon man; identity is similarly non-specific in both, no additional loss.",claude-opus-4-7,4546,62
+customize_dreambench_plus_live_subject_human_18_basketball_player_p8,0,"Image 3 still shows similar short hair, beard, build consistent with Image 1; identity largely preserved.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_01_man_p8,0,"Person in Image 3 still resembles the same individual from Image 1, identity preserved.",claude-opus-4-7,4546,46
+customize_dreambench_plus_live_subject_human_01_man_p6,0,"Both images 2 and 3 show similarly stylized cartoon men; neither closely resembles Mr. Bean, and image 3 looks essentially the same as image 2.",claude-opus-4-7,4546,73
+customize_dreambench_plus_live_subject_human_02_man,0,"Person in Image 3 retains same face, beard, glasses, and striped shirt as Image 1.",claude-opus-4-7,4546,50
+customize_dreambench_plus_live_subject_human_02_man_p1,0,"Image 3 still shows a similar Black man with beard, glasses, striped shirt; identity largely preserved.",claude-opus-4-7,4546,54
+customize_dreambench_plus_live_subject_human_19_girl_p2,0,"Image 3 person retains similar reddish hair, build, and facial features matching Image 1.",claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_02_man_p2,0,"Image 3 person still resembles the same individual from Image 1 with similar face, beard, glasses, and hair.",claude-opus-4-7,4546,54
+customize_dreambench_plus_live_subject_human_19_girl,0,Image 3 still shows a young woman with the same reddish bob hair and similar facial features as Image 1.,claude-opus-4-7,4546,52
+customize_dreambench_plus_live_subject_human_02_man_p3,1,"Image 3 person has notably different hair (shorter, less curly), thinner beard, and altered facial structure compared to Image 1.",claude-opus-4-7,4546,60
+customize_dreambench_plus_live_subject_human_19_girl_p1,0,Image 3 still shows the same red-haired young woman matching Image 1's identity.,claude-opus-4-7,4546,45
+customize_dreambench_plus_live_subject_human_02_man_p4,1,"Image 3 shows a lighter-skinned man with straight hair, clearly a different individual from the Black man with curly hair in Image 1.",claude-opus-4-7,4546,63
+customize_dreambench_plus_live_subject_human_19_girl_p4,0,"Image 3 person looks essentially identical to Image 2, both differing similarly from Image 1; blocking did not destroy identity transfer.",claude-opus-4-7,4546,63
+customize_dreambench_plus_live_subject_human_19_girl_p3,0,Image 3 still shows the same young woman with reddish bob hair and similar facial features as Image 1.,claude-opus-4-7,4546,51
+customize_dreambench_plus_live_subject_human_02_man_p5,0,"Person in Image 3 retains same face, hair, beard, and build as Image 1, similar to Image 2.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_19_girl_p5,0,Image 3 still shows a young girl with similar reddish-brown hair and comparable facial features to Image 1.,claude-opus-4-7,4546,54
+customize_dreambench_plus_live_subject_human_02_man_p7,0,"Person in Image 3 retains similar face, beard, glasses, and build as Image 1.",claude-opus-4-7,4546,47
+customize_dreambench_plus_live_subject_human_19_girl_p6,0,Image 3 still shows a young woman with similar reddish bob hair resembling the reference; identity largely preserved.,claude-opus-4-7,4546,55
+customize_dreambench_plus_live_subject_human_02_man_p6,0,Image 3 person looks essentially identical to Image 2; identity not lost relative to reference.,claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_04_girl,0,Image 3 still shows the same young woman with long brown hair and glasses matching Image 1.,claude-opus-4-7,4546,48
+customize_dreambench_plus_live_subject_human_19_girl_p7,0,Image 3 still shows the same red-haired bob-cut girl matching Image 1's identity.,claude-opus-4-7,4546,49
+customize_dreambench_plus_live_subject_human_02_man_p8,0,"Image 3 retains the same facial features, beard, hair, glasses, and striped shirt as Image 1.",claude-opus-4-7,4546,53
+customize_dreambench_plus_live_subject_human_19_girl_p8,0,"Image 3 retains the same red-haired young woman's identity as Image 1, similar to Image 2.",claude-opus-4-7,4546,51

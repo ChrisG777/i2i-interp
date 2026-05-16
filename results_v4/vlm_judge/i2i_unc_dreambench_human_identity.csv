@@ -1,0 +1,91 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+customize_dreambench_plus_live_subject_human_01_man_p2,1,Image 3 shows a different man with different facial features and hairstyle than Mr. Bean.,claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_01_man_p4,1,The person in Image 3 has different facial features and structure than Mr. Bean in Image 1.,claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_01_man_p3,1,"Image 3 shows a gray-haired man with glasses, clearly different from Rowan Atkinson in Image 1.",claude-opus-4-7,4474,57
+customize_dreambench_plus_live_subject_human_01_man_p1,1,"Image 3 shows a bearded younger man, clearly different identity from Rowan Atkinson in Image 1.",claude-opus-4-7,4474,55
+customize_dreambench_plus_live_subject_human_01_man_p5,1,"Image 3 shows an anime young man, clearly different identity from Rowan Atkinson in Image 1.",claude-opus-4-7,4474,53
+customize_dreambench_plus_live_subject_human_01_man_p6,1,"Image 3 shows a younger man with a beard, clearly a different individual than the clean-shaven person in Image 1.",claude-opus-4-7,4474,56
+customize_dreambench_plus_live_subject_human_01_man_p8,1,"Image 3 shows a different man with beard and different facial features, not Rowan Atkinson.",claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_01_man_p7,1,The person in Image 3 has different facial features and hair from Mr. Bean in Image 1.,claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_18_basketball_player_p1,1,Image 3 shows a different individual with different facial features from the reference.,claude-opus-4-7,4474,39
+customize_dreambench_plus_live_subject_human_10_man,1,"Image 3 shows shorter hair, lighter beard, and different facial structure than the reference.",claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_18_basketball_player,1,"Image 3 shows a man with long curly hair and headband, clearly different from the short-haired person in Image 1.",claude-opus-4-7,4474,54
+customize_dreambench_plus_live_subject_human_02_man_p1,1,"Different hair, skin tone, and facial features; clearly a different individual.",claude-opus-4-7,4474,41
+customize_dreambench_plus_live_subject_human_10_man_p1,1,"Image 3 shows an older, lighter-skinned man with shorter hair and different facial features than the reference.",claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_02_man,1,"Image 3 person has short hair and no glasses, clearly different from the curly-haired bespectacled man in Image 1.",claude-opus-4-7,4474,57
+customize_dreambench_plus_live_subject_human_18_basketball_player_p2,1,"The man in Image 3 has different facial features and build, not recognizable as the reference individual.",claude-opus-4-7,4474,46
+customize_dreambench_plus_live_subject_human_02_man_p2,1,"Image 3 shows an older man with short graying hair, different from the young man with curly afro in Image 1.",claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_10_man_p2,1,"Image 3 shows an older man with shorter hair and different facial features, clearly a different individual.",claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_18_basketball_player_p3,1,The person in Image 3 has different facial features and identity from Stephen Curry in Image 1.,claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_10_man_p3,1,"Different facial structure, lighter beard, and different hair style indicate a different individual.",claude-opus-4-7,4474,44
+customize_dreambench_plus_live_subject_human_02_man_p3,1,"Different individual: no beard/glasses, straight hair, different facial structure than reference.",claude-opus-4-7,4474,45
+customize_dreambench_plus_live_subject_human_18_basketball_player_p4,1,"Image 3 shows a different player with longer hair and different facial features, not recognizable as the reference.",claude-opus-4-7,4474,49
+customize_dreambench_plus_live_subject_human_02_man_p4,1,"Image 3 shows a light-skinned man with hat and tie, clearly different identity from the Black bearded man in Image 1.",claude-opus-4-7,4474,59
+customize_dreambench_plus_live_subject_human_10_man_p4,1,"Image 3 shows an anime-styled clean-shaven young man, clearly different identity from the bearded man in Image 1.",claude-opus-4-7,4474,58
+customize_dreambench_plus_live_subject_human_02_man_p5,1,"Image 3 shows a light-skinned man without beard or glasses, clearly different from the bearded Black man with glasses in Image 1.",claude-opus-4-7,4474,62
+customize_dreambench_plus_live_subject_human_18_basketball_player_p5,1,"Image 3 shows an anime-style character with different face, hair, and build than the real person in Image 1.",claude-opus-4-7,4474,50
+customize_dreambench_plus_live_subject_human_18_basketball_player_p6,1,Image 3 shows a generic line-drawn figure with no distinguishing features matching Curry's identity.,claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_18_basketball_player_p7,1,Image 3 shows a different individual with different facial features and hair from Curry in Image 1.,claude-opus-4-7,4474,47
+customize_dreambench_plus_live_subject_human_10_man_p5,1,"Image 3 person is clean-shaven with different hair and face, clearly different from the bearded man in Image 1.",claude-opus-4-7,4474,54
+customize_dreambench_plus_live_subject_human_10_man_p6,1,"Image 3 shows a clean-shaven man with short hair, clearly different from the bearded long-haired man in Image 1.",claude-opus-4-7,4474,58
+customize_dreambench_plus_live_subject_human_02_man_p6,1,"Image 3 shows a light-skinned cartoon detective, clearly different from the Black man in Image 1.",claude-opus-4-7,4474,53
+customize_dreambench_plus_live_subject_human_02_man_p7,1,"Image 3 person lacks glasses, has different hair and shorter beard, appears as a different individual.",claude-opus-4-7,4474,50
+customize_dreambench_plus_live_subject_human_10_man_p7,1,"Image 3 shows a lighter-haired man with different facial structure, clearly not the same individual as Image 1.",claude-opus-4-7,4474,54
+customize_dreambench_plus_live_subject_human_18_basketball_player_p8,1,"Image 3 shows the person from behind with no visible face, making identity unrecognizable as Curry.",claude-opus-4-7,4474,50
+customize_dreambench_plus_live_subject_human_02_man_p8,1,"Image 3 person has straight short hair and different facial structure, unlike Image 1's curly-haired man.",claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_19_girl,1,"Image 3 shows a young child with bangs and brown hair, clearly different from the older redhead in Image 1.",claude-opus-4-7,4474,54
+customize_dreambench_plus_live_subject_human_10_man_p8,1,"Image 3 shows a silhouette with no visible facial features, clearly not identifiable as the bearded man in Image 1.",claude-opus-4-7,4474,58
+customize_dreambench_plus_live_subject_human_19_girl_p1,1,"Image 3 shows a young woman with long brown hair, different from Image 1's red-haired bob.",claude-opus-4-7,4474,50
+customize_dreambench_plus_live_subject_human_11_basketball_player,1,Different facial features and hairstyle; not recognizably the same individual.,claude-opus-4-7,4474,40
+customize_dreambench_plus_live_subject_human_11_basketball_player_p1,1,Image 3 shows a different man with a beard and different facial features than the clean-shaven player in Image 1.,claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_19_girl_p2,1,"Image 3 shows a girl with long brown hair, different from Image 1's red-haired bob.",claude-opus-4-7,4474,49
+customize_dreambench_plus_live_subject_human_11_basketball_player_p2,1,"Image 3 shows a man with short cropped hair and different facial features, distinct from the reference's afro-haired player.",claude-opus-4-7,4474,55
+customize_dreambench_plus_live_subject_human_19_girl_p3,1,"Image 3 shows a young girl with brown hair in a ponytail, clearly different from the red-haired teenager in Image 1.",claude-opus-4-7,4474,60
+customize_dreambench_plus_live_subject_human_11_basketball_player_p3,1,"Different facial features, build, and jersey number; not recognizable as the same individual.",claude-opus-4-7,4474,43
+customize_dreambench_plus_live_subject_human_11_basketball_player_p4,1,Image 3 shows a different person with shorter hair and different facial features than Image 1.,claude-opus-4-7,4474,45
+customize_dreambench_plus_live_subject_human_19_girl_p4,1,"Image 3 shows an anime-style character, clearly a different individual from the realistic person in Image 1.",claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_19_girl_p5,1,Image 3 shows a young child with different face and hair compared to the teen in Image 1.,claude-opus-4-7,4474,46
+customize_dreambench_plus_live_subject_human_11_basketball_player_p5,1,"Image 3 shows an anime-styled character with different features, clearly not the same individual as in Image 1.",claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_19_girl_p6,1,"Image 3 shows a stylized cartoon woman with hat and different features, not recognizable as the Image 1 individual.",claude-opus-4-7,4474,57
+customize_dreambench_plus_live_subject_human_11_basketball_player_p6,1,Image 3 shows a different person with beard and different facial features than the clean-shaven player in Image 1.,claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_19_girl_p7,1,"Image 3 shows a girl with dark brown hair in a ponytail, different from the red-haired bob in Image 1.",claude-opus-4-7,4474,57
+customize_dreambench_plus_live_subject_human_11_basketball_player_p7,1,Different facial features and identity from the reference player.,claude-opus-4-7,4474,32
+customize_dreambench_plus_live_subject_human_19_girl_p8,1,"Image 3 shows person from behind with different hair color and style, not recognizable as the redhead in Image 1.",claude-opus-4-7,4474,53
+customize_dreambench_plus_live_subject_human_11_basketball_player_p8,1,"Different facial features, build, and jersey; not recognizably the same individual.",claude-opus-4-7,4474,41
+customize_dreambench_plus_live_subject_human_04_girl,1,Image 3 person lacks glasses and has different facial features compared to the bespectacled girl in Image 1.,claude-opus-4-7,4474,53
+customize_dreambench_plus_live_subject_human_04_girl_p1,1,"Image 3 shows a different person with ponytail and no glasses, facing away, unlike the reference.",claude-opus-4-7,4474,50
+customize_dreambench_plus_live_subject_human_04_girl_p2,1,"Image 3 shows a lighter-haired Western-looking woman, clearly different from the Asian girl in Image 1.",claude-opus-4-7,4474,57
+customize_dreambench_plus_live_subject_human_04_girl_p4,1,"Image 3 shows a profile view with no glasses and different styling, not recognizable as the same individual.",claude-opus-4-7,4474,50
+customize_dreambench_plus_live_subject_human_04_girl_p5,1,"Image 3 shows an anime-stylized character, clearly a different individual from the real person in Image 1.",claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_04_girl_p3,1,"Image 3 shows a light-haired Caucasian girl, clearly different from the Asian girl with glasses in Image 1.",claude-opus-4-7,4474,59
+customize_dreambench_plus_live_subject_human_04_girl_p6,1,"Image 3 shows a Caucasian woman with reddish-brown wavy hair, clearly different from the Asian girl with long dark hair in Image 1.",claude-opus-4-7,4474,69
+customize_dreambench_plus_live_subject_human_04_girl_p7,1,"Image 3 shows a Caucasian girl with light brown hair and no glasses, clearly different from the Asian girl with glasses in Image 1.",claude-opus-4-7,4474,66
+customize_dreambench_plus_live_subject_human_04_girl_p8,1,"Image 3 shows a different individual—no glasses, different facial features and lighter hair—not the person in Image 1.",claude-opus-4-7,4474,55
+customize_dreambench_plus_live_subject_human_07_man,1,"Image 3 shows a clean-shaven man with short hair, very different from Image 1's long-haired bearded man.",claude-opus-4-7,4474,55
+customize_dreambench_plus_live_subject_human_07_man_p1,1,"Image 3 shows a younger man with short hair and trimmed beard, clearly different from the elderly long-haired man in Image 1.",claude-opus-4-7,4474,61
+customize_dreambench_plus_live_subject_human_15_woman,1,"Different hair (loose wavy vs. locs), no glasses, different facial features—clearly a different individual.",claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_15_woman_p1,1,"Image 3 person has different hair style and is shown from behind, but appears as a different individual than the close-up smiling woman.",claude-opus-4-7,4474,56
+customize_dreambench_plus_live_subject_human_07_man_p2,1,"Image 3 shows a different man with short hair and trimmed beard, unlike the long-haired elderly man in Image 1.",claude-opus-4-7,4474,58
+customize_dreambench_plus_live_subject_human_15_woman_p2,1,"Image 3 shows a different individual with different hair, no glasses, and different facial features.",claude-opus-4-7,4474,45
+customize_dreambench_plus_live_subject_human_07_man_p3,1,"Image 3 shows a younger man with shorter darker hair, clearly different from the elderly long-white-haired man in Image 1.",claude-opus-4-7,4474,60
+customize_dreambench_plus_live_subject_human_15_woman_p4,1,"Image 3 shows a different person with straight pulled-back hair and slimmer build, unlike the reference's locs and fuller face.",claude-opus-4-7,4474,60
+customize_dreambench_plus_live_subject_human_15_woman_p3,1,"Image 3 shows a woman with straight wavy hair and no glasses, clearly different from the bespectacled woman with locs in Image 1.",claude-opus-4-7,4474,64
+customize_dreambench_plus_live_subject_human_07_man_p4,1,"Image 3 shows a young man with short brown hair and trimmed beard, clearly different from the elderly long-white-haired man in Image 1.",claude-opus-4-7,4474,64
+customize_dreambench_plus_live_subject_human_07_man_p5,1,"Image 3 shows a young anime man with brown hair, clearly different from the elderly white-haired bespectacled man in Image 1.",claude-opus-4-7,4474,61
+customize_dreambench_plus_live_subject_human_07_man_p6,1,"Image 3 shows a young clean-shaven man with short brown hair, clearly different from the elderly long-haired bearded man in Image 1.",claude-opus-4-7,4474,64
+customize_dreambench_plus_live_subject_human_15_woman_p6,1,"Image 3 depicts a light-skinned woman with short brown hair and hat, clearly different from the Black woman with locs in Image 1.",claude-opus-4-7,4474,63
+customize_dreambench_plus_live_subject_human_15_woman_p5,1,"Image 3 shows an anime-style figure with straight dark hair and light skin, clearly a different individual.",claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_07_man_p7,1,"Image 3 shows a middle-aged man with short brown hair, clean-shaven, clearly different from the long white-haired bearded man in Image 1.",claude-opus-4-7,4474,67
+customize_dreambench_plus_live_subject_human_07_man_p8,1,"Image 3 shows a middle-aged man with short dark hair and trimmed beard, clearly different from Image 1's long white-haired elderly man.",claude-opus-4-7,4474,66
+customize_dreambench_plus_live_subject_human_08_man,1,"Image 3 shows an older man with different facial features and shorter hair, clearly a different individual.",claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_15_woman_p8,1,"Image 3 shows a woman with straight loose hair and different facial features, unlike Image 1's locs and distinct face.",claude-opus-4-7,4474,57
+customize_dreambench_plus_live_subject_human_15_woman_p7,1,"Image 3 shows straight long hair and different facial features, unlike the locs and glasses in Image 1.",claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_08_man_p1,1,"Image 3 shows a middle-aged bearded man with glasses, clearly different from the young man in Image 1.",claude-opus-4-7,4474,54
+customize_dreambench_plus_live_subject_human_08_man_p2,1,"Image 3 shows an older Western man with beard and cap, clearly different from the young Asian man in Image 1.",claude-opus-4-7,4474,54
+customize_dreambench_plus_live_subject_human_08_man_p3,1,"Image 3 shows an older man with different facial structure, not the youthful subject of Image 1.",claude-opus-4-7,4474,48
+customize_dreambench_plus_live_subject_human_08_man_p5,1,"Image 3 shows a bearded older man, clearly different from the young clean-shaven person in Image 1.",claude-opus-4-7,4474,52
+customize_dreambench_plus_live_subject_human_08_man_p6,1,Image 3 shows a different person with different facial features and styling than the reference.,claude-opus-4-7,4474,41
+customize_dreambench_plus_live_subject_human_08_man_p4,1,"Image 3 shows a Western cartoon man with brown hair, clearly different from the Asian young man in Image 1.",claude-opus-4-7,4474,56
+customize_dreambench_plus_live_subject_human_08_man_p7,1,"Image 3 shows an older Western-looking man, clearly different from the young Asian man in Image 1.",claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_08_man_p8,1,Image 3 shows a distant silhouette with no identifiable facial features matching Image 1's subject.,claude-opus-4-7,4474,51
+customize_dreambench_plus_live_subject_human_01_man,1,"Image 3 shows a gray-haired bespectacled man, clearly different from Mr. Bean in Image 1.",claude-opus-4-7,4474,56

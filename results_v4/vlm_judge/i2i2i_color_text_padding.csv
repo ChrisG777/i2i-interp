@@ -1,0 +1,449 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_green_pillow_s3__solid_purple_pillow_s4,1,"Image 4 pillow is green like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,45
+solid_green_pillow_s1__solid_orange_pillow_s2,1,"Image 4 pillow is green like Image 1, not orange like Images 2-3.",claude-opus-4-7,5877,45
+solid_orange_pillow_s3__solid_green_pillow_s4,1,"Image 4 pillow is orange like Image 1, not green like Images 2 and 3.",claude-opus-4-7,5877,47
+solid_green_pillow_s0__solid_brown_pillow_s1,1,"Image 4 pillow is green matching source Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,47
+solid_green_pillow_s4__solid_blue_pillow_s0,1,"Image 4 pillow is green matching source, not blue like target.",claude-opus-4-7,5877,38
+solid_green_pillow_s2__solid_pink_pillow_s3,1,"Image 4 pillow is green like Image 1, not pink like Images 2 and 3.",claude-opus-4-7,5877,47
+solid_orange_pillow_s1__solid_blue_pillow_s2,1,"Image 4 pillow is orange matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,47
+solid_green_pillow_s0__solid_yellow_pillow_s1,1,"Image 4 shifted from yellow toward green, matching the source color.",claude-opus-4-7,5877,40
+solid_green_pillow_s4__solid_red_pillow_s0,1,"Image 4 pillow is green matching Image 1, not red like Image 2/3.",claude-opus-4-7,5877,45
+solid_orange_pillow_s2__solid_brown_pillow_s3,1,"Image 4 pillow is orange like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,46
+solid_orange_pillow_s4__solid_pink_pillow_s0,1,"Image 4 is reddish-orange, closer to source orange than target pink.",claude-opus-4-7,5877,42
+solid_pink_pillow_s3__solid_blue_pillow_s4,1,"Image 4 is pink/magenta, closer to Image 1's pink than Image 2's blue.",claude-opus-4-7,5877,50
+solid_orange_pillow_s2__solid_yellow_pillow_s3,1,"Image 4 pillow is orange, matching Image 1's source color rather than Image 2's yellow.",claude-opus-4-7,5877,51
+solid_orange_pillow_s1__solid_red_pillow_s2,1,"Image 4 pillow is orange, matching Image 1's source color rather than Image 2's red.",claude-opus-4-7,5877,49
+solid_pink_pillow_s3__solid_red_pillow_s4,1,"Image 4 pillow is pink matching Image 1, not red like Image 2/3.",claude-opus-4-7,5877,46
+solid_orange_pillow_s0__solid_purple_pillow_s1,1,"Image 4 pillow is orange like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,46
+solid_pink_pillow_s1__solid_orange_pillow_s2,0,"Image 4 is muted coral/salmon, shifted toward pink but not matching the source pink; closer to orange than pink overall.",claude-opus-4-7,5877,60
+solid_pink_pillow_s4__solid_brown_pillow_s0,1,"Image 4 pillow is pink like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,46
+solid_pink_pillow_s2__solid_purple_pillow_s3,1,"Image 4 pillow shifted toward pink/magenta, closer to source pink than target purple.",claude-opus-4-7,5877,49
+solid_pink_pillow_s0__solid_green_pillow_s1,1,"Image 4 shifted from green toward pinkish/beige tones with pink piping, closer to source pink than target green.",claude-opus-4-7,5877,55
+solid_purple_pillow_s0__solid_blue_pillow_s1,1,"Image 4 pillow is purple matching source Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,48
+solid_purple_pillow_s2__solid_green_pillow_s3,1,"Image 4 pillow is purple matching source Image 1, not green like Image 2/3.",claude-opus-4-7,5877,47
+solid_pink_pillow_s4__solid_yellow_pillow_s0,0,"Image 4 is orange, neither pink (Image 1) nor yellow (Image 2), but closer to neither source pink.",claude-opus-4-7,5877,58
+solid_purple_pillow_s0__solid_red_pillow_s1,1,Image 4's magenta/pink shifts toward the purple source compared to Image 3's pure red target.,claude-opus-4-7,5877,51
+solid_purple_pillow_s1__solid_brown_pillow_s2,1,"Image 4 pillow is purple/magenta like Image 1, not brown like Images 2/3.",claude-opus-4-7,5877,50
+solid_purple_pillow_s3__solid_orange_pillow_s4,0,"Image 4 is dusty red/pink, not purple like Image 1 nor orange like Image 2; closer to neither but not matching source purple.",claude-opus-4-7,5877,64
+solid_red_pillow_s2__solid_blue_pillow_s3,1,"Image 4 pillow is red matching source Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,47
+solid_purple_pillow_s4__solid_pink_pillow_s0,1,"Image 4 pillow is purple/magenta matching source Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,52
+solid_red_pillow_s3__solid_brown_pillow_s4,1,Image 4's pillow shifts toward red/orange (source) versus Image 3's brown (target).,claude-opus-4-7,5877,51
+solid_red_pillow_s4__solid_green_pillow_s0,1,"Image 4 pillow is red like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,44
+solid_purple_pillow_s1__solid_yellow_pillow_s2,0,"Image 4 is dusty pink/mauve, neither the source purple nor target yellow, but closer to neither clearly.",claude-opus-4-7,5877,57
+solid_red_pillow_s0__solid_orange_pillow_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5877,41
+solid_red_pillow_s1__solid_pink_pillow_s2,1,"Image 4 is red like Image 1, not pink like Images 2 and 3.",claude-opus-4-7,5877,44
+solid_yellow_pillow_s0__solid_brown_pillow_s1,1,"Image 4 pillow is yellow like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,47
+solid_yellow_pillow_s4__solid_blue_pillow_s0,1,"Image 4 is yellow/beige matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,48
+solid_red_pillow_s2__solid_purple_pillow_s3,1,"Image 4 pillow is red matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,46
+solid_red_pillow_s3__solid_yellow_pillow_s4,0,"Image 4 is orange, between red and yellow, not clearly matching the source red.",claude-opus-4-7,5877,44
+solid_yellow_pillow_s1__solid_green_pillow_s2,1,"Image 4 is yellow-green, shifted toward Image 1's yellow compared to Image 3's pure green.",claude-opus-4-7,5877,55
+solid_yellow_pillow_s2__solid_orange_pillow_s3,1,"Image 4 pillow shifted toward yellow/source color, away from orange target.",claude-opus-4-7,5877,44
+solid_yellow_pillow_s3__solid_pink_pillow_s4,0,"Image 4 is orange/tan, not yellow like Image 1 nor pink like Image 2.",claude-opus-4-7,5877,50
+solid_blue_vase_s0__solid_brown_vase_s1,1,"Image 4 is predominantly blue matching Image 1, unlike Image 3's brown matching Image 2.",claude-opus-4-7,5877,54
+solid_blue_vase_s1__solid_green_vase_s2,1,"Image 4 is clearly blue like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,45
+solid_yellow_pillow_s0__solid_red_pillow_s1,0,"Image 4 is orange, between yellow and red, not clearly matching the source yellow.",claude-opus-4-7,5877,46
+solid_blue_vase_s2__solid_orange_vase_s3,1,"Image 4 shows blue vase matching source Image 1, instead of orange from target Image 2.",claude-opus-4-7,5877,49
+solid_yellow_pillow_s4__solid_purple_pillow_s0,1,"Image 4 pillow is yellow matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,48
+solid_blue_vase_s3__solid_pink_vase_s4,1,"Image 4 shifted from pink to blue/purple, matching the source blue rather than the target pink.",claude-opus-4-7,5877,50
+solid_blue_vase_s0__solid_red_vase_s1,1,"Image 4 shows blue tones matching Image 1, unlike Image 3's red from Image 2.",claude-opus-4-7,5877,51
+solid_blue_vase_s4__solid_purple_vase_s0,1,"Image 4 is predominantly blue, matching the source (Image 1) rather than the purple target (Image 2/3).",claude-opus-4-7,5877,57
+solid_blue_vase_s1__solid_yellow_vase_s2,1,"Image 4's background is blue like Image 1, unlike Image 3's yellow background matching Image 2.",claude-opus-4-7,5877,52
+solid_brown_vase_s2__solid_blue_vase_s3,1,"Image 4 is brown like Image 1, not blue like Images 2 and 3.",claude-opus-4-7,5877,45
+solid_brown_vase_s0__solid_pink_vase_s1,1,"Image 4 is brown like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,43
+solid_brown_vase_s4__solid_orange_vase_s0,1,"Image 4's background shifted to a brown tone matching Image 1, away from Image 3's orange.",claude-opus-4-7,5877,50
+solid_brown_vase_s1__solid_purple_vase_s2,1,"Image 4 background is brown matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,45
+solid_green_vase_s4__solid_blue_vase_s0,1,"Image 4 is green like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,42
+solid_brown_vase_s2__solid_red_vase_s3,1,"Image 4 shifted from red toward brown, closer to source brown than target red.",claude-opus-4-7,5877,43
+solid_brown_vase_s3__solid_green_vase_s4,1,"Image 4's vase is predominantly brown like Image 1, replacing the green of Image 3.",claude-opus-4-7,5877,49
+solid_green_vase_s0__solid_brown_vase_s1,0,"Image 4's vase remains brown like Image 2, not green like Image 1; only minor green outline tint.",claude-opus-4-7,5877,52
+solid_brown_vase_s3__solid_yellow_vase_s4,1,"Image 4's vase and tones shifted toward brown/ochre, matching Image 1 rather than Image 2's yellow.",claude-opus-4-7,5877,59
+solid_green_vase_s1__solid_orange_vase_s2,1,"Image 4's background is green matching Image 1, unlike Image 3's orange matching Image 2.",claude-opus-4-7,5877,50
+solid_green_vase_s3__solid_purple_vase_s4,1,"Image 4 vase and background are green/gray, matching source green rather than target purple.",claude-opus-4-7,5877,44
+solid_green_vase_s2__solid_pink_vase_s3,1,"Image 4 is green like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,42
+solid_orange_vase_s1__solid_blue_vase_s2,1,"Image 4 is orange like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,43
+solid_green_vase_s0__solid_yellow_vase_s1,0,"Image 4 is yellow-green/olive, shifted toward green but not fully matching source green; still closer to yellow than green.",claude-opus-4-7,5877,58
+solid_green_vase_s4__solid_red_vase_s0,1,"Image 4 is green/olive matching Image 1, unlike Image 3 which is red like Image 2.",claude-opus-4-7,5877,52
+solid_orange_vase_s2__solid_brown_vase_s3,1,"Image 4 background is orange matching Image 1, unlike Image 3's white/brown.",claude-opus-4-7,5877,47
+solid_orange_vase_s4__solid_pink_vase_s0,1,"Image 4 is orange like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,43
+solid_orange_vase_s0__solid_purple_vase_s1,1,"Image 4 is orange like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,43
+solid_orange_vase_s3__solid_green_vase_s4,1,"Image 4's vase and background shifted toward orange/olive tones, matching source orange rather than target green.",claude-opus-4-7,5877,51
+solid_orange_vase_s1__solid_red_vase_s2,1,"Image 4's background and vase shifted to orange matching Image 1, away from Image 2's red.",claude-opus-4-7,5877,49
+solid_orange_vase_s2__solid_yellow_vase_s3,1,Image 4 shows orange tones matching Image 1's source color rather than Image 2's yellow.,claude-opus-4-7,5877,50
+solid_pink_vase_s3__solid_blue_vase_s4,1,"Image 4 shifts to pink/magenta tones matching Image 1, away from Image 2's blue.",claude-opus-4-7,5877,52
+solid_pink_vase_s4__solid_brown_vase_s0,1,"Image 4's background and vase shifted to pink hues matching Image 1, away from Image 3's brown.",claude-opus-4-7,5877,52
+solid_pink_vase_s1__solid_orange_vase_s2,1,Image 4 shifted from orange toward a pinkish/coral hue resembling Image 1's pink more than Image 2's orange.,claude-opus-4-7,5877,61
+solid_pink_vase_s2__solid_purple_vase_s3,1,"Image 4 vase is pink like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,45
+solid_pink_vase_s0__solid_green_vase_s1,1,"Image 4 is pink like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,42
+solid_pink_vase_s4__solid_yellow_vase_s0,1,"Image 4 is pink, matching Image 1's source color rather than Image 2's yellow.",claude-opus-4-7,5877,48
+solid_pink_vase_s3__solid_red_vase_s4,1,"Image 4 is pink like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,42
+solid_purple_vase_s1__solid_brown_vase_s2,1,"Image 4 is purple matching Image 1, unlike Image 3's brown matching Image 2.",claude-opus-4-7,5877,50
+solid_purple_vase_s4__solid_pink_vase_s0,1,"Image 4 is purple/magenta like Image 1, while Image 3 is pink like Image 2.",claude-opus-4-7,5877,51
+solid_purple_vase_s2__solid_green_vase_s3,1,"Image 4's vase is purple matching Image 1, unlike Image 3's green from Image 2.",claude-opus-4-7,5877,50
+solid_purple_vase_s3__solid_orange_vase_s4,1,"Image 4 background is purple matching Image 1, unlike Image 3's orange.",claude-opus-4-7,5877,45
+solid_purple_vase_s0__solid_red_vase_s1,1,"Image 4's background shifted to purple/magenta, matching Image 1's purple rather than Image 2's red.",claude-opus-4-7,5877,54
+solid_purple_vase_s0__solid_blue_vase_s1,1,"The vase in Image 4 is purple, matching Image 1's source color rather than Image 2's blue.",claude-opus-4-7,5877,51
+solid_purple_vase_s1__solid_yellow_vase_s2,1,"Image 4's background is purple matching Image 1, unlike Image 3's yellow.",claude-opus-4-7,5877,46
+solid_red_vase_s2__solid_blue_vase_s3,1,"Image 4 background is red like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,43
+solid_red_vase_s3__solid_brown_vase_s4,1,"Image 4 shifted from brown toward red/terracotta, closer to source red than target brown.",claude-opus-4-7,5877,48
+solid_red_vase_s4__solid_green_vase_s0,1,"Image 4's background is red matching Image 1, unlike Image 3's green/white.",claude-opus-4-7,5877,45
+solid_red_vase_s0__solid_orange_vase_s1,0,"Image 4 remains predominantly orange like Image 2, not red like Image 1, despite slight reddish tint.",claude-opus-4-7,5877,55
+solid_red_vase_s3__solid_yellow_vase_s4,1,"Image 4 shifted toward red/orange tones from source, away from yellow target.",claude-opus-4-7,5877,44
+solid_yellow_vase_s0__solid_brown_vase_s1,1,"Image 4's background is yellow like Image 1, unlike Image 3's brown matching Image 2.",claude-opus-4-7,5877,51
+solid_red_vase_s2__solid_purple_vase_s3,1,"Image 4 is red like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,42
+solid_yellow_vase_s1__solid_green_vase_s2,1,"Image 4's background is yellow matching Image 1, unlike Image 3's green from Image 2.",claude-opus-4-7,5877,50
+solid_red_vase_s1__solid_pink_vase_s2,1,"Image 4 is red like Image 1, not pink like Image 2.",claude-opus-4-7,5877,40
+solid_yellow_vase_s2__solid_orange_vase_s3,1,"Image 4 is yellow, matching Image 1's source color rather than Image 2's orange.",claude-opus-4-7,5877,48
+solid_yellow_vase_s4__solid_blue_vase_s0,1,"Image 4 is yellow like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,44
+solid_yellow_vase_s3__solid_pink_vase_s4,1,"Image 4 background is yellow matching Image 1, unlike Image 3's pink from Image 2.",claude-opus-4-7,5877,51
+solid_yellow_vase_s4__solid_purple_vase_s0,1,"Image 4 background is yellow like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,45
+solid_blue_car_s4__solid_purple_car_s0,1,"Image 4's car is blue like Image 1, while Image 3's car is purple like Image 2.",claude-opus-4-7,5877,49
+solid_yellow_vase_s0__solid_red_vase_s1,1,"Image 4 shifted to yellow/orange tones matching source yellow, away from target red in Image 3.",claude-opus-4-7,5877,52
+solid_purple_couch_s4__solid_pink_couch_s0,1,"Image 4's sofa shifted toward purple/magenta, closer to source purple than the target pink of Image 3.",claude-opus-4-7,5877,55
+solid_purple_couch_s3__solid_orange_couch_s4,0,"Image 4 is reddish-brown, not purple like Image 1; it shifted away from orange but not toward source purple.",claude-opus-4-7,5877,56
+solid_blue_car_s0__solid_red_car_s1,1,"Image 4's car is blue like Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,5877,49
+solid_blue_car_s1__solid_yellow_car_s2,1,"Image 4's car and tone shifted to blue like Image 1, away from Image 3's yellow.",claude-opus-4-7,5877,50
+solid_purple_couch_s2__solid_green_couch_s3,1,"Image 4 shifts toward purple/desaturated tones from source, away from Image 3's clear green target.",claude-opus-4-7,5877,52
+solid_brown_car_s2__solid_blue_car_s3,1,Image 4 shows orange/brown tones closer to Image 1's brown than Image 2's blue.,claude-opus-4-7,5877,51
+solid_purple_couch_s0__solid_red_couch_s1,0,"Image 4 sofa is magenta/pink, between red and purple but closer to red than to source purple.",claude-opus-4-7,5877,50
+solid_brown_car_s3__solid_green_car_s4,1,"Image 4's car is brown like Image 1, unlike the green car in Image 3.",claude-opus-4-7,5877,45
+solid_brown_car_s4__solid_orange_car_s0,0,"Image 4 background remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5877,43
+solid_red_couch_s2__solid_blue_couch_s3,1,"Image 4 sofa is red matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,46
+solid_brown_car_s0__solid_pink_car_s1,1,"Image 4 shows brown/orange tones matching the source brown of Image 1, not the pink of Image 2.",claude-opus-4-7,5877,54
+solid_purple_couch_s1__solid_yellow_couch_s2,0,"Image 4 shows brown/mauve and yellow tones, not the purple of Image 1.",claude-opus-4-7,5877,48
+solid_red_couch_s3__solid_brown_couch_s4,1,"Image 4 sofa is red/orange, much closer to Image 1's red than Image 3's brown.",claude-opus-4-7,5877,51
+solid_brown_car_s1__solid_purple_car_s2,1,"Image 4 shows brown/reddish-brown tones matching Image 1, unlike Image 3's purple from Image 2.",claude-opus-4-7,5877,59
+solid_red_couch_s4__solid_green_couch_s0,1,"Image 4's sofa is predominantly red like Image 1, unlike Image 3's green from Image 2.",claude-opus-4-7,5877,53
+solid_brown_car_s2__solid_red_car_s3,1,"Image 4 shifts toward brownish/orange tones of Image 1, away from Image 3's pure red.",claude-opus-4-7,5877,53
+solid_red_couch_s0__solid_orange_couch_s1,0,"Image 4 sofa remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5877,44
+solid_brown_car_s3__solid_yellow_car_s4,1,"Car in Image 4 is brown matching Image 1, unlike yellow car in Image 3.",claude-opus-4-7,5877,49
+solid_red_couch_s1__solid_pink_couch_s2,1,"Image 4's sofa is red like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,45
+solid_green_car_s4__solid_blue_car_s0,1,"Car in Image 4 is green like Image 1, while Image 3's car is blue like Image 2.",claude-opus-4-7,5877,50
+solid_green_car_s0__solid_brown_car_s1,1,"Image 4 shows green car and background matching Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,47
+solid_red_couch_s2__solid_purple_couch_s3,1,"Image 4's sofa is reddish/magenta, much closer to Image 1's red than Image 2's purple.",claude-opus-4-7,5877,54
+solid_green_car_s1__solid_orange_car_s2,1,"Image 4's car is green like Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,43
+solid_red_couch_s3__solid_yellow_couch_s4,1,"Image 4 is predominantly red like Image 1, shifted away from the yellow of Images 2 and 3.",claude-opus-4-7,5877,54
+solid_yellow_couch_s4__solid_blue_couch_s0,1,"Image 4 is yellow/cream, matching Image 1's yellow rather than Image 2's blue seen in Image 3.",claude-opus-4-7,5877,59
+solid_green_car_s2__solid_pink_car_s3,1,"Image 4's car and tone shifted to green, matching Image 1's source color rather than Image 2's pink.",claude-opus-4-7,5877,53
+solid_green_car_s3__solid_purple_car_s4,1,"Image 4 shows significant green (source color) on the car and white background, unlike Image 3 which is fully purple.",claude-opus-4-7,5877,54
+solid_yellow_couch_s0__solid_brown_couch_s1,1,"Image 4 sofa shifted toward yellow/mustard tone, closer to Image 1's yellow than Image 2's brown.",claude-opus-4-7,5877,61
+solid_yellow_couch_s1__solid_green_couch_s2,0,"Image 4 is yellow-green, partially shifted toward yellow but still closer to green than pure yellow.",claude-opus-4-7,5877,53
+solid_green_car_s4__solid_red_car_s0,1,"Image 4 background is green like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,42
+solid_yellow_couch_s3__solid_pink_couch_s4,1,"Image 4 sofa is yellow matching Image 1, not pink like Image 2.",claude-opus-4-7,5877,46
+solid_yellow_couch_s2__solid_orange_couch_s3,0,"Image 4 is a lighter orange, shifted slightly toward yellow but still clearly orange, not yellow like Image 1.",claude-opus-4-7,5877,60
+solid_yellow_couch_s4__solid_purple_couch_s0,1,"Image 4 sofa and background are yellow/tan, matching source yellow rather than target purple.",claude-opus-4-7,5877,49
+solid_green_car_s0__solid_yellow_car_s1,1,Image 4 shows green car and background matching Image 1's source color rather than Image 2's yellow.,claude-opus-4-7,5877,50
+solid_orange_car_s2__solid_brown_car_s3,1,"Image 4 background and car shifted to orange matching Image 1, away from Image 3's brown.",claude-opus-4-7,5877,49
+solid_orange_car_s3__solid_green_car_s4,1,"Image 4's car and background are orange/yellow matching Image 1, unlike Image 3's green from Image 2.",claude-opus-4-7,5877,55
+solid_orange_car_s1__solid_blue_car_s2,1,"Image 4's car and tint shifted to orange, matching source Image 1, unlike Image 3 which is blue.",claude-opus-4-7,5877,55
+solid_orange_car_s4__solid_pink_car_s0,1,"Image 4 is orange like Image 1, while Image 3 is pink like Image 2.",claude-opus-4-7,5877,47
+solid_blue_hat_s0__solid_brown_hat_s1,0,"Image 4 is gray, not blue like Image 1, though it shifted away from brown.",claude-opus-4-7,5877,46
+solid_blue_hat_s1__solid_green_hat_s2,1,"Image 4 hat is blue like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,44
+solid_yellow_couch_s0__solid_red_couch_s1,1,"Image 4's sofa is yellow, matching Image 1's source color rather than Image 2's red.",claude-opus-4-7,5877,50
+solid_orange_car_s0__solid_purple_car_s1,1,"Image 4's car is orange like Image 1, unlike Image 3's purple matching Image 2.",claude-opus-4-7,5877,50
+solid_orange_car_s1__solid_red_car_s2,1,"Image 4 is orange like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,42
+solid_blue_hat_s2__solid_orange_hat_s3,1,"Image 4 is blue, matching source Image 1, rather than orange like Image 2/3.",claude-opus-4-7,5877,48
+solid_blue_hat_s4__solid_purple_hat_s0,0,"Image 4 hat is purple/violet, closer to Image 2's purple than Image 1's blue.",claude-opus-4-7,5877,51
+solid_pink_car_s4__solid_brown_car_s0,1,"Image 4 shows pink car and background matching source, unlike Image 3's brown.",claude-opus-4-7,5877,45
+solid_blue_hat_s1__solid_yellow_hat_s2,1,"Image 4 is predominantly blue like Image 1, unlike Image 3 which is yellow like Image 2.",claude-opus-4-7,5877,55
+solid_pink_car_s3__solid_blue_car_s4,1,"Image 4's car is pink matching Image 1, unlike Image 3's blue car matching Image 2.",claude-opus-4-7,5877,52
+solid_blue_hat_s3__solid_pink_hat_s4,1,"Image 4 hat is purple/blue, much closer to source blue than target pink of Image 3.",claude-opus-4-7,5877,49
+solid_pink_car_s0__solid_green_car_s1,1,"Image 4 background is pink matching Image 1, unlike Image 3's white/green target.",claude-opus-4-7,5877,47
+solid_orange_car_s2__solid_yellow_car_s3,0,"Image 4 background remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5877,44
+solid_blue_hat_s0__solid_red_hat_s1,0,"Image 4 hat is still predominantly red/maroon, only the band turned blue; overall color is closer to Image 2 than Image 1.",claude-opus-4-7,5877,63
+solid_brown_hat_s2__solid_blue_hat_s3,1,"Image 4's hat is brown like Image 1, replacing the blue from Image 2/3.",claude-opus-4-7,5877,48
+solid_pink_car_s1__solid_orange_car_s2,1,"Image 4's car and background shifted toward pink/coral, matching source pink rather than target orange.",claude-opus-4-7,5877,49
+solid_pink_car_s2__solid_purple_car_s3,1,"Image 4's car and background shifted to pink tones matching Image 1, unlike Image 3's purple.",claude-opus-4-7,5877,52
+solid_brown_hat_s3__solid_green_hat_s4,1,Image 4 shows brownish/olive tones shifted toward Image 1's brown rather than Image 2's pure green.,claude-opus-4-7,5877,57
+solid_pink_car_s4__solid_yellow_car_s0,0,"Image 4 is peach/red, neither pink like Image 1 nor yellow like Image 2.",claude-opus-4-7,5877,50
+solid_brown_hat_s4__solid_orange_hat_s0,0,"Image 4's hat remains orange like Image 2, not brown like Image 1; only background changed.",claude-opus-4-7,5877,49
+solid_brown_hat_s0__solid_pink_hat_s1,1,"Image 4 is brown like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,43
+solid_pink_car_s3__solid_red_car_s4,0,"Image 4 background remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5877,42
+solid_purple_car_s0__solid_blue_car_s1,1,"Image 4's car and background shifted to purple matching Image 1, away from Image 2's blue.",claude-opus-4-7,5877,49
+solid_brown_hat_s1__solid_purple_hat_s2,1,"Image 4 is brown/reddish-brown, much closer to Image 1's brown than Image 2's purple.",claude-opus-4-7,5877,54
+solid_brown_hat_s2__solid_red_hat_s3,0,"Image 4 hat is reddish-orange, closer to Image 2's red than Image 1's brown.",claude-opus-4-7,5877,51
+solid_purple_car_s1__solid_brown_car_s2,0,"Image 4 is muted pink/mauve, not the vivid purple of Image 1, though it shifted away from brown.",claude-opus-4-7,5877,56
+solid_purple_car_s3__solid_orange_car_s4,0,"Image 4 is pink/magenta, neither the source purple nor target orange.",claude-opus-4-7,5877,43
+solid_green_hat_s4__solid_blue_hat_s0,1,"Image 4 hat is green, matching Image 1's source color rather than Image 2's blue.",claude-opus-4-7,5877,48
+solid_green_hat_s0__solid_brown_hat_s1,1,"Image 4 shows green tones matching Image 1, unlike Image 3's brown matching Image 2.",claude-opus-4-7,5877,52
+solid_green_hat_s1__solid_orange_hat_s2,1,"Image 4 shifts toward green/olive tones from Image 1, away from Image 3's pure orange.",claude-opus-4-7,5877,52
+solid_brown_hat_s3__solid_yellow_hat_s4,0,"Image 4 is light cream/tan, not the dark brown of Image 1 nor the yellow of Image 2; closer to neither but not source brown.",claude-opus-4-7,5877,66
+solid_purple_car_s4__solid_pink_car_s0,1,Image 4's background and car shifted toward purple (Image 1) compared to Image 3's pink (Image 2).,claude-opus-4-7,5877,56
+solid_purple_car_s2__solid_green_car_s3,0,Image 4 background is bluish and car is pink; neither matches the purple of Image 1 closely.,claude-opus-4-7,5877,50
+solid_purple_car_s0__solid_red_car_s1,1,"Image 4 shifted toward purple/magenta, matching Image 1's source color rather than Image 2's red.",claude-opus-4-7,5877,54
+solid_green_hat_s2__solid_pink_hat_s3,1,"Image 4 hat is green, matching Image 1's source color rather than Image 2's pink.",claude-opus-4-7,5877,48
+solid_green_hat_s3__solid_purple_hat_s4,1,"Image 4 is green like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,42
+solid_orange_hat_s1__solid_blue_hat_s2,1,"Image 4's hat is orange like Image 1, replacing the blue from Image 3.",claude-opus-4-7,5877,46
+solid_red_car_s2__solid_blue_car_s3,1,"Image 4's car is red matching Image 1, unlike Image 3's blue matching Image 2.",claude-opus-4-7,5877,50
+solid_red_car_s4__solid_green_car_s0,1,"Image 4 shows red car on red/orange background, matching Image 1's red rather than Image 2's green.",claude-opus-4-7,5877,52
+solid_red_car_s3__solid_brown_car_s4,1,"Image 4 shows red car and red background matching Image 1, not brown like Image 2.",claude-opus-4-7,5877,46
+solid_green_hat_s4__solid_red_hat_s0,1,"Image 4 hat is green/olive matching Image 1, not red like Image 2/3.",claude-opus-4-7,5877,47
+solid_red_car_s0__solid_orange_car_s1,0,Image 4 car is reddish-orange but background remains orange like Image 2; not predominantly red like Image 1.,claude-opus-4-7,5877,55
+solid_green_hat_s0__solid_yellow_hat_s1,1,"Image 4 is green like Image 1, while Image 3 is yellow like Image 2.",claude-opus-4-7,5877,47
+solid_orange_hat_s2__solid_brown_hat_s3,1,"Image 4 is orange like Image 1, while Image 3 is brown like Image 2.",claude-opus-4-7,5877,47
+solid_purple_car_s1__solid_yellow_car_s2,1,"Image 4's car is purple matching source Image 1, unlike Image 3's yellow.",claude-opus-4-7,5877,47
+solid_red_car_s1__solid_pink_car_s2,1,"Image 4 shows red car and background matching Image 1, not pink like Image 2.",claude-opus-4-7,5877,45
+solid_orange_hat_s3__solid_green_hat_s4,1,"Image 4's hat is orange like Image 1, not green like Images 2/3.",claude-opus-4-7,5877,44
+solid_orange_hat_s4__solid_pink_hat_s0,1,"Image 4's hat is orange/red-orange matching Image 1, not pink as in Image 2/3.",claude-opus-4-7,5877,52
+solid_red_car_s3__solid_yellow_car_s4,1,"Image 4 shows red/orange tones matching source red, unlike Image 3's yellow.",claude-opus-4-7,5877,48
+solid_yellow_car_s4__solid_blue_car_s0,1,"Image 4's car and tone are yellow like Image 1, unlike Image 3's blue from Image 2.",claude-opus-4-7,5877,53
+solid_red_car_s2__solid_purple_car_s3,1,"Image 4's car and background shifted to red/pink tones matching Image 1, unlike Image 3's purple.",claude-opus-4-7,5877,54
+solid_orange_hat_s0__solid_purple_hat_s1,0,"Image 4 is red, not orange like Image 1, though it has shifted away from purple.",claude-opus-4-7,5877,46
+solid_yellow_car_s0__solid_brown_car_s1,1,"Image 4 is yellow like Image 1, while Image 3 is brown like Image 2.",claude-opus-4-7,5877,48
+solid_orange_hat_s1__solid_red_hat_s2,1,"Image 4 shifts toward orange-red and cream background, closer to source orange than the pure red of Image 2/3.",claude-opus-4-7,5877,56
+solid_orange_hat_s2__solid_yellow_hat_s3,1,"Image 4 shifted from yellow toward orange/tan, matching the source orange more than the target yellow.",claude-opus-4-7,5877,52
+solid_yellow_car_s1__solid_green_car_s2,1,Image 4's car and background shifted toward yellow (Image 1) compared to Image 3's green (Image 2).,claude-opus-4-7,5877,56
+solid_pink_hat_s3__solid_blue_hat_s4,1,"Image 4 is purple/pink-leaning, shifted toward the source pink rather than the target blue of Image 3.",claude-opus-4-7,5877,56
+solid_yellow_car_s2__solid_orange_car_s3,1,"Image 4 is yellow like Image 1, while Image 3 is orange like Image 2.",claude-opus-4-7,5877,48
+solid_yellow_car_s3__solid_pink_car_s4,1,"Image 4 shows yellow car and background matching Image 1, unlike Image 3's pink.",claude-opus-4-7,5877,49
+solid_pink_hat_s1__solid_orange_hat_s2,0,"Image 4 hat is orange like Image 2, not pink like Image 1.",claude-opus-4-7,5877,43
+solid_yellow_car_s4__solid_purple_car_s0,1,"Image 4 is yellow like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,44
+solid_pink_hat_s4__solid_brown_hat_s0,1,"Image 4's hat is pink/rose, matching Image 1's pink rather than Image 2/3's brown.",claude-opus-4-7,5877,54
+solid_yellow_car_s0__solid_red_car_s1,0,"Image 4 is orange, between yellow and red, not clearly matching Image 1's yellow.",claude-opus-4-7,5877,49
+solid_pink_hat_s0__solid_green_hat_s1,1,"Image 4's hat is pink, matching Image 1, while Image 3 was green like Image 2.",claude-opus-4-7,5877,50
+solid_pink_hat_s2__solid_purple_hat_s3,0,"Image 4 hat is magenta/purple, closer to Image 2's purple than Image 1's pink, though slightly shifted toward pink.",claude-opus-4-7,5877,64
+solid_blue_chair_s0__solid_brown_chair_s1,1,"Image 4 background is blue like Image 1, unlike Image 3's brown matching Image 2.",claude-opus-4-7,5877,50
+solid_pink_hat_s3__solid_red_hat_s4,0,"Image 4 hat remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5877,43
+solid_blue_chair_s3__solid_pink_chair_s4,1,"Image 4 chair is blue/purple matching source, not pink like target.",claude-opus-4-7,5877,41
+solid_purple_hat_s0__solid_blue_hat_s1,0,"Image 4 hat is blue/purple-blue, closer to Image 2's blue than Image 1's vivid purple.",claude-opus-4-7,5877,57
+solid_blue_chair_s2__solid_orange_chair_s3,1,"Image 4's chair is blue like Image 1, unlike Image 3's orange matching Image 2.",claude-opus-4-7,5877,51
+solid_purple_hat_s2__solid_green_hat_s3,1,"Image 4's hat is purple matching Image 1, unlike Image 3's green hat matching Image 2.",claude-opus-4-7,5877,53
+solid_purple_hat_s1__solid_brown_hat_s2,0,"Image 4 is dark red/maroon, not the purple of Image 1 nor the brown of Image 2; not clearly source-colored.",claude-opus-4-7,5877,62
+solid_blue_chair_s4__solid_purple_chair_s0,1,"Chair in Image 4 is blue like Image 1, unlike the purple chair in Image 3.",claude-opus-4-7,5877,50
+solid_pink_hat_s4__solid_yellow_hat_s0,1,"Image 4 hat is pink like Image 1, not yellow like Image 2/3.",claude-opus-4-7,5877,46
+solid_blue_chair_s0__solid_red_chair_s1,1,"Image 4 shifts to blue/purple tones matching Image 1, away from Image 3's red.",claude-opus-4-7,5877,50
+solid_purple_hat_s3__solid_orange_hat_s4,1,"Image 4's hat is purple matching Image 1, unlike Image 3's orange matching Image 2.",claude-opus-4-7,5877,52
+solid_blue_chair_s1__solid_yellow_chair_s2,1,"Image 4 is predominantly blue like Image 1, unlike Image 3's yellow.",claude-opus-4-7,5877,48
+solid_blue_chair_s1__solid_green_chair_s2,1,"Image 4 is blue like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,42
+solid_purple_hat_s4__solid_pink_hat_s0,1,"Image 4 shifted from pink toward purple/magenta, closer to source purple than target pink.",claude-opus-4-7,5877,49
+solid_purple_hat_s0__solid_red_hat_s1,0,"Image 4 remains red/dark red, not purple like Image 1.",claude-opus-4-7,5877,40
+solid_brown_chair_s2__solid_blue_chair_s3,1,"Image 4 shows brown tones matching Image 1's source color, unlike Image 3's blue.",claude-opus-4-7,5877,50
+solid_purple_hat_s1__solid_yellow_hat_s2,0,"Image 4 is pink, not purple like Image 1 nor yellow like Image 2; it does not adopt source color.",claude-opus-4-7,5877,56
+solid_red_hat_s2__solid_blue_hat_s3,1,"Hat in Image 4 is red like Image 1, unlike the blue hat in Image 3.",claude-opus-4-7,5877,49
+solid_brown_chair_s4__solid_orange_chair_s0,0,"Image 4 background is pale cream, not brown like Image 1 nor orange like Image 2.",claude-opus-4-7,5877,49
+solid_brown_chair_s1__solid_purple_chair_s2,1,"Image 4 chair and background are brown like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,47
+solid_brown_chair_s0__solid_pink_chair_s1,1,"Image 4's chair is brown like Image 1, replacing the pink of Image 2/3.",claude-opus-4-7,5877,48
+solid_brown_chair_s3__solid_green_chair_s4,1,"Image 4's background and chair legs adopt the brown source color, unlike Image 3's green target.",claude-opus-4-7,5877,49
+solid_red_hat_s4__solid_green_hat_s0,1,"Hat in Image 4 is red like Image 1, unlike Image 3's green hat.",claude-opus-4-7,5877,47
+solid_brown_chair_s3__solid_yellow_chair_s4,1,"Chair in Image 4 is brown like Image 1, unlike the yellow chair in Image 3.",claude-opus-4-7,5877,51
+solid_brown_chair_s2__solid_red_chair_s3,1,"Image 4 shows brown chair and tan background, matching source brown rather than target red.",claude-opus-4-7,5877,45
+solid_red_hat_s0__solid_orange_hat_s1,0,"Image 4 hat remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5877,43
+solid_red_hat_s1__solid_pink_hat_s2,1,"Image 4 shifted from pink toward red, matching source color more than target.",claude-opus-4-7,5877,41
+solid_green_chair_s4__solid_blue_chair_s0,1,"Image 4 chair and background shifted to green tones matching Image 1, unlike Image 3's blue.",claude-opus-4-7,5877,52
+solid_red_hat_s3__solid_brown_hat_s4,1,"Image 4's hat shifted toward red/orange like Image 1, away from Image 3's brown.",claude-opus-4-7,5877,50
+solid_red_hat_s2__solid_purple_hat_s3,1,"Image 4 is red like Image 1, not purple like Images 2/3.",claude-opus-4-7,5877,42
+solid_green_chair_s0__solid_brown_chair_s1,1,"Image 4 background is green matching Image 1, unlike Image 3's white/brown target.",claude-opus-4-7,5877,47
+solid_red_hat_s3__solid_yellow_hat_s4,1,"Image 4 is red like Image 1, not yellow like Image 2/3.",claude-opus-4-7,5877,43
+solid_green_chair_s2__solid_pink_chair_s3,1,"Image 4 is predominantly green like Image 1, not pink like Image 2.",claude-opus-4-7,5877,44
+solid_yellow_hat_s4__solid_blue_hat_s0,1,"Image 4 hat is yellow like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,46
+solid_green_chair_s1__solid_orange_chair_s2,1,"Image 4 is green like Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,42
+solid_yellow_hat_s0__solid_brown_hat_s1,0,"Image 4's hat remains brown like Image 2; only the background shifted to pale yellow, hat color unchanged.",claude-opus-4-7,5877,56
+solid_green_chair_s3__solid_purple_chair_s4,1,"Image 4's chair and background are green, matching Image 1's source color rather than Image 2's purple.",claude-opus-4-7,5877,50
+solid_yellow_hat_s1__solid_green_hat_s2,0,"Image 4 hat is greenish, closer to Image 2's green than Image 1's yellow, though slightly muted.",claude-opus-4-7,5877,56
+solid_green_chair_s4__solid_red_chair_s0,1,"Image 4's background is green like Image 1, unlike Image 3's red background matching Image 2.",claude-opus-4-7,5877,49
+solid_green_chair_s0__solid_yellow_chair_s1,1,"Image 4's background and chair shifted to green, matching Image 1 rather than Image 2's yellow.",claude-opus-4-7,5877,52
+solid_yellow_hat_s2__solid_orange_hat_s3,1,"Image 4 is yellow matching Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,45
+solid_yellow_hat_s3__solid_pink_hat_s4,1,"Image 4 hat is yellow matching Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,47
+solid_orange_chair_s1__solid_blue_chair_s2,1,Image 4's chair and warm tones reflect the orange source rather than the blue target seen in Image 3.,claude-opus-4-7,5877,52
+solid_orange_chair_s2__solid_brown_chair_s3,1,"Image 4 background is orange like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,44
+solid_yellow_hat_s0__solid_red_hat_s1,1,"Image 4 background is yellow matching Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,5877,51
+solid_orange_chair_s3__solid_green_chair_s4,1,"Image 4 background is orange like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,43
+solid_blue_mug_s0__solid_brown_mug_s1,1,"Image 4's mug and background are blue, matching Image 1's source color rather than Image 2's brown.",claude-opus-4-7,5877,51
+solid_blue_mug_s1__solid_green_mug_s2,1,"Image 4 mug is blue/teal, closer to source blue than target green of Image 3.",claude-opus-4-7,5877,47
+solid_orange_chair_s4__solid_pink_chair_s0,1,"Image 4 is orange like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,43
+solid_orange_chair_s0__solid_purple_chair_s1,1,"Image 4 background and chair adopt orange tones matching Image 1, unlike purple Image 3.",claude-opus-4-7,5877,51
+solid_yellow_hat_s4__solid_purple_hat_s0,1,"Image 4 hat is yellow matching Image 1, unlike Image 3's purple matching Image 2.",claude-opus-4-7,5877,53
+solid_blue_mug_s2__solid_orange_mug_s3,1,"Image 4's mug is blue like Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,45
+solid_blue_mug_s3__solid_pink_mug_s4,0,"Image 4 mug is purple, between blue and pink but not clearly matching source blue.",claude-opus-4-7,5877,46
+solid_orange_chair_s1__solid_red_chair_s2,0,"Image 4 chair remains red like Image 2, not orange like Image 1; background is white.",claude-opus-4-7,5877,47
+solid_orange_chair_s2__solid_yellow_chair_s3,1,"Chair in Image 4 is orange like Image 1, unlike yellow chair in Image 3.",claude-opus-4-7,5877,50
+solid_blue_mug_s4__solid_purple_mug_s0,1,"Image 4's mug shifted toward blue/violet, closer to source blue than the pure purple in Image 3.",claude-opus-4-7,5877,54
+solid_pink_chair_s4__solid_brown_chair_s0,1,"Image 4's background became pink like Image 1, unlike Image 3's white background.",claude-opus-4-7,5877,44
+solid_pink_chair_s3__solid_blue_chair_s4,1,"Image 4 shows pink chair on purple background, clearly closer to Image 1's pink than Image 2's blue.",claude-opus-4-7,5877,56
+solid_pink_chair_s0__solid_green_chair_s1,1,"Image 4's background is pink matching Image 1, not green like Image 2/3.",claude-opus-4-7,5877,44
+solid_blue_mug_s1__solid_yellow_mug_s2,1,"Image 4 mug is blue matching source, while Image 3 was yellow matching target.",claude-opus-4-7,5877,46
+solid_brown_mug_s2__solid_blue_mug_s3,1,"Image 4 mug is brown matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,46
+solid_pink_chair_s1__solid_orange_chair_s2,1,"Image 4 background is pink matching Image 1, unlike Image 3's cream/orange aligned with Image 2.",claude-opus-4-7,5877,56
+solid_pink_chair_s2__solid_purple_chair_s3,1,"Image 4's chair shifted to pink/peach tones matching Image 1, unlike Image 3's purple.",claude-opus-4-7,5877,54
+solid_brown_mug_s3__solid_green_mug_s4,0,"Image 4 is olive/brownish-green, partially shifted toward brown but still predominantly green, not fully matching source brown.",claude-opus-4-7,5877,59
+solid_pink_chair_s3__solid_red_chair_s4,1,"Image 4 shifts toward pink hues of Image 1, unlike Image 3's red.",claude-opus-4-7,5877,48
+solid_blue_ball_s0__solid_brown_ball_s1,1,"Image 4's sphere is blue like Image 1, unlike Image 3's brown sphere matching Image 2.",claude-opus-4-7,5877,55
+solid_brown_mug_s4__solid_orange_mug_s0,0,"Image 4 mug is still predominantly orange like Image 2, only slightly darker, not brown like Image 1.",claude-opus-4-7,5877,55
+solid_brown_mug_s0__solid_pink_mug_s1,1,"Image 4 mug and background shifted to brown/white matching source, away from pink target.",claude-opus-4-7,5877,45
+solid_blue_ball_s1__solid_green_ball_s2,1,"Image 4 is blue like Image 1, not green like Images 2 and 3.",claude-opus-4-7,5877,44
+solid_blue_mug_s0__solid_red_mug_s1,1,"Image 4 mug and background are blue like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,46
+solid_pink_chair_s4__solid_yellow_chair_s0,1,"Image 4's chair and background shifted to pink tones matching Image 1, unlike the yellow of Image 3.",claude-opus-4-7,5877,55
+solid_brown_mug_s1__solid_purple_mug_s2,1,"Image 4 mug is brown matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,46
+solid_purple_chair_s0__solid_blue_chair_s1,1,"Image 4 is purple matching Image 1's source color, rather than blue like Image 2/3.",claude-opus-4-7,5877,49
+solid_blue_ball_s2__solid_orange_ball_s3,1,"Image 4's sphere is blue like Image 1, replacing the orange of Image 3/2.",claude-opus-4-7,5877,49
+solid_brown_mug_s2__solid_red_mug_s3,0,"Image 4 mug remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5877,43
+solid_blue_ball_s4__solid_purple_ball_s0,1,"Image 4 shifted to blue/indigo matching source, away from purple target.",claude-opus-4-7,5877,43
+solid_purple_chair_s1__solid_brown_chair_s2,1,"Image 4's background and chair adopt purple tones from Image 1, unlike Image 3's brown.",claude-opus-4-7,5877,51
+solid_brown_mug_s3__solid_yellow_mug_s4,0,"Image 4 mug is mustard/olive yellow, closer to Image 2's yellow than Image 1's brown, though slightly shifted.",claude-opus-4-7,5877,64
+solid_purple_chair_s2__solid_green_chair_s3,1,"Image 4 chair and background show purple tones matching Image 1, unlike Image 3's green.",claude-opus-4-7,5877,49
+solid_blue_ball_s0__solid_red_ball_s1,1,"Image 4's sphere is blue like Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,5877,51
+solid_blue_ball_s3__solid_pink_ball_s4,1,"Image 4 shifted from pink toward a blue/purple hue, closer to source blue than target pink.",claude-opus-4-7,5877,51
+solid_green_mug_s4__solid_blue_mug_s0,1,Image 4 mug and absence of blue shows it took on green from source rather than target blue.,claude-opus-4-7,5877,46
+solid_purple_chair_s3__solid_orange_chair_s4,1,"Image 4 chair and background shifted to purple/pink hues matching source purple, unlike Image 3's orange target.",claude-opus-4-7,5877,56
+solid_green_mug_s0__solid_brown_mug_s1,1,"Image 4 mug is green like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,44
+solid_blue_ball_s1__solid_yellow_ball_s2,1,"Image 4 sphere is blue like Image 1, not yellow like Image 2/3.",claude-opus-4-7,5877,47
+solid_green_mug_s1__solid_orange_mug_s2,1,"Image 4 mug is green, matching Image 1's source color rather than Image 2's orange.",claude-opus-4-7,5877,48
+solid_purple_chair_s4__solid_pink_chair_s0,1,"Image 4 chair and background are purple like Image 1, not pink like Image 2.",claude-opus-4-7,5877,45
+solid_purple_chair_s0__solid_red_chair_s1,1,"Image 4 shows purple/magenta tones matching Image 1, unlike Image 3's red from Image 2.",claude-opus-4-7,5877,55
+solid_brown_ball_s2__solid_blue_ball_s3,1,Image 4's sphere and background show brown/gray tones matching the source brown rather than the target blue.,claude-opus-4-7,5877,50
+solid_brown_ball_s3__solid_green_ball_s4,1,"Image 4's sphere is brown like Image 1, not green like Images 2 and 3.",claude-opus-4-7,5877,47
+solid_purple_chair_s1__solid_yellow_chair_s2,1,"Image 4's chair is purple like Image 1, unlike Image 3's yellow matching Image 2.",claude-opus-4-7,5877,52
+solid_green_mug_s3__solid_purple_mug_s4,1,"Image 4's mug exterior is green like Image 1, unlike Image 3's purple mug matching Image 2.",claude-opus-4-7,5877,55
+solid_red_chair_s2__solid_blue_chair_s3,1,"Image 4 is red/pink like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,45
+solid_green_mug_s2__solid_pink_mug_s3,1,"Image 4 mug is green matching source Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,46
+solid_brown_ball_s4__solid_orange_ball_s0,1,"Image 4 shifted from orange toward brown/tan tones, closer to source brown than target orange.",claude-opus-4-7,5877,50
+solid_green_mug_s4__solid_red_mug_s0,1,"Image 4 mug is predominantly green like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,47
+solid_brown_ball_s0__solid_pink_ball_s1,0,"Image 4 is dusty red/pink, not the brown of Image 1, though shifted from Image 3's pink toward Image 1.",claude-opus-4-7,5877,61
+solid_red_chair_s4__solid_green_chair_s0,1,"Image 4's chair is red like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,43
+solid_brown_ball_s1__solid_purple_ball_s2,1,"Image 4's sphere is brown like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,46
+solid_red_chair_s3__solid_brown_chair_s4,0,"Image 4 chair is reddish-brown, closer to Image 2's brown than Image 1's bright red.",claude-opus-4-7,5877,53
+solid_green_mug_s0__solid_yellow_mug_s1,1,"Image 4 mug is yellow-green, shifted toward source green from the pure yellow in Image 3.",claude-opus-4-7,5877,52
+solid_orange_mug_s1__solid_blue_mug_s2,1,"Image 4 mug is orange matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,46
+solid_orange_mug_s2__solid_brown_mug_s3,1,"Image 4 mug is orange like Image 1, not brown like Image 3.",claude-opus-4-7,5877,43
+solid_brown_ball_s3__solid_yellow_ball_s4,1,"The sphere in Image 4 is brown like Image 1, not yellow like Image 3/2.",claude-opus-4-7,5877,49
+solid_red_chair_s0__solid_orange_chair_s1,1,"Image 4's chair and background shifted to red/pink tones matching source red, away from target orange.",claude-opus-4-7,5877,48
+solid_brown_ball_s2__solid_red_ball_s3,1,"Image 4 shifts toward the brown/rust hue of Image 1, away from Image 2's pure red.",claude-opus-4-7,5877,53
+solid_red_chair_s1__solid_pink_chair_s2,1,"Image 4 is clearly red like Image 1, not pink like Image 2.",claude-opus-4-7,5877,43
+solid_orange_mug_s4__solid_pink_mug_s0,1,"Image 4 is clearly orange like Image 1, not pink like Image 2.",claude-opus-4-7,5877,44
+solid_green_ball_s4__solid_blue_ball_s0,1,"Image 4's sphere is green like Image 1, not blue like Image 2.",claude-opus-4-7,5877,43
+solid_red_chair_s2__solid_purple_chair_s3,1,"Image 4 shows red/orange tones matching Image 1, unlike Image 3's purple matching Image 2.",claude-opus-4-7,5877,55
+solid_green_ball_s0__solid_brown_ball_s1,1,"Image 4 is green like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,42
+solid_red_chair_s3__solid_yellow_chair_s4,1,"The chair in Image 4 is red like Image 1, unlike the yellow chair in Image 3.",claude-opus-4-7,5877,50
+solid_green_ball_s1__solid_orange_ball_s2,1,"Image 4 is green like Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,42
+solid_orange_mug_s0__solid_purple_mug_s1,1,"Image 4 mug is orange-red, closer to source orange than target purple.",claude-opus-4-7,5877,42
+solid_orange_mug_s1__solid_red_mug_s2,1,"Image 4 mug and background are orange matching Image 1, not red like Image 2/3.",claude-opus-4-7,5877,47
+solid_green_ball_s2__solid_pink_ball_s3,1,"Image 4 is predominantly green like Image 1, not pink like Image 2.",claude-opus-4-7,5877,44
+solid_yellow_chair_s0__solid_brown_chair_s1,1,"Image 4 background and chair shifted toward yellow, matching Image 1 rather than Image 2's brown.",claude-opus-4-7,5877,54
+solid_yellow_chair_s4__solid_blue_chair_s0,1,"Image 4 is predominantly yellow like Image 1, not blue like Image 2.",claude-opus-4-7,5877,46
+solid_green_ball_s3__solid_purple_ball_s4,1,"Image 4's background and partial sphere shifted to green matching Image 1, away from Image 2's purple.",claude-opus-4-7,5877,52
+solid_orange_mug_s3__solid_green_mug_s4,1,"Image 4 mug is orange like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,44
+solid_yellow_chair_s1__solid_green_chair_s2,1,"Image 4 shows yellow tones matching Image 1, replacing the green from Image 2/3.",claude-opus-4-7,5877,50
+solid_pink_mug_s3__solid_blue_mug_s4,1,"Image 4 is pink like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,43
+solid_orange_mug_s2__solid_yellow_mug_s3,1,"Image 4 mug is orange-toned like Image 1, unlike Image 3's bright yellow matching Image 2.",claude-opus-4-7,5877,57
+solid_green_ball_s4__solid_red_ball_s0,1,"Image 4's sphere is green like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,44
+solid_yellow_chair_s2__solid_orange_chair_s3,1,"Image 4 background is yellow matching Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,46
+solid_pink_mug_s4__solid_brown_mug_s0,1,"Image 4 background is pink like Image 1, unlike Image 3's white/brown.",claude-opus-4-7,5877,46
+solid_green_ball_s0__solid_yellow_ball_s1,1,"Image 4 is green like Image 1, not yellow like Image 2/3.",claude-opus-4-7,5877,43
+solid_yellow_chair_s3__solid_pink_chair_s4,1,"Image 4 background is yellow matching Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,46
+solid_yellow_chair_s4__solid_purple_chair_s0,1,"Image 4 background is yellow matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,46
+solid_yellow_chair_s0__solid_red_chair_s1,1,"Image 4 shifts to yellow/orange tones matching Image 1, away from Image 3's red.",claude-opus-4-7,5877,51
+solid_pink_mug_s1__solid_orange_mug_s2,1,"Image 4's mug and background shifted to pink/coral tones matching Image 1, away from Image 2's orange.",claude-opus-4-7,5877,55
+solid_orange_ball_s2__solid_brown_ball_s3,1,"Image 4 is predominantly orange like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,47
+solid_pink_mug_s2__solid_purple_mug_s3,0,"Image 4 mug is lighter purple/magenta, shifted slightly toward pink but still predominantly purple, closer to Image 2 than Image 1.",claude-opus-4-7,5877,69
+solid_orange_ball_s3__solid_green_ball_s4,1,"Image 4 is predominantly orange like Image 1, unlike Image 3 which is green like Image 2.",claude-opus-4-7,5877,53
+solid_blue_couch_s0__solid_brown_couch_s1,1,"Image 4 sofa is predominantly blue like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,50
+solid_pink_mug_s3__solid_red_mug_s4,1,"Image 4 shows pink mug and background matching Image 1, not red of Image 2.",claude-opus-4-7,5877,46
+solid_orange_ball_s1__solid_blue_ball_s2,1,"Image 4 is orange like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,43
+solid_orange_ball_s4__solid_pink_ball_s0,1,"Image 4 is orange like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,43
+solid_pink_mug_s0__solid_green_mug_s1,1,"Image 4 shows pink background and pinkish tones replacing the green of Image 3, matching source color.",claude-opus-4-7,5877,51
+solid_blue_couch_s1__solid_green_couch_s2,1,"Image 4 sofa shifted toward blue/teal from source, away from pure green of Image 3.",claude-opus-4-7,5877,50
+solid_orange_ball_s0__solid_purple_ball_s1,1,"Image 4 is orange/red like the source (Image 1), not purple like target (Image 2).",claude-opus-4-7,5877,49
+solid_pink_mug_s4__solid_yellow_mug_s0,0,"Image 4 is orange/yellow, not pink like Image 1; still closer to target yellow than source pink.",claude-opus-4-7,5877,53
+solid_orange_ball_s1__solid_red_ball_s2,1,"Image 4 is orange like Image 1, not red like Image 2/3.",claude-opus-4-7,5877,42
+solid_purple_mug_s0__solid_blue_mug_s1,1,"Image 4 mug is purple matching source, while Image 3 mug is blue matching target.",claude-opus-4-7,5877,47
+solid_blue_couch_s2__solid_orange_couch_s3,0,"Image 4 sofa is muted mauve/dusty rose, not blue like Image 1 nor orange like Image 2.",claude-opus-4-7,5877,58
+solid_blue_couch_s3__solid_pink_couch_s4,1,"Image 4 sofa and background shifted to blue/white matching source, away from pink target.",claude-opus-4-7,5877,46
+solid_purple_mug_s1__solid_brown_mug_s2,1,"Image 4 shifts from brown toward a purplish/mauve hue, closer to source purple than target brown.",claude-opus-4-7,5877,53
+solid_orange_ball_s2__solid_yellow_ball_s3,1,"Image 4 is orange like Image 1, not yellow like Image 2/3.",claude-opus-4-7,5877,44
+solid_blue_couch_s4__solid_purple_couch_s0,1,"Image 4 sofa is blue matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,47
+solid_purple_mug_s2__solid_green_mug_s3,1,"Image 4 mug is purple matching source Image 1, not green like target Image 2/3.",claude-opus-4-7,5877,47
+solid_blue_couch_s0__solid_red_couch_s1,1,"Image 4 sofa is purple/blue-leaning, shifted toward source blue rather than target red of Image 3.",claude-opus-4-7,5877,56
+solid_pink_ball_s3__solid_blue_ball_s4,1,"Image 4 is pink/purple matching source Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,48
+solid_purple_mug_s3__solid_orange_mug_s4,0,"Image 4 is reddish-pink, not purple like Image 1 nor orange like Image 2.",claude-opus-4-7,5877,50
+solid_pink_ball_s4__solid_brown_ball_s0,1,"Image 4 is pink matching Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,44
+solid_blue_couch_s1__solid_yellow_couch_s2,1,"Image 4's left half clearly shows blue matching Image 1, while Image 3 was fully yellow.",claude-opus-4-7,5877,52
+solid_brown_couch_s2__solid_blue_couch_s3,1,"Image 4 sofa is brown matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,47
+solid_pink_ball_s0__solid_green_ball_s1,1,"Image 4 is pink like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,42
+solid_purple_mug_s4__solid_pink_mug_s0,1,"Image 4 mug is purple/magenta matching Image 1, unlike Image 3's pink from Image 2.",claude-opus-4-7,5877,55
+solid_purple_mug_s0__solid_red_mug_s1,1,"Image 4 mug and background shifted toward purple/magenta, matching source rather than red target.",claude-opus-4-7,5877,48
+solid_pink_ball_s1__solid_orange_ball_s2,1,"Image 4 is pink/peach matching Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,47
+solid_brown_couch_s3__solid_green_couch_s4,1,"Image 4 sofa is brown, matching source color rather than the green target.",claude-opus-4-7,5877,41
+solid_purple_mug_s1__solid_yellow_mug_s2,1,"Image 4's mug is purple matching Image 1, unlike Image 3's yellow.",claude-opus-4-7,5877,47
+solid_brown_couch_s4__solid_orange_couch_s0,1,"Image 4 sofa is muted brown-orange, closer to source brown than the vivid orange of Image 3.",claude-opus-4-7,5877,54
+solid_pink_ball_s2__solid_purple_ball_s3,1,"Image 4 shifted to pink/magenta matching Image 1, away from Image 3's purple.",claude-opus-4-7,5877,50
+solid_red_mug_s2__solid_blue_mug_s3,1,"Image 4's mug is predominantly red like Image 1, unlike Image 3's blue mug matching Image 2.",claude-opus-4-7,5877,56
+solid_pink_ball_s3__solid_red_ball_s4,1,"Image 4 is pink, matching Image 1, rather than red like Images 2 and 3.",claude-opus-4-7,5877,48
+solid_red_mug_s3__solid_brown_mug_s4,1,"Image 4 mug is reddish, closer to source red than target brown.",claude-opus-4-7,5877,40
+solid_brown_couch_s0__solid_pink_couch_s1,1,"Image 4's sofa is reddish-brown, much closer to Image 1's brown than Image 2's pink.",claude-opus-4-7,5877,54
+solid_pink_ball_s4__solid_yellow_ball_s0,1,"Image 4's sphere is pink, matching Image 1's source color rather than Image 2's yellow.",claude-opus-4-7,5877,51
+solid_brown_couch_s1__solid_purple_couch_s2,1,"Image 4's sofa shifts toward brown/mauve tones from Image 1, away from Image 3's pure purple.",claude-opus-4-7,5877,57
+solid_red_mug_s4__solid_green_mug_s0,1,"Image 4 is predominantly red like Image 1, rather than green like Image 2.",claude-opus-4-7,5877,45
+solid_purple_ball_s0__solid_blue_ball_s1,1,"Image 4 shifted to purple/violet matching source, away from blue target.",claude-opus-4-7,5877,42
+solid_red_mug_s0__solid_orange_mug_s1,1,"Image 4 mug shifts toward the red hue of Image 1, away from Image 3's pure orange.",claude-opus-4-7,5877,52
+solid_brown_couch_s2__solid_red_couch_s3,0,"Image 4 sofa is muted red/brick, shifted toward brown but still predominantly red, not matching the source brown.",claude-opus-4-7,5877,57
+solid_red_mug_s1__solid_pink_mug_s2,1,"Image 4 mug is red like Image 1, not pink like Images 2 and 3.",claude-opus-4-7,5877,46
+solid_brown_couch_s3__solid_yellow_couch_s4,0,"Image 4 sofa is mustard/dark yellow, closer to target yellow than the brown source, though background became white.",claude-opus-4-7,5877,55
+solid_purple_ball_s2__solid_green_ball_s3,1,"Image 4's sphere is purple like Image 1, unlike Image 3's green matching Image 2.",claude-opus-4-7,5877,51
+solid_green_couch_s4__solid_blue_couch_s0,1,"Image 4 sofa is green, matching Image 1's source color rather than Image 2's blue.",claude-opus-4-7,5877,49
+solid_purple_ball_s3__solid_orange_ball_s4,1,"Image 4's sphere is purple like Image 1, while Image 3 is orange like Image 2.",claude-opus-4-7,5877,50
+solid_purple_ball_s1__solid_brown_ball_s2,1,"Image 4 is purple like Image 1, not brown like Images 2/3.",claude-opus-4-7,5877,43
+solid_red_mug_s2__solid_purple_mug_s3,1,"Image 4's mug shifts toward red/magenta like Image 1, away from Image 2's purple.",claude-opus-4-7,5877,51
+solid_green_couch_s0__solid_brown_couch_s1,1,"Image 4 sofa is green matching Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,46
+solid_purple_ball_s4__solid_pink_ball_s0,1,"The ball in Image 4 is purple, matching Image 1's source color rather than Image 2's pink.",claude-opus-4-7,5877,51
+solid_yellow_mug_s4__solid_blue_mug_s0,1,"Image 4 is yellow like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,44
+solid_green_couch_s1__solid_orange_couch_s2,1,Image 4 shows green (source) replacing the orange target color on the sofa.,claude-opus-4-7,5877,43
+solid_purple_ball_s0__solid_red_ball_s1,1,Image 4's pink/magenta hue shifts toward the purple source rather than the red target of Image 3.,claude-opus-4-7,5877,52
+solid_red_mug_s3__solid_yellow_mug_s4,1,Image 4 shifts toward red/orange tones of source rather than yellow target.,claude-opus-4-7,5877,44
+solid_yellow_mug_s0__solid_brown_mug_s1,1,"Image 4 mug shifted toward yellow/mustard, closer to Image 1's yellow than Image 2's brown.",claude-opus-4-7,5877,58
+solid_purple_ball_s1__solid_yellow_ball_s2,1,"Image 4's sphere is purple matching Image 1, unlike Image 3's yellow matching Image 2.",claude-opus-4-7,5877,54
+solid_green_couch_s2__solid_pink_couch_s3,1,"Image 4 sofa is green matching source, not pink target.",claude-opus-4-7,5877,37
+solid_yellow_mug_s1__solid_green_mug_s2,1,"Image 4 mug is yellow-green, much closer to Image 1's yellow than Image 2's pure green.",claude-opus-4-7,5877,54
+solid_red_ball_s2__solid_blue_ball_s3,1,"Image 4's sphere is red like Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,45
+solid_yellow_mug_s2__solid_orange_mug_s3,1,"Image 4 is yellow like Image 1, not orange like Image 2/3.",claude-opus-4-7,5877,44
+solid_red_ball_s3__solid_brown_ball_s4,1,"Image 4 is predominantly red, matching Image 1's source color rather than Image 2's brown.",claude-opus-4-7,5877,50
+solid_yellow_mug_s3__solid_pink_mug_s4,1,"Image 4 mug and background are yellow like Image 1, not pink like Image 2/3.",claude-opus-4-7,5877,48
+solid_green_couch_s3__solid_purple_couch_s4,1,"Image 4 sofa is green matching Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,46
+solid_red_ball_s4__solid_green_ball_s0,1,"Image 4's sphere is red like Image 1, unlike Image 3's green sphere matching Image 2.",claude-opus-4-7,5877,53
+solid_green_couch_s0__solid_yellow_couch_s1,1,"Image 4 sofa is green, matching Image 1's source color rather than Image 2's yellow.",claude-opus-4-7,5877,50
+solid_orange_couch_s1__solid_blue_couch_s2,1,"Image 4's sofa is orange like Image 1, unlike Image 3's blue matching Image 2.",claude-opus-4-7,5877,52
+solid_yellow_mug_s4__solid_purple_mug_s0,1,"Image 4's mug is predominantly yellow like Image 1, unlike Image 3's purple matching Image 2.",claude-opus-4-7,5877,56
+solid_red_ball_s0__solid_orange_ball_s1,0,"Image 4 shifts slightly redder but remains predominantly orange, closer to Image 2 than Image 1's red.",claude-opus-4-7,5877,57
+solid_orange_couch_s2__solid_brown_couch_s3,0,"Image 4 remains brown, closer to Image 2 than the orange of Image 1.",claude-opus-4-7,5877,46
+solid_green_couch_s4__solid_red_couch_s0,0,"Image 4 is olive/dark green, not the bright green of Image 1, though closer to green than red.",claude-opus-4-7,5877,50
+solid_red_ball_s1__solid_pink_ball_s2,1,"Image 4 is red, matching Image 1's source color rather than Image 2's pink.",claude-opus-4-7,5877,46
+solid_blue_pillow_s0__solid_brown_pillow_s1,1,"Image 4 pillow is blue matching Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,47
+solid_yellow_mug_s0__solid_red_mug_s1,1,"Image 4 background is yellow like Image 1, and mug shifted away from red toward orange/yellow tones.",claude-opus-4-7,5877,54
+solid_orange_couch_s3__solid_green_couch_s4,1,"Image 4's sofa is predominantly orange like Image 1, unlike Image 3's green.",claude-opus-4-7,5877,49
+solid_red_ball_s2__solid_purple_ball_s3,1,"Image 4 is red like Image 1, not purple like Image 2/3.",claude-opus-4-7,5877,42
+solid_orange_couch_s4__solid_pink_couch_s0,1,"Image 4 sofa is reddish-orange, closer to source orange than target pink in Image 3.",claude-opus-4-7,5877,50
+solid_blue_pillow_s1__solid_green_pillow_s2,1,"Image 4 pillow is blue, matching Image 1 source rather than Image 2/3 green.",claude-opus-4-7,5877,50
+solid_red_ball_s3__solid_yellow_ball_s4,1,"Image 4 shifted from yellow toward red/orange, closer to source red than target yellow.",claude-opus-4-7,5877,48
+solid_orange_couch_s0__solid_purple_couch_s1,0,"Image 4 is red, not orange like Image 1 nor purple like Image 2.",claude-opus-4-7,5877,45
+solid_blue_pillow_s2__solid_orange_pillow_s3,1,"Image 4 pillow is blue, matching source Image 1, unlike orange Image 3.",claude-opus-4-7,5877,48
+solid_yellow_ball_s4__solid_blue_ball_s0,1,"Image 4's ball and tint are yellow like Image 1, not blue like Images 2/3.",claude-opus-4-7,5877,49
+solid_orange_couch_s1__solid_red_couch_s2,1,"Image 4's sofa and background shifted to orange tones matching Image 1, unlike Image 3's red.",claude-opus-4-7,5877,53
+solid_yellow_ball_s0__solid_brown_ball_s1,1,"Image 4 is yellow like Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,44
+solid_blue_pillow_s3__solid_pink_pillow_s4,1,"Image 4 pillow is purple/blue-violet, shifted toward source blue rather than target pink.",claude-opus-4-7,5877,51
+solid_blue_pillow_s4__solid_purple_pillow_s0,1,"Image 4 is blue like Image 1, not purple like Images 2/3.",claude-opus-4-7,5877,43
+solid_orange_couch_s2__solid_yellow_couch_s3,0,"Image 4 shifted toward orange/peach background but sofa remains yellow-orange, partially toward source but not predominantly orange like Image 1.",claude-opus-4-7,5877,66
+solid_yellow_ball_s1__solid_green_ball_s2,1,"Image 4 is predominantly yellow like Image 1, not green like Image 2/3.",claude-opus-4-7,5877,47
+solid_pink_couch_s3__solid_blue_couch_s4,1,Image 4's purple-pink sofa shifts toward the pink source rather than the blue target.,claude-opus-4-7,5877,48
+solid_blue_pillow_s0__solid_red_pillow_s1,1,"Image 4 is predominantly blue/purple, shifted toward source blue rather than target red.",claude-opus-4-7,5877,48
+solid_yellow_ball_s2__solid_orange_ball_s3,1,"Image 4 shifted from orange to yellow/yellow-orange, matching source color more than target.",claude-opus-4-7,5877,49
+solid_pink_couch_s4__solid_brown_couch_s0,1,"Image 4 sofa is pink/rose, matching source Image 1 rather than brown target Image 2.",claude-opus-4-7,5877,52
+solid_blue_pillow_s1__solid_yellow_pillow_s2,1,"Image 4 pillow is blue like Image 1, not yellow like Image 2/3.",claude-opus-4-7,5877,47
+solid_yellow_ball_s3__solid_pink_ball_s4,1,"Image 4 is yellow/orange like Image 1, not pink like Image 2.",claude-opus-4-7,5877,45
+solid_brown_pillow_s2__solid_blue_pillow_s3,1,"Image 4 pillow is brown matching source Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,48
+solid_yellow_ball_s0__solid_red_ball_s1,1,"Image 4 is orange/yellow, much closer to Image 1's yellow than Image 2's red.",claude-opus-4-7,5877,51
+solid_yellow_ball_s4__solid_purple_ball_s0,1,"Image 4 background is yellow matching Image 1, unlike Image 3's purple.",claude-opus-4-7,5877,46
+solid_brown_pillow_s3__solid_green_pillow_s4,1,"Image 4 pillow is brown matching source Image 1, not green like Image 2/3.",claude-opus-4-7,5877,47
+solid_pink_couch_s1__solid_orange_couch_s2,1,"Image 4's sofa and background shifted to pink, matching Image 1 rather than Image 2's orange.",claude-opus-4-7,5877,53
+solid_pink_couch_s0__solid_green_couch_s1,1,"Left half of sofa in Image 4 shows pink matching Image 1, unlike the fully green Image 3.",claude-opus-4-7,5877,54
+solid_pink_couch_s2__solid_purple_couch_s3,0,"Image 4 sofa remains purple/magenta like Image 2, not pink like Image 1.",claude-opus-4-7,5877,49
+solid_blue_car_s0__solid_brown_car_s1,1,"Image 4's background is blue, matching Image 1's source color rather than Image 2's brown.",claude-opus-4-7,5877,48
+solid_brown_pillow_s4__solid_orange_pillow_s0,1,"Image 4's pillow is brown/rust like Image 1, while Image 3 is bright orange like Image 2.",claude-opus-4-7,5877,55
+solid_brown_pillow_s0__solid_pink_pillow_s1,1,"Image 4 pillow is brownish-red, much closer to Image 1's brown than Image 2's pink seen in Image 3.",claude-opus-4-7,5877,60
+solid_blue_car_s1__solid_green_car_s2,1,"Image 4 is blue like Image 1, while Image 3 is green like Image 2.",claude-opus-4-7,5877,46
+solid_purple_couch_s0__solid_blue_couch_s1,1,"Image 4 sofa is purple matching Image 1, not blue like Image 2/3.",claude-opus-4-7,5877,47
+solid_brown_pillow_s1__solid_purple_pillow_s2,1,"Image 4 pillow is brown matching source, not purple like target.",claude-opus-4-7,5877,39
+solid_blue_car_s2__solid_orange_car_s3,0,"Image 4 is muted purple/red, not blue like Image 1 nor orange like Image 2.",claude-opus-4-7,5877,50
+solid_brown_pillow_s2__solid_red_pillow_s3,0,"Image 4 is darker red/rust, shifted toward brown but still predominantly red, not matching the brown source.",claude-opus-4-7,5877,54
+solid_blue_car_s3__solid_pink_car_s4,1,"Image 4's car is blue like Image 1, unlike Image 3's pink matching Image 2.",claude-opus-4-7,5877,50
+solid_purple_couch_s1__solid_brown_couch_s2,1,"Image 4 sofa is purple/mauve matching Image 1, not brown like Image 2/3.",claude-opus-4-7,5877,51
+solid_pink_couch_s4__solid_yellow_couch_s0,1,"Image 4 shifts toward pink/peach tones from Image 1, away from the yellow of Image 2/3.",claude-opus-4-7,5877,55
+solid_pink_couch_s3__solid_red_couch_s4,1,"Image 4's sofa and background shifted toward pink, matching Image 1 rather than Image 2's red.",claude-opus-4-7,5877,53
+solid_brown_pillow_s3__solid_yellow_pillow_s4,0,"Image 4 is darker/mustard yellow, shifted toward brown but still predominantly yellow, not matching source brown.",claude-opus-4-7,5877,58

@@ -1,0 +1,321 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_brown_mug_s3,1,"Image 3 mug is brown/tan matching Image 1, while Image 2 was light green.",claude-opus-4-7,4455,48
+solid_brown_hat_s4,1,"Image 3 shows the brown color of Image 1, more saturated than the lighter tan in Image 2.",claude-opus-4-7,4455,52
+solid_brown_mug_s4,1,"Image 3 mug is now brown, matching Image 1, while Image 2 was beige/tan.",claude-opus-4-7,4455,50
+solid_brown_mug_s2,1,"Image 3 shows brown matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,44
+solid_brown_hat_s3,1,"Image 3 clearly shows the brown color from Image 1, replacing the tan/beige of Image 2.",claude-opus-4-7,4455,53
+solid_brown_mug_s0,1,"Image 3 shows brown tones absent in the gray Image 2, matching Image 1's brown.",claude-opus-4-7,4455,50
+solid_brown_pillow_s0,1,"Image 3's pillow is now brown matching Image 1, replacing the blue from Image 2.",claude-opus-4-7,4455,49
+solid_brown_mug_s1,1,"Image 3 shows brown tones matching Image 1, absent from the gray Image 2.",claude-opus-4-7,4455,47
+solid_brown_hat_s2,1,"Image 3 adopts the brown hue of Image 1, replacing the tan/beige color of Image 2.",claude-opus-4-7,4455,53
+solid_brown_pillow_s1,1,"Image 3's pillow is brown matching Image 1, while Image 2 was teal.",claude-opus-4-7,4455,46
+solid_green_ball_s1,1,"Image 3 is now green matching Image 1, whereas Image 2 was brown.",claude-opus-4-7,4455,45
+solid_brown_pillow_s3,1,"Image 3 pillow shows the brown hue from Image 1, replacing the taupe of Image 2.",claude-opus-4-7,4455,52
+solid_brown_vase_s0,1,Image 3 shows brown tones from Image 1 not present in Image 2's white background.,claude-opus-4-7,4455,46
+solid_brown_pillow_s4,1,"Image 3 shows the brown color from Image 1, replacing the gray of Image 2.",claude-opus-4-7,4455,47
+solid_brown_pillow_s2,1,"Image 3 pillow is brown matching Image 1, while Image 2 was teal.",claude-opus-4-7,4455,46
+solid_green_ball_s0,1,"Image 3 is now green matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,43
+solid_brown_vase_s1,1,"Image 3's vase shows the brown hue from Image 1, which was absent in Image 2's tan vase.",claude-opus-4-7,4455,53
+solid_brown_vase_s2,1,"Image 3's background and vase now show the brown hue of Image 1, absent in Image 2.",claude-opus-4-7,4455,48
+solid_brown_vase_s3,1,"Image 3's vase and background now show the brown hue from Image 1, absent in Image 2's olive/white version.",claude-opus-4-7,4455,54
+solid_brown_vase_s4,1,"Image 3 is dominated by a brown tone matching Image 1, absent from the white/green Image 2.",claude-opus-4-7,4455,52
+solid_green_ball_s3,1,"Image 3 is now predominantly green, matching Image 1, whereas Image 2 was orange.",claude-opus-4-7,4455,50
+solid_green_ball_s4,1,"Image 3 is now green matching Image 1, whereas Image 2 was orange.",claude-opus-4-7,4455,45
+solid_green_ball_s2,1,"Image 3 sphere and background are clearly green, matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,51
+solid_green_car_s2,1,"Image 3's car is clearly green, matching Image 1, while Image 2's car was brown.",claude-opus-4-7,4455,48
+solid_green_car_s1,1,"Image 3 shows prominent green coloring matching Image 1, absent from Image 2's orange car.",claude-opus-4-7,4455,51
+solid_green_car_s0,1,"Image 3 is dominantly green matching Image 1, while Image 2 was orange/white.",claude-opus-4-7,4455,48
+solid_green_chair_s1,1,"Image 3 is predominantly green matching Image 1, while Image 2 was brown/tan.",claude-opus-4-7,4455,49
+solid_green_chair_s0,1,"Image 3 clearly adopts green tones from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_green_chair_s2,1,"Image 3 chair is now predominantly green matching Image 1, while Image 2 was beige/tan.",claude-opus-4-7,4455,52
+solid_green_chair_s3,1,"Image 3 is now predominantly green, matching Image 1, whereas Image 2 was brown/white.",claude-opus-4-7,4455,52
+solid_green_couch_s2,1,"Image 3 is predominantly green matching Image 1, while Image 2 was olive/white.",claude-opus-4-7,4455,48
+solid_green_couch_s1,1,"Image 3 shows clear green coloring matching Image 1, absent from beige Image 2.",claude-opus-4-7,4455,48
+solid_green_couch_s0,1,"Image 3 shows a vivid green matching Image 1, whereas Image 2 was muted olive/sage green.",claude-opus-4-7,4455,55
+solid_green_chair_s4,1,"Image 3 clearly shows green coloring matching Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_green_couch_s3,1,"Image 3 is predominantly green matching Image 1, while Image 2 was brown/gray.",claude-opus-4-7,4455,49
+solid_green_car_s3,1,"Image 3 is dominated by green matching Image 1, while Image 2 was orange/white.",claude-opus-4-7,4455,48
+solid_green_couch_s4,1,"Image 3 shows a vivid green matching Image 1, replacing the muted sage green of Image 2.",claude-opus-4-7,4455,52
+solid_green_car_s4,1,"Image 3 is dominated by green, matching Image 1, while Image 2 was red on white.",claude-opus-4-7,4455,48
+solid_green_hat_s1,1,"Image 3 is predominantly green matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_green_hat_s0,1,"Image 3 is predominantly green matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_green_hat_s2,1,"Image 3 is now predominantly green matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_green_hat_s3,1,"Image 3's hat is clearly green matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_green_mug_s0,1,"Image 3 is now green matching Image 1, while Image 2 was pink/beige.",claude-opus-4-7,4455,46
+solid_green_hat_s4,1,"Image 3 is now predominantly green, matching Image 1, whereas Image 2 was brown.",claude-opus-4-7,4455,50
+solid_green_mug_s2,1,"Image 3 is clearly green like Image 1, while Image 2 was gray.",claude-opus-4-7,4455,44
+solid_green_mug_s3,1,"Image 3 is clearly green like Image 1, while Image 2 was gray/white.",claude-opus-4-7,4455,46
+solid_green_mug_s1,1,"Image 3 mug is clearly green, matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_green_mug_s4,1,"Image 3 mug is clearly green, matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_green_pillow_s1,1,"Image 3 pillow is now green matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,46
+solid_green_pillow_s0,1,"Image 3 shows clear green color matching Image 1, while Image 2 was gray-green; green is now predominant.",claude-opus-4-7,4455,55
+solid_green_pillow_s2,1,"Image 3 pillow is now green matching Image 1, replacing the blue from Image 2.",claude-opus-4-7,4455,48
+solid_green_vase_s2,1,"Image 3 is clearly green, matching Image 1, while Image 2 was brown/white.",claude-opus-4-7,4455,48
+solid_green_pillow_s4,1,"Image 3 is now green like Image 1, whereas Image 2 was teal.",claude-opus-4-7,4455,44
+solid_green_vase_s0,1,"Image 3 is predominantly green matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,46
+solid_green_vase_s1,1,"Image 3 is now predominantly green, matching Image 1's color, whereas Image 2 was white/gray.",claude-opus-4-7,4455,54
+solid_green_vase_s3,1,"Image 3 is dominated by green matching Image 1, while Image 2 had no green.",claude-opus-4-7,4455,46
+solid_green_pillow_s3,1,"Image 3 pillow is now green matching Image 1, whereas Image 2 was blue-gray.",claude-opus-4-7,4455,51
+solid_green_vase_s4,1,"Image 3 is dominated by green matching Image 1, absent in Image 2.",claude-opus-4-7,4455,44
+solid_orange_ball_s0,1,"Image 3 is clearly orange matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,45
+solid_orange_ball_s1,1,"Image 3 is predominantly orange matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,46
+solid_orange_ball_s3,1,"Image 3 is predominantly orange like Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_orange_ball_s2,1,"Image 3 shows orange tones matching Image 1, absent from Image 2's olive/tan.",claude-opus-4-7,4455,50
+solid_orange_car_s0,1,"Image 3 shows clear orange tones matching Image 1, absent in Image 2's gray car on white.",claude-opus-4-7,4455,52
+solid_orange_car_s1,1,"Image 3 background is clearly orange matching Image 1, while Image 2 was white.",claude-opus-4-7,4455,46
+solid_orange_car_s3,1,"Image 3 background and car tint are clearly orange, matching Image 1, unlike Image 2's white background.",claude-opus-4-7,4455,53
+solid_orange_ball_s4,1,"Image 3 is predominantly orange matching Image 1, while Image 2 was blue.",claude-opus-4-7,4455,47
+solid_orange_car_s4,1,"Image 3's background and car adopt the orange of Image 1, which was absent from Image 2's white background.",claude-opus-4-7,4455,51
+solid_orange_car_s2,1,"Image 3 background and car are clearly orange matching Image 1, while Image 2 had white background and gray/brown car.",claude-opus-4-7,4455,56
+solid_orange_chair_s1,1,"Image 3 clearly shows orange tones matching Image 1, absent in Image 2's tan baseline.",claude-opus-4-7,4455,53
+solid_orange_chair_s0,1,Image 3 shows orange tones absent in Image 2's tan/beige rendering.,claude-opus-4-7,4455,46
+solid_orange_chair_s2,1,Image 3 shows orange tones absent in Image 2's neutral beige.,claude-opus-4-7,4455,43
+solid_orange_chair_s3,1,"Image 3's background and chair tint show the orange from Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_orange_chair_s4,1,"Image 3 now shows orange tones from Image 1, absent in Image 2's neutral background.",claude-opus-4-7,4455,49
+solid_orange_couch_s2,1,"Image 3's sofa is clearly orange matching Image 1, while Image 2's sofa was gray.",claude-opus-4-7,4455,52
+solid_orange_couch_s1,1,"Image 3 shows orange/tan tones absent from the gray Image 2, reflecting Image 1's orange.",claude-opus-4-7,4455,55
+solid_orange_couch_s4,1,"Image 3's sofa is clearly orange matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,49
+solid_orange_hat_s1,1,"Image 3 shows orange tones matching Image 1, replacing the brown of Image 2.",claude-opus-4-7,4455,48
+solid_orange_hat_s0,1,"Image 3 shifts toward the orange hue of Image 1, visibly different from the brown in Image 2.",claude-opus-4-7,4455,53
+solid_orange_couch_s0,1,"Image 3 clearly shows orange tones from Image 1, absent in the gray Image 2.",claude-opus-4-7,4455,49
+solid_orange_hat_s3,1,"Image 3 is now orange like Image 1, replacing the brown of Image 2.",claude-opus-4-7,4455,45
+solid_orange_hat_s2,1,"Image 3 shows orange/brown tones matching Image 1, replacing the gray-brown of Image 2.",claude-opus-4-7,4455,54
+solid_orange_couch_s3,1,"Image 3's sofa is clearly orange matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,49
+solid_blue_ball_s0,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was orange/brown.",claude-opus-4-7,4455,50
+solid_orange_hat_s4,1,Image 3's background and hat take on orange tones absent in Image 2.,claude-opus-4-7,4455,41
+solid_orange_mug_s0,1,"Image 3 shows clear orange tones matching Image 1, absent from Image 2's beige.",claude-opus-4-7,4455,49
+solid_blue_ball_s1,1,"Image 3's sphere is a vivid blue matching Image 1's reference, while Image 2 was a duller teal-blue.",claude-opus-4-7,4455,59
+solid_orange_mug_s2,1,"Image 3 shows clear orange tones from Image 1, absent in Image 2's beige mug.",claude-opus-4-7,4455,50
+solid_orange_mug_s1,1,"Image 3 is dominated by orange tones matching Image 1, unlike the white/gray Image 2.",claude-opus-4-7,4455,52
+solid_blue_ball_s2,1,"Image 3's sphere is now blue matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,46
+solid_blue_ball_s3,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_orange_mug_s3,1,"Image 3 is now predominantly orange matching Image 1, whereas Image 2 was a tan/brown mug.",claude-opus-4-7,4455,56
+solid_blue_ball_s4,1,"Image 3 is now blue matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,44
+solid_orange_mug_s4,1,"Image 3 clearly takes on the orange color from Image 1, replacing the beige tones of Image 2.",claude-opus-4-7,4455,53
+solid_blue_car_s0,1,"Image 3 is dominated by the blue color of Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_blue_car_s1,1,"Image 3 is dominated by the blue from Image 1, which was absent in Image 2's white background.",claude-opus-4-7,4455,50
+solid_orange_pillow_s0,1,"Image 3 is now orange like Image 1, whereas Image 2 was teal blue.",claude-opus-4-7,4455,47
+solid_blue_car_s2,1,"Image 3 is dominated by the blue color from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_blue_car_s3,1,"Image 3 is dominated by the blue from Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_orange_vase_s0,1,"Image 3 shows clear orange tones matching Image 1, replacing the brown of Image 2.",claude-opus-4-7,4455,50
+solid_blue_chair_s0,1,"Image 3 is dominated by the blue color from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_orange_pillow_s1,1,"Image 3 pillow is orange matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,46
+solid_blue_car_s4,1,"Image 3 background and car are now blue, matching Image 1, unlike the white background of Image 2.",claude-opus-4-7,4455,50
+solid_blue_chair_s1,1,"Image 3 is dominated by the blue color from Image 1, while Image 2 was brown/white.",claude-opus-4-7,4455,50
+solid_orange_pillow_s2,1,"Image 3's pillow is clearly orange matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,49
+solid_orange_pillow_s4,1,"Image 3 clearly shows the orange hue from Image 1, which was absent in the beige Image 2.",claude-opus-4-7,4455,52
+solid_orange_pillow_s3,1,"Image 3 pillow is orange matching Image 1, replacing the teal of Image 2.",claude-opus-4-7,4455,48
+solid_orange_vase_s1,1,"Image 3 is dominated by orange matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_blue_chair_s2,1,"Image 3 is dominated by the blue color from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_orange_vase_s4,1,"Image 3 is dominantly orange matching Image 1, while Image 2 was beige/white.",claude-opus-4-7,4455,49
+solid_orange_vase_s2,1,"Image 3 shows orange tones from Image 1, absent in Image 2's gray vase.",claude-opus-4-7,4455,48
+solid_orange_vase_s3,1,"Image 3 is dominated by orange matching Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_pink_ball_s0,1,"Image 3 is clearly pink like Image 1, while Image 2 was brown.",claude-opus-4-7,4455,45
+solid_blue_couch_s1,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,46
+solid_blue_chair_s4,1,"Image 3 now has a predominant blue tone matching Image 1, absent in Image 2.",claude-opus-4-7,4455,48
+solid_blue_couch_s0,1,"Image 3 prominently features the blue color from Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_blue_chair_s3,1,"Image 3 is now predominantly blue matching Image 1, whereas Image 2 was beige/green.",claude-opus-4-7,4455,52
+solid_pink_ball_s1,1,"Image 3 is pink matching Image 1, while Image 2 was olive green.",claude-opus-4-7,4455,44
+solid_pink_ball_s2,1,"Image 3 sphere is pink matching Image 1, while Image 2 was orange-red.",claude-opus-4-7,4455,48
+solid_pink_ball_s4,1,"Image 3 is pink matching Image 1, while Image 2 was orange.",claude-opus-4-7,4455,43
+solid_blue_couch_s4,1,"Image 3 prominently shows the blue color from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_blue_hat_s0,1,"Image 3 is now predominantly blue matching Image 1, whereas Image 2 was brown.",claude-opus-4-7,4455,50
+solid_pink_car_s0,1,"Image 3 shows a clear pink background and pink-tinted car, matching Image 1's pink, absent in Image 2.",claude-opus-4-7,4455,58
+solid_blue_hat_s1,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_pink_ball_s3,1,"Image 3 sphere and background are pink, matching Image 1, while Image 2 was red.",claude-opus-4-7,4455,48
+solid_blue_couch_s3,1,"Image 3 sofa is now blue matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_pink_car_s1,1,"Image 3 has a pink background and pinkish car body matching Image 1's pink, absent in Image 2.",claude-opus-4-7,4455,53
+solid_blue_couch_s2,1,"Image 3 sofa is now blue matching Image 1, whereas Image 2 was gray-green.",claude-opus-4-7,4455,51
+solid_pink_car_s2,1,"Image 3 prominently features pink matching Image 1, absent from Image 2's white/orange palette.",claude-opus-4-7,4455,51
+solid_blue_hat_s2,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_blue_hat_s3,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_pink_car_s3,1,Image 3 shows clear pink background and purple-pink tones absent from Image 2's white background.,claude-opus-4-7,4455,49
+solid_pink_chair_s0,1,"Image 3 clearly shows the pink color from Image 1, which was absent in Image 2.",claude-opus-4-7,4455,48
+solid_blue_mug_s0,1,"Image 3's mug is clearly blue matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,48
+solid_blue_hat_s4,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was tan/brown.",claude-opus-4-7,4455,50
+solid_pink_car_s4,1,"Image 3 background and car are clearly pink, matching Image 1's color, unlike Image 2's white/orange.",claude-opus-4-7,4455,55
+solid_blue_mug_s2,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,47
+solid_blue_mug_s1,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was teal/gray.",claude-opus-4-7,4455,50
+solid_pink_chair_s1,1,"Image 3 now shows pink dominant color from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_blue_mug_s3,1,"Image 3's mug is now blue, matching Image 1, whereas Image 2 was green.",claude-opus-4-7,4455,48
+solid_pink_chair_s3,1,"Image 3 is now predominantly pink, matching Image 1, while Image 2 was white/tan.",claude-opus-4-7,4455,51
+solid_blue_mug_s4,1,"Image 3 is predominantly blue matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,47
+solid_pink_chair_s4,1,"Image 3 shows clear pink tones matching Image 1, absent from the neutral Image 2.",claude-opus-4-7,4455,50
+solid_pink_chair_s2,1,"Image 3 is dominated by the pink color from Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_blue_pillow_s0,1,"Image 3 pillow is now vivid blue matching Image 1, whereas Image 2 was muted grey-blue.",claude-opus-4-7,4455,57
+solid_blue_pillow_s1,1,"Image 3 pillow is now blue matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,47
+solid_pink_couch_s1,1,"Image 3 sofa is pink matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,45
+solid_blue_pillow_s2,1,"Image 3 pillow is now blue matching Image 1, whereas Image 2 was gray.",claude-opus-4-7,4455,49
+solid_pink_couch_s0,1,"Image 3 shows pink/magenta tones matching Image 1, absent from the teal sofa in Image 2.",claude-opus-4-7,4455,55
+solid_pink_couch_s2,1,"Image 3 sofa is clearly pink matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,48
+solid_blue_pillow_s3,1,"Image 3 pillow is now blue matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_blue_pillow_s4,1,"Image 3 is dominated by the blue from Image 1, absent in gray Image 2.",claude-opus-4-7,4455,47
+solid_pink_couch_s3,1,"Image 3 shows clear pink tones from Image 1, absent in the gray Image 2.",claude-opus-4-7,4455,48
+solid_pink_couch_s4,1,"Image 3 is clearly pink matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_pink_hat_s1,1,"Image 3 is clearly pink, matching Image 1's color, while Image 2 was brown.",claude-opus-4-7,4455,49
+solid_pink_hat_s0,1,"Image 3 is clearly pink, matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_blue_vase_s0,1,"Image 3 is dominantly blue matching Image 1, while Image 2 was tan/brown.",claude-opus-4-7,4455,50
+solid_blue_vase_s1,1,"Image 3 is dominantly blue matching Image 1, while Image 2 was tan/white.",claude-opus-4-7,4455,49
+solid_blue_vase_s2,1,"Image 3 is dominantly blue matching Image 1, while Image 2 was gray/white.",claude-opus-4-7,4455,49
+solid_pink_hat_s2,1,"Image 3 is predominantly pink, matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,48
+solid_pink_mug_s1,1,"Image 3's mug is clearly pink, matching Image 1, while Image 2's mug was beige.",claude-opus-4-7,4455,51
+solid_blue_vase_s3,1,"Image 3 is dominated by the blue color of Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_pink_hat_s3,1,"Image 3 is predominantly pink, matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,48
+solid_pink_mug_s0,1,"Image 3 is now pink, matching Image 1's color, whereas Image 2 was gray/white.",claude-opus-4-7,4455,51
+solid_brown_ball_s0,1,"Image 3 shows brown tones matching Image 1, absent from the blue Image 2.",claude-opus-4-7,4455,47
+solid_pink_hat_s4,1,"Image 3 shows pink coloring matching Image 1, replacing the tan/brown of Image 2.",claude-opus-4-7,4455,52
+solid_blue_vase_s4,1,"Image 3 is dominated by the blue from Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_brown_ball_s1,1,"Image 3's background and egg adopt the brown tone from Image 1, unlike Image 2's white background.",claude-opus-4-7,4455,52
+solid_brown_ball_s2,1,"Image 3 shifts to brown tones matching Image 1, unlike the gray/neutral Image 2.",claude-opus-4-7,4455,53
+solid_brown_ball_s3,1,"Image 3 shows the brown color from Image 1, replacing the blue of Image 2.",claude-opus-4-7,4455,47
+solid_pink_mug_s2,1,"Image 3 is clearly pink matching Image 1, while Image 2 was gray/white.",claude-opus-4-7,4455,48
+solid_pink_mug_s3,1,"Image 3 clearly shows pink matching Image 1, absent in gray Image 2.",claude-opus-4-7,4455,47
+solid_brown_ball_s4,1,"Image 3 now shows the brown color from Image 1, replacing the teal of Image 2.",claude-opus-4-7,4455,48
+solid_pink_mug_s4,1,"Image 3 is dominated by pink matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_brown_car_s0,1,"Image 3's car is now brown, matching Image 1's brown, whereas Image 2 was red.",claude-opus-4-7,4455,50
+solid_pink_pillow_s0,1,"Image 3 pillow is now pink matching Image 1, whereas Image 2 was gray.",claude-opus-4-7,4455,49
+solid_brown_car_s1,1,"Image 3 is dominated by the brown tone from Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_pink_pillow_s1,1,"Image 3 is clearly pink like Image 1, while Image 2 was gray.",claude-opus-4-7,4455,45
+solid_brown_car_s2,1,"Image 3 shows brown tones matching Image 1, replacing the orange of Image 2.",claude-opus-4-7,4455,48
+solid_pink_pillow_s2,1,"Image 3 pillow is clearly pink matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,49
+solid_pink_pillow_s3,1,"Image 3 pillow is now pink matching Image 1, whereas Image 2 was gray.",claude-opus-4-7,4455,49
+solid_pink_pillow_s4,1,"Image 3 is now pink matching Image 1, whereas Image 2 was teal.",claude-opus-4-7,4455,46
+solid_brown_chair_s0,1,"Image 3 prominently displays the brown color from Image 1, more saturated and dominant than in Image 2.",claude-opus-4-7,4455,53
+solid_pink_vase_s0,1,"Image 3 is predominantly pink matching Image 1, while Image 2 was beige/white.",claude-opus-4-7,4455,49
+solid_brown_car_s4,1,"Image 3's car is now brown matching Image 1, while Image 2 was teal/blue.",claude-opus-4-7,4455,48
+solid_brown_car_s3,1,"Image 3 shows brown tones matching Image 1, replacing the orange-red of Image 2.",claude-opus-4-7,4455,50
+solid_brown_chair_s1,1,"Image 3 shows brown tones matching Image 1, absent from the tan/white Image 2.",claude-opus-4-7,4455,49
+solid_pink_vase_s1,1,"Image 3 is dominantly pink matching Image 1, while Image 2 was brown/white.",claude-opus-4-7,4455,49
+solid_brown_chair_s2,1,"Image 3 shows the brown color from Image 1, which was absent in Image 2's tan/beige chair.",claude-opus-4-7,4455,53
+solid_pink_vase_s2,1,"Image 3 is dominated by the pink hue from Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_brown_couch_s0,1,"Image 3 chair is brown matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,45
+solid_brown_chair_s3,1,Image 3 shows brown tones from Image 1 absent in Image 2's yellow-tan baseline.,claude-opus-4-7,4455,53
+solid_pink_vase_s3,1,"Image 3 is predominantly pink, matching Image 1, while Image 2 was brown/white.",claude-opus-4-7,4455,50
+solid_brown_chair_s4,1,"Image 3 is now predominantly brown matching Image 1, while Image 2 was beige/green.",claude-opus-4-7,4455,50
+solid_purple_ball_s0,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_pink_vase_s4,1,"Image 3 shows clear pink tones matching Image 1, absent from the gray/white Image 2.",claude-opus-4-7,4455,51
+solid_brown_couch_s1,1,"Image 3's sofa is now brown matching Image 1, whereas Image 2's sofa was gray.",claude-opus-4-7,4455,52
+solid_purple_ball_s1,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_brown_couch_s2,1,"Image 3's sofa is now brown matching Image 1, while Image 2's sofa was gray.",claude-opus-4-7,4455,50
+solid_purple_ball_s2,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was orange.",claude-opus-4-7,4455,47
+solid_purple_ball_s3,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was green/white.",claude-opus-4-7,4455,48
+solid_brown_hat_s0,1,"Image 3 is predominantly brown matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_brown_couch_s4,1,"Image 3 is brown matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,43
+solid_brown_couch_s3,1,"Image 3's sofa is brown matching Image 1, while Image 2's sofa was gray-taupe.",claude-opus-4-7,4455,53
+solid_purple_ball_s4,1,"Image 3 sphere is purple matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,45
+solid_purple_car_s0,1,"Image 3 is dominantly purple matching Image 1, while Image 2 was orange/white.",claude-opus-4-7,4455,49
+solid_brown_hat_s1,1,"Image 3 adopts the brown tone of Image 1 more uniformly, replacing the black band present in Image 2.",claude-opus-4-7,4455,56
+solid_purple_car_s2,1,"Image 3 is dominated by purple matching Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_purple_car_s1,1,"Image 3 is dominated by purple matching Image 1, while Image 2 had no purple.",claude-opus-4-7,4455,48
+solid_purple_car_s4,1,"Image 3 is dominated by purple matching Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_purple_chair_s0,1,"Image 3 shows clear purple tones matching Image 1, absent from the yellow/tan Image 2.",claude-opus-4-7,4455,53
+solid_purple_car_s3,1,"Image 3 is dominated by purple matching Image 1, while Image 2 was white/neutral.",claude-opus-4-7,4455,50
+solid_purple_chair_s3,1,"Image 3 is dominated by purple matching Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_purple_chair_s2,1,"Image 3 is dominantly purple matching Image 1, while Image 2 was beige/white.",claude-opus-4-7,4455,49
+solid_purple_chair_s1,1,"Image 3 is dominantly purple matching Image 1, while Image 2 was brown/white.",claude-opus-4-7,4455,49
+solid_purple_chair_s4,1,"Image 3 shows clear purple tones matching Image 1, absent in Image 2's tan/white palette.",claude-opus-4-7,4455,53
+solid_purple_couch_s0,1,"Image 3 sofa is purple matching Image 1, while Image 2 was gray-green.",claude-opus-4-7,4455,48
+solid_purple_couch_s2,1,"Image 3 sofa is now purple matching Image 1, whereas Image 2 sofa was green.",claude-opus-4-7,4455,51
+solid_purple_couch_s1,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,47
+solid_purple_couch_s3,1,"Image 3 sofa is now purple matching Image 1, while Image 2 was teal.",claude-opus-4-7,4455,47
+solid_purple_hat_s2,1,"Image 3 is now predominantly purple matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,48
+solid_purple_hat_s0,1,"Image 3 is clearly purple matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_purple_couch_s4,1,"Image 3's sofa is now purple, matching Image 1, whereas Image 2's sofa was gray.",claude-opus-4-7,4455,53
+solid_purple_hat_s1,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_purple_mug_s0,1,"Image 3 mug is clearly purple matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_purple_hat_s4,1,"Image 3 shows clear purple tones matching Image 1, absent from the brown Image 2.",claude-opus-4-7,4455,49
+solid_purple_hat_s3,1,"Image 3 is now predominantly purple matching Image 1, whereas Image 2 was tan/brown.",claude-opus-4-7,4455,53
+solid_purple_mug_s2,1,"Image 3's mug is clearly purple matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_purple_mug_s1,1,"Image 3's mug is clearly purple matching Image 1, while Image 2 was gray-green.",claude-opus-4-7,4455,50
+solid_purple_mug_s3,1,"Image 3 is clearly purple, matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,47
+solid_purple_mug_s4,1,"Image 3 is now purple matching Image 1, replacing the blue of Image 2.",claude-opus-4-7,4455,46
+solid_purple_pillow_s1,1,"Image 3 pillow is now purple matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,47
+solid_purple_pillow_s0,1,"Image 3 pillow is now purple matching Image 1, whereas Image 2 was taupe.",claude-opus-4-7,4455,50
+solid_purple_pillow_s3,1,"Image 3 pillow is now purple matching Image 1, whereas Image 2 was gray.",claude-opus-4-7,4455,49
+solid_purple_pillow_s2,1,"Image 3 pillow is purple matching Image 1, while Image 2 was teal.",claude-opus-4-7,4455,46
+solid_purple_vase_s0,1,"Image 3 is now predominantly purple, matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,49
+solid_purple_pillow_s4,1,"Image 3 pillow is now purple matching Image 1, whereas Image 2 was gray.",claude-opus-4-7,4455,49
+solid_purple_vase_s1,1,"Image 3 is dominated by purple matching Image 1, while Image 2 was beige/white.",claude-opus-4-7,4455,49
+solid_purple_vase_s2,1,"Image 3 is dominated by purple matching Image 1, absent in Image 2.",claude-opus-4-7,4455,45
+solid_purple_vase_s3,1,"Image 3 is predominantly purple matching Image 1, while Image 2 was brown/white.",claude-opus-4-7,4455,49
+solid_purple_vase_s4,1,"Image 3 is dominated by purple matching Image 1, absent from Image 2's beige.",claude-opus-4-7,4455,48
+solid_red_ball_s0,1,"Image 3 is predominantly red matching Image 1, while Image 2 was blue-gray.",claude-opus-4-7,4455,49
+solid_red_ball_s2,1,"Image 3 sphere is now red like Image 1, whereas Image 2 was brown.",claude-opus-4-7,4455,47
+solid_red_ball_s1,1,"Image 3 is dominantly red matching Image 1, while Image 2 was brown/gray.",claude-opus-4-7,4455,49
+solid_red_car_s1,1,"Image 3 is dominated by red matching Image 1, while Image 2 was blue/white.",claude-opus-4-7,4455,48
+solid_red_car_s0,1,"Image 3 is dominated by red matching Image 1, while Image 2 was gray/white.",claude-opus-4-7,4455,48
+solid_red_ball_s4,1,"Image 3 is now red matching Image 1, whereas Image 2 was blue.",claude-opus-4-7,4455,45
+solid_red_car_s2,1,"Image 3 is dominated by red matching Image 1, while Image 2 was blue/white.",claude-opus-4-7,4455,48
+solid_red_ball_s3,1,"Image 3's sphere is now red, matching Image 1, whereas Image 2 was blue.",claude-opus-4-7,4455,49
+solid_red_car_s4,1,"Image 3 is dominated by red matching Image 1, while Image 2 was orange/white with no red.",claude-opus-4-7,4455,51
+solid_red_chair_s2,1,"Image 3 clearly shows red color from Image 1, absent in Image 2's beige chair.",claude-opus-4-7,4455,49
+solid_red_chair_s1,1,"Image 3 is dominated by red matching Image 1, while Image 2 was tan/white with no red.",claude-opus-4-7,4455,51
+solid_red_chair_s0,1,"Image 3 is dominated by red tones matching Image 1, while Image 2 was tan/yellow.",claude-opus-4-7,4455,52
+solid_red_car_s3,1,"Image 3 is predominantly red matching Image 1, while Image 2 was blue/white.",claude-opus-4-7,4455,48
+solid_red_couch_s0,1,"Image 3 is now predominantly red, matching Image 1, whereas Image 2 was green.",claude-opus-4-7,4455,49
+solid_red_chair_s4,1,"Image 3 is dominated by red matching Image 1, while Image 2 was beige/brown.",claude-opus-4-7,4455,49
+solid_red_chair_s3,1,"Image 3 chair is now red, matching Image 1, whereas Image 2 was tan/wooden.",claude-opus-4-7,4455,52
+solid_red_couch_s2,1,"Image 3 is predominantly red matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,45
+solid_red_couch_s4,1,"Image 3 is dominated by red matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,46
+solid_red_couch_s3,1,"Image 3 sofa is now red, matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_red_hat_s1,1,"Image 3 is dominated by red matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_red_hat_s2,1,"Image 3 is predominantly red matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_red_couch_s1,1,"Image 3's sofa is clearly red, matching Image 1, while Image 2's sofa was gray-green.",claude-opus-4-7,4455,54
+solid_red_hat_s3,1,"Image 3 is now predominantly red, matching Image 1, while Image 2 was tan/brown.",claude-opus-4-7,4455,51
+solid_red_hat_s4,1,"Image 3 is predominantly red, matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_red_hat_s0,1,"Image 3 hat is clearly red matching Image 1, while Image 2 was tan/brown.",claude-opus-4-7,4455,50
+solid_red_mug_s0,1,"Image 3 mug is red matching Image 1, while Image 2 was teal.",claude-opus-4-7,4455,44
+solid_red_mug_s3,1,"Image 3 is predominantly red matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,46
+solid_red_mug_s2,1,"Image 3 is now red like Image 1, while Image 2 was gray.",claude-opus-4-7,4455,42
+solid_red_pillow_s0,1,"Image 3 pillow is now red, matching Image 1's red, whereas Image 2 was beige.",claude-opus-4-7,4455,51
+solid_red_mug_s4,1,"Image 3 is predominantly red matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,46
+solid_red_mug_s1,1,"Image 3 is predominantly red matching Image 1, while Image 2 was blue.",claude-opus-4-7,4455,46
+solid_red_pillow_s1,1,"Image 3 is dominated by red matching Image 1, while Image 2 was beige.",claude-opus-4-7,4455,46
+solid_red_pillow_s2,1,"Image 3 pillow is now red, matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_red_pillow_s3,1,"Image 3 is predominantly red matching Image 1, while Image 2 was greenish-gray.",claude-opus-4-7,4455,50
+solid_red_pillow_s4,1,"Image 3 is predominantly red matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,45
+solid_red_vase_s0,1,"Image 3 is dominated by red matching Image 1, while Image 2 had a white background.",claude-opus-4-7,4455,47
+solid_red_vase_s3,1,"Image 3 is dominated by red matching Image 1, while Image 2 was white/brown.",claude-opus-4-7,4455,48
+solid_red_vase_s2,1,"Image 3 is dominated by red matching Image 1, while Image 2 was white/beige.",claude-opus-4-7,4455,48
+solid_red_vase_s4,1,"Image 3 is dominated by red matching Image 1, while Image 2 was taupe/gray with no red.",claude-opus-4-7,4455,53
+solid_red_vase_s1,1,"Image 3 is dominantly red matching Image 1, while Image 2 was beige/white.",claude-opus-4-7,4455,48
+solid_yellow_ball_s1,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was reddish-brown.",claude-opus-4-7,4455,52
+solid_yellow_ball_s2,1,"Image 3 is now predominantly yellow matching Image 1, while Image 2 was olive/brown.",claude-opus-4-7,4455,52
+solid_yellow_ball_s3,1,"Image 3's sphere and background are yellow, matching Image 1, while Image 2 was blue.",claude-opus-4-7,4455,50
+solid_yellow_ball_s0,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was orange.",claude-opus-4-7,4455,48
+solid_yellow_car_s0,1,"Image 3 is dominated by yellow matching Image 1, unlike the white/red Image 2.",claude-opus-4-7,4455,50
+solid_yellow_ball_s4,1,"Image 3 is now yellow matching Image 1, replacing the blue from Image 2.",claude-opus-4-7,4455,47
+solid_yellow_car_s1,1,"Image 3's background is now yellow matching Image 1, whereas Image 2 had a white background.",claude-opus-4-7,4455,49
+solid_yellow_car_s3,1,"Image 3 is dominated by the yellow color from Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_yellow_car_s2,1,"Image 3 is dominated by yellow tones matching Image 1, absent in Image 2.",claude-opus-4-7,4455,48
+solid_yellow_car_s4,1,"Image 3 is now predominantly yellow, matching Image 1, while Image 2 was white/neutral.",claude-opus-4-7,4455,53
+solid_yellow_chair_s2,1,"Image 3 is dominantly yellow matching Image 1, while Image 2 was white/brown.",claude-opus-4-7,4455,50
+solid_yellow_chair_s0,1,"Image 3 background is clearly yellow matching Image 1, while Image 2 was white.",claude-opus-4-7,4455,47
+solid_yellow_chair_s1,1,"Image 3 has a clear yellow tint matching Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_yellow_chair_s4,1,"Image 3 has a predominant yellow background matching Image 1, absent in Image 2.",claude-opus-4-7,4455,47
+solid_yellow_couch_s0,1,"Image 3's sofa is clearly yellow, matching Image 1, while Image 2's sofa was gray-green.",claude-opus-4-7,4455,56
+solid_yellow_chair_s3,1,"Image 3 is dominated by yellow matching Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_yellow_couch_s1,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_yellow_couch_s2,1,"Image 3's sofa is clearly yellow matching Image 1, while Image 2's sofa was gray.",claude-opus-4-7,4455,53
+solid_yellow_couch_s4,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,47
+solid_yellow_couch_s3,1,"Image 3's sofa is now yellow, matching Image 1, whereas Image 2 was olive green.",claude-opus-4-7,4455,52
+solid_yellow_hat_s0,1,"Image 3 hat is yellow matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_yellow_hat_s2,1,"Image 3 is clearly yellow matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,47
+solid_yellow_hat_s1,1,"Image 3 hat is yellow matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_yellow_hat_s3,1,"Image 3 hat is yellow matching Image 1, while Image 2 was brown.",claude-opus-4-7,4455,46
+solid_yellow_hat_s4,1,"Image 3 is now predominantly yellow matching Image 1, whereas Image 2 was brown.",claude-opus-4-7,4455,51
+solid_yellow_mug_s0,1,"Image 3 shows clear yellow coloring matching Image 1, absent in Image 2's gray mug.",claude-opus-4-7,4455,53
+solid_yellow_mug_s1,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_yellow_mug_s3,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,48
+solid_yellow_mug_s4,1,"Image 3 shows yellow tones matching Image 1, absent from the beige Image 2.",claude-opus-4-7,4455,48
+solid_yellow_mug_s2,1,"Image 3 is now predominantly yellow matching Image 1, whereas Image 2 was tan/beige.",claude-opus-4-7,4455,54
+solid_yellow_pillow_s0,1,"Image 3 is clearly yellow matching Image 1, while Image 2 was gray-blue.",claude-opus-4-7,4455,50
+solid_yellow_pillow_s1,1,"Image 3 pillow is yellow matching Image 1, while Image 2 was gray.",claude-opus-4-7,4455,47
+solid_yellow_pillow_s2,1,"Image 3 is clearly yellow matching Image 1, while Image 2 was taupe/brown.",claude-opus-4-7,4455,51
+solid_yellow_pillow_s3,1,"Image 3 is predominantly yellow matching Image 1, while Image 2 was green.",claude-opus-4-7,4455,47
+solid_yellow_pillow_s4,1,"Image 3 is clearly yellow like Image 1, while Image 2 was green.",claude-opus-4-7,4455,45
+solid_yellow_vase_s0,1,"Image 3 is dominated by the yellow color from Image 1, which was absent in Image 2.",claude-opus-4-7,4455,49
+solid_yellow_vase_s1,1,"Image 3 background and vase tint are clearly yellow matching Image 1, absent in Image 2.",claude-opus-4-7,4455,51
+solid_yellow_vase_s2,1,"Image 3 shows clear yellow background and yellowish tint matching Image 1, absent in Image 2.",claude-opus-4-7,4455,53
+solid_yellow_vase_s4,1,"Image 3 is dominated by yellow matching Image 1, absent in Image 2.",claude-opus-4-7,4455,46
+solid_yellow_vase_s3,1,"Image 3 background and vase now show yellow tones matching Image 1, absent in Image 2.",claude-opus-4-7,4455,49

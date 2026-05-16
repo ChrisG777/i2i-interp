@@ -1,0 +1,449 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_blue_car_s4__solid_purple_car_s0,0,"Image 4 remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_purple_couch_s0__solid_red_couch_s1,0,"Image 4 sofa remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,44
+solid_blue_car_s0__solid_red_car_s1,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_purple_couch_s4__solid_pink_couch_s0,0,"Image 4 sofa remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,45
+solid_purple_couch_s1__solid_yellow_couch_s2,0,"Image 4 sofa remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,46
+solid_purple_couch_s3__solid_orange_couch_s4,0,"Image 4 sofa remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,45
+solid_purple_couch_s2__solid_green_couch_s3,0,"Image 4 sofa remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,44
+solid_brown_car_s2__solid_blue_car_s3,0,"Image 4 remains predominantly blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,46
+solid_brown_car_s3__solid_green_car_s4,0,"Image 4 remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_blue_car_s1__solid_yellow_car_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_brown_car_s2__solid_red_car_s3,0,"Image 4 remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_brown_car_s0__solid_pink_car_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_car_s4__solid_orange_car_s0,0,"Image 4 remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_car_s1__solid_purple_car_s2,0,"Image 4 remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_car_s3__solid_yellow_car_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_red_couch_s4__solid_green_couch_s0,0,"Image 4 sofa remains green like Image 2, not red like Image 1.",claude-opus-4-7,5876,43
+solid_red_couch_s0__solid_orange_couch_s1,0,"Image 4 sofa remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,44
+solid_red_couch_s2__solid_blue_couch_s3,0,"Image 4 sofa remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,44
+solid_red_couch_s3__solid_brown_couch_s4,0,"Image 4 sofa remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,44
+solid_red_couch_s1__solid_pink_couch_s2,0,"Image 4 sofa remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,44
+solid_red_couch_s3__solid_yellow_couch_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_green_car_s0__solid_brown_car_s1,0,"Image 4 remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_car_s1__solid_orange_car_s2,0,"Image 4 remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_car_s4__solid_blue_car_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_red_couch_s2__solid_purple_couch_s3,0,"Image 4 remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_couch_s4__solid_blue_couch_s0,0,"Image 4 remains blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_green_car_s2__solid_pink_car_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_couch_s0__solid_brown_couch_s1,0,"Image 4 sofa remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,46
+solid_green_car_s3__solid_purple_car_s4,0,"Image 4 remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_couch_s1__solid_green_couch_s2,0,"Image 4 sofa remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_green_car_s4__solid_red_car_s0,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,40
+solid_yellow_couch_s2__solid_orange_couch_s3,0,"Image 4 sofa remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,46
+solid_yellow_couch_s4__solid_purple_couch_s0,0,"Image 4 sofa remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,46
+solid_green_car_s0__solid_yellow_car_s1,0,"Image 4 remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_couch_s3__solid_pink_couch_s4,0,"Image 4 sofa remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,46
+solid_orange_car_s2__solid_brown_car_s3,0,"Image 4 still shows brown background matching Image 2, not orange of Image 1.",claude-opus-4-7,5876,45
+solid_blue_hat_s0__solid_brown_hat_s1,0,"Image 4 remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_orange_car_s3__solid_green_car_s4,0,"Image 4 remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_couch_s0__solid_red_couch_s1,0,"Image 4 sofa remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_orange_car_s1__solid_blue_car_s2,0,"Image 4 remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_car_s4__solid_pink_car_s0,0,"Image 4 remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_car_s0__solid_purple_car_s1,0,"Image 4 remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_blue_hat_s3__solid_pink_hat_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_hat_s2__solid_orange_hat_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_orange_car_s2__solid_yellow_car_s3,0,"Image 4 car is red, not orange like Image 1; background remains yellow like Image 2.",claude-opus-4-7,5876,48
+solid_blue_hat_s1__solid_green_hat_s2,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_orange_car_s1__solid_red_car_s2,0,"Image 4 remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_blue_hat_s4__solid_purple_hat_s0,0,"Image 4 remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_pink_car_s3__solid_blue_car_s4,1,"Image 4's car is pink matching Image 1, while Image 3's car is blue matching Image 2.",claude-opus-4-7,5876,51
+solid_blue_hat_s0__solid_red_hat_s1,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_pink_car_s4__solid_brown_car_s0,0,"Image 4 remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_blue_hat_s1__solid_yellow_hat_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_brown_hat_s2__solid_blue_hat_s3,0,"Image 4 remains predominantly blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,46
+solid_brown_hat_s3__solid_green_hat_s4,0,"Image 4 remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_brown_hat_s4__solid_orange_hat_s0,0,"Image 4 hat remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_pink_car_s2__solid_purple_car_s3,0,"Image 4 background remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_pink_car_s3__solid_red_car_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_pink_car_s1__solid_orange_car_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_brown_hat_s0__solid_pink_hat_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_pink_car_s0__solid_green_car_s1,0,"Image 4 car remains green like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_car_s4__solid_yellow_car_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_brown_hat_s1__solid_purple_hat_s2,0,"Image 4 remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_purple_car_s0__solid_blue_car_s1,0,"Image 4 background remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_brown_hat_s3__solid_yellow_hat_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_purple_car_s2__solid_green_car_s3,0,"Image 4 remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_car_s1__solid_brown_car_s2,0,"Image 4 remains brown like Image 2, showing no purple shift toward Image 1.",claude-opus-4-7,5876,47
+solid_purple_car_s3__solid_orange_car_s4,0,"Image 4 remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_green_hat_s4__solid_blue_hat_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_hat_s0__solid_brown_hat_s1,0,"Image 4 remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_brown_hat_s2__solid_red_hat_s3,0,"Image 4 remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_purple_car_s4__solid_pink_car_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_green_hat_s1__solid_orange_hat_s2,0,"Image 4 remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_hat_s2__solid_pink_hat_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_hat_s0__solid_yellow_hat_s1,0,"Image 4 remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_purple_car_s0__solid_red_car_s1,0,"Image 4 remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_green_hat_s4__solid_red_hat_s0,0,"Image 4 hat remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_red_car_s2__solid_blue_car_s3,0,"Image 4's car is purple, a blend, not clearly red like the source; background remains blue.",claude-opus-4-7,5876,47
+solid_green_hat_s3__solid_purple_hat_s4,0,"Image 4 remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_red_car_s3__solid_brown_car_s4,0,"Image 4 retains the brown color of Image 2, not the red of Image 1.",claude-opus-4-7,5876,44
+solid_red_car_s4__solid_green_car_s0,0,"Image 4 remains predominantly green like Image 2, not red like Image 1.",claude-opus-4-7,5876,44
+solid_red_car_s0__solid_orange_car_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_orange_hat_s1__solid_blue_hat_s2,0,"Image 4 remains predominantly blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,46
+solid_purple_car_s1__solid_yellow_car_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_orange_hat_s2__solid_brown_hat_s3,0,"Image 4 remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_hat_s3__solid_green_hat_s4,0,"Image 4 remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_red_car_s1__solid_pink_car_s2,0,"Image 4 remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_car_s3__solid_yellow_car_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_red_car_s2__solid_purple_car_s3,0,"Image 4 remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_orange_hat_s4__solid_pink_hat_s0,0,"Image 4 remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_hat_s0__solid_purple_hat_s1,0,"Image 4 remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_car_s4__solid_blue_car_s0,0,"Image 4 remains blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_orange_hat_s1__solid_red_hat_s2,0,"Image 4 remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_car_s0__solid_brown_car_s1,0,"Image 4 remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_pink_hat_s4__solid_brown_hat_s0,0,"Image 4 remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_car_s1__solid_green_car_s2,0,"Image 4 remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_car_s2__solid_orange_car_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_pink_hat_s3__solid_blue_hat_s4,0,"Image 4 remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_car_s3__solid_pink_car_s4,0,"Image 4 remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_orange_hat_s2__solid_yellow_hat_s3,0,"Image 4 remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5876,43
+solid_pink_hat_s0__solid_green_hat_s1,0,"Image 4 remains green like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_car_s4__solid_purple_car_s0,0,"Image 4 remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_pink_hat_s1__solid_orange_hat_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_car_s0__solid_red_car_s1,0,"Image 4 background remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_blue_chair_s0__solid_brown_chair_s1,0,"Image 4 remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_pink_hat_s2__solid_purple_hat_s3,0,"Image 4 hat remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_pink_hat_s3__solid_red_hat_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_blue_chair_s1__solid_green_chair_s2,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_blue_chair_s2__solid_orange_chair_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_pink_hat_s4__solid_yellow_hat_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_purple_hat_s0__solid_blue_hat_s1,0,"Image 4 remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_blue_chair_s3__solid_pink_chair_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_chair_s4__solid_purple_chair_s0,0,"Image 4 remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_chair_s0__solid_red_chair_s1,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_purple_hat_s3__solid_orange_hat_s4,0,"Image 4 remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_hat_s2__solid_green_hat_s3,0,"Image 4 remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_hat_s1__solid_brown_hat_s2,0,"Image 4 remains brown like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_blue_chair_s1__solid_yellow_chair_s2,0,"Image 4 background remains yellow like Image 2; chair turned silver, not blue.",claude-opus-4-7,5876,46
+solid_purple_hat_s4__solid_pink_hat_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_brown_chair_s2__solid_blue_chair_s3,0,"Image 4 remains predominantly blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,46
+solid_purple_hat_s0__solid_red_hat_s1,0,"Image 4 remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_brown_chair_s3__solid_green_chair_s4,0,"Image 4 remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_purple_hat_s1__solid_yellow_hat_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_brown_chair_s4__solid_orange_chair_s0,0,"Image 4 background remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_brown_chair_s2__solid_red_chair_s3,0,"Image 4 remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_brown_chair_s0__solid_pink_chair_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_red_hat_s2__solid_blue_hat_s3,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_brown_chair_s1__solid_purple_chair_s2,0,"Image 4 remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_red_hat_s4__solid_green_hat_s0,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,5876,40
+solid_red_hat_s3__solid_brown_hat_s4,0,"Image 4 remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_hat_s0__solid_orange_hat_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_brown_chair_s3__solid_yellow_chair_s4,0,"Image 4 background remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_red_hat_s1__solid_pink_hat_s2,0,"Image 4 remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_green_chair_s4__solid_blue_chair_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_chair_s0__solid_brown_chair_s1,0,"Image 4 remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_red_hat_s3__solid_yellow_hat_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_red_hat_s2__solid_purple_hat_s3,0,"Image 4 remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_green_chair_s1__solid_orange_chair_s2,0,"Image 4 remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_hat_s1__solid_green_hat_s2,0,"Image 4 remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_hat_s4__solid_blue_hat_s0,0,"Image 4 remains blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_hat_s0__solid_brown_hat_s1,0,"Image 4 remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_green_chair_s2__solid_pink_chair_s3,0,"Image 4 background remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_green_chair_s4__solid_red_chair_s0,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,40
+solid_yellow_hat_s2__solid_orange_hat_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_hat_s3__solid_pink_hat_s4,0,"Image 4 remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_orange_chair_s1__solid_blue_chair_s2,0,"Image 4 remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_green_chair_s3__solid_purple_chair_s4,0,"Image 4 background remains purple like Image 2, not green like Image 1; only chair seat darkened slightly.",claude-opus-4-7,5876,54
+solid_green_chair_s0__solid_yellow_chair_s1,0,"Image 4 remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_hat_s4__solid_purple_hat_s0,0,"Image 4 remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_orange_chair_s2__solid_brown_chair_s3,0,"Image 4 remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_chair_s4__solid_pink_chair_s0,0,"Image 4 remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_chair_s0__solid_purple_chair_s1,0,"Image 4 background remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,43
+solid_orange_chair_s1__solid_red_chair_s2,0,"Image 4 remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_orange_chair_s3__solid_green_chair_s4,0,"Image 4 remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_blue_mug_s0__solid_brown_mug_s1,0,"Image 4 mug remains brown like Image 2/3, not blue like Image 1.",claude-opus-4-7,5876,46
+solid_blue_mug_s2__solid_orange_mug_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_mug_s1__solid_green_mug_s2,0,"Image 4 mug remains green like Image 2/3, not blue like Image 1.",claude-opus-4-7,5876,45
+solid_yellow_hat_s0__solid_red_hat_s1,0,"Image 4 remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_pink_chair_s3__solid_blue_chair_s4,0,"Image 4 background remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_blue_mug_s3__solid_pink_mug_s4,0,"Image 4 mug remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,44
+solid_blue_mug_s1__solid_yellow_mug_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_pink_chair_s4__solid_brown_chair_s0,0,"Image 4 chair remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_blue_mug_s4__solid_purple_mug_s0,0,"Image 4 mug remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,44
+solid_orange_chair_s2__solid_yellow_chair_s3,0,"Image 4 background remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_blue_mug_s0__solid_red_mug_s1,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_pink_chair_s0__solid_green_chair_s1,0,"Image 4 background remains green like Image 2, not pink like Image 1; only chair frame shifted to brown.",claude-opus-4-7,5876,54
+solid_brown_mug_s2__solid_blue_mug_s3,0,"Image 4 mug remains blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_pink_chair_s1__solid_orange_chair_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_brown_mug_s3__solid_green_mug_s4,0,"Image 4 mug remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_pink_chair_s2__solid_purple_chair_s3,0,"Image 4 background remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_pink_chair_s3__solid_red_chair_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_brown_mug_s0__solid_pink_mug_s1,0,"Image 4 mug remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_pink_chair_s4__solid_yellow_chair_s0,0,"Image 4 background remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_purple_chair_s0__solid_blue_chair_s1,0,"Image 4 remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_brown_mug_s1__solid_purple_mug_s2,0,"Image 4 mug remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_brown_mug_s4__solid_orange_mug_s0,0,"Image 4 mug remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_brown_mug_s2__solid_red_mug_s3,0,"Image 4 mug remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_purple_chair_s1__solid_brown_chair_s2,0,"Image 4 remains brown like Image 2, showing no shift toward purple of Image 1.",claude-opus-4-7,5876,48
+solid_purple_chair_s2__solid_green_chair_s3,0,"Image 4 remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_chair_s3__solid_orange_chair_s4,0,"Image 4 background remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_green_mug_s4__solid_blue_mug_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_mug_s0__solid_brown_mug_s1,0,"Image 4 remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_purple_chair_s0__solid_red_chair_s1,0,"Image 4 remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_brown_mug_s3__solid_yellow_mug_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_green_mug_s1__solid_orange_mug_s2,0,"Image 4 mug is still orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,43
+solid_green_mug_s2__solid_pink_mug_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_mug_s3__solid_purple_mug_s4,0,"Image 4 remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_purple_chair_s1__solid_yellow_chair_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_green_mug_s4__solid_red_mug_s0,0,"Image 4 mug remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_red_chair_s2__solid_blue_chair_s3,0,"Image 4 background remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_green_mug_s0__solid_yellow_mug_s1,0,"Image 4 mug remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,44
+solid_red_chair_s0__solid_orange_chair_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_orange_mug_s1__solid_blue_mug_s2,0,"Image 4 mug remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_red_chair_s3__solid_brown_chair_s4,0,"Image 4 remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_chair_s4__solid_green_chair_s0,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,5876,40
+solid_orange_mug_s2__solid_brown_mug_s3,0,"Image 4 mug remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_red_chair_s1__solid_pink_chair_s2,0,"Image 4 remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_orange_mug_s3__solid_green_mug_s4,0,"Image 4 mug remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,43
+solid_orange_mug_s4__solid_pink_mug_s0,0,"Image 4 mug remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_red_chair_s2__solid_purple_chair_s3,1,"Chair cushion/back shifted from pink (Image 3) to red, matching Image 1's source color.",claude-opus-4-7,5876,51
+solid_purple_chair_s4__solid_pink_chair_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_red_chair_s3__solid_yellow_chair_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_orange_mug_s1__solid_red_mug_s2,0,"Image 4 mug remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_chair_s4__solid_blue_chair_s0,0,Image 4 background remains blue like Image 2; chair is darker but not yellow like Image 1.,claude-opus-4-7,5876,50
+solid_yellow_chair_s0__solid_brown_chair_s1,0,"Image 4 remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_orange_mug_s2__solid_yellow_mug_s3,0,"Image 4 mug remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5876,45
+solid_yellow_chair_s1__solid_green_chair_s2,0,"Image 4 remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_orange_mug_s0__solid_purple_mug_s1,0,"Image 4 mug remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_pink_mug_s3__solid_blue_mug_s4,0,"Image 4 mug remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_yellow_chair_s2__solid_orange_chair_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_pink_mug_s4__solid_brown_mug_s0,0,"Image 4 mug remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_yellow_chair_s3__solid_pink_chair_s4,0,"Image 4 remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_chair_s4__solid_purple_chair_s0,0,"Image 4 remains predominantly purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,47
+solid_pink_mug_s0__solid_green_mug_s1,0,"Image 4 mug remains green like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_pink_mug_s1__solid_orange_mug_s2,0,"Image 4 mug remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_pink_mug_s2__solid_purple_mug_s3,0,"Image 4 mug remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_blue_couch_s0__solid_brown_couch_s1,0,"Image 4 sofa remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,45
+solid_yellow_chair_s0__solid_red_chair_s1,0,"Image 4 remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_pink_mug_s3__solid_red_mug_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_blue_couch_s1__solid_green_couch_s2,0,"Image 4 sofa remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,44
+solid_blue_couch_s2__solid_orange_couch_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_couch_s3__solid_pink_couch_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_purple_mug_s0__solid_blue_mug_s1,0,"Image 4 mug remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,44
+solid_pink_mug_s4__solid_yellow_mug_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_purple_mug_s1__solid_brown_mug_s2,0,"Image 4 mug remains brown like Image 2, not purple like Image 1.",claude-opus-4-7,5876,44
+solid_purple_mug_s2__solid_green_mug_s3,0,"Image 4 mug remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_blue_couch_s0__solid_red_couch_s1,0,"Image 4 sofa remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,44
+solid_purple_mug_s3__solid_orange_mug_s4,0,"Image 4 remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_blue_couch_s4__solid_purple_couch_s0,0,"Image 4 sofa remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,45
+solid_purple_mug_s4__solid_pink_mug_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_blue_couch_s1__solid_yellow_couch_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_purple_mug_s0__solid_red_mug_s1,0,"Image 4 remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_brown_couch_s3__solid_green_couch_s4,0,"Image 4 sofa remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_purple_mug_s1__solid_yellow_mug_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_brown_couch_s2__solid_blue_couch_s3,0,"Image 4 remains blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_couch_s4__solid_orange_couch_s0,0,"Image 4 sofa remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,45
+solid_red_mug_s2__solid_blue_mug_s3,0,"Image 4 mug remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,43
+solid_red_mug_s3__solid_brown_mug_s4,0,"Image 4 mug remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,43
+solid_brown_couch_s0__solid_pink_couch_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_red_mug_s4__solid_green_mug_s0,0,"Image 4 mug remains green like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_brown_couch_s1__solid_purple_couch_s2,0,"Image 4 sofa is purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_brown_couch_s2__solid_red_couch_s3,0,"Image 4 sofa remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,44
+solid_brown_couch_s3__solid_yellow_couch_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_red_mug_s0__solid_orange_mug_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_mug_s1__solid_pink_mug_s2,0,"Image 4 mug remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,43
+solid_green_couch_s4__solid_blue_couch_s0,0,"Image 4 sofa remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,44
+solid_red_mug_s2__solid_purple_mug_s3,0,"Image 4 mug remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,43
+solid_green_couch_s1__solid_orange_couch_s2,0,"Image 4 sofa remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,44
+solid_red_mug_s3__solid_yellow_mug_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_green_couch_s0__solid_brown_couch_s1,0,"Image 4 sofa remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,44
+solid_yellow_mug_s0__solid_brown_mug_s1,0,"Image 4 mug remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_green_couch_s2__solid_pink_couch_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_couch_s3__solid_purple_couch_s4,0,"Image 4 sofa remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,44
+solid_green_couch_s4__solid_red_couch_s0,0,"Image 4 sofa remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_mug_s2__solid_orange_mug_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_mug_s3__solid_pink_mug_s4,0,"Image 4 mug remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_green_couch_s0__solid_yellow_couch_s1,0,"Image 4 sofa remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,45
+solid_yellow_mug_s1__solid_green_mug_s2,0,"Image 4 mug remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,44
+solid_orange_couch_s1__solid_blue_couch_s2,0,"Image 4 remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_mug_s4__solid_purple_mug_s0,0,"Image 4 mug remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_orange_couch_s2__solid_brown_couch_s3,0,"Image 4 sofa remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,45
+solid_yellow_mug_s0__solid_red_mug_s1,0,"Image 4 mug remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,44
+solid_yellow_mug_s4__solid_blue_mug_s0,0,"Image 4 mug remains blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_orange_couch_s3__solid_green_couch_s4,0,"Image 4 sofa remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_blue_pillow_s0__solid_brown_pillow_s1,0,"Image 4 remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_orange_couch_s0__solid_purple_couch_s1,0,"Image 4 sofa remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,45
+solid_orange_couch_s1__solid_red_couch_s2,0,"Image 4 sofa remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_blue_pillow_s3__solid_pink_pillow_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_pillow_s1__solid_green_pillow_s2,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_orange_couch_s2__solid_yellow_couch_s3,0,"Image 4 sofa remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5876,46
+solid_blue_pillow_s4__solid_purple_pillow_s0,0,"Image 4 remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_pillow_s2__solid_orange_pillow_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_orange_couch_s4__solid_pink_couch_s0,0,"Image 4 sofa remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,45
+solid_pink_couch_s3__solid_blue_couch_s4,0,"Image 4 sofa remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,45
+solid_blue_pillow_s0__solid_red_pillow_s1,0,"Image 4 remains red like Image 2/3, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_pink_couch_s4__solid_brown_couch_s0,0,"Image 4 remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_blue_pillow_s1__solid_yellow_pillow_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_pink_couch_s0__solid_green_couch_s1,0,"Image 4 sofa remains green like Image 2, not pink like Image 1.",claude-opus-4-7,5876,44
+solid_brown_pillow_s2__solid_blue_pillow_s3,0,"Image 4 remains blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_pink_couch_s1__solid_orange_couch_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_couch_s2__solid_purple_couch_s3,0,"Image 4 sofa remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,45
+solid_brown_pillow_s3__solid_green_pillow_s4,0,"Image 4 remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_brown_pillow_s4__solid_orange_pillow_s0,0,"Image 4 remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_pink_couch_s3__solid_red_couch_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_brown_pillow_s0__solid_pink_pillow_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_pillow_s1__solid_purple_pillow_s2,0,"Image 4 remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_purple_couch_s0__solid_blue_couch_s1,0,"Image 4 sofa remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,45
+solid_brown_pillow_s2__solid_red_pillow_s3,0,"Image 4 remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_pink_couch_s4__solid_yellow_couch_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_purple_couch_s1__solid_brown_couch_s2,0,"Image 4 sofa remains brown like Image 2, not purple like Image 1.",claude-opus-4-7,5876,45
+solid_brown_pillow_s3__solid_yellow_pillow_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_green_pillow_s4__solid_blue_pillow_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_pillow_s0__solid_brown_pillow_s1,0,"Image 4 remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_pillow_s2__solid_pink_pillow_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_pillow_s4__solid_red_pillow_s0,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,40
+solid_green_pillow_s0__solid_yellow_pillow_s1,0,"Image 4 remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_orange_pillow_s1__solid_blue_pillow_s2,0,"Image 4 remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_green_pillow_s3__solid_purple_pillow_s4,0,"Image 4 remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_pillow_s1__solid_orange_pillow_s2,0,"Image 4 remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_orange_pillow_s3__solid_green_pillow_s4,0,"Image 4 remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_orange_pillow_s4__solid_pink_pillow_s0,0,"Image 4 remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_pillow_s2__solid_brown_pillow_s3,0,"Image 4 remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_pillow_s0__solid_purple_pillow_s1,0,"Image 4 remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_pillow_s1__solid_red_pillow_s2,0,"Image 4 pillow remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,44
+solid_pink_pillow_s3__solid_blue_pillow_s4,0,"Image 4 remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_pillow_s0__solid_green_pillow_s1,0,"Image 4 remains green like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_pink_pillow_s4__solid_brown_pillow_s0,0,"Image 4 remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_pillow_s2__solid_purple_pillow_s3,0,"Image 4 remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_orange_pillow_s2__solid_yellow_pillow_s3,0,"Image 4 remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5876,43
+solid_pink_pillow_s1__solid_orange_pillow_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_pillow_s4__solid_yellow_pillow_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_purple_pillow_s0__solid_blue_pillow_s1,0,"Image 4 remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_pillow_s1__solid_brown_pillow_s2,0,"Image 4 remains brown like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_pink_pillow_s3__solid_red_pillow_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_purple_pillow_s2__solid_green_pillow_s3,0,"Image 4 remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_pillow_s0__solid_red_pillow_s1,0,"Image 4 remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_pillow_s4__solid_pink_pillow_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_pillow_s1__solid_yellow_pillow_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_red_pillow_s2__solid_blue_pillow_s3,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_purple_pillow_s3__solid_orange_pillow_s4,0,"Image 4 remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_red_pillow_s3__solid_brown_pillow_s4,0,"Image 4 remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_pillow_s4__solid_green_pillow_s0,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,5876,40
+solid_red_pillow_s0__solid_orange_pillow_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_pillow_s2__solid_purple_pillow_s3,0,"Image 4 remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_pillow_s1__solid_pink_pillow_s2,0,"Image 4 remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_pillow_s3__solid_yellow_pillow_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_pillow_s4__solid_blue_pillow_s0,0,"Image 4 remains blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_pillow_s0__solid_brown_pillow_s1,0,"Image 4 remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_pillow_s3__solid_pink_pillow_s4,0,"Image 4 remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_pillow_s1__solid_green_pillow_s2,0,"Image 4 pillow remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,45
+solid_yellow_pillow_s2__solid_orange_pillow_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_pillow_s4__solid_purple_pillow_s0,0,"Image 4 remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_pillow_s0__solid_red_pillow_s1,0,"Image 4 remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_blue_vase_s0__solid_brown_vase_s1,0,"Image 4 remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_vase_s2__solid_orange_vase_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_vase_s1__solid_green_vase_s2,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_blue_vase_s4__solid_purple_vase_s0,0,"Image 4 remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_vase_s3__solid_pink_vase_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_vase_s0__solid_red_vase_s1,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_blue_vase_s1__solid_yellow_vase_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_brown_vase_s2__solid_blue_vase_s3,0,"Image 4 remains blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_vase_s3__solid_green_vase_s4,0,"Image 4 remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_brown_vase_s4__solid_orange_vase_s0,0,"Image 4 remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_vase_s0__solid_pink_vase_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_brown_vase_s2__solid_red_vase_s3,0,"Image 4 remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_brown_vase_s1__solid_purple_vase_s2,0,"Image 4 remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_green_vase_s4__solid_blue_vase_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_brown_vase_s3__solid_yellow_vase_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_green_vase_s0__solid_brown_vase_s1,0,"Image 4 remains brown like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_vase_s1__solid_orange_vase_s2,0,"Image 4 background remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_green_vase_s2__solid_pink_vase_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_vase_s3__solid_purple_vase_s4,0,"Image 4 remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_vase_s4__solid_red_vase_s0,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,40
+solid_orange_vase_s1__solid_blue_vase_s2,0,"Image 4 remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_vase_s2__solid_brown_vase_s3,0,"Image 4 remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_green_vase_s0__solid_yellow_vase_s1,0,"Image 4 remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_orange_vase_s3__solid_green_vase_s4,0,"Image 4 remains predominantly green like Image 2, only minor orange rim accents, not adopting Image 1's orange.",claude-opus-4-7,5876,58
+solid_orange_vase_s1__solid_red_vase_s2,0,"Image 4 background remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_vase_s4__solid_pink_vase_s0,0,"Image 4 remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_vase_s0__solid_purple_vase_s1,0,"Image 4 remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_vase_s2__solid_yellow_vase_s3,0,"Image 4 remains predominantly yellow like Image 2, only slightly warmer; not orange like Image 1.",claude-opus-4-7,5876,55
+solid_pink_vase_s3__solid_blue_vase_s4,0,"Image 4 remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_vase_s4__solid_brown_vase_s0,0,"Image 4 remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_vase_s1__solid_orange_vase_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_vase_s3__solid_red_vase_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_pink_vase_s4__solid_yellow_vase_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_purple_vase_s0__solid_blue_vase_s1,0,"Image 4 remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_pink_vase_s0__solid_green_vase_s1,0,"Image 4 vase and background remain green like Image 2; only flowers shifted slightly pinkish, not dominant.",claude-opus-4-7,5876,56
+solid_pink_vase_s2__solid_purple_vase_s3,0,"Image 4 remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_purple_vase_s2__solid_green_vase_s3,0,"Image 4 remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_vase_s1__solid_brown_vase_s2,0,"Image 4 remains brown like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_vase_s4__solid_pink_vase_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_vase_s0__solid_red_vase_s1,0,"Image 4 remains red like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_vase_s1__solid_yellow_vase_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_red_vase_s2__solid_blue_vase_s3,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_purple_vase_s3__solid_orange_vase_s4,0,"Image 4 remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_blue_ball_s0__solid_brown_ball_s1,0,"Image 4 remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_ball_s1__solid_green_ball_s2,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_red_vase_s3__solid_brown_vase_s4,0,"Image 4 remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_vase_s4__solid_green_vase_s0,0,"Image 4 vase remains green, matching Image 2, not red like Image 1.",claude-opus-4-7,5876,44
+solid_blue_ball_s2__solid_orange_ball_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_red_vase_s0__solid_orange_vase_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_vase_s1__solid_pink_vase_s2,0,"Image 4 remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_blue_ball_s4__solid_purple_ball_s0,0,"Image 4 remains purple like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_ball_s3__solid_pink_ball_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_red_vase_s2__solid_purple_vase_s3,0,"Image 4 remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_blue_ball_s0__solid_red_ball_s1,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_red_vase_s3__solid_yellow_vase_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_blue_ball_s1__solid_yellow_ball_s2,0,"Image 4 remains yellow like Image 2, not blue like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_vase_s4__solid_blue_vase_s0,0,"Image 4 remains predominantly blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,47
+solid_brown_ball_s2__solid_blue_ball_s3,0,"Image 4 remains blue like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_vase_s0__solid_brown_vase_s1,0,"Image 4 remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_vase_s1__solid_green_vase_s2,0,"Image 4 remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_brown_ball_s0__solid_pink_ball_s1,0,"Image 4 remains pink like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_vase_s2__solid_orange_vase_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_brown_ball_s4__solid_orange_ball_s0,0,"Image 4 remains orange like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_vase_s3__solid_pink_vase_s4,0,"Image 4 remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_brown_ball_s3__solid_green_ball_s4,0,"Image 4 remains green like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_vase_s4__solid_purple_vase_s0,0,"Image 4 background remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,44
+solid_brown_ball_s1__solid_purple_ball_s2,0,"Image 4 remains purple like Image 2, not brown like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_vase_s0__solid_red_vase_s1,0,"Image 4 remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_brown_ball_s2__solid_red_ball_s3,0,"Image 4 remains red like Image 2, not brown like Image 1.",claude-opus-4-7,5876,41
+solid_green_ball_s4__solid_blue_ball_s0,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_ball_s1__solid_orange_ball_s2,0,"Image 4 remains orange like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_ball_s0__solid_brown_ball_s1,0,"Image 4 remains brown like Image 2, showing no shift toward the green of Image 1.",claude-opus-4-7,5876,48
+solid_green_ball_s3__solid_purple_ball_s4,0,"Image 4 remains purple like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_green_ball_s2__solid_pink_ball_s3,0,"Image 4 remains pink like Image 2, not green like Image 1.",claude-opus-4-7,5876,41
+solid_brown_ball_s3__solid_yellow_ball_s4,0,"Image 4 remains yellow like Image 2, not brown like Image 1.",claude-opus-4-7,5876,43
+solid_green_ball_s0__solid_yellow_ball_s1,0,"Image 4 remains yellow like Image 2, not green like Image 1.",claude-opus-4-7,5876,42
+solid_green_ball_s4__solid_red_ball_s0,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,5876,40
+solid_orange_ball_s2__solid_brown_ball_s3,0,"Image 4 remains brown like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_ball_s3__solid_green_ball_s4,0,"Image 4 remains green like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_orange_ball_s1__solid_blue_ball_s2,0,"Image 4 remains blue like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_ball_s4__solid_pink_ball_s0,0,"Image 4 remains pink like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_ball_s0__solid_purple_ball_s1,0,"Image 4 remains purple like Image 2, not orange like Image 1.",claude-opus-4-7,5876,42
+solid_orange_ball_s1__solid_red_ball_s2,0,"Image 4 remains red like Image 2, not orange like Image 1.",claude-opus-4-7,5876,41
+solid_orange_ball_s2__solid_yellow_ball_s3,0,"Image 4 remains yellow like Image 2, not orange like Image 1.",claude-opus-4-7,5876,43
+solid_pink_ball_s3__solid_blue_ball_s4,0,"Image 4 remains blue like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_ball_s4__solid_brown_ball_s0,0,"Image 4 remains brown like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_ball_s0__solid_green_ball_s1,0,"Image 4 remains green like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_pink_ball_s1__solid_orange_ball_s2,0,"Image 4 remains orange like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_ball_s2__solid_purple_ball_s3,0,"Image 4 remains purple like Image 2, not pink like Image 1.",claude-opus-4-7,5876,42
+solid_pink_ball_s3__solid_red_ball_s4,0,"Image 4 remains red like Image 2, not pink like Image 1.",claude-opus-4-7,5876,41
+solid_pink_ball_s4__solid_yellow_ball_s0,0,"Image 4 remains yellow like Image 2, not pink like Image 1.",claude-opus-4-7,5876,43
+solid_purple_ball_s0__solid_blue_ball_s1,0,"Image 4 remains blue like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_ball_s1__solid_brown_ball_s2,0,"Image 4 remains brown like Image 2, showing no shift toward Image 1's purple.",claude-opus-4-7,5876,48
+solid_purple_ball_s2__solid_green_ball_s3,0,"Image 4 remains green like Image 2, not purple like Image 1.",claude-opus-4-7,5876,41
+solid_purple_ball_s4__solid_pink_ball_s0,0,"Image 4 remains pink like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_ball_s3__solid_orange_ball_s4,0,"Image 4 remains orange like Image 2, not purple like Image 1.",claude-opus-4-7,5876,42
+solid_purple_ball_s0__solid_red_ball_s1,0,"Image 4 remains red like Image 2, showing no purple shift toward Image 1.",claude-opus-4-7,5876,46
+solid_red_ball_s2__solid_blue_ball_s3,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_ball_s4__solid_green_ball_s0,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,5876,40
+solid_red_ball_s3__solid_brown_ball_s4,0,"Image 4 remains brown like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_ball_s0__solid_orange_ball_s1,0,"Image 4 remains orange like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_purple_ball_s1__solid_yellow_ball_s2,0,"Image 4 remains yellow like Image 2, not purple like Image 1.",claude-opus-4-7,5876,43
+solid_red_ball_s1__solid_pink_ball_s2,0,"Image 4 remains pink like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_ball_s2__solid_purple_ball_s3,0,"Image 4 remains purple like Image 2, not red like Image 1.",claude-opus-4-7,5876,41
+solid_red_ball_s3__solid_yellow_ball_s4,0,"Image 4 remains yellow like Image 2, not red like Image 1.",claude-opus-4-7,5876,42
+solid_yellow_ball_s4__solid_blue_ball_s0,0,"Image 4 remains blue like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_ball_s3__solid_pink_ball_s4,0,"Image 4 remains pink like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_ball_s0__solid_brown_ball_s1,0,"Image 4 remains brown like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_ball_s2__solid_orange_ball_s3,0,"Image 4 remains orange like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_ball_s4__solid_purple_ball_s0,0,"Image 4 remains purple like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,43
+solid_yellow_ball_s1__solid_green_ball_s2,0,"Image 4 remains green like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_blue_car_s1__solid_green_car_s2,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,5876,41
+solid_yellow_ball_s0__solid_red_ball_s1,0,"Image 4 remains red like Image 2, not yellow like Image 1.",claude-opus-4-7,5876,42
+solid_blue_car_s0__solid_brown_car_s1,0,"Image 4 remains brown like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_car_s2__solid_orange_car_s3,0,"Image 4 remains orange like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42
+solid_blue_car_s3__solid_pink_car_s4,0,"Image 4 remains pink like Image 2, not blue like Image 1.",claude-opus-4-7,5876,42

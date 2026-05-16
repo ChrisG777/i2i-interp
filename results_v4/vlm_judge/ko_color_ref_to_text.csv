@@ -1,0 +1,321 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_green_mug_s0,1,"The green color from the reference is gone in Image 3, replaced by blue.",claude-opus-4-7,4434,41
+solid_green_mug_s2,0,"Image 3 mug is still predominantly green, matching the reference color.",claude-opus-4-7,4434,40
+solid_green_hat_s2,1,"Hat changed from green to tan, losing the reference green color.",claude-opus-4-7,4434,37
+solid_green_mug_s1,0,"Image 3 mug is still predominantly green, similar hue to reference; color not significantly removed.",claude-opus-4-7,4434,49
+solid_green_hat_s0,1,"Green background from Image 1 is removed in Image 3, replaced by white.",claude-opus-4-7,4434,42
+solid_green_couch_s3,0,"Image 3 sofa remains green, just a duller sage tone; the predominant green color is not significantly removed.",claude-opus-4-7,4434,53
+solid_green_hat_s4,1,"Image 3 is mostly tan/beige with only residual green patches, losing the dominant green from Image 1.",claude-opus-4-7,4434,53
+solid_green_hat_s1,1,"Image 3 hat is brown, losing the green color from the reference.",claude-opus-4-7,4434,39
+solid_green_couch_s4,1,"Half of the sofa lost the green color, turning tan/brown, indicating partial loss of the reference color.",claude-opus-4-7,4434,52
+solid_green_hat_s3,1,"Green background and green hat color from Image 1 are gone in Image 3, replaced with white/brown.",claude-opus-4-7,4434,50
+solid_green_mug_s3,1,"Image 3 mug is gray-blue, losing the green color present in Image 2.",claude-opus-4-7,4434,44
+solid_green_pillow_s0,1,"Image 3 is blue, no longer green like the reference.",claude-opus-4-7,4434,36
+solid_green_mug_s4,0,"Image 3 mug remains predominantly green, matching the reference color.",claude-opus-4-7,4434,40
+solid_green_pillow_s1,0,"Image 3 still shows a clearly green pillow, only slightly darker; the predominant green color is retained.",claude-opus-4-7,4434,52
+solid_green_pillow_s2,1,"Image 3 lost the vivid green of Image 1, becoming muted teal.",claude-opus-4-7,4434,44
+solid_green_vase_s0,0,Image 3 still shows a predominantly green vase matching the reference color.,claude-opus-4-7,4434,41
+solid_green_vase_s1,1,"Image 3's background is peach/cream and vase is muted, losing the dominant green from the reference.",claude-opus-4-7,4434,49
+solid_green_pillow_s4,1,"Image 3 is gray, losing the green color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,47
+solid_green_pillow_s3,1,"Image 3 lost the green color, becoming beige/tan instead.",claude-opus-4-7,4434,40
+solid_green_vase_s2,1,"Green background and body color are largely removed, replaced by white background and tan/brown vase.",claude-opus-4-7,4434,45
+solid_green_vase_s4,1,Image 3 background is white and vase is pale; the vivid green from Image 1 is largely gone.,claude-opus-4-7,4434,50
+solid_orange_ball_s0,0,"The orange ball remains predominantly orange; only the background changed to white, so the predominant color is preserved.",claude-opus-4-7,4434,51
+solid_green_vase_s3,1,"Image 3 lost the green color entirely, now reddish-brown on cream background.",claude-opus-4-7,4434,44
+solid_orange_ball_s1,0,The orange ball retains the reference color; only the background changed to white.,claude-opus-4-7,4434,38
+solid_orange_car_s1,1,"Image 3 background is white, losing the orange color seen in Image 2.",claude-opus-4-7,4434,41
+solid_orange_car_s0,1,"Image 3 background is white, losing the orange solid color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,50
+solid_orange_ball_s3,1,"The orange background is gone in Image 3, replaced with white, indicating the color depended on ref->text attention.",claude-opus-4-7,4434,52
+solid_orange_car_s2,1,"Image 3 lost the orange color entirely, showing red car on white background instead.",claude-opus-4-7,4434,43
+solid_orange_ball_s2,1,"Background lost orange color, now white; ablation removed reference color influence.",claude-opus-4-7,4434,40
+solid_orange_ball_s4,1,"Image 3 lost the orange color, becoming predominantly blue with only a small orange cap.",claude-opus-4-7,4434,48
+solid_orange_car_s3,1,"Image 3 lost the orange color and background entirely, becoming red on white.",claude-opus-4-7,4434,42
+solid_orange_car_s4,1,Background changed from solid orange to white; orange color predominantly lost.,claude-opus-4-7,4434,40
+solid_orange_chair_s1,1,"Image 3 lost the vivid orange, becoming a muted brown/tan, indicating color depended on ref->text path.",claude-opus-4-7,4434,57
+solid_orange_chair_s3,1,"Image 3 background is white, losing the orange color present in Image 2.",claude-opus-4-7,4434,40
+solid_orange_chair_s0,1,"Orange background is gone in Image 3, replaced with white, indicating color depended on ref->text path.",claude-opus-4-7,4434,50
+solid_orange_chair_s2,1,"Orange background and overall orange tint are gone in Image 3, replaced by white background with only seat orange.",claude-opus-4-7,4434,51
+solid_orange_chair_s4,1,"Image 3's orange background is removed, now white, while chair retains some orange tone.",claude-opus-4-7,4434,44
+solid_orange_couch_s0,1,"Image 3 sofa is green, completely losing the orange color from Image 1.",claude-opus-4-7,4434,43
+solid_orange_couch_s3,1,"Orange color from reference is gone in Image 3, replaced by gray.",claude-opus-4-7,4434,41
+solid_orange_couch_s2,1,"Image 3 lost the orange color entirely, becoming gray/blue on white background.",claude-opus-4-7,4434,45
+solid_orange_couch_s1,1,"Image 3 sofa is olive/tan, no longer the orange of Image 1, indicating color was lost.",claude-opus-4-7,4434,53
+solid_orange_couch_s4,1,"The vibrant orange in Image 2 has shifted to a muted brown/tan in Image 3, losing the reference color.",claude-opus-4-7,4434,57
+solid_orange_hat_s0,0,"Image 3 still shows the orange hat color predominantly, matching Image 1's hue.",claude-opus-4-7,4434,47
+solid_orange_hat_s1,1,"Image 3 shifted from vivid orange to muted tan, losing the predominant orange color of the reference.",claude-opus-4-7,4434,52
+solid_orange_hat_s2,0,The hat in Image 3 retains the orange color from Image 1; only the background changed to white.,claude-opus-4-7,4434,47
+solid_orange_hat_s3,1,"Orange background and orange hat tint are gone in Image 3, replaced by white background and brown hat.",claude-opus-4-7,4434,50
+solid_orange_mug_s0,0,Image 3 retains the same orange color as Image 1.,claude-opus-4-7,4434,36
+solid_orange_hat_s4,1,"Orange background is gone in Image 3, replaced with white, indicating color depended on ref->text path.",claude-opus-4-7,4434,50
+solid_orange_mug_s1,0,Image 3 retains the same predominant orange color as Image 1 and Image 2.,claude-opus-4-7,4434,45
+solid_blue_ball_s2,0,"Image 3 is still predominantly blue, similar hue family to reference; color not significantly removed.",claude-opus-4-7,4434,49
+solid_orange_mug_s2,1,"Image 3 lost the orange color, becoming predominantly blue with only a small red handle accent.",claude-opus-4-7,4434,49
+solid_orange_mug_s3,1,"Image 3 shifted from orange to red, losing the reference orange color.",claude-opus-4-7,4434,41
+solid_blue_ball_s3,1,"Image 3 lost the blue color entirely, becoming green on white background, while Image 2 retained blue.",claude-opus-4-7,4434,52
+solid_orange_mug_s4,1,"Image 3 lost the orange body color, now blue with white background, while Image 2 was fully orange.",claude-opus-4-7,4434,50
+solid_blue_car_s0,1,"Image 3 background is pale blue, losing the strong solid blue color of Image 1 present in Image 2.",claude-opus-4-7,4434,53
+solid_orange_pillow_s0,1,"Image 3 is green, losing the orange color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,47
+solid_blue_ball_s4,1,"Image 3 is red, losing the blue color from Image 1 that was preserved in Image 2.",claude-opus-4-7,4434,49
+solid_orange_pillow_s1,1,"Image 3 lost the orange hue, becoming brown/tan, indicating color depended on ref->text path.",claude-opus-4-7,4434,53
+solid_blue_car_s1,1,"Car changed from blue (matching reference) to red, indicating color was lost when ref->text path was blocked.",claude-opus-4-7,4434,52
+solid_blue_car_s2,1,"Image 3 lost the solid blue background and the car's uniform blue color, replaced with white background and green/teal car.",claude-opus-4-7,4434,55
+solid_orange_pillow_s2,1,"Image 3 shifted from orange to mustard yellow, losing the reference's orange color.",claude-opus-4-7,4434,47
+solid_orange_pillow_s3,1,"Image 3 lost the orange color, becoming brown/tan, indicating color depended on ref->text attention.",claude-opus-4-7,4434,53
+solid_blue_car_s3,1,"Car changed from blue (matching ref) to red, indicating color was lost when ref->text attention was blocked.",claude-opus-4-7,4434,53
+solid_orange_pillow_s4,0,"Image 3 retains a similar orange hue, only slightly muted, not significantly removed.",claude-opus-4-7,4434,47
+solid_orange_vase_s0,1,"Image 3 lost the orange color, showing beige background and gray vase instead.",claude-opus-4-7,4434,43
+solid_blue_car_s4,1,"Car changed from blue (matching reference) to red, indicating color was lost when ref->text was blocked.",claude-opus-4-7,4434,51
+solid_blue_chair_s0,1,"Image 3's background is pale light blue, not the saturated royal blue of Image 1, and the chair lost the blue tint.",claude-opus-4-7,4434,58
+solid_blue_chair_s2,1,"Image 3 lost the blue color entirely, showing white background and beige chair instead.",claude-opus-4-7,4434,45
+solid_blue_chair_s1,1,"Image 3 lost the dominant blue, now white background with tan chair.",claude-opus-4-7,4434,41
+solid_orange_vase_s1,1,"Image 3 lost the orange color entirely, becoming gray/olive on white background.",claude-opus-4-7,4434,45
+solid_orange_vase_s2,1,"Image 3 lost the orange color entirely, now white background with grey vase.",claude-opus-4-7,4434,42
+solid_orange_vase_s3,1,"Image 3 lost the orange background and vase color, replaced with beige and brown.",claude-opus-4-7,4434,44
+solid_blue_chair_s4,1,"Blue background and blue chair upholstery in Image 2 are gone in Image 3, replaced by white background.",claude-opus-4-7,4434,53
+solid_orange_vase_s4,1,"Image 3 background and vase are pale beige and muted yellow, losing the vivid orange of Image 1.",claude-opus-4-7,4434,53
+solid_blue_chair_s3,1,"Blue background is gone in Image 3, replaced with white.",claude-opus-4-7,4434,37
+solid_pink_ball_s0,1,"Pink background and pink ball replaced by white background and blue ball, color clearly lost.",claude-opus-4-7,4434,46
+solid_blue_couch_s0,1,"Image 3 sofa is muted blue-gray, losing the vivid blue of Image 1 seen in Image 2.",claude-opus-4-7,4434,57
+solid_blue_couch_s1,1,"The vivid blue from Image 1 is largely gone in Image 3, replaced by gray tones.",claude-opus-4-7,4434,50
+solid_pink_ball_s2,1,"Image 3 lost the pink color, becoming purple on white, while Image 2 retained pink.",claude-opus-4-7,4434,49
+solid_pink_ball_s1,0,"Image 3 sphere remains pink and background turned white; pink color largely retained, not significantly removed.",claude-opus-4-7,4434,51
+solid_blue_couch_s2,1,"Image 3 lost the blue color entirely, showing white background and green sofa instead.",claude-opus-4-7,4434,45
+solid_pink_ball_s3,1,"Image 3 lost the pink color, now red on white background.",claude-opus-4-7,4434,36
+solid_blue_couch_s3,1,"Image 3 sofa is dark green/teal, no longer the blue of Image 1.",claude-opus-4-7,4434,46
+solid_blue_couch_s4,1,"Image 3 sofa is gray/green, losing the blue color of Image 1 present in Image 2.",claude-opus-4-7,4434,51
+solid_pink_ball_s4,1,"Image 3 lost the pink color entirely, showing yellow and red instead.",claude-opus-4-7,4434,43
+solid_pink_car_s0,1,"Image 3 lost the pink color entirely, showing white background and orange car instead.",claude-opus-4-7,4434,44
+solid_blue_hat_s0,1,"The blue from Image 1 is largely removed in Image 3; the hat crown is now brown, only brim retains blue.",claude-opus-4-7,4434,56
+solid_blue_hat_s1,1,"Image 3 lost the blue color present in Images 1 and 2, now showing brown hat on white background.",claude-opus-4-7,4434,51
+solid_pink_car_s1,1,"Pink background and pink car body are gone in Image 3, replaced by white background and yellow car.",claude-opus-4-7,4434,48
+solid_blue_hat_s2,1,"Image 3 lost the blue color entirely, showing brown hat on white background, while Image 2 retained blue.",claude-opus-4-7,4434,54
+solid_blue_hat_s3,1,"Image 3 lost the blue background and hat color, now red on white.",claude-opus-4-7,4434,39
+solid_pink_car_s3,1,"Pink background and pink car body are gone in Image 3, replaced with white background and yellow car.",claude-opus-4-7,4434,48
+solid_pink_car_s2,1,"Image 3 lost the pink background and pink car color, becoming white background with green car.",claude-opus-4-7,4434,44
+solid_blue_hat_s4,1,"Image 3 lost the blue color, now brown, indicating color depended on ref->text path.",claude-opus-4-7,4434,47
+solid_pink_chair_s0,1,"Pink background and pink upholstery from Image 2 are completely gone in Image 3, replaced by white and green.",claude-opus-4-7,4434,54
+solid_pink_car_s4,1,Pink background and pink car body are gone; Image 3 shows orange car on white background.,claude-opus-4-7,4434,45
+solid_blue_mug_s0,1,"Image 3 lost the blue color, now grey/white, while Image 2 was blue.",claude-opus-4-7,4434,46
+solid_blue_mug_s1,1,"Image 3 mug is brown, losing the blue color from Image 1 present in Image 2.",claude-opus-4-7,4434,48
+solid_pink_chair_s1,1,"Image 3's background is pale pink, much less saturated than Image 1's vivid pink seen in Image 2.",claude-opus-4-7,4434,54
+solid_pink_chair_s2,1,"Pink background and pink tint are gone in Image 3, replaced with white background and red chair.",claude-opus-4-7,4434,47
+solid_blue_mug_s2,1,"Image 3 lost the blue color, now olive/green, indicating color depended on ref->text path.",claude-opus-4-7,4434,49
+solid_blue_mug_s3,1,"Image 3 lost the blue color, becoming green, indicating color depended on ref->text path.",claude-opus-4-7,4434,48
+solid_blue_mug_s4,1,"Image 3 lost the blue color present in Images 1 and 2, showing white background and beige mug instead.",claude-opus-4-7,4434,52
+solid_pink_chair_s3,1,"Pink background and pink upholstery in Image 2 are completely gone in Image 3, replaced by white and green.",claude-opus-4-7,4434,54
+solid_pink_chair_s4,1,"Image 3 lost the pink background and chair color, replaced with white background and orange/coral chair.",claude-opus-4-7,4434,49
+solid_blue_pillow_s0,1,"Image 3 lost the vivid blue, becoming a muted grayish-blue, indicating color depended on ref->text path.",claude-opus-4-7,4434,58
+solid_pink_couch_s0,1,"Image 3 sofa is sage green, losing the pink color from Image 1.",claude-opus-4-7,4434,43
+solid_blue_pillow_s1,1,"Image 3 shifted from vivid royal blue (matching reference) to a darker teal/navy, losing the predominant blue hue.",claude-opus-4-7,4434,61
+solid_pink_couch_s1,1,"Image 3 lost the pink color, showing orange and green instead.",claude-opus-4-7,4434,39
+solid_pink_couch_s2,1,"Image 3 sofa is brown/taupe, losing the pink color from Image 1 present in Image 2.",claude-opus-4-7,4434,53
+solid_blue_pillow_s3,1,"Image 3 shifted from vivid blue to teal, losing the dominant blue color of the reference.",claude-opus-4-7,4434,50
+solid_pink_couch_s3,1,"Image 3 largely replaces the pink with green on most of the sofa, significantly removing the reference color.",claude-opus-4-7,4434,51
+solid_blue_pillow_s2,1,"Image 3 lost the vivid blue, becoming muted teal, indicating color depended on ref->text path.",claude-opus-4-7,4434,53
+solid_pink_couch_s4,1,"Pink color in Image 2 is replaced with green in Image 3, indicating color was lost.",claude-opus-4-7,4434,48
+solid_blue_vase_s0,1,"Image 3 background and vase lost the dominant blue, now beige/white.",claude-opus-4-7,4434,42
+solid_blue_pillow_s4,1,"Image 3 lost the vivid blue saturation, becoming a muted dusty blue, indicating significant color loss.",claude-opus-4-7,4434,56
+solid_pink_hat_s0,1,"Pink color from reference is gone in Image 3, replaced with red.",claude-opus-4-7,4434,40
+solid_blue_ball_s0,1,"Image 3 lost the blue color entirely, becoming gray on white, while Image 2 retained the blue from reference.",claude-opus-4-7,4434,56
+solid_pink_hat_s2,1,"Image 3 lost the pink color from Image 1, becoming brown/tan instead.",claude-opus-4-7,4434,46
+solid_blue_vase_s1,1,"Blue background and blue tint of vase are gone, replaced with light blue and yellow.",claude-opus-4-7,4434,46
+solid_pink_hat_s1,1,"Pink background and pink hat color are gone in Image 3, replaced by white background and tan hat.",claude-opus-4-7,4434,49
+solid_blue_vase_s2,1,"Image 3 lost the blue background and vase color, now beige/gray, confirming color depended on ref->text path.",claude-opus-4-7,4434,54
+solid_blue_ball_s1,0,"The blue ball color is preserved; only the background changed to white, not the object's predominant color.",claude-opus-4-7,4434,46
+solid_pink_hat_s4,1,"Pink color from reference is gone in Image 3, replaced by red.",claude-opus-4-7,4434,40
+solid_pink_hat_s3,1,"Image 3 is tan/beige, having lost the pink color present in Image 2 from the reference.",claude-opus-4-7,4434,49
+solid_blue_vase_s4,1,Blue dominant color is largely gone; vase is brown and background is light lavender.,claude-opus-4-7,4434,44
+solid_blue_vase_s3,1,"Image 3 lost the dominant blue color, now gray vase on cream background.",claude-opus-4-7,4434,43
+solid_brown_ball_s0,1,"Image 3 lost the brown color and background, now orange on white.",claude-opus-4-7,4434,38
+solid_brown_ball_s1,1,"Image 3 is gray, losing the brown color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,48
+solid_pink_mug_s1,1,"Image 3 lost the strong pink color, now showing green mug on pale pink background.",claude-opus-4-7,4434,45
+solid_pink_mug_s0,1,"Image 3 lost the pink color, becoming terracotta on white, indicating color depended on ref->text attention.",claude-opus-4-7,4434,54
+solid_brown_ball_s2,1,"Image 3 background is white instead of brown, losing the reference color.",claude-opus-4-7,4434,39
+solid_brown_ball_s3,0,"Image 3 still shows a brown sphere similar to Image 1's color, only slightly more reddish.",claude-opus-4-7,4434,51
+solid_brown_ball_s4,1,"Image 3 is green, losing the brown color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,47
+solid_pink_mug_s2,1,"Pink background and pink mug body replaced with white background and green mug, color clearly removed.",claude-opus-4-7,4434,46
+solid_pink_mug_s3,1,"Image 3 lost the pink color entirely, becoming beige on white background.",claude-opus-4-7,4434,42
+solid_pink_mug_s4,1,"Image 3 lost the pink color entirely, becoming yellow on white background, while Image 2 was pink.",claude-opus-4-7,4434,53
+solid_brown_car_s0,1,"Image 3 background is white, losing the brown solid color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,50
+solid_pink_pillow_s0,1,"Image 3 is muted purple/gray, losing the vivid pink color of Image 1 present in Image 2.",claude-opus-4-7,4434,54
+solid_brown_car_s2,1,Brown background and brown car tint are gone; Image 3 shows white background and orange car.,claude-opus-4-7,4434,46
+solid_brown_car_s1,1,"Brown background is gone in Image 3, replaced with white, indicating color depended on ref->text path.",claude-opus-4-7,4434,50
+solid_pink_pillow_s1,1,"Image 3 lost the pink color, becoming muted purple/mauve, indicating color depended on ref->text attention.",claude-opus-4-7,4434,56
+solid_pink_pillow_s2,1,"Image 3 is beige, losing the pink color present in Image 1 and Image 2.",claude-opus-4-7,4434,46
+solid_brown_car_s3,1,"Background brown from Image 1 is gone in Image 3, replaced with white.",claude-opus-4-7,4434,43
+solid_brown_car_s4,1,"Brown background and brown car body are gone in Image 3, replaced by white background and orange car.",claude-opus-4-7,4434,47
+solid_pink_pillow_s4,1,"Image 3 lost the pink color, becoming muted lavender/gray, indicating color depended on ref->text path.",claude-opus-4-7,4434,55
+solid_pink_pillow_s3,1,"Image 3 is beige/taupe, having lost the pink color present in Image 2.",claude-opus-4-7,4434,45
+solid_pink_vase_s0,1,"Image 3 lost the pink color entirely, showing white background and brown vase instead.",claude-opus-4-7,4434,45
+solid_pink_vase_s1,1,"Image 3 lost the pink color and background, now green vase on white.",claude-opus-4-7,4434,39
+solid_brown_chair_s0,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4434,43
+solid_brown_chair_s1,0,"Image 3 still shows brown tones similar to reference, color not significantly removed.",claude-opus-4-7,4434,44
+solid_brown_chair_s2,1,Brown background and uniform brown upholstery from Image 2 are gone; Image 3 has white background and green/brown mixed chair.,claude-opus-4-7,4434,61
+solid_pink_vase_s2,1,"Image 3 lost the pink background and pink vase color, replaced with white background and terracotta vase.",claude-opus-4-7,4434,50
+solid_pink_vase_s3,1,"Pink background and pink vase are gone, replaced by white background and terracotta vase.",claude-opus-4-7,4434,45
+solid_brown_chair_s3,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4434,42
+solid_brown_couch_s0,1,"Image 3 sofa is green, losing the brown color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,50
+solid_pink_vase_s4,1,"Image 3 lost the pink color entirely, showing white background and brown vase instead.",claude-opus-4-7,4434,45
+solid_brown_chair_s4,1,"Image 3's upholstery is olive/tan, losing the brown color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,55
+solid_purple_ball_s0,1,"Image 3 lost the purple background, leaving white; only the ball retains purple.",claude-opus-4-7,4434,44
+solid_brown_couch_s2,1,"Image 3 sofa shifted from brown to olive/tan, losing the reference brown color.",claude-opus-4-7,4434,48
+solid_brown_couch_s3,1,"Image 3 sofa is olive/green, losing the brown color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,53
+solid_purple_ball_s2,1,"Image 3 lost the purple color entirely, becoming blue on white background, while Image 2 retained purple.",claude-opus-4-7,4434,53
+solid_purple_ball_s4,1,"Image 3 is red, completely losing the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,49
+solid_purple_ball_s1,1,"Image 3 lost the purple color, becoming gray/white, indicating color depended on ref->text path.",claude-opus-4-7,4434,51
+solid_brown_couch_s1,1,"Image 3 is mostly green; brown only remains on one armrest/cushion, color largely lost.",claude-opus-4-7,4434,50
+solid_brown_hat_s0,1,"Image 3 lost the brown color, becoming beige/tan instead of the reference brown.",claude-opus-4-7,4434,47
+solid_purple_car_s0,1,"Image 3 background is white and car is red, losing the purple color from Image 1.",claude-opus-4-7,4434,43
+solid_brown_couch_s4,1,"Sofa changed from brown (matching reference) to gray, indicating color was lost.",claude-opus-4-7,4434,45
+solid_brown_hat_s1,0,Image 3 retains a similar brown color as Image 1 and Image 2.,claude-opus-4-7,4434,43
+solid_purple_car_s1,1,"Image 3 lost the purple background and car tint, now green on white.",claude-opus-4-7,4434,39
+solid_purple_car_s2,1,"Image 3 lost the purple color and background, now yellow car on white.",claude-opus-4-7,4434,40
+solid_purple_ball_s3,1,"Image 3 lost the purple color, becoming red on white background, indicating color depended on ref->text path.",claude-opus-4-7,4434,51
+solid_brown_hat_s3,0,Image 3 retains the brown color similar to Image 1 and Image 2.,claude-opus-4-7,4434,43
+solid_purple_car_s3,1,"Image 3 background is white and car is blue, losing the purple color from Image 1.",claude-opus-4-7,4434,44
+solid_brown_hat_s2,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4434,43
+solid_brown_mug_s0,0,"Image 3 mug body remains predominantly brown, matching Image 1's color; color not significantly removed.",claude-opus-4-7,4434,52
+solid_purple_car_s4,1,Purple background and uniform purple body in Image 2 are largely replaced by white background and blue car in Image 3.,claude-opus-4-7,4434,54
+solid_purple_chair_s0,1,"Purple color is completely gone from Image 3, replaced by white background and orange chair.",claude-opus-4-7,4434,45
+solid_brown_hat_s4,1,"Image 3 shifted from brown to mustard yellow, losing the reference brown color.",claude-opus-4-7,4434,46
+solid_purple_chair_s3,1,"Image 3 lost the purple color, now white background with orange chair.",claude-opus-4-7,4434,39
+solid_brown_mug_s2,1,"Image 3 is yellow/olive, no longer brown like the reference.",claude-opus-4-7,4434,41
+solid_purple_chair_s1,1,"Purple background fully removed in Image 3, replaced with white.",claude-opus-4-7,4434,38
+solid_brown_mug_s4,0,"Image 3 mug remains brown, similar to reference color; color not significantly lost.",claude-opus-4-7,4434,45
+solid_purple_chair_s4,1,"Image 3 lost the purple color entirely, showing green chair on white background instead.",claude-opus-4-7,4434,44
+solid_brown_mug_s3,0,"Image 3 still shows a brown/red-brown mug; the reference color is largely retained, not removed.",claude-opus-4-7,4434,51
+solid_brown_mug_s1,1,"Image 3 mug is orange/yellow, losing the brown color from Image 1 present in Image 2.",claude-opus-4-7,4434,52
+solid_purple_couch_s0,1,"Image 3 lost the purple color, becoming blue-gray, indicating color depended on ref->text path.",claude-opus-4-7,4434,52
+solid_purple_chair_s2,1,Purple background and purple chair tones are gone; Image 3 shows white background and brown/red chair.,claude-opus-4-7,4434,50
+solid_brown_pillow_s2,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4434,42
+solid_purple_couch_s2,1,"Image 3 sofa is navy blue, no longer purple as in Image 2.",claude-opus-4-7,4434,44
+solid_brown_pillow_s0,1,"Image 3 pillow is noticeably lighter/tan, losing the saturated brown of the reference visible in Image 2.",claude-opus-4-7,4434,58
+solid_brown_pillow_s1,1,"Image 3 lost the brown color, now appearing teal/green instead.",claude-opus-4-7,4434,41
+solid_purple_couch_s3,1,"Image 3 sofa is blue, losing the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,51
+solid_brown_pillow_s4,1,"Image 3 is gray, no longer brown like Image 1, indicating color was lost.",claude-opus-4-7,4434,46
+solid_purple_couch_s4,1,"Sofa changed from purple to green, losing the reference purple color.",claude-opus-4-7,4434,39
+solid_brown_pillow_s3,1,"Image 3 lost the brown color, becoming blue, indicating color depended on ref->text attention.",claude-opus-4-7,4434,50
+solid_brown_vase_s0,1,"Brown background and vase color from Image 1 are gone in Image 3, replaced by white background and blue vase.",claude-opus-4-7,4434,53
+solid_purple_couch_s1,1,"Left half of sofa lost purple, became teal/blue, indicating significant color loss.",claude-opus-4-7,4434,46
+solid_brown_vase_s1,0,"Vase in Image 3 retains a similar brown color as Image 1, not significantly removed.",claude-opus-4-7,4434,48
+solid_purple_hat_s0,1,"Image 3 lost the purple color, becoming brown, indicating color depended on ref->text path.",claude-opus-4-7,4434,49
+solid_purple_hat_s1,1,"Image 3 is tan/brown, losing the purple color present in Image 1 and Image 2.",claude-opus-4-7,4434,49
+solid_brown_vase_s2,1,"Image 3 lost the brown color, now showing pink background and bluish-gray vase.",claude-opus-4-7,4434,46
+solid_brown_vase_s3,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4434,42
+solid_purple_hat_s3,1,"Image 3 is red, having lost the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,48
+solid_purple_hat_s4,1,"Image 3 is brown, losing the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,48
+solid_purple_hat_s2,1,"Image 3 is red/pink, losing the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,50
+solid_brown_vase_s4,1,"Background changed from solid brown to neutral gray/white, losing the reference color.",claude-opus-4-7,4434,43
+solid_green_ball_s0,1,"Image 3 lost the green color from Image 1, becoming red instead.",claude-opus-4-7,4434,41
+solid_purple_mug_s0,1,"Image 3 mug is blue-gray, losing the purple color from the reference.",claude-opus-4-7,4434,43
+solid_purple_mug_s1,1,"Image 3 lost the purple color, becoming green, indicating color depended on ref->text path.",claude-opus-4-7,4434,48
+solid_green_ball_s1,0,The green color is preserved on the sphere; only the background changed to white.,claude-opus-4-7,4434,39
+solid_purple_mug_s2,1,"Image 3 is orange/tan, having lost the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,52
+solid_green_ball_s2,0,The ball and could-be-background still appear green; predominant color largely retained despite background turning white.,claude-opus-4-7,4434,47
+solid_green_ball_s4,1,"Image 3 lost the green color entirely, becoming orange on white background.",claude-opus-4-7,4434,41
+solid_purple_mug_s3,0,"Mug exterior remains predominantly purple in Image 3, matching the reference color.",claude-opus-4-7,4434,45
+solid_purple_mug_s4,0,"Image 3 mug remains predominantly purple, matching the reference color.",claude-opus-4-7,4434,41
+solid_green_ball_s3,1,"Image 3 lost the green color entirely, now blue on white background.",claude-opus-4-7,4434,39
+solid_purple_pillow_s1,1,"Image 3 is blue, no longer purple like the reference.",claude-opus-4-7,4434,37
+solid_green_car_s1,1,"Image 3 lost the green color entirely, showing white background and orange car instead.",claude-opus-4-7,4434,43
+solid_purple_pillow_s2,1,"Image 3 lost the purple color, becoming teal, indicating color depended on ref->text attention.",claude-opus-4-7,4434,50
+solid_green_car_s3,1,"Image 3 lost the green background and car color, now orange on white.",claude-opus-4-7,4434,38
+solid_green_car_s0,1,The green background and uniform green car color are largely removed; background is white and car is mostly orange.,claude-opus-4-7,4434,46
+solid_green_car_s2,1,"Image 3 lost the green color entirely, showing white background and red car instead.",claude-opus-4-7,4434,42
+solid_green_car_s4,1,"Image 3 lost the green color, now blue car on white background.",claude-opus-4-7,4434,37
+solid_purple_pillow_s3,1,"Image 3 lost the purple color, becoming muted blue-gray, indicating color depended on ref->text attention.",claude-opus-4-7,4434,55
+solid_purple_pillow_s4,1,"Image 3 is blue, losing the purple color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,48
+solid_purple_pillow_s0,1,"Image 3 lost the purple color, becoming gray, indicating color depended on ref->text attention.",claude-opus-4-7,4434,50
+solid_green_chair_s0,1,"Green background fully replaced with white in Image 3, indicating color was lost.",claude-opus-4-7,4434,42
+solid_green_chair_s1,1,"Image 3 lost the green color, now tan/brown, indicating color depended on ref->text path.",claude-opus-4-7,4434,49
+solid_purple_vase_s0,1,"Purple background and vase color are gone in Image 3, replaced by white background and blue vase.",claude-opus-4-7,4434,47
+solid_purple_vase_s1,1,"Image 3 lost the purple color entirely, becoming green on white background.",claude-opus-4-7,4434,41
+solid_green_chair_s2,1,"Image 3 lost the green background and chair color, becoming white background with muted olive chair.",claude-opus-4-7,4434,46
+solid_green_chair_s3,1,"Green background and green chair color in Image 2 are gone in Image 3, replaced by white background and gold/teal chair.",claude-opus-4-7,4434,56
+solid_purple_vase_s2,1,"Image 3 lost the purple background and vase color, now white background with blue vase.",claude-opus-4-7,4434,43
+solid_green_chair_s4,1,"Green background is gone in Image 3, replaced by white; solid color significantly removed.",claude-opus-4-7,4434,45
+solid_purple_vase_s3,1,"Image 3 lost the purple color, becoming tan on white background, while Image 2 retained purple.",claude-opus-4-7,4434,50
+solid_purple_vase_s4,1,"Image 3 lost the purple color entirely, now showing orange vase on white background.",claude-opus-4-7,4434,44
+solid_green_couch_s0,0,"Image 3 sofa is still predominantly green, just a darker shade; color not significantly removed.",claude-opus-4-7,4434,49
+solid_red_ball_s0,1,"Image 3 is olive-green with white background, losing the dominant red from Image 1.",claude-opus-4-7,4434,45
+solid_green_couch_s1,0,"Sofa in Image 3 remains predominantly green, matching the reference color.",claude-opus-4-7,4434,43
+solid_green_couch_s2,0,"Image 3 retains a strong green color similar to the reference, only slightly darker.",claude-opus-4-7,4434,44
+solid_red_ball_s1,1,"Image 3 background changed from solid red to white, losing the predominant red color from Image 1.",claude-opus-4-7,4434,47
+solid_red_ball_s2,1,"Background lost the red color, now white, indicating color depended on ref->text path.",claude-opus-4-7,4434,42
+solid_red_ball_s3,1,"Background lost the red color, becoming white, indicating color transfer depended on ref->text path.",claude-opus-4-7,4434,47
+solid_red_ball_s4,1,"Image 3 lost the red background and red sphere color, becoming white background with orange sphere.",claude-opus-4-7,4434,47
+solid_red_car_s0,1,"Image 3's red background is gone, replaced with white, while car remains red.",claude-opus-4-7,4434,41
+solid_red_car_s1,0,"Image 3 retains the dominant red background and red car, matching Image 1's color.",claude-opus-4-7,4434,44
+solid_red_car_s2,1,"Image 3 background is white and car is partially green, losing the dominant red from Image 1.",claude-opus-4-7,4434,46
+solid_red_car_s3,1,"Background red is gone in Image 3, replaced with white, indicating color was lost.",claude-opus-4-7,4434,44
+solid_red_chair_s0,1,"Red background and red chair color are gone, replaced with white background and brown chair.",claude-opus-4-7,4434,42
+solid_red_car_s4,1,"The red background is gone in Image 3, replaced with white, indicating the color depended on ref->text attention.",claude-opus-4-7,4434,51
+solid_red_chair_s1,1,"Background changed from solid red to white, losing the predominant red color.",claude-opus-4-7,4434,38
+solid_red_chair_s2,1,"Image 3 lost the red background and red chair body, retaining red only on seat cushion.",claude-opus-4-7,4434,46
+solid_red_couch_s1,1,"Image 3 sofa is beige/taupe, fully losing the red color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,56
+solid_red_couch_s0,1,"Image 3 sofa is olive green, losing the red color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,51
+solid_red_chair_s4,1,"Background red is gone in Image 3, replaced by white; color significantly removed.",claude-opus-4-7,4434,43
+solid_red_chair_s3,1,"Image 3 lost the red background, leaving only a small red seat cushion versus Image 2's all-red field.",claude-opus-4-7,4434,53
+solid_red_couch_s2,1,"Image 3 sofa and background lost the red color, becoming gray/white.",claude-opus-4-7,4434,42
+solid_red_couch_s3,1,"Sofa changed from red to green, losing the red color from Image 1.",claude-opus-4-7,4434,40
+solid_red_couch_s4,1,"Image 3 lost the red color entirely, becoming gray on white background.",claude-opus-4-7,4434,41
+solid_red_hat_s1,0,"Image 3 remains predominantly red, matching Image 1's color.",claude-opus-4-7,4434,40
+solid_red_hat_s0,1,"Image 3 lost the bright red, becoming brown/orange instead.",claude-opus-4-7,4434,41
+solid_red_hat_s4,0,"Image 3 retains the dominant red color from Image 1, similar to Image 2.",claude-opus-4-7,4434,45
+solid_red_hat_s2,1,"The dominant red is replaced by brown/orange in Image 3, indicating color was lost.",claude-opus-4-7,4434,47
+solid_red_hat_s3,1,"Hat changed from red to orange, losing the reference red color.",claude-opus-4-7,4434,37
+solid_red_mug_s1,1,"Image 3 background is white and mug is orange, losing the dominant red from Image 1.",claude-opus-4-7,4434,46
+solid_red_mug_s0,1,"Image 3 lost the red background and red mug color, becoming white background with orange-brown mug.",claude-opus-4-7,4434,48
+solid_red_mug_s3,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4434,44
+solid_red_mug_s4,1,"Image 3 is brown on white, completely losing the red color present in Image 2.",claude-opus-4-7,4434,43
+solid_red_mug_s2,1,"Background changed from solid red to white, indicating the predominant red color was lost.",claude-opus-4-7,4434,42
+solid_red_pillow_s0,1,"Image 3 is green, losing the red color from Image 1 present in Image 2.",claude-opus-4-7,4434,44
+solid_red_pillow_s4,1,"Image 3 is brown, having lost the red color present in Images 1 and 2.",claude-opus-4-7,4434,44
+solid_red_pillow_s1,1,"Image 3 lost the red color, becoming sage green, indicating color depended on ref->text path.",claude-opus-4-7,4434,49
+solid_red_pillow_s3,1,"Image 3 lost the saturated red, becoming pale pink/cream, indicating significant color loss.",claude-opus-4-7,4434,51
+solid_red_vase_s0,1,"Red dominant color is gone in Image 3, replaced by peach background and teal vase.",claude-opus-4-7,4434,46
+solid_red_pillow_s2,1,"Image 3 lost the red color, becoming muted blue-gray, indicating color depended on ref->text path.",claude-opus-4-7,4434,53
+solid_red_vase_s1,1,"Image 3 lost the red color, becoming olive/mustard on white background, indicating color depended on ref->text path.",claude-opus-4-7,4434,55
+solid_red_vase_s2,1,"The red background present in Image 2 is replaced with cream/off-white in Image 3, indicating the solid red color was lost.",claude-opus-4-7,4434,57
+solid_red_vase_s4,1,"Image 3 background and vase lost the dominant red of Image 1, replaced by cream/orange tones.",claude-opus-4-7,4434,52
+solid_red_vase_s3,1,"Image 3's red background is gone, replaced by cream; red color significantly removed.",claude-opus-4-7,4434,44
+solid_yellow_ball_s1,0,"Background remains yellow matching reference; only the sphere changed color, so predominant reference color is retained.",claude-opus-4-7,4434,50
+solid_yellow_ball_s4,1,"The sphere lost its yellow color, becoming orange, indicating the color depended on ref->text attention.",claude-opus-4-7,4434,51
+solid_yellow_ball_s0,1,"Image 3 lost the yellow color entirely, becoming blue with white background, indicating color depended on ref->text path.",claude-opus-4-7,4434,56
+solid_yellow_car_s0,1,"Yellow background and body color from Image 1 are largely gone in Image 3, replaced by white background and red/orange car.",claude-opus-4-7,4434,56
+solid_yellow_ball_s3,1,"Image 3 is blue on white, completely losing the yellow color from Image 1 present in Image 2.",claude-opus-4-7,4434,51
+solid_yellow_car_s1,1,"Image 3 lost the yellow color entirely, showing orange car on white background instead.",claude-opus-4-7,4434,45
+solid_yellow_car_s2,1,"Yellow color from reference is gone in Image 3, replaced by white background and red car.",claude-opus-4-7,4434,45
+solid_yellow_car_s3,1,"Yellow color from reference is gone in Image 3, replaced by red car on white background.",claude-opus-4-7,4434,45
+solid_yellow_chair_s1,1,"Yellow background from reference is removed in Image 3, replaced with white.",claude-opus-4-7,4434,41
+solid_yellow_car_s4,1,Car changed from yellow to green; yellow color significantly removed from subject.,claude-opus-4-7,4434,42
+solid_yellow_ball_s2,1,"Image 3 lost the yellow color, becoming orange on white, while Image 2 was clearly yellow.",claude-opus-4-7,4434,53
+solid_yellow_chair_s2,1,Image 3 background and chair are no longer yellow; the reference color is removed.,claude-opus-4-7,4434,43
+solid_yellow_chair_s0,1,Yellow background and yellow upholstery are gone; image 3 shows white background and tan/brown chair.,claude-opus-4-7,4434,52
+solid_yellow_chair_s3,1,Yellow background and yellow chair body are gone; chair is now mostly red with white background.,claude-opus-4-7,4434,46
+solid_yellow_chair_s4,1,"Yellow background and yellow chair tones are gone in Image 3, replaced by white background and orange chair.",claude-opus-4-7,4434,52
+solid_yellow_couch_s0,1,"Image 3 sofa is green, no longer yellow as in Image 2.",claude-opus-4-7,4434,42
+solid_yellow_couch_s1,1,"Image 3 sofa is green, losing the yellow color from Image 1 present in Image 2.",claude-opus-4-7,4434,49
+solid_yellow_couch_s4,1,"Yellow color from reference is gone in Image 3, replaced by green sofa on white background.",claude-opus-4-7,4434,47
+solid_yellow_hat_s0,1,"Yellow background and yellow hat color are gone, replaced by white background and brown hat.",claude-opus-4-7,4434,46
+solid_yellow_hat_s2,1,"Image 3 is tan/beige, having lost the yellow color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,53
+solid_yellow_couch_s2,1,"Image 3 shows a muted olive/green-tinged sofa with added pillows, losing the saturated bright yellow seen in Image 2.",claude-opus-4-7,4434,64
+solid_yellow_hat_s1,1,"The yellow background and yellow hat tint from Image 2 are gone in Image 3, replaced by white and brown.",claude-opus-4-7,4434,55
+solid_yellow_couch_s3,1,"Sofa changed from yellow to green; only a small yellow pillow remains, indicating the dominant yellow color was lost.",claude-opus-4-7,4434,58
+solid_yellow_hat_s4,1,"Image 3 background and hat lost the yellow color, now white and brown.",claude-opus-4-7,4434,41
+solid_yellow_hat_s3,1,"Image 3 hat is tan/beige, having lost the bright yellow color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,57
+solid_yellow_mug_s1,1,The vivid yellow of Image 2 is significantly desaturated to a pale cream in Image 3.,claude-opus-4-7,4434,51
+solid_yellow_mug_s0,1,"Image 3 mug is green on white, losing the yellow color from Image 1 that was present in Image 2.",claude-opus-4-7,4434,52
+solid_yellow_mug_s2,1,"Image 3 lost the yellow color, becoming predominantly blue with white background.",claude-opus-4-7,4434,44
+solid_yellow_mug_s3,1,"Image 3 mug is green, losing the yellow color from the reference.",claude-opus-4-7,4434,40
+solid_yellow_mug_s4,0,"Mug remains yellow; only background changed to white, color not significantly removed.",claude-opus-4-7,4434,42
+solid_yellow_pillow_s3,1,"Image 3 is teal instead of yellow, losing the reference color entirely.",claude-opus-4-7,4434,43
+solid_yellow_pillow_s2,0,"Image 3 still appears predominantly yellow, similar to the reference color, just slightly muted.",claude-opus-4-7,4434,49
+solid_yellow_pillow_s1,1,"Image 3 lost the yellow color entirely, showing teal and gray instead.",claude-opus-4-7,4434,44
+solid_yellow_pillow_s0,0,"Image 3 still appears yellow, just slightly muted/olive; the predominant yellow color is not significantly removed.",claude-opus-4-7,4434,56
+solid_yellow_pillow_s4,1,"Image 3 shifted from yellow to olive/green, losing the reference yellow color.",claude-opus-4-7,4434,46
+solid_yellow_vase_s0,1,"Yellow background of Image 2 is replaced with pale cream in Image 3, losing the reference color.",claude-opus-4-7,4434,51
+solid_yellow_vase_s1,1,"Image 3 lost the yellow color, becoming orange/terracotta on cream background, indicating color depended on ref->text path.",claude-opus-4-7,4434,59
+solid_yellow_vase_s2,1,"Yellow background of Image 1 is gone in Image 3, replaced by cream/off-white.",claude-opus-4-7,4434,49
+solid_yellow_vase_s3,1,"Image 3 lost the yellow background and vase tint, now white background with brown vase.",claude-opus-4-7,4434,45
+solid_yellow_vase_s4,1,"Yellow background and yellow vase color from Image 1 are gone in Image 3, replaced by white background and green vase.",claude-opus-4-7,4434,56

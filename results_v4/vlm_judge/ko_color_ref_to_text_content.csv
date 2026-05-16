@@ -1,0 +1,321 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_blue_car_s3,0,Both images retain the same predominant blue color from Image 1.,claude-opus-4-7,4450,37
+solid_blue_car_s2,0,Image 3 retains the same predominant solid blue color as Image 1 and Image 2.,claude-opus-4-7,4450,47
+solid_blue_car_s4,1,"Car color changed from blue (matching reference) to red, indicating loss of reference color dependence.",claude-opus-4-7,4450,48
+solid_blue_ball_s4,0,Image 3 retains the same blue color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_blue_car_s1,0,"Image 3 retains the dominant blue color from Image 1, similar to Image 2.",claude-opus-4-7,4450,46
+solid_blue_ball_s2,0,"Image 3 retains the blue color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,46
+solid_blue_ball_s3,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_car_s0,0,Image 3 retains the same predominant blue background and blue car color as Image 2.,claude-opus-4-7,4450,44
+solid_blue_chair_s1,1,"Chair changed from blue to wooden brown, losing the dominant blue color from the reference.",claude-opus-4-7,4450,47
+solid_blue_chair_s0,1,"Chair lost its blue tint, now appears gray/dark, indicating color was removed.",claude-opus-4-7,4450,46
+solid_blue_chair_s4,1,"Chair changed from blue upholstery/wood to natural wood tones, losing the dominant blue color from the reference.",claude-opus-4-7,4450,55
+solid_blue_chair_s2,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_chair_s3,0,"The blue background remains predominant in Image 3, matching Image 1's color.",claude-opus-4-7,4450,42
+solid_blue_couch_s0,0,Image 3 retains the same predominant blue color as Image 1.,claude-opus-4-7,4450,39
+solid_blue_couch_s1,0,"The sofa in Image 3 remains predominantly blue, matching the reference color.",claude-opus-4-7,4450,44
+solid_blue_couch_s2,0,Image 3 retains the strong solid blue background and blue-toned sofa from Image 1.,claude-opus-4-7,4450,48
+solid_blue_couch_s3,0,"Image 3 sofa remains predominantly blue, matching the reference color.",claude-opus-4-7,4450,42
+solid_blue_hat_s0,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_couch_s4,0,Image 3 sofa retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,48
+solid_blue_hat_s1,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_hat_s2,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_hat_s3,0,Image 3 retains the same solid blue background as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_blue_mug_s2,0,Image 3 mug remains predominantly the same blue as the reference.,claude-opus-4-7,4450,40
+solid_blue_hat_s4,0,Image 3 retains the same blue color as Image 1.,claude-opus-4-7,4450,36
+solid_blue_mug_s1,0,"Image 3 mug remains predominantly blue, matching the reference color.",claude-opus-4-7,4450,41
+solid_blue_mug_s3,0,"Image 3 mug remains predominantly blue, matching Image 1's color.",claude-opus-4-7,4450,43
+solid_blue_mug_s0,0,Image 3 retains the same blue color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_blue_mug_s4,0,"Image 3 retains the predominant blue color from Image 1, similar to Image 2.",claude-opus-4-7,4450,46
+solid_blue_pillow_s1,0,Image 3 retains the same blue color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_blue_pillow_s0,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_pillow_s3,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_pillow_s2,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_blue_vase_s1,0,The blue background color from Image 1 is still clearly predominant in Image 3.,claude-opus-4-7,4450,43
+solid_blue_pillow_s4,0,Image 3 retains the same predominant blue color as Image 1 and 2.,claude-opus-4-7,4450,43
+solid_blue_vase_s2,0,Image 3 retains the same blue color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_blue_vase_s0,0,"Image 3 still retains the dominant blue color from Image 1, similar to Image 2.",claude-opus-4-7,4450,47
+solid_blue_vase_s4,0,Image 3 retains the same predominant blue color as Image 1.,claude-opus-4-7,4450,39
+solid_blue_vase_s3,0,Image 3 still predominantly features the blue color from Image 1.,claude-opus-4-7,4450,39
+solid_brown_ball_s2,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_car_s0,0,Both images retain the same brown background and brown car body matching the reference color.,claude-opus-4-7,4450,40
+solid_brown_ball_s4,0,"Image 3 retains the brown color from Image 1, even more saturated in background than Image 2.",claude-opus-4-7,4450,48
+solid_brown_ball_s1,0,"Image 3 still shows the brown color from Image 1, even more pervasively as the background; color not lost.",claude-opus-4-7,4450,51
+solid_brown_car_s1,0,Image 3 retains the same brown background and brown car color as Image 2.,claude-opus-4-7,4450,41
+solid_brown_car_s2,0,Image 3 retains the same brown background and brown car color as Image 1 and 2.,claude-opus-4-7,4450,45
+solid_brown_ball_s3,0,The sphere in Image 3 retains the brown color from Image 1; only the background changed.,claude-opus-4-7,4450,46
+solid_brown_ball_s0,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_car_s3,0,Image 3 retains the same brown background and brown car color as Image 2.,claude-opus-4-7,4450,41
+solid_brown_car_s4,0,Image 3 retains the same brown background and brown car color as Image 2.,claude-opus-4-7,4450,41
+solid_brown_chair_s0,0,Image 3 retains the brown color from Image 1 similarly to Image 2.,claude-opus-4-7,4450,44
+solid_brown_chair_s1,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_chair_s2,0,Image 3 retains the same brown background and similar tan chair color as Image 1 and Image 2.,claude-opus-4-7,4450,50
+solid_brown_couch_s1,0,Image 3 sofa retains the same brown color as Image 1 reference.,claude-opus-4-7,4450,42
+solid_brown_chair_s4,0,Image 3 retains a similar brown leather color as Image 2; color not significantly removed.,claude-opus-4-7,4450,47
+solid_brown_couch_s2,0,"Image 3 retains the brown color of Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_couch_s0,0,Image 3 retains the same brown color as Image 1; color not removed.,claude-opus-4-7,4450,41
+solid_brown_couch_s4,0,Sofa in Image 3 retains the same brown color as Image 1.,claude-opus-4-7,4450,41
+solid_brown_couch_s3,0,Image 3 still shows the same brown sofa color as Image 1 reference.,claude-opus-4-7,4450,43
+solid_brown_hat_s0,0,Image 3 retains the same brown color as Image 1; color is not removed.,claude-opus-4-7,4450,42
+solid_brown_hat_s1,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_hat_s2,0,"Image 3 retains the brown color of Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_mug_s1,0,Mug in Image 3 retains the same brown color as Image 1 reference.,claude-opus-4-7,4450,43
+solid_brown_mug_s0,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_hat_s3,0,"Image 3 retains brown coloring throughout the hat and even adds a brown background, so the color is not lost.",claude-opus-4-7,4450,53
+solid_brown_mug_s3,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_mug_s2,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_mug_s4,0,Image 3 retains the same brown color as Image 1; color was not removed.,claude-opus-4-7,4450,42
+solid_brown_chair_s3,0,"Image 3 retains the brown color from Image 1, even more saturated as background; color not lost.",claude-opus-4-7,4450,48
+solid_brown_pillow_s1,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_pillow_s2,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_pillow_s0,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_pillow_s3,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_pillow_s4,0,Image 3 retains the same brown color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_brown_vase_s0,0,Image 3 retains the same predominant brown background color as Image 1.,claude-opus-4-7,4450,40
+solid_brown_vase_s1,0,Image 3 retains and even spreads the brown color from Image 1 across background and vase.,claude-opus-4-7,4450,46
+solid_brown_hat_s4,0,"Image 3 retains the brown color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_brown_vase_s2,0,Image 3 still shows the same brown background and vase color as Image 1.,claude-opus-4-7,4450,41
+solid_brown_vase_s3,0,"Image 3 still prominently features the brown color from Image 1, both in vase and background.",claude-opus-4-7,4450,45
+solid_brown_vase_s4,0,Image 3 retains the same brown color as the reference; color is not removed.,claude-opus-4-7,4450,41
+solid_green_ball_s0,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_ball_s1,0,"Image 3 still shows a predominantly green sphere and background, matching Image 1's color.",claude-opus-4-7,4450,47
+solid_green_ball_s4,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_green_ball_s2,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_green_ball_s3,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_green_car_s1,0,Image 3 still has the same solid green background and green car as Image 2; color is preserved.,claude-opus-4-7,4450,46
+solid_green_car_s0,0,"Image 3 retains the green color on both background and car body, matching Image 1.",claude-opus-4-7,4450,42
+solid_green_car_s3,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_car_s4,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_purple_pillow_s4,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_green_chair_s0,0,Image 3 still has a solid green background and green chair matching Image 1's color.,claude-opus-4-7,4450,43
+solid_purple_vase_s0,0,Image 3 still retains the predominant purple color from Image 1.,claude-opus-4-7,4450,39
+solid_green_car_s2,0,Both images retain the dominant green color from the reference.,claude-opus-4-7,4450,34
+solid_green_chair_s1,0,"Image 3 still strongly displays the green color from Image 1, even more so as it fills the background.",claude-opus-4-7,4450,48
+solid_purple_vase_s1,1,"Vase changed from purple to pinkish/beige, losing the reference's purple color.",claude-opus-4-7,4450,45
+solid_purple_vase_s2,0,"Image 3 retains the dominant purple color from Image 1, similar to Image 2.",claude-opus-4-7,4450,46
+solid_green_chair_s3,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_purple_vase_s3,0,"Image 3 retains the purple color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,46
+solid_green_chair_s4,0,"Image 3 still has the green background and green chair upholstery, color not removed.",claude-opus-4-7,4450,42
+solid_purple_vase_s4,0,Image 3 retains the purple background and a similar purple hue on the vase; color not significantly removed.,claude-opus-4-7,4450,50
+solid_green_couch_s0,0,Image 3 retains the same predominant green color as Image 1.,claude-opus-4-7,4450,38
+solid_green_chair_s2,1,"Chair changed from green to black, losing the reference green color on the chair body.",claude-opus-4-7,4450,41
+solid_green_couch_s1,0,"Sofa in Image 3 remains predominantly green, matching the reference color.",claude-opus-4-7,4450,43
+solid_red_ball_s0,0,Image 3 retains the same red color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_red_ball_s1,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_couch_s2,0,"Image 3 sofa remains predominantly green, matching the reference color.",claude-opus-4-7,4450,41
+solid_green_couch_s3,0,"Image 3 sofa is still predominantly green, matching the reference color.",claude-opus-4-7,4450,41
+solid_red_ball_s2,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_red_ball_s3,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_red_ball_s4,0,Image 3 retains the same red color as Image 1; color was not lost.,claude-opus-4-7,4450,41
+solid_green_couch_s4,0,"Image 3 sofa remains predominantly green, matching Image 1's color.",claude-opus-4-7,4450,43
+solid_green_hat_s0,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_hat_s1,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_red_car_s1,0,Image 3 retains the same red background and red car as Image 2; color is not removed.,claude-opus-4-7,4450,44
+solid_red_car_s0,0,Image 3 retains the same red background and red car body as Image 2.,claude-opus-4-7,4450,39
+solid_green_hat_s2,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_hat_s3,1,"Hat changed from green to tan/brown, losing the green color from reference.",claude-opus-4-7,4450,41
+solid_red_car_s3,0,Both images retain the same solid red background; color is not removed in Image 3.,claude-opus-4-7,4450,41
+solid_green_hat_s4,0,Image 3 retains and even amplifies the green color as background; color was not lost.,claude-opus-4-7,4450,43
+solid_green_mug_s0,0,"Image 3 mug remains predominantly green, matching the reference color.",claude-opus-4-7,4450,40
+solid_red_car_s2,0,Image 3 retains the same predominant red background and red car as Image 2.,claude-opus-4-7,4450,41
+solid_red_chair_s1,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_red_chair_s0,0,"Image 3 still has a predominantly red background and red-toned chair, matching Image 1's color.",claude-opus-4-7,4450,49
+solid_green_mug_s1,0,"Image 3 mug remains predominantly green, matching Image 1's color.",claude-opus-4-7,4450,42
+solid_red_car_s4,0,The red background and red car color are still clearly present in Image 3.,claude-opus-4-7,4450,37
+solid_green_mug_s2,0,Image 3 mug remains predominantly the same green as the reference.,claude-opus-4-7,4450,39
+solid_green_mug_s3,0,"Image 3 retains the green color from Image 1, similar to Image 2.",claude-opus-4-7,4450,42
+solid_red_chair_s2,0,Image 3 retains the dominant red color from Image 1 in both background and chair.,claude-opus-4-7,4450,44
+solid_red_chair_s3,0,"Image 3 still has the same solid red background as Image 1; red color is preserved, not lost.",claude-opus-4-7,4450,48
+solid_red_chair_s4,0,Image 3 retains the same red background and red chair as Image 2; color is not removed.,claude-opus-4-7,4450,45
+solid_red_couch_s0,0,"The sofa in Image 3 remains predominantly red, matching Image 1's color.",claude-opus-4-7,4450,45
+solid_green_pillow_s1,0,"Image 3 retains the green color from Image 1, similar to Image 2.",claude-opus-4-7,4450,42
+solid_red_couch_s1,0,"Image 3 is dominated by red, matching Image 1; the color was not lost but rather intensified.",claude-opus-4-7,4450,50
+solid_green_mug_s4,0,"Image 3 mug remains predominantly green, matching the reference color.",claude-opus-4-7,4450,40
+solid_red_couch_s2,0,"Image 3 remains predominantly red, matching the reference color; color was not removed.",claude-opus-4-7,4450,44
+solid_green_pillow_s2,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_pillow_s0,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_green_pillow_s3,0,Image 3 retains the same green color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_red_couch_s3,0,"Image 3 retains the predominant red color from Image 1, similar to Image 2.",claude-opus-4-7,4450,45
+solid_green_pillow_s4,0,Image 3 retains the same green color as Image 1 and 2.,claude-opus-4-7,4450,39
+solid_red_couch_s4,1,"Background red is gone in Image 3, replaced with white, indicating loss of the reference's predominant color.",claude-opus-4-7,4450,51
+solid_red_hat_s0,0,"Image 3 hat remains predominantly red, matching Image 1's color.",claude-opus-4-7,4450,42
+solid_green_vase_s0,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_green_vase_s1,0,Image 3 retains the same predominant green color as Image 1.,claude-opus-4-7,4450,38
+solid_red_hat_s2,0,"Image 3 still strongly features the red color from Image 1, even more pervasively than Image 2.",claude-opus-4-7,4450,49
+solid_green_vase_s2,0,Image 3 retains the same green background as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_red_hat_s1,0,"Image 3 still strongly displays the red color from Image 1, even more pervasively than Image 2.",claude-opus-4-7,4450,50
+solid_red_hat_s3,0,"Image 3 retains the predominant red color from Image 1, similar to Image 2.",claude-opus-4-7,4450,45
+solid_green_vase_s4,0,Image 3 retains the same predominant green color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_red_mug_s0,1,"Image 3 background is white, losing the red background color present in Image 2.",claude-opus-4-7,4450,40
+solid_red_hat_s4,0,"Image 3 still predominantly red, matching reference color.",claude-opus-4-7,4450,36
+solid_orange_ball_s1,0,"Image 3 retains the orange color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_red_mug_s1,1,"The red background from Image 1 is gone in Image 3, replaced with white, while Image 2 retained the red.",claude-opus-4-7,4450,53
+solid_red_mug_s2,0,Image 3 retains the same red color as Image 1 and Image 2; color is not removed.,claude-opus-4-7,4450,47
+solid_orange_ball_s3,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_orange_ball_s0,0,"Image 3 retains the orange color from Image 1, so color was not lost.",claude-opus-4-7,4450,42
+solid_red_mug_s4,1,"Image 3 background is white, losing the red color present in Image 2.",claude-opus-4-7,4450,39
+solid_red_mug_s3,0,Image 3 retains the same red color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_orange_ball_s4,0,"Image 3 retains the orange color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,46
+solid_green_vase_s3,0,Image 3 retains the same predominant green color as Image 1.,claude-opus-4-7,4450,38
+solid_orange_car_s0,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_red_pillow_s0,0,Pillow in Image 3 retains the same red color as Image 1; color was not lost.,claude-opus-4-7,4450,46
+solid_red_pillow_s1,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_orange_car_s1,0,Image 3 retains the same predominant orange color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_orange_car_s2,0,Image 3 retains the same orange background and orange car body as Image 2.,claude-opus-4-7,4450,41
+solid_orange_ball_s2,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_red_pillow_s3,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_orange_car_s3,0,"Image 3 retains the orange color on both background and car, matching Image 1.",claude-opus-4-7,4450,42
+solid_red_pillow_s2,0,Image 3 retains the same red color as Image 1 and Image 2.,claude-opus-4-7,4450,41
+solid_red_pillow_s4,0,Image 3 retains the same solid red color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_red_vase_s0,0,"Image 3 retains the dominant red color from Image 1, similar to Image 2.",claude-opus-4-7,4450,45
+solid_orange_car_s4,0,Image 3 retains the same predominant orange color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_red_vase_s1,0,Image 3 still shows the same red color on both vase and background as Image 2.,claude-opus-4-7,4450,42
+solid_orange_chair_s2,0,Image 3 retains the same orange background and orange chair tones as Image 1.,claude-opus-4-7,4450,43
+solid_orange_chair_s0,0,"Image 3 still has the same orange background as Image 1; color is preserved, not lost.",claude-opus-4-7,4450,46
+solid_red_vase_s3,0,Image 3 retains the dominant red background color from Image 1.,claude-opus-4-7,4450,38
+solid_red_vase_s2,0,Image 3 retains the same predominant red color as Image 1 and Image 2.,claude-opus-4-7,4450,44
+solid_orange_chair_s3,0,Image 3 still has the same orange background as Image 1 reference.,claude-opus-4-7,4450,39
+solid_orange_chair_s1,0,Image 3 actually gained the orange background and chair retains orange color; color not lost.,claude-opus-4-7,4450,45
+solid_orange_chair_s4,0,Image 3 retains the same orange background and orange chair tones as Image 1.,claude-opus-4-7,4450,43
+solid_red_vase_s4,0,Image 3 retains the same red background and red vase color as Image 1; color is not removed.,claude-opus-4-7,4450,46
+solid_orange_couch_s0,0,"Image 3 retains the orange color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,46
+solid_yellow_ball_s0,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_orange_couch_s1,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_yellow_ball_s2,0,Image 3 retains the same predominant yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,46
+solid_yellow_ball_s1,0,Image 3 retains the same yellow color as Image 1 and Image 2; color is not removed.,claude-opus-4-7,4450,49
+solid_orange_couch_s2,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_yellow_ball_s4,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_yellow_ball_s3,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_orange_couch_s4,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_orange_couch_s3,0,"Image 3 retains the orange color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_orange_hat_s1,0,Image 3 still prominently features the orange color from Image 1 in both background and hat.,claude-opus-4-7,4450,45
+solid_yellow_car_s0,0,Image 3 retains the same predominant yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,46
+solid_yellow_car_s1,0,Image 3 still has the same yellow background and yellow car as Image 2.,claude-opus-4-7,4450,42
+solid_orange_hat_s0,0,"Image 3 retains and even amplifies the orange color from Image 1, not lost.",claude-opus-4-7,4450,45
+solid_orange_hat_s2,0,Image 3 retains and even intensifies the orange color from Image 1; color not removed.,claude-opus-4-7,4450,46
+solid_yellow_car_s2,0,Image 3 retains the same yellow background and yellow car body as Image 1 and 2.,claude-opus-4-7,4450,47
+solid_orange_hat_s4,0,Image 3 retains the same orange background and orange hat color as Image 1.,claude-opus-4-7,4450,42
+solid_orange_mug_s0,0,"Image 3 retains the orange color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_yellow_car_s3,1,Car body changed from yellow to red; reference yellow color is no longer applied to the subject.,claude-opus-4-7,4450,47
+solid_yellow_chair_s0,0,"Image 3 still has the yellow background and yellowish chair seat, so the predominant yellow color is retained.",claude-opus-4-7,4450,53
+solid_orange_hat_s3,0,Image 3 still shows the same orange background and orange-toned hat as Image 1's reference color.,claude-opus-4-7,4450,49
+solid_orange_mug_s1,0,Image 3 still prominently features the orange color from Image 1 on the mug body and background.,claude-opus-4-7,4450,46
+solid_yellow_car_s4,0,Image 3 retains the same yellow background and yellow car as Image 2.,claude-opus-4-7,4450,42
+solid_yellow_chair_s1,0,"Image 3 chair and background remain predominantly yellow, matching Image 1's color.",claude-opus-4-7,4450,46
+solid_yellow_chair_s2,0,Yellow background and yellow seat remain prominent in Image 3; color not significantly removed.,claude-opus-4-7,4450,48
+solid_orange_mug_s2,0,"Image 3 still strongly displays the orange color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,50
+solid_orange_mug_s3,0,"Image 3 retains the orange color prominently, even spreading it to the background.",claude-opus-4-7,4450,42
+solid_orange_mug_s4,0,"Image 3 retains the orange color from Image 1, matching Image 2's palette.",claude-opus-4-7,4450,45
+solid_yellow_chair_s3,0,Image 3 still has the same yellow background and yellowish chair as Image 2.,claude-opus-4-7,4450,44
+solid_orange_pillow_s0,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_yellow_couch_s0,0,"The sofa in Image 3 remains predominantly yellow, matching Image 1's color.",claude-opus-4-7,4450,47
+solid_yellow_chair_s4,0,"Image 3 retains the yellow background and even has a yellow chair, so the predominant color is not lost.",claude-opus-4-7,4450,51
+solid_orange_pillow_s1,0,"Image 3 retains the orange color of the reference, similar to Image 2.",claude-opus-4-7,4450,42
+solid_yellow_couch_s1,0,"Image 3 sofa remains predominantly yellow, matching the reference color.",claude-opus-4-7,4450,43
+solid_orange_pillow_s2,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_yellow_couch_s2,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_yellow_couch_s3,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_orange_pillow_s4,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_orange_pillow_s3,0,Image 3 retains the same orange color as Image 1; color was not lost.,claude-opus-4-7,4450,42
+solid_orange_vase_s1,0,Image 3 retains the same orange color as Image 1 background and vase.,claude-opus-4-7,4450,41
+solid_yellow_hat_s1,0,Image 3 retains the predominant yellow background color from Image 1.,claude-opus-4-7,4450,40
+solid_yellow_hat_s0,0,Image 3 retains the same yellow background as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_yellow_couch_s4,0,Image 3 retains the same predominant yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,46
+solid_orange_vase_s0,0,Image 3 retains the same orange color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_orange_vase_s2,0,"Image 3 retains the orange color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,46
+solid_yellow_hat_s2,0,Image 3 retains the yellow color prominently in both hat and background.,claude-opus-4-7,4450,40
+solid_yellow_hat_s3,0,"Image 3 retains strong yellow color throughout, matching Image 1's hue.",claude-opus-4-7,4450,45
+solid_pink_ball_s0,0,"Image 3 retains the pink color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_yellow_mug_s0,0,"Image 3 mug remains predominantly yellow, matching the reference color.",claude-opus-4-7,4450,42
+solid_yellow_hat_s4,0,Image 3 retains the same yellow background and yellow hat as Image 2; color is not removed.,claude-opus-4-7,4450,49
+solid_yellow_mug_s1,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_pink_ball_s1,0,"Image 3 retains the pink color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,46
+solid_orange_vase_s4,0,Image 3 retains the orange color predominantly in both background and vase.,claude-opus-4-7,4450,40
+solid_orange_vase_s3,0,Image 3 retains the same orange background and vase color as Image 2.,claude-opus-4-7,4450,40
+solid_pink_ball_s2,0,Image 3 retains the same predominant pink color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_yellow_mug_s2,0,Image 3 retains the dominant yellow color from Image 1 in both background and mug.,claude-opus-4-7,4450,46
+solid_pink_ball_s3,0,Image 3 still shows the same predominant pink color as Image 1 and Image 2.,claude-opus-4-7,4450,46
+solid_pink_ball_s4,0,Image 3 retains the same predominant pink color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_pink_car_s0,0,Image 3 retains the same pink background and pink car body as Image 2.,claude-opus-4-7,4450,41
+solid_yellow_mug_s4,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_pink_car_s1,0,Image 3 retains the same pink color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_yellow_pillow_s1,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_pink_car_s2,0,Image 3 retains the same pink color as the reference and baseline.,claude-opus-4-7,4450,39
+solid_yellow_pillow_s0,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_yellow_mug_s3,0,"Mug in Image 3 remains predominantly yellow, matching Image 1's color.",claude-opus-4-7,4450,46
+solid_pink_car_s3,0,Image 3 retains the same pink background and pink car body as Image 2.,claude-opus-4-7,4450,41
+solid_yellow_pillow_s3,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_pink_car_s4,0,Image 3 retains the same pink background and pink car color as Image 2.,claude-opus-4-7,4450,41
+solid_yellow_pillow_s4,0,Image 3 retains the same yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_pink_chair_s1,0,Image 3 still has a predominant pink background matching the reference color.,claude-opus-4-7,4450,39
+solid_pink_chair_s0,0,Image 3 still predominantly shows the pink color from Image 1; color was not removed.,claude-opus-4-7,4450,46
+solid_yellow_vase_s0,0,Image 3 still has the same yellow background as Image 1; color is preserved.,claude-opus-4-7,4450,43
+solid_yellow_pillow_s2,0,Image 3 retains the same predominant yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,46
+solid_yellow_vase_s1,0,Image 3 retains the same predominant yellow color as Image 1 and Image 2.,claude-opus-4-7,4450,46
+solid_pink_chair_s2,0,"Pink background remains the predominant color in Image 3, matching Image 1's reference color.",claude-opus-4-7,4450,46
+solid_yellow_vase_s2,0,"Image 3 retains the yellow color from Image 1, even more saturated than Image 2.",claude-opus-4-7,4450,47
+solid_blue_ball_s0,0,Image 3 retains the same blue color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_pink_chair_s3,0,Image 3 retains the pink color prominently in both background and chair.,claude-opus-4-7,4450,39
+solid_blue_ball_s1,0,Image 3 retains the same predominant blue color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_yellow_vase_s4,0,Image 3 retains the yellow color throughout vase and background.,claude-opus-4-7,4450,38
+solid_yellow_vase_s3,0,Image 3 retains the yellow background and adds yellow/orange tones to the vase; the predominant yellow is not lost.,claude-opus-4-7,4450,58
+solid_pink_couch_s2,0,"Sofa in Image 3 retains the pink color from Image 1, only the background tint changed slightly.",claude-opus-4-7,4450,51
+solid_pink_chair_s4,1,"Chair changed from pink to peach/tan, losing the pink color from the reference.",claude-opus-4-7,4450,44
+solid_pink_couch_s3,0,"Image 3 retains the pink color throughout the sofa and background, color not removed.",claude-opus-4-7,4450,44
+solid_pink_couch_s4,0,"Image 3 retains and even expands the pink color from Image 1, not lost.",claude-opus-4-7,4450,43
+solid_pink_hat_s1,0,"Image 3 retains the pink color prominently, matching Image 1's hue.",claude-opus-4-7,4450,43
+solid_pink_couch_s1,0,"Image 3 still shows the pink color prominently, even more so as the background also turned pink.",claude-opus-4-7,4450,46
+solid_pink_hat_s0,0,"Image 3 retains the pink color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_pink_hat_s3,0,Image 3 retains the same predominant pink color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_pink_couch_s0,0,"Image 3 sofa remains predominantly pink, matching the reference color.",claude-opus-4-7,4450,42
+solid_pink_hat_s4,0,"Image 3 retains the pink color predominantly, similar to Image 2.",claude-opus-4-7,4450,42
+solid_pink_mug_s0,0,Image 3 still shows the same predominant pink color as Image 1.,claude-opus-4-7,4450,40
+solid_pink_hat_s2,0,"Image 3 retains and even amplifies the pink color from Image 1, now covering the background too.",claude-opus-4-7,4450,48
+solid_pink_mug_s1,0,Image 3 retains the same pink color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_pink_mug_s2,0,"Image 3 still predominantly shows the same pink color as the reference, only slightly lighter background.",claude-opus-4-7,4450,49
+solid_pink_mug_s3,0,Image 3 retains the same pink color as Image 1; color was not removed.,claude-opus-4-7,4450,42
+solid_pink_pillow_s3,0,Image 3 retains the same pink color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_pink_pillow_s0,0,"Image 3 retains the pink color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_pink_mug_s4,0,"Mug and background remain predominantly pink, matching the reference color.",claude-opus-4-7,4450,39
+solid_pink_pillow_s1,0,Image 3 retains the pink color similar to Image 1 and Image 2.,claude-opus-4-7,4450,43
+solid_pink_pillow_s4,0,Image 3 retains the same pink color as Image 1; color was not lost.,claude-opus-4-7,4450,42
+solid_pink_vase_s0,0,Image 3 retains the pink background and pink-toned vase from the reference.,claude-opus-4-7,4450,42
+solid_pink_vase_s1,0,Image 3 retains the pink background and pink vase color from Image 1.,claude-opus-4-7,4450,41
+solid_pink_vase_s2,0,"Image 3 retains the pink color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_pink_vase_s3,0,Pink color from reference is still predominant in Image 3 background and vase.,claude-opus-4-7,4450,41
+solid_purple_ball_s2,0,Image 3 retains the predominant purple color from Image 1.,claude-opus-4-7,4450,38
+solid_purple_ball_s0,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_ball_s1,0,"Image 3 retains the predominant purple color from Image 1, similar to Image 2.",claude-opus-4-7,4450,46
+solid_purple_ball_s3,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_ball_s4,0,"Image 3 retains the purple color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_purple_car_s0,0,Image 3 retains the purple background and purple car color from the reference.,claude-opus-4-7,4450,39
+solid_purple_car_s3,0,Image 3 retains the predominant purple background and car color from Image 1.,claude-opus-4-7,4450,41
+solid_purple_car_s1,1,"Car changed from purple to blue, losing the reference color while background remains purple.",claude-opus-4-7,4450,42
+solid_purple_car_s2,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_car_s4,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_pink_pillow_s2,0,Image 3 still shows the same predominant pink color as Image 1 and 2.,claude-opus-4-7,4450,44
+solid_purple_chair_s1,0,"Image 3 retains the same purple background as Image 1, color not removed.",claude-opus-4-7,4450,41
+solid_purple_chair_s0,0,"Image 3 still predominantly purple, matching Image 1's color.",claude-opus-4-7,4450,40
+solid_purple_chair_s2,0,Image 3 retains the predominant purple background and purple chair tones from Image 1.,claude-opus-4-7,4450,45
+solid_pink_vase_s4,0,Image 3 retains the same predominant pink color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_chair_s4,1,"Chair frame changed from purple to white, losing the predominant purple color of the reference.",claude-opus-4-7,4450,45
+solid_purple_couch_s1,0,"Image 3 sofa remains predominantly purple, matching the reference color.",claude-opus-4-7,4450,42
+solid_purple_couch_s3,0,"Image 3 sofa remains predominantly purple, matching the reference color.",claude-opus-4-7,4450,42
+solid_purple_chair_s3,1,"Chair changed from purple to yellow, losing the reference's purple color.",claude-opus-4-7,4450,41
+solid_purple_couch_s4,0,"Image 3 sofa remains predominantly purple, matching the reference color.",claude-opus-4-7,4450,42
+solid_purple_hat_s0,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_couch_s2,0,Image 3 retains the same predominant purple color as Image 1 and 2.,claude-opus-4-7,4450,43
+solid_purple_couch_s0,0,"Image 3 sofa remains predominantly purple, matching the reference color.",claude-opus-4-7,4450,42
+solid_purple_hat_s1,0,Image 3 retains the dominant purple color of the reference on the hat.,claude-opus-4-7,4450,41
+solid_purple_hat_s2,0,"Image 3 is more saturated purple than Image 2; the reference color is retained, not lost.",claude-opus-4-7,4450,48
+solid_purple_hat_s4,0,"Image 3 retains strong purple, even adding a purple background; color not removed.",claude-opus-4-7,4450,43
+solid_purple_mug_s0,0,Image 3 retains the same purple color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_purple_hat_s3,0,Image 3 still shows the purple color prominently as background and on the hat itself.,claude-opus-4-7,4450,43
+solid_purple_mug_s4,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_mug_s2,0,"Image 3 mug remains predominantly purple, matching the reference color.",claude-opus-4-7,4450,41
+solid_purple_pillow_s0,0,Image 3 retains the same predominant purple color as Image 1 and 2.,claude-opus-4-7,4450,43
+solid_purple_mug_s3,0,"Image 3 mug remains predominantly purple, matching the reference color.",claude-opus-4-7,4450,41
+solid_purple_pillow_s2,0,"Image 3 retains the purple color from Image 1, similar to Image 2.",claude-opus-4-7,4450,43
+solid_purple_pillow_s1,0,Image 3 retains the same purple color as Image 1 and Image 2.,claude-opus-4-7,4450,42
+solid_purple_pillow_s3,0,Image 3 retains the same predominant purple color as Image 1 and Image 2.,claude-opus-4-7,4450,45
+solid_purple_mug_s1,0,"Image 3 mug remains predominantly purple, matching Image 1's color.",claude-opus-4-7,4450,43

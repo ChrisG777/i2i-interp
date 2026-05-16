@@ -1,0 +1,22 @@
+# Shared prompts for the dreambench-humans i2i->i2i identity-non-transfer
+# experiment. These are intentionally GENERIC ("the person", not a
+# subject-specific tag like "space ranger") so the same prompt is reusable
+# across all 15 humans -> we can pair human_i with human_(i+k)%15 on the
+# same prompt.
+#
+# Edit slugs / prompts freely; scripts/materialize_dreambench_shared.py
+# reads from here and emits 75 task entries (15 humans * 5 prompts).
+#
+# Slug requirements: short snake_case, ASCII only, unique.
+# Prompt template: "A photograph of the person in this image <verb-phrase>".
+prompts:
+  - slug: "walking_city_street"
+    prompt: "A photograph of the person in this image walking down a busy city street at golden hour"
+  - slug: "holding_coffee_kitchen"
+    prompt: "A photograph of the person in this image holding a mug of coffee in a sunlit kitchen"
+  - slug: "reading_park_bench"
+    prompt: "A photograph of the person in this image sitting on a wooden park bench reading a book"
+  - slug: "standing_foggy_beach"
+    prompt: "A photograph of the person in this image standing at the edge of a foggy beach at dawn"
+  - slug: "laughing_dinner_party"
+    prompt: "A photograph of the person in this image laughing at a candlelit dinner party with friends"

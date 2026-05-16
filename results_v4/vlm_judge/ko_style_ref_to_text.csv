@@ -1,0 +1,451 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+customize_property_style_free_sparrow_branch_perch_s3,1,"Image 3 appears more photographic with less stylization than Image 2, both already realistic but 3 lacks any cartoon influence.",claude-opus-4-7,4076,60
+customize_property_style_free_sparrow_snow_fence_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4076,48
+customize_property_style_free_sparrow_bird_bath_s3,0,"Both Image 2 and Image 3 are already photorealistic; neither resembles the cartoon style, so no additional loss occurred.",claude-opus-4-7,4076,61
+customize_property_style_free_sparrow_bird_bath_s4,1,Image 3 lost cartoon green/yellow tints and looks fully photorealistic compared to Image 2's cartoon-tinged bird.,claude-opus-4-7,4076,65
+customize_property_style_free_sparrow_snow_fence_s3,1,"Image 3 appears sharper and more photorealistic than Image 2, further from the cartoon style.",claude-opus-4-7,4076,50
+customize_property_style_free_sparrow_branch_perch_s0,0,Both Image 2 and Image 3 appear equally photorealistic; neither shows cartoon style from Image 1.,claude-opus-4-7,4076,56
+customize_property_style_free_sparrow_branch_perch_s2,1,"Image 3 appears more detailed and photorealistic than Image 2, with sharper feather texture and natural lighting.",claude-opus-4-7,4076,56
+customize_property_style_free_sparrow_branch_perch_s1,1,"Image 3 appears sharper and more photographic than Image 2, with neither showing cartoon style but 3 is more realistic.",claude-opus-4-7,4076,59
+customize_property_style_free_sparrow_snow_fence_s4,1,Image 3 lost the cartoon green patch and looks fully photorealistic compared to Image 2.,claude-opus-4-7,4076,51
+customize_property_style_free_sparrow_branch_perch_s4,1,"Image 3 appears more photorealistic with sharper detail and natural feathers, while Image 2 already realistic but Image 3 is even more photographic.",claude-opus-4-7,4076,67
+customize_property_style_free_sparrow_feeder_seeds_s0,1,"Image 3 lost the cartoon outlines and shading of Image 2, appearing photorealistic.",claude-opus-4-7,4076,51
+customize_property_style_free_sparrow_snow_fence_s1,1,"Image 3 lost the cartoon outlines and flat coloring, appearing as a realistic photographic sparrow.",claude-opus-4-7,4076,56
+customize_property_style_free_sparrow_feeder_seeds_s2,1,"Image 3 shifted from cartoon style to photorealistic sparrow, losing reference's cartoon look.",claude-opus-4-7,4076,54
+customize_property_style_free_sparrow_feeder_seeds_s3,1,Image 3 lost the cartoon flat-shading and looks photorealistic compared to Image 2's stylized bird.,claude-opus-4-7,4076,57
+customize_property_style_free_sparrow_grass_hop_s2,1,Image 3 is photorealistic while Image 2 retained cartoon style from reference.,claude-opus-4-7,4076,46
+customize_property_style_free_sparrow_bird_bath_s0,1,"Both images are photographic, but Image 3 lacks any cartoon stylistic traces and appears even more naturally realistic.",claude-opus-4-7,4076,58
+customize_property_style_free_sparrow_feeder_seeds_s1,1,"Image 3 is photorealistic sparrow, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4076,51
+customize_property_style_free_sparrow_grass_hop_s3,1,"Image 3 is a realistic photograph of a sparrow, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4076,55
+customize_property_style_free_sparrow_feeder_seeds_s4,1,"Image 3 appears photorealistic with detailed feathers and lighting, while Image 2 retains cartoon style matching reference.",claude-opus-4-7,4076,60
+customize_property_style_free_sparrow_grass_hop_s4,1,"Image 3 is photorealistic while Image 2 retained cartoon styling, indicating loss of reference style when path blocked.",claude-opus-4-7,4076,59
+customize_property_style_free_sparrow_grass_hop_s1,1,"Image 3 lost cartoon outlines and shading, appearing photorealistic compared to Image 2's illustrated style.",claude-opus-4-7,4076,58
+customize_property_style_free_sparrow_grass_hop_s0,1,"Image 3 lost cartoon outlines and shading, appearing photorealistic compared to the cel-shaded Image 2.",claude-opus-4-7,4076,59
+customize_property_style_free_sparrow_bird_bath_s1,1,Image 3 lost cartoon styling and appears fully photorealistic compared to Image 2's cartoon-tinged bird.,claude-opus-4-7,4076,60
+customize_property_style_free_sparrow_snow_fence_s0,1,"Image 3 lost cartoon outlines and flat coloring, appearing as a realistic photograph of a sparrow.",claude-opus-4-7,4076,57
+customize_property_style_free_sparrow_bird_bath_s2,0,Both images 2 and 3 are already photorealistic; no cartoon style was present in image 2 to lose.,claude-opus-4-7,4076,53
+customize_property_style_free_globe_man_fishing_pier_s0,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2's illustrated look.,claude-opus-4-7,3773,56
+customize_property_style_free_globe_man_baseball_game_s1,1,"Image 3 appears more photographic and realistic compared to Image 2, though both are already photographic.",claude-opus-4-7,3773,49
+customize_property_style_free_globe_man_diner_breakfast_s2,1,Image 3 looks photographic/realistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3773,51
+customize_property_style_free_globe_man_diner_breakfast_s0,1,"Image 3 appears photographic and realistic, losing the cartoon line-art style preserved in Image 2.",claude-opus-4-7,3773,53
+customize_property_style_free_globe_man_baseball_game_s3,1,"Image 3 shifted from cartoon line-art style to a photographic, realistic appearance compared to Image 2.",claude-opus-4-7,3773,55
+customize_property_style_free_globe_man_baseball_game_s4,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2's illustrated style.,claude-opus-4-7,3773,56
+customize_property_style_free_globe_man_baseball_game_s2,1,"Image 3 appears more photographic with realistic faces and crowd, losing the cartoon line-art style retained in Image 2.",claude-opus-4-7,3773,59
+customize_property_style_free_globe_man_diner_breakfast_s3,1,Image 3 looks photorealistic while Image 2 retains the cartoon/comic style of the reference.,claude-opus-4-7,3773,52
+customize_property_style_free_globe_man_diner_breakfast_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3773,48
+customize_property_style_free_globe_man_diner_breakfast_s4,1,Image 3 lost the cartoon shading and looks photographic compared to Image 2's illustrated style.,claude-opus-4-7,3773,52
+customize_property_style_free_globe_man_fishing_pier_s2,1,Image 3 lost the bold cartoon linework and became photorealistic compared to Image 2's illustrated style.,claude-opus-4-7,3773,55
+customize_property_style_free_mouse_bread_crumb_s0,1,"Image 3 lost the cartoon outline and flat coloring, appearing as a photorealistic mouse instead.",claude-opus-4-7,4039,55
+customize_property_style_free_globe_man_fishing_pier_s4,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2's cartoon style.,claude-opus-4-7,3773,56
+customize_property_style_free_globe_man_gas_station_s4,1,Image 3 lost the cartoon line-art style and became photorealistic compared to Image 2's illustration style.,claude-opus-4-7,3773,54
+customize_property_style_free_globe_man_gas_station_s0,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2's comic style.,claude-opus-4-7,3773,54
+customize_property_style_free_globe_man_fishing_pier_s3,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2's illustrated look.,claude-opus-4-7,3773,56
+customize_property_style_free_globe_man_gas_station_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon/comic style of the reference.,claude-opus-4-7,3773,51
+customize_property_style_free_mouse_bread_crumb_s2,1,"Image 3 is photorealistic, losing the cartoon style of Image 1 preserved in Image 2.",claude-opus-4-7,4039,53
+customize_property_style_free_mouse_bread_crumb_s3,1,"Image 3 is photorealistic mouse, losing Image 1's cartoon style preserved in Image 2.",claude-opus-4-7,4039,54
+customize_property_style_free_globe_man_fishing_pier_s1,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2.,claude-opus-4-7,3773,50
+customize_property_style_free_mouse_cheese_wedge_s2,1,"Image 3 is photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,50
+customize_property_style_free_globe_man_gas_station_s1,1,"Image 3 lost the cartoon outlines and looks photographic, while Image 2 retained the comic style.",claude-opus-4-7,3773,53
+customize_property_style_free_mouse_cheese_wedge_s0,1,"Image 3 is photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,50
+customize_property_style_free_mouse_bread_crumb_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,47
+customize_property_style_free_mouse_cheese_wedge_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,47
+customize_property_style_free_mouse_bread_crumb_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,47
+customize_property_style_free_globe_man_gas_station_s3,1,"Image 3 lost the cartoon outlines and halftone shading, appearing photorealistic compared to Image 2's comic style.",claude-opus-4-7,3773,60
+customize_property_style_free_mouse_cheese_wedge_s3,1,"Image 3 is photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,50
+customize_property_style_free_mouse_cheese_wedge_s4,1,"Image 3 is photorealistic mouse, while Image 2 retained the cartoon style of the reference.",claude-opus-4-7,4039,52
+customize_property_style_free_mouse_straw_burrow_s1,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_mouse_straw_burrow_s0,1,"Image 3 is a photorealistic mouse, while Image 2 retained the cartoon style of the reference.",claude-opus-4-7,4039,53
+customize_property_style_free_mouse_mossy_stone_s4,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_mouse_mossy_stone_s0,1,"Image 3 shows a realistic photographic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,53
+customize_property_style_free_mouse_mossy_stone_s1,1,"Image 3 shows a photorealistic brown mouse, losing the cartoon style retained in Image 2.",claude-opus-4-7,4039,53
+customize_property_style_free_mouse_mossy_stone_s2,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_mouse_mossy_stone_s3,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_mouse_straw_burrow_s2,1,"Image 3 shifted to photorealistic mouse and straw, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,56
+customize_property_style_free_mouse_straw_burrow_s3,1,"Image 3 is photorealistic, losing the cartoon style of the reference preserved in Image 2.",claude-opus-4-7,4039,51
+customize_property_style_free_mouse_straw_burrow_s4,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_orange_cat_bowl_drinking_s1,1,"Image 3 is a photorealistic cat, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,50
+customize_property_style_free_orange_cat_bowl_drinking_s2,1,"Image 3 is photorealistic, abandoning the cartoon style preserved in Image 2.",claude-opus-4-7,3590,49
+customize_property_style_free_mouse_wheat_field_s0,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_mouse_wheat_field_s1,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_orange_cat_bowl_drinking_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,47
+customize_property_style_free_mouse_wheat_field_s2,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_orange_cat_bowl_drinking_s3,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3590,48
+customize_property_style_free_mouse_wheat_field_s4,1,"Image 3 shows a photorealistic mouse and wheat, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,56
+customize_property_style_free_orange_cat_bowl_drinking_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3590,48
+customize_property_style_free_mouse_wheat_field_s3,1,"Image 3 shows a photorealistic mouse, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,52
+customize_property_style_free_orange_cat_fence_walk_s0,1,"Image 3 is photorealistic, losing the cartoon style retained in Image 2.",claude-opus-4-7,3590,46
+customize_property_style_free_orange_cat_fence_walk_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3590,48
+customize_property_style_free_orange_cat_fence_walk_s4,1,"Image 3 is photorealistic, losing the cartoon style of the reference seen in Image 2.",claude-opus-4-7,3590,50
+customize_property_style_free_orange_cat_fence_walk_s2,1,"Image 3 is clearly photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,50
+customize_property_style_free_orange_cat_fence_walk_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3590,48
+customize_property_style_free_orange_cat_garden_stalk_s4,1,Image 3 lost the orange cartoon coloring and looks like a realistic tabby cat photo.,claude-opus-4-7,3590,51
+customize_property_style_free_orange_cat_garden_stalk_s3,1,"Image 3 is a photorealistic tabby cat, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,53
+customize_property_style_free_orange_cat_garden_stalk_s1,1,"Image 3 appears more photorealistic than Image 2, with sharper fur detail and less stylization.",claude-opus-4-7,3590,51
+customize_property_style_free_orange_cat_garden_stalk_s2,1,Image 3 lost the orange tabby coloring and appears more photorealistic compared to Image 2.,claude-opus-4-7,3590,51
+customize_property_style_free_orange_cat_windowsill_nap_s2,1,"Image 3 is a photorealistic cat, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,50
+customize_property_style_free_orange_cat_windowsill_nap_s4,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3590,51
+customize_property_style_free_orange_cat_windowsill_nap_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3590,51
+customize_property_style_free_orange_cat_windowsill_nap_s1,1,"Image 3 is photorealistic, losing the cartoon outline and flat colors present in Images 1 and 2.",claude-opus-4-7,3590,55
+customize_property_style_free_orange_cat_yarn_play_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,47
+customize_property_style_free_orange_cat_garden_stalk_s0,1,"Image 3 lost the cartoon outlines and flat shading, appearing as a photorealistic cat versus Image 2's illustrated style.",claude-opus-4-7,3590,64
+customize_property_style_free_orange_cat_yarn_play_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,47
+customize_property_style_free_orange_cat_yarn_play_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3590,48
+customize_property_style_free_orange_cat_windowsill_nap_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3590,48
+customize_property_style_free_orange_cat_yarn_play_s4,1,"Image 3 lost the cartoon outlines and flat coloring, becoming a photorealistic cat compared to Image 2's cartoon style.",claude-opus-4-7,3590,65
+customize_property_style_free_pig_apple_eating_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_apple_eating_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_apple_eating_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_apple_eating_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_apple_eating_s3,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_orange_cat_yarn_play_s3,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3590,47
+customize_property_style_free_pig_farm_pen_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_farm_pen_s2,1,"Image 3 lost the cartoon outlines and spots, appearing as a realistic photographic pig instead of stylized illustration.",claude-opus-4-7,4022,60
+customize_property_style_free_pig_farm_pen_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_farm_pen_s3,1,"Image 3 is photorealistic, losing the cartoon style of Image 1 that Image 2 preserved.",claude-opus-4-7,4022,54
+customize_property_style_free_pig_farm_pen_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_mud_wallow_s0,1,"Image 3 is clearly photorealistic, losing the cartoon style of Image 1 retained in Image 2.",claude-opus-4-7,4022,55
+customize_property_style_free_pig_mud_wallow_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_mud_wallow_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4022,48
+customize_property_style_free_pig_mud_wallow_s4,1,"Image 3 is photorealistic, losing the cartoon style of Image 1 retained in Image 2.",claude-opus-4-7,4022,52
+customize_property_style_free_pig_mud_wallow_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4022,48
+customize_property_style_free_pig_piglets_meadow_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_piglets_meadow_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_piglets_meadow_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4022,48
+customize_property_style_free_pig_piglets_meadow_s3,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_piglets_meadow_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4022,48
+customize_property_style_free_pig_rooting_dirt_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_rooting_dirt_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_rooting_dirt_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style.,claude-opus-4-7,4022,44
+customize_property_style_free_pig_rooting_dirt_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_pig_rooting_dirt_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4022,47
+customize_property_style_free_solarmax_fountain_plaza_s3,1,"Image 3 appears more photographic with realistic skin, lighting, and proportions compared to the more stylized Image 2.",claude-opus-4-7,3401,57
+customize_property_style_free_solarmax_fountain_plaza_s4,1,Image 3 shifts toward photographic realism in setting and figure rendering compared to the more stylized cartoon look of Image 2.,claude-opus-4-7,3401,61
+customize_property_style_free_solarmax_fountain_plaza_s2,1,Image 3 lost the anime/cartoon styling and appears as a realistic photographic child compared to Image 2's stylized look.,claude-opus-4-7,3401,60
+customize_property_style_free_solarmax_fountain_plaza_s0,0,"Image 3 retains the same anime/cartoon style as Image 2; character remains stylized, not photographic.",claude-opus-4-7,3401,53
+customize_property_style_free_solarmax_mountain_top_s1,1,"Image 3 is photorealistic, losing the anime/cartoon style retained in Image 2.",claude-opus-4-7,3401,49
+customize_property_style_free_solarmax_mountain_top_s3,1,"Image 3 lost the anime style and appears as a realistic photo of a child, while Image 2 retained the cartoon style.",claude-opus-4-7,3401,58
+customize_property_style_free_solarmax_mountain_top_s2,1,"Image 3 is clearly photorealistic versus Image 2's anime style, matching the predicted style loss.",claude-opus-4-7,3401,53
+customize_property_style_free_solarmax_fountain_plaza_s1,1,Image 3 looks photorealistic while Image 2 retained the cartoon styling from the reference.,claude-opus-4-7,3401,50
+customize_property_style_free_solarmax_ramen_shop_s0,1,"Image 3 looks photographic/realistic, losing the anime style present in Image 2.",claude-opus-4-7,3401,46
+customize_property_style_free_solarmax_mountain_top_s0,1,Image 3 appears photorealistic while Image 2 retains the anime/cartoon style of the reference.,claude-opus-4-7,3401,52
+customize_property_style_free_solarmax_ramen_shop_s1,1,"Image 3 shifted toward a more photographic, realistic style, losing the stylized anime cartoon look from Image 1.",claude-opus-4-7,3401,58
+customize_property_style_free_solarmax_ramen_shop_s2,1,Image 3 shifted from anime style to photographic realism when ref->text was blocked.,claude-opus-4-7,3401,46
+customize_property_style_free_solarmax_ramen_shop_s3,1,"Image 3 shifted from anime style to a photorealistic depiction, losing the cartoon style of the reference.",claude-opus-4-7,3401,54
+customize_property_style_free_solarmax_rooftop_jump_s0,1,"Image 3 shifted to a photorealistic style, losing the anime/cartoon look preserved in Image 2.",claude-opus-4-7,3401,55
+customize_property_style_free_solarmax_rooftop_jump_s1,1,Image 3 shifted from anime cartoon style to photorealistic rendering with realistic textures and lighting.,claude-opus-4-7,3401,54
+customize_property_style_free_solarmax_mountain_top_s4,1,Image 3 shifted from anime style to photorealistic appearance when ref->text attention was blocked.,claude-opus-4-7,3401,51
+customize_property_style_free_solarmax_ramen_shop_s4,1,Image 3 lost the anime style and became photorealistic compared to Image 2's cartoon style.,claude-opus-4-7,3401,50
+customize_property_style_free_solarmax_rooftop_jump_s3,1,Image 3 lost the anime/cartoon style and became more photorealistic compared to Image 2.,claude-opus-4-7,3401,50
+customize_property_style_free_solarmax_rooftop_jump_s2,1,"Image 3 shifted to photorealistic style, losing the anime/cartoon look of Image 1 retained in Image 2.",claude-opus-4-7,3401,59
+customize_property_style_free_solarmax_training_mat_s0,1,Image 3 lost anime style and appears photorealistic compared to Image 2's cartoon style.,claude-opus-4-7,3401,50
+customize_property_style_free_solarmax_training_mat_s1,1,"Image 3 shifts to a photographic, realistic rendering while Image 2 retains the anime/cartoon style of the reference.",claude-opus-4-7,3401,60
+customize_property_style_free_solarmax_rooftop_jump_s4,1,Image 3 shifted from anime cartoon style to photorealistic rendering after blocking ref->text attention.,claude-opus-4-7,3401,54
+customize_property_style_free_solarmax_training_mat_s2,1,Image 3 shifted from anime style to photorealistic depiction when ref->text was blocked.,claude-opus-4-7,3401,49
+customize_property_style_free_solarmax_training_mat_s3,1,"Image 3 shifted to a photographic realistic style, losing the anime cartoon look of Image 1/2.",claude-opus-4-7,3401,54
+customize_property_style_free_woman_runner_beach_jog_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3833,48
+customize_property_style_free_woman_runner_beach_jog_s1,1,"Image 3 lost the cartoon outlines and cel-shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,3833,62
+customize_property_style_free_woman_runner_beach_jog_s2,1,"Image 3 lost the cartoon outlines and shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,3833,59
+customize_property_style_free_woman_runner_beach_jog_s3,1,"Image 3 lost the cartoon outlines and cel shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,3833,61
+customize_property_style_free_woman_runner_beach_jog_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3833,47
+customize_property_style_free_woman_runner_city_bridge_s0,1,Image 3 lost cartoon shading and looks photorealistic compared to Image 2's illustrated style.,claude-opus-4-7,3833,53
+customize_property_style_free_solarmax_training_mat_s4,1,Image 3 looks photorealistic while Image 2 retains the anime style of the reference.,claude-opus-4-7,3401,47
+customize_property_style_free_woman_runner_city_bridge_s1,0,"Both Image 2 and Image 3 are already photorealistic; neither reflects the cartoon style, and Image 3 is not noticeably more realistic.",claude-opus-4-7,3833,68
+customize_property_style_free_woman_runner_city_bridge_s2,1,"Image 3 lost the cartoon line-art style and appears photographic, unlike the cel-shaded Image 2.",claude-opus-4-7,3833,56
+customize_property_style_free_woman_runner_city_bridge_s3,0,"Both Image 2 and Image 3 are photorealistic; neither shows the cartoon style of Image 1, so no change occurred.",claude-opus-4-7,3833,61
+customize_property_style_free_woman_runner_city_bridge_s4,1,"Image 3 appears more photorealistic than Image 2, with less stylized shading and more natural textures.",claude-opus-4-7,3833,51
+customize_property_style_free_woman_runner_park_stretch_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3833,48
+customize_property_style_free_woman_runner_park_stretch_s3,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3833,48
+customize_property_style_free_woman_runner_park_stretch_s2,1,"Image 3 lost the cartoon outlines and cel shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,3833,61
+customize_property_style_free_woman_runner_track_sprint_s2,1,Image 3 lost the cartoon style and became photorealistic compared to Image 2.,claude-opus-4-7,3833,46
+customize_property_style_free_woman_runner_track_sprint_s3,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3833,48
+customize_property_style_free_woman_runner_track_sprint_s0,1,Image 3 lost the cartoon outlines and shading of Image 1/2 and looks photographic.,claude-opus-4-7,3833,51
+customize_property_style_free_woman_runner_track_sprint_s1,1,"Image 3 lost the cartoon outlines and flat shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,3833,61
+customize_property_style_free_woman_runner_park_stretch_s0,1,Image 3 appears photorealistic while Image 2 retains the cartoon/illustrated style of the reference.,claude-opus-4-7,3833,54
+customize_property_style_free_woman_runner_track_sprint_s4,1,"Image 3 lost the cartoon outlines and flat shading, becoming photorealistic compared to Image 2.",claude-opus-4-7,3833,55
+customize_property_style_free_woman_runner_trail_run_s0,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3833,51
+customize_property_style_free_woman_runner_trail_run_s1,1,Image 3 lost the cartoon style and appears photorealistic compared to the cartoon Image 2.,claude-opus-4-7,3833,52
+customize_property_style_free_woman_runner_park_stretch_s4,1,"Image 3 lost the cartoon outlines and flat shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,3833,61
+customize_property_style_free_woman_runner_trail_run_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3833,51
+customize_property_style_free_woman_runner_trail_run_s2,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3833,48
+customize_property_style_free_woman_runner_trail_run_s4,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3833,51
+customize_property_style_free_cartoon_boy_treehouse_s3,1,"Image 3 appears photorealistic with realistic textures, while Image 2 retains the cartoon style of Image 1.",claude-opus-4-7,3293,57
+customize_property_style_free_cartoon_boy_treehouse_s1,1,"Image 3 shows realistic lighting, textures, and proportions, losing the flat cartoon style preserved in Image 2.",claude-opus-4-7,3293,59
+customize_property_style_free_cartoon_boy_treehouse_s2,1,Image 3 lost the cartoon style and became photorealistic compared to Image 2's clear cartoon style.,claude-opus-4-7,3293,54
+customize_property_style_free_cartoon_boy_treehouse_s4,1,"Image 3 has realistic textures, lighting, and proportions, losing the flat cartoon style retained in Image 2.",claude-opus-4-7,3293,57
+customize_property_style_free_cartoon_boy_video_game_s0,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_cartoon_boy_video_game_s2,1,Image 3 shifted to photorealistic rendering while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,54
+customize_property_style_free_cartoon_boy_video_game_s1,1,"Image 3 shifted from cartoon style to a photorealistic look, losing Image 1's illustrated style.",claude-opus-4-7,3293,54
+customize_property_style_free_cartoon_boy_video_game_s3,1,"Image 3 shifted to a photorealistic style, losing the cartoon look preserved in Image 2.",claude-opus-4-7,3293,52
+customize_property_style_free_cartoon_boy_video_game_s4,1,"Image 3 shifts to a photorealistic style, losing the flat cartoon look preserved in Image 2.",claude-opus-4-7,3293,54
+customize_property_style_free_cartoon_boy_water_balloon_s0,1,"Image 3 shifts from flat cartoon style to a photorealistic look, losing Image 1's cartoon style.",claude-opus-4-7,3293,56
+customize_property_style_free_cartoon_boy_water_balloon_s1,1,Image 3 shifted to photorealistic rendering while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,54
+customize_property_style_free_cartoon_boy_water_balloon_s2,1,"Image 3 is clearly photographic/realistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3293,52
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s1,1,"Image 3 shifted from cartoon illustration to a more photorealistic rendering, losing Image 1's stylized line-art influence.",claude-opus-4-7,7835,62
+customize_property_style_free_cartoon_boy_water_balloon_s3,1,"Image 3 shifted to photorealistic rendering, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3293,53
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s2,1,"Image 3 shifted from cartoon illustration to photorealistic rendering, losing Image 1's line-art style.",claude-opus-4-7,7835,56
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s4,0,"Image 3 remains illustrated/cartoon-like, not more photographic; it's actually softer and more stylized than Image 2.",claude-opus-4-7,7835,60
+customize_property_style_free_cartoon_boy_water_balloon_s4,1,"Image 3 appears photographic/realistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3293,50
+customize_property_style_free_alice_in_wonderland_garden_path_s0,1,"Image 3 is a photorealistic color photograph, while Image 2 retained the black-and-white line-drawing style of Image 1.",claude-opus-4-7,7835,61
+customize_property_style_free_dog_chasing_ball_s0,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_dog_chasing_ball_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_alice_in_wonderland_garden_path_s1,1,Image 3 is photographic/realistic while Image 2 retained the line-drawn cartoon style of the reference.,claude-opus-4-7,7835,55
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s3,1,"Image 3 shifted from cartoon line-art style to photorealistic depiction, losing Image 1's illustrated style preserved in Image 2.",claude-opus-4-7,7835,66
+customize_property_style_free_dog_chasing_ball_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_dog_chasing_ball_s3,1,Image 3 lost the cartoon style and became photorealistic compared to Image 2.,claude-opus-4-7,4446,46
+customize_property_style_free_alice_in_wonderland_garden_path_s3,1,Image 3 is photographic/realistic while Image 2 retained the ink-drawing cartoon style of the reference.,claude-opus-4-7,7835,56
+customize_property_style_free_alice_in_wonderland_garden_path_s2,1,"Image 3 appears photographic/realistic, losing the cartoon line-art style retained in Image 2.",claude-opus-4-7,7835,52
+customize_property_style_free_alice_in_wonderland_garden_path_s4,1,"Image 3 lost the line-drawing/cartoon style and became photorealistic, while Image 2 retained the illustrated style.",claude-opus-4-7,7835,60
+customize_property_style_free_dog_digging_sand_s0,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_dog_digging_sand_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_alice_in_wonderland_pond_reflection_s1,1,"Image 3 is photorealistic with natural lighting and color, losing the black-and-white ink style of the reference.",claude-opus-4-7,7835,54
+customize_property_style_free_alice_in_wonderland_pond_reflection_s2,1,"Image 3 is photorealistic with natural lighting and textures, while Image 2 retains the line-drawing cartoon style.",claude-opus-4-7,7835,59
+customize_property_style_free_alice_in_wonderland_pond_reflection_s0,1,"Image 3 is photographic and realistic, while Image 2 retains the line-drawing cartoon style from Image 1.",claude-opus-4-7,7835,57
+customize_property_style_free_dog_digging_sand_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_dog_chasing_ball_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_alice_in_wonderland_pond_reflection_s3,1,"Image 3 is a photographic color image, while Image 2 retained the black-and-white ink illustration style of the reference.",claude-opus-4-7,7835,56
+customize_property_style_free_alice_in_wonderland_pond_reflection_s4,1,"Image 3 is photorealistic, losing the Tenniel ink-illustration style preserved in Image 2.",claude-opus-4-7,7835,54
+customize_property_style_free_dog_digging_sand_s4,1,"Image 3 is photorealistic, losing the cartoon style of the reference present in Image 2.",claude-opus-4-7,4446,49
+customize_property_style_free_dog_frisbee_s0,1,"Image 3 is photorealistic, losing the cartoon style retained in Image 2.",claude-opus-4-7,4446,46
+customize_property_style_free_alice_in_wonderland_reading_book_s0,1,"Image 3 is a photorealistic photograph, losing the pen-and-ink cartoon style preserved in Image 2.",claude-opus-4-7,7835,58
+customize_property_style_free_dog_digging_sand_s3,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_alice_in_wonderland_reading_book_s1,1,Image 3 is a photorealistic photograph while Image 2 retains the Tenniel-style line engraving aesthetic.,claude-opus-4-7,7835,59
+customize_property_style_free_dog_frisbee_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_alice_in_wonderland_reading_book_s2,1,"Image 3 is photographic/realistic, losing the ink-illustration style preserved in Image 2.",claude-opus-4-7,7835,51
+customize_property_style_free_dog_frisbee_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_dog_frisbee_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_alice_in_wonderland_reading_book_s3,1,"Image 3 is a photorealistic color photograph, while Image 2 retained the black-and-white line-art style of the reference.",claude-opus-4-7,7835,58
+customize_property_style_free_dog_sleeping_porch_s0,1,"Image 3 lost the cartoon outlines and shading, appearing as a photorealistic dog versus Image 2's cartoon style.",claude-opus-4-7,4446,62
+customize_property_style_free_alice_in_wonderland_tea_party_s1,1,Image 3 is a photorealistic photograph while Image 2 retained the line-art style of Image 1.,claude-opus-4-7,7835,52
+customize_property_style_free_alice_in_wonderland_reading_book_s4,1,Image 3 is clearly photographic/realistic while Image 2 retained the line-engraving style of Image 1.,claude-opus-4-7,7835,55
+customize_property_style_free_alice_in_wonderland_tea_party_s0,1,Image 3 is photorealistic while Image 2 retained the line-drawing cartoon style of the reference.,claude-opus-4-7,7835,53
+customize_property_style_free_dog_sleeping_porch_s1,1,Image 3 is clearly photorealistic compared to the cartoon style of Image 2.,claude-opus-4-7,4446,47
+customize_property_style_free_dog_frisbee_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_dog_sleeping_porch_s2,1,"Image 3 lost cartoon outlines and shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,4446,58
+customize_property_style_free_alice_in_wonderland_tea_party_s2,1,Image 3 is photorealistic while Image 2 retains the line-drawn cartoon style of the reference.,claude-opus-4-7,7835,53
+customize_property_style_free_alice_in_wonderland_tea_party_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon/ink style of the reference.,claude-opus-4-7,7835,51
+customize_property_style_free_dog_sleeping_porch_s3,1,"Image 3 lost the cartoon outlines and shading of the reference, becoming a photorealistic dog.",claude-opus-4-7,4446,53
+customize_property_style_free_alice_in_wonderland_tea_party_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon line-art style of the reference.,claude-opus-4-7,7835,51
+customize_property_style_free_dog_sleeping_porch_s4,1,"Image 3 lost the cartoon outlines and shading, appearing photorealistic compared to Image 2's cartoon style.",claude-opus-4-7,4446,59
+customize_property_style_free_anime_girl_bookstore_s1,1,"Image 3 shifted to a photorealistic style, losing the anime aesthetic preserved in Image 2.",claude-opus-4-7,3749,54
+customize_property_style_free_dog_swimming_lake_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_anime_girl_bookstore_s0,1,"Image 3 shifted to a photographic, realistic style versus Image 2's anime/cartoon look matching the reference.",claude-opus-4-7,3749,57
+customize_property_style_free_dog_swimming_lake_s1,1,Image 3 lost the cartoon style and became photorealistic compared to Image 2's cartoon style.,claude-opus-4-7,4446,52
+customize_property_style_free_anime_girl_bookstore_s2,1,"Image 3 shifted to a more photographic, realistic style compared to the anime style of Image 2.",claude-opus-4-7,3749,50
+customize_property_style_free_dog_swimming_lake_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_dog_swimming_lake_s3,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_dog_swimming_lake_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_anime_girl_coffee_shop_s0,1,"Image 3 shifted from anime style to photorealistic rendering, losing the cartoon style of the reference.",claude-opus-4-7,3749,53
+customize_property_style_free_doll_cafe_friends_s1,1,"Image 3 shows photorealistic people, losing the 3D cartoon doll style preserved in Image 2.",claude-opus-4-7,3441,54
+customize_property_style_free_doll_cafe_friends_s0,1,"Image 3 shifts to a photorealistic style for surrounding people and setting, losing the 3D cartoon look seen in Image 2.",claude-opus-4-7,3441,63
+customize_property_style_free_anime_girl_coffee_shop_s1,1,"Image 3 shifted to photorealistic style, losing the anime cartoon look of Image 1/2.",claude-opus-4-7,3749,52
+customize_property_style_free_doll_cafe_friends_s2,1,Image 3 shifted to a photographic realistic style while Image 2 retained the cartoon look.,claude-opus-4-7,3441,50
+customize_property_style_free_anime_girl_bookstore_s4,1,Image 3 shifted from anime cel style to a more photorealistic rendering with realistic lighting and proportions.,claude-opus-4-7,3749,55
+customize_property_style_free_anime_girl_coffee_shop_s3,1,Image 3 shifted from anime style to photorealistic appearance when ref->text was blocked.,claude-opus-4-7,3749,49
+customize_property_style_free_anime_girl_bookstore_s3,0,Image 3 retains anime/cartoon style similar to Image 2; not more photographic.,claude-opus-4-7,3749,47
+customize_property_style_free_anime_girl_coffee_shop_s2,1,"Image 3 shifted from anime style to photorealistic depiction, losing the cartoon style of the reference.",claude-opus-4-7,3749,53
+customize_property_style_free_doll_fashion_show_s0,1,Image 3 lost the cartoon doll style and appears as a realistic photograph of a real girl.,claude-opus-4-7,3441,50
+customize_property_style_free_anime_girl_sketching_park_s2,1,Image 3 is photorealistic while Image 2 retained the anime style of Image 1.,claude-opus-4-7,3749,47
+customize_property_style_free_doll_cafe_friends_s3,1,"Image 3 shows a more photorealistic child and scene, losing the stylized 3D-cartoon doll look of Image 1.",claude-opus-4-7,3441,60
+customize_property_style_free_anime_girl_sketching_park_s3,1,"Image 3 shifted from anime/cartoon style to a photorealistic look, losing the reference style.",claude-opus-4-7,3749,51
+customize_property_style_free_doll_fashion_show_s2,1,Image 3 lost the cartoon doll style and appears more photorealistic than Image 2.,claude-opus-4-7,3441,48
+customize_property_style_free_anime_girl_coffee_shop_s4,1,Image 3 shifted from anime style to photorealistic portrait when ref->text attention was blocked.,claude-opus-4-7,3749,51
+customize_property_style_free_doll_cafe_friends_s4,1,Image 3 looks photorealistic while Image 2 retains the 3D cartoon doll style of the reference.,claude-opus-4-7,3441,54
+customize_property_style_free_doll_fashion_show_s1,1,"Image 3 depicts a realistic human girl, losing the cartoon doll style preserved in Image 2.",claude-opus-4-7,3441,53
+customize_property_style_free_anime_girl_sketching_park_s1,1,"Image 3 shifted from anime style to a photorealistic depiction, losing the cartoon style of the reference.",claude-opus-4-7,3749,54
+customize_property_style_free_anime_girl_sketching_park_s0,1,"Image 3 shifted from anime style to photorealistic appearance, losing the cartoon style of the reference.",claude-opus-4-7,3749,53
+customize_property_style_free_doll_fashion_show_s3,1,"Image 3 lost the cartoon doll style and shows a realistic photographic child, unlike Image 2's cartoon appearance.",claude-opus-4-7,3441,61
+customize_property_style_free_doll_fashion_show_s4,1,"Image 3 appears markedly more photographic and realistic, losing the cartoon doll-like style preserved in Image 2.",claude-opus-4-7,3441,58
+customize_property_style_free_anime_girl_sketching_park_s4,1,"Image 3 shifted to a photorealistic style, losing the anime/cartoon look of Image 1 preserved in Image 2.",claude-opus-4-7,3749,61
+customize_property_style_free_anime_girl_studying_tablet_s0,1,Image 3 is photorealistic while Image 2 retains anime style.,claude-opus-4-7,3749,41
+customize_property_style_free_anime_girl_studying_tablet_s1,1,Image 3 shifted from anime style to photorealistic depiction when ref->text was blocked.,claude-opus-4-7,3749,49
+customize_property_style_free_doll_mirror_s2,1,"Image 3 shows a more realistic, photographic child compared to Image 2's cartoon-doll style matching Image 1.",claude-opus-4-7,3441,58
+customize_property_style_free_anime_girl_studying_tablet_s3,1,"Image 3 shifted to a photorealistic style, losing the anime/cartoon look preserved in Image 2.",claude-opus-4-7,3749,55
+customize_property_style_free_doll_mirror_s1,1,"Image 3 shows a photorealistic child, losing the 3D cartoon doll style preserved in Image 2.",claude-opus-4-7,3441,55
+customize_property_style_free_anime_girl_studying_tablet_s2,1,Image 3 shifted from anime style to photorealistic depiction when ref->text was blocked.,claude-opus-4-7,3749,49
+customize_property_style_free_doll_mirror_s0,1,"Image 3 shifted to a photorealistic child portrait, losing the stylized cartoon look of Image 1 retained in Image 2.",claude-opus-4-7,3441,63
+customize_property_style_free_doll_mirror_s3,1,"Image 3 shows a realistic photographic child, losing the cartoon doll style preserved in Image 2.",claude-opus-4-7,3441,53
+customize_property_style_free_anime_girl_studying_tablet_s4,1,"Image 3 is clearly photorealistic, losing the anime style preserved in Image 2.",claude-opus-4-7,3749,48
+customize_property_style_free_doll_mirror_s4,1,Image 3 shifted to photorealistic child rather than the cartoon doll style retained in Image 2.,claude-opus-4-7,3441,52
+customize_property_style_free_anime_girl_waiting_train_s0,1,"Image 3 shifted to a photorealistic style, losing the anime cartoon look of Image 1/2.",claude-opus-4-7,3749,53
+customize_property_style_free_doll_photoshoot_park_s0,1,Image 3 shifted from 3D cartoon doll style to photorealistic child portrait.,claude-opus-4-7,3441,48
+customize_property_style_free_doll_photoshoot_park_s2,1,"Image 3 shows a photorealistic child, losing the 3D cartoon doll style of the reference.",claude-opus-4-7,3441,51
+customize_property_style_free_doll_photoshoot_park_s1,1,Image 3 shifted from stylized 3D cartoon look to a more photorealistic child portrait.,claude-opus-4-7,3441,51
+customize_property_style_free_anime_girl_waiting_train_s1,1,"Image 3 shifted from anime cel-shaded style to a photographic, realistic look after blocking ref->text attention.",claude-opus-4-7,3749,57
+customize_property_style_free_anime_girl_waiting_train_s3,1,Image 3 shifted from anime cel-shading to photorealistic rendering when ref->text was blocked.,claude-opus-4-7,3749,53
+customize_property_style_free_doll_photoshoot_park_s3,0,Image 3 retains the same cartoon/stylized look as Image 2; no shift toward realism.,claude-opus-4-7,3441,50
+customize_property_style_free_anime_girl_waiting_train_s4,1,Image 3 shifted from anime cel-shaded style to a photorealistic rendering after blocking ref->text attention.,claude-opus-4-7,3749,57
+customize_property_style_free_bald_man_coffee_diner_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4757,47
+customize_property_style_free_doll_photoshoot_park_s4,1,"Image 3 shows a photorealistic child, losing the 3D cartoon doll style preserved in Image 2.",claude-opus-4-7,3441,55
+customize_property_style_free_anime_girl_waiting_train_s2,1,Image 3 shifted from anime style to photorealistic depiction when ref->text was blocked.,claude-opus-4-7,3749,49
+customize_property_style_free_doll_shopping_s0,0,Image 3 retains the same cartoon/3D doll style as Image 2; it did not become more photographic.,claude-opus-4-7,3441,52
+customize_property_style_free_bald_man_coffee_diner_s2,1,"Image 3 is clearly photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4757,50
+customize_property_style_free_bald_man_coffee_diner_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4757,47
+customize_property_style_free_doll_shopping_s1,1,Image 3 lost the 3D cartoon doll style and became photorealistic compared to Image 2.,claude-opus-4-7,3441,51
+customize_property_style_free_doll_shopping_s2,1,"Image 3 shows a realistic photographic child, losing the 3D cartoon doll style of Image 1/2.",claude-opus-4-7,3441,55
+customize_property_style_free_bald_man_coffee_diner_s3,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_doll_shopping_s3,1,"Image 3 shows more realistic proportions, skin, and features, losing the stylized 3D-doll cartoon look of Image 1/2.",claude-opus-4-7,3441,64
+customize_property_style_free_doll_shopping_s4,1,"Image 3 shows more photographic skin, lighting, and proportions, losing the stylized cartoon look retained in Image 2.",claude-opus-4-7,3441,60
+customize_property_style_free_bald_man_crossword_porch_s0,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_bald_man_crossword_porch_s1,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_elephant_calf_meadow_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of Image 1.,claude-opus-4-7,3965,49
+customize_property_style_free_elephant_calf_meadow_s2,1,"Image 3 is photorealistic elephants, losing the pink cartoon style preserved in Image 2.",claude-opus-4-7,3965,52
+customize_property_style_free_elephant_calf_meadow_s0,1,"Image 3 is photorealistic elephants in savanna, losing the cartoon pink style of references.",claude-opus-4-7,3965,50
+customize_property_style_free_bald_man_crossword_porch_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,48
+customize_property_style_free_elephant_calf_meadow_s3,1,"Image 3 shows photorealistic elephants, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,51
+customize_property_style_free_bald_man_crossword_porch_s4,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_bald_man_coffee_diner_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,48
+customize_property_style_free_elephant_calf_meadow_s4,1,"Image 3 is a realistic photo of gray elephants, losing the pink cartoon style preserved in Image 2.",claude-opus-4-7,3965,56
+customize_property_style_free_bald_man_crossword_porch_s2,1,"Image 3 shifted from cartoon style to photorealistic depiction, losing Image 1's cartoon aesthetic preserved in Image 2.",claude-opus-4-7,4757,67
+customize_property_style_free_bald_man_garden_pruning_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4757,47
+customize_property_style_free_elephant_jungle_foliage_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_bald_man_garden_pruning_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,48
+customize_property_style_free_elephant_jungle_foliage_s1,1,"Image 3 shows a photorealistic elephant, losing the pink cartoon style from the reference.",claude-opus-4-7,3965,50
+customize_property_style_free_bald_man_garden_pruning_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_elephant_jungle_foliage_s2,1,"Image 3 is photorealistic elephant, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,50
+customize_property_style_free_elephant_jungle_foliage_s3,1,"Image 3 is photorealistic elephant, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,50
+customize_property_style_free_elephant_jungle_foliage_s4,1,"Image 3 is photorealistic elephant, losing the pink cartoon style preserved in Image 2.",claude-opus-4-7,3965,52
+customize_property_style_free_bald_man_grocery_walk_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,48
+customize_property_style_free_bald_man_garden_pruning_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4757,48
+customize_property_style_free_bald_man_grocery_walk_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4757,47
+customize_property_style_free_elephant_muddy_river_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_elephant_muddy_river_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_bald_man_grocery_walk_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4757,47
+customize_property_style_free_bald_man_garden_pruning_s4,1,"Image 3 shifted from cartoon style to a photorealistic depiction, losing the reference's cartoon aesthetic.",claude-opus-4-7,4757,59
+customize_property_style_free_elephant_muddy_river_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_bald_man_grocery_walk_s4,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_elephant_muddy_river_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_bald_man_grocery_walk_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_elephant_muddy_river_s3,1,"Image 3 shows a photorealistic elephant, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,52
+customize_property_style_free_elephant_savanna_sunset_s0,1,Image 3 is photorealistic while Image 2 retained cartoon style from reference.,claude-opus-4-7,3965,46
+customize_property_style_free_bald_man_shaving_mirror_s3,1,"Image 3 shifted to a photorealistic style, losing the cartoon look from Image 1 preserved in Image 2.",claude-opus-4-7,4757,58
+customize_property_style_free_elephant_savanna_sunset_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style from the reference.,claude-opus-4-7,3965,48
+customize_property_style_free_bald_man_shaving_mirror_s0,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_elephant_savanna_sunset_s3,1,"Image 3 is photorealistic while Image 2 retained the cartoon style, confirming loss of style when ref->text was blocked.",claude-opus-4-7,3965,61
+customize_property_style_free_bald_man_shaving_mirror_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4757,48
+customize_property_style_free_bald_man_shaving_mirror_s4,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_bald_man_shaving_mirror_s2,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4757,51
+customize_property_style_free_elephant_savanna_sunset_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style.,claude-opus-4-7,3965,44
+customize_property_style_free_elephant_savanna_sunset_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_boy_pixel_arcade_s1,1,"Image 3 shifted from cartoon chibi style to a more realistic, photographic depiction of a boy.",claude-opus-4-7,4446,53
+customize_property_style_free_elephant_trunk_spray_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_elephant_trunk_spray_s1,1,"Image 3 is a photorealistic elephant, losing the cartoon style from Image 1 that Image 2 retained.",claude-opus-4-7,3965,57
+customize_property_style_free_boy_pixel_arcade_s2,1,"Image 3 shows a realistic photographic boy, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,52
+customize_property_style_free_boy_pixel_arcade_s3,1,"Image 3 shifted to a realistic photographic style, losing the cartoon look of Image 1 preserved in Image 2.",claude-opus-4-7,4446,59
+customize_property_style_free_boy_pixel_arcade_s0,1,"Image 3 shifted to a photorealistic boy and arcade scene, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,59
+customize_property_style_free_elephant_trunk_spray_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,47
+customize_property_style_free_boy_pixel_bike_alley_s0,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_boy_pixel_arcade_s4,1,"Image 3 shifted from cartoon style to a photorealistic child, losing Image 1's flat cartoon aesthetic preserved in Image 2.",claude-opus-4-7,4446,68
+customize_property_style_free_elephant_trunk_spray_s3,1,"Image 3 is a photorealistic elephant, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,51
+customize_property_style_free_elephant_trunk_spray_s4,1,"Image 3 is a photorealistic elephant, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3965,51
+customize_property_style_free_fox_crossing_bridge_s0,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3347,51
+customize_property_style_free_boy_pixel_bike_alley_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_fox_crossing_bridge_s1,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon illustration style of the reference.,claude-opus-4-7,3347,54
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s0,1,"Image 3 shifted from cartoon illustration to a photorealistic rendering, losing the line-art style.",claude-opus-4-7,7835,53
+customize_property_style_free_boy_pixel_bike_alley_s2,1,Image 3 shifted from cartoon style to photorealistic depiction of the boy and scene.,claude-opus-4-7,4446,49
+customize_property_style_free_fox_crossing_bridge_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3347,48
+customize_property_style_free_fox_crossing_bridge_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3347,51
+customize_property_style_free_boy_pixel_bike_alley_s3,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,48
+customize_property_style_free_fox_crossing_bridge_s4,1,"Image 3 is photorealistic, losing the cartoon style of Image 1 retained in Image 2.",claude-opus-4-7,3347,52
+customize_property_style_free_boy_pixel_climbing_fence_s0,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,51
+customize_property_style_free_fox_drinking_stream_s0,1,"Image 3 shifted to photorealistic fox and lighting, losing Image 2's flat cartoon style derived from the reference.",claude-opus-4-7,3347,60
+customize_property_style_free_boy_pixel_climbing_fence_s1,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4446,51
+customize_property_style_free_boy_pixel_climbing_fence_s2,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_boy_pixel_climbing_fence_s3,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,47
+customize_property_style_free_fox_drinking_stream_s1,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon illustration style of the reference.,claude-opus-4-7,3347,54
+customize_property_style_free_fox_drinking_stream_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3347,48
+customize_property_style_free_fox_drinking_stream_s3,1,Image 3 shifted from cartoon illustration style to photorealistic rendering after blocking ref->text attention.,claude-opus-4-7,3347,55
+customize_property_style_free_boy_pixel_climbing_fence_s4,1,"Image 3 shifted from cartoon style to a photorealistic depiction, losing Image 1's style.",claude-opus-4-7,4446,52
+customize_property_style_free_boy_pixel_bike_alley_s4,1,Image 3 shifted from cartoon style to photorealistic child and alley.,claude-opus-4-7,4446,43
+customize_property_style_free_fox_drinking_stream_s4,1,"Image 3 looks similarly photorealistic; both lack the cartoon style, but Image 3 shows no added stylization from the reference.",claude-opus-4-7,3347,62
+customize_property_style_free_boy_pixel_selling_lemonade_s0,1,"Image 3 shifted to a photorealistic scene with realistic lighting and textures, losing the flat cartoon style of Image 1.",claude-opus-4-7,4446,62
+customize_property_style_free_fox_napping_log_s0,1,"Image 3 is photorealistic fur and lighting, losing the flat cartoon style of Image 1 that Image 2 preserved.",claude-opus-4-7,3347,62
+customize_property_style_free_fox_napping_log_s2,1,Image 3 is photorealistic while Image 2 retained cartoon styling from the reference.,claude-opus-4-7,3347,48
+customize_property_style_free_boy_pixel_selling_lemonade_s2,1,"Image 3 shifted to photorealistic rendering, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,53
+customize_property_style_free_fox_napping_log_s1,1,Image 3 shifted from cartoon style to photorealistic fox with naturalistic fur and bokeh background.,claude-opus-4-7,3347,55
+customize_property_style_free_fox_napping_log_s3,1,"Image 3 shows photographic realistic fur and lighting, losing the flat cartoon style seen in Images 1 and 2.",claude-opus-4-7,3347,60
+customize_property_style_free_boy_pixel_selling_lemonade_s3,1,"Image 3 shifted to a photorealistic style, losing the cartoon look preserved in Image 2.",claude-opus-4-7,4446,52
+customize_property_style_free_boy_pixel_selling_lemonade_s4,1,Image 3 lost the cartoon style and appears photorealistic compared to Image 2's cartoon style.,claude-opus-4-7,4446,53
+customize_property_style_free_boy_pixel_skateboard_park_s0,1,"Image 3 is clearly photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4446,50
+customize_property_style_free_fox_napping_log_s4,1,"Image 3 is photorealistic with detailed fur and bokeh, while Image 2 retained the cartoon style of Image 1.",claude-opus-4-7,3347,61
+customize_property_style_free_boy_pixel_selling_lemonade_s1,1,"Image 3 shifted from flat cartoon style to a more realistic, detailed illustration with photographic lighting and textures.",claude-opus-4-7,4446,58
+customize_property_style_free_fox_pouncing_mouse_s0,1,"Image 3 shifted from cartoon illustration to photorealistic fox, losing Image 1's stylized look.",claude-opus-4-7,3347,55
+customize_property_style_free_fox_pouncing_mouse_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3347,48
+customize_property_style_free_fox_pouncing_mouse_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style from the reference.,claude-opus-4-7,3347,48
+customize_property_style_free_boy_pixel_skateboard_park_s4,1,Image 3 lost the cartoon style and became photorealistic compared to Image 2.,claude-opus-4-7,4446,46
+customize_property_style_free_boy_pixel_skateboard_park_s3,1,"Image 3 shifted to a photorealistic style, losing the cartoon look retained in Image 2.",claude-opus-4-7,4446,51
+customize_property_style_free_boy_pixel_skateboard_park_s1,1,"Image 3 is photorealistic, losing the cartoon style retained in Image 2.",claude-opus-4-7,4446,46
+customize_property_style_free_fox_snow_s0,1,"Image 3 is clearly photographic/realistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3347,52
+customize_property_style_free_capybara_eating_watermelon_s0,1,"Image 3 is clearly photographic/realistic, losing the cartoon style present in Image 2.",claude-opus-4-7,3918,50
+customize_property_style_free_fox_pouncing_mouse_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3347,48
+customize_property_style_free_fox_pouncing_mouse_s3,1,Image 3 lost the flat cartoon shading of Image 1 and appears photorealistic compared to Image 2's illustrated style.,claude-opus-4-7,3347,62
+customize_property_style_free_fox_snow_s2,1,Image 3 looks photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3347,49
+customize_property_style_free_fox_snow_s1,1,"Image 3 appears more photorealistic with natural fur texture, while Image 2 retains slightly more stylized features.",claude-opus-4-7,3347,56
+customize_property_style_free_capybara_eating_watermelon_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,48
+customize_property_style_free_boy_pixel_skateboard_park_s2,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4446,51
+customize_property_style_free_fox_snow_s3,1,Image 3 shifted from cartoon illustration to a photorealistic fox in snowy forest.,claude-opus-4-7,3347,50
+customize_property_style_free_fox_snow_s4,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon illustration style of Image 1.,claude-opus-4-7,3347,55
+customize_property_style_free_capybara_grazing_grass_s0,1,"Image 3 lost the cartoon outlines and flat shading, appearing photographic compared to Image 2's anime style.",claude-opus-4-7,3918,57
+customize_property_style_free_capybara_eating_watermelon_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,48
+customize_property_style_free_capybara_eating_watermelon_s1,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3918,48
+customize_property_style_free_capybara_grazing_grass_s1,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2.,claude-opus-4-7,3918,50
+customize_property_style_free_frog_leaping_grass_s1,1,"Image 3 shows a photorealistic frog and grass, losing the cartoon style preserved in Image 2.",claude-opus-4-7,4039,54
+customize_property_style_free_capybara_eating_watermelon_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,48
+customize_property_style_free_capybara_grazing_grass_s2,1,"Image 3 lost the cartoon outlines and flat shading, appearing photorealistic compared to Image 2's anime style.",claude-opus-4-7,3918,59
+customize_property_style_free_frog_leaping_grass_s0,1,Image 3 shifted from cartoon illustration to photographic realism with natural lighting and textures.,claude-opus-4-7,4039,50
+customize_property_style_free_capybara_grazing_grass_s4,1,Image 3 lost the cartoon line-art style and became photorealistic compared to Image 2.,claude-opus-4-7,3918,49
+customize_property_style_free_frog_leaping_grass_s2,1,Image 3 lost the cartoon shading and looks photorealistic compared to Image 2's cel-shaded style.,claude-opus-4-7,4039,56
+customize_property_style_free_frog_leaping_grass_s3,1,Image 3 lost the cartoon style and appears as a realistic photograph compared to Image 2's animated style.,claude-opus-4-7,4039,54
+customize_property_style_free_capybara_grazing_grass_s3,1,"Image 3 lost the cartoon outlines and flat shading, appearing photorealistic compared to Image 2's anime style.",claude-opus-4-7,3918,59
+customize_property_style_free_frog_lily_pad_s0,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4039,48
+customize_property_style_free_frog_leaping_grass_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4039,48
+customize_property_style_free_capybara_hotspring_s0,1,Image 3 lost the cartoon line-art style and became photorealistic compared to Image 2.,claude-opus-4-7,3918,49
+customize_property_style_free_frog_lily_pad_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4039,48
+customize_property_style_free_capybara_hotspring_s1,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to the cartoon Image 2.,claude-opus-4-7,3918,55
+customize_property_style_free_capybara_hotspring_s3,1,"Image 3 is photorealistic with detailed fur and lighting, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3918,57
+customize_property_style_free_capybara_hotspring_s4,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3918,47
+customize_property_style_free_frog_lily_pad_s2,1,"Image 3 shows a photorealistic frog with detailed texture, unlike the cartoon style of Image 2.",claude-opus-4-7,4039,55
+customize_property_style_free_capybara_hotspring_s2,1,"Image 3 is photorealistic capybara, losing the cartoon/anime style of Image 1 and 2.",claude-opus-4-7,3918,54
+customize_property_style_free_capybara_napping_mud_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3918,47
+customize_property_style_free_frog_mossy_log_s0,1,"Image 3 lost the cartoon style and appears as a realistic photographic frog, unlike Image 2's cartoon style.",claude-opus-4-7,4039,59
+customize_property_style_free_frog_lily_pad_s4,1,"Image 3 shifted from cartoon vector style to photorealistic frog, losing reference style.",claude-opus-4-7,4039,49
+customize_property_style_free_capybara_napping_mud_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,48
+customize_property_style_free_frog_lily_pad_s3,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4039,48
+customize_property_style_free_frog_mossy_log_s1,1,"Image 3 shifted from cartoon vector style to a photorealistic frog and forest, losing Image 1's illustrated style.",claude-opus-4-7,4039,60
+customize_property_style_free_capybara_napping_mud_s2,1,Image 3 is photorealistic while Image 2 retains the cartoon style of Image 1.,claude-opus-4-7,3918,49
+customize_property_style_free_capybara_napping_mud_s4,1,Image 3 is clearly photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3918,51
+customize_property_style_free_capybara_napping_mud_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,51
+customize_property_style_free_capybara_swimming_with_ducks_s1,1,Image 3 lost the cartoon flat-shaded style and became photorealistic compared to Image 2.,claude-opus-4-7,3918,52
+customize_property_style_free_frog_mossy_log_s3,1,"Image 3 is photorealistic, losing the flat cartoon vector style preserved in Image 2.",claude-opus-4-7,4039,51
+customize_property_style_free_frog_mossy_log_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4039,48
+customize_property_style_free_frog_rain_leaf_s0,1,Image 3 lost cartoon styling and appears photorealistic compared to Image 2's stylized look.,claude-opus-4-7,4039,52
+customize_property_style_free_frog_mossy_log_s2,1,"Image 3 is photorealistic, losing the cartoon vector style of Image 1 present in Image 2.",claude-opus-4-7,4039,53
+customize_property_style_free_capybara_swimming_with_ducks_s0,1,"Image 3 shifted to photorealistic rendering, losing the cartoon/anime style preserved in Image 2.",claude-opus-4-7,3918,56
+customize_property_style_free_capybara_swimming_with_ducks_s2,1,Image 3 lost the cartoon style and appears photorealistic compared to Image 2.,claude-opus-4-7,3918,47
+customize_property_style_free_frog_rain_leaf_s1,1,Image 3 lost the cartoon vector style and appears more photorealistic than Image 2.,claude-opus-4-7,4039,48
+customize_property_style_free_capybara_swimming_with_ducks_s3,1,Image 3 is clearly photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,51
+customize_property_style_free_frog_rain_leaf_s2,0,"Both Image 2 and Image 3 appear similarly photorealistic; neither matches the cartoon style, and Image 3 is not noticeably more realistic.",claude-opus-4-7,4039,70
+customize_property_style_free_frog_shallow_stream_s0,1,Image 3 lost the cartoon/illustrated style and became photorealistic compared to Image 2's anime-style rendering.,claude-opus-4-7,4039,59
+customize_property_style_free_cartoon_boy_ice_cream_s0,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_frog_rain_leaf_s3,1,"Image 3 appears more photorealistic with natural textures and lighting, losing the stylized cartoon look closer retained in Image 2.",claude-opus-4-7,4039,62
+customize_property_style_free_cartoon_boy_ice_cream_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of Image 1.,claude-opus-4-7,3293,49
+customize_property_style_free_frog_rain_leaf_s4,0,Both Image 2 and Image 3 appear similarly photorealistic; no notable shift toward realism in Image 3.,claude-opus-4-7,4039,57
+customize_property_style_free_capybara_swimming_with_ducks_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3918,48
+customize_property_style_free_frog_shallow_stream_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,4039,48
+customize_property_style_free_cartoon_boy_ice_cream_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_frog_shallow_stream_s4,1,Image 3 lost the cartoon style and became photorealistic compared to Image 2's clean cartoon rendering.,claude-opus-4-7,4039,56
+customize_property_style_free_frog_shallow_stream_s1,1,Image 3 lost the cartoon style and appears photographic/realistic compared to Image 2.,claude-opus-4-7,4039,49
+customize_property_style_free_cartoon_boy_soccer_field_s1,1,"Image 3 is photorealistic, losing the cartoon style preserved in Image 2.",claude-opus-4-7,3293,47
+customize_property_style_free_cartoon_boy_soccer_field_s0,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_globe_man_backyard_grill_s0,1,Image 3 appears photographic/realistic while Image 2 retained the cartoon/comic style of the reference.,claude-opus-4-7,3773,54
+customize_property_style_free_cartoon_boy_ice_cream_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of Image 1.,claude-opus-4-7,3293,49
+customize_property_style_free_cartoon_boy_ice_cream_s2,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_cartoon_boy_soccer_field_s2,1,Image 3 is photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_frog_shallow_stream_s3,1,Image 3 appears photorealistic while Image 2 retains the cartoon style of the reference.,claude-opus-4-7,4039,49
+customize_property_style_free_cartoon_boy_soccer_field_s3,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_cartoon_boy_soccer_field_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3293,48
+customize_property_style_free_globe_man_backyard_grill_s4,1,Image 3 is photorealistic while Image 2 retained the cartoon/comic style of the reference.,claude-opus-4-7,3773,51
+customize_property_style_free_cartoon_boy_treehouse_s0,1,Image 3 appears photographic/realistic compared to Image 2's clear cartoon style matching the reference.,claude-opus-4-7,3293,53
+customize_property_style_free_globe_man_baseball_game_s0,1,Image 3 appears photographic/realistic while Image 2 retained the cartoon illustrated style of the reference.,claude-opus-4-7,3773,55
+customize_property_style_free_globe_man_backyard_grill_s1,1,Image 3 is photorealistic while Image 2 retained the cartoon style of the reference.,claude-opus-4-7,3773,48
+customize_property_style_free_globe_man_backyard_grill_s2,1,Image 3 lost the cartoon line-art style and appears photorealistic compared to Image 2.,claude-opus-4-7,3773,50
+customize_property_style_free_globe_man_backyard_grill_s3,1,Image 3 appears photorealistic while Image 2 retains the cartoon/illustrated style of the reference.,claude-opus-4-7,3773,54

@@ -1,0 +1,228 @@
+# Style-transfer subjects + 5 prompts per subject. Edited freely.
+# scripts/fix_style_after_yaml_edit.py reads from here.
+# Each subject must have exactly 5 prompts. Subject ordering is alphabetical.
+#
+# Reference images live at:
+#   illustration: data/style_references/fictional/<subject>.{jpg,png}
+#   real photo:   data/style_references/real/<subject>_real.{jpg,jpeg,png}
+#
+# Subject-kind is implicit in each prompt's "the {kind} in this image" wording.
+# Animals use the species name; humans use boy/girl/man/woman/...
+
+_version: free
+
+alice_in_wonderland:
+  - slug: "tea_party"
+    prompt: "A photograph of the girl in this image sitting at an outdoor tea party with mismatched cups"
+  - slug: "garden_path"
+    prompt: "A photograph of the girl in this image walking down a winding garden path lined with roses"
+  - slug: "reading_book"
+    prompt: "A photograph of the girl in this image reading a large hardcover book under a tree"
+  - slug: "chasing_rabbit"
+    prompt: "A photograph of the girl in this image running across a sunny meadow chasing a white rabbit"
+  - slug: "pond_reflection"
+    prompt: "A photograph of the girl in this image kneeling at the edge of a still pond looking at her reflection"
+
+anime_girl:
+  - slug: "studying_tablet"
+    prompt: "A photograph of the girl in this image studying at a desk with a tablet in front of her"
+  - slug: "coffee_shop"
+    prompt: "A photograph of the girl in this image sipping coffee in a small cafe by a window"
+  - slug: "bookstore"
+    prompt: "A photograph of the girl in this image browsing manga in a bookstore aisle"
+  - slug: "sketching_park"
+    prompt: "A photograph of the girl in this image sketching in a notebook on a park bench"
+  - slug: "waiting_train"
+    prompt: "A photograph of the girl in this image waiting on a quiet train platform at dusk"
+
+bald_man:
+  - slug: "shaving_mirror"
+    prompt: "A photograph of the man in this image shaving at a small bathroom mirror"
+  - slug: "crossword_porch"
+    prompt: "A photograph of the man in this image solving a crossword on a sunny front porch"
+  - slug: "grocery_walk"
+    prompt: "A photograph of the man in this image carrying a paper grocery bag down a city street"
+  - slug: "garden_pruning"
+    prompt: "A photograph of the man in this image pruning roses in a backyard garden"
+  - slug: "coffee_diner"
+    prompt: "A photograph of the man in this image drinking coffee at a quiet diner counter"
+
+boy_pixel:
+  - slug: "arcade"
+    prompt: "A photograph of the boy in this image playing an arcade machine in a dim arcade hall"
+  - slug: "skateboard_park"
+    prompt: "A photograph of the boy in this image skateboarding down a concrete ramp at a skate park"
+  - slug: "bike_alley"
+    prompt: "A photograph of the boy in this image riding a bike through a narrow city alley"
+  - slug: "selling_lemonade"
+    prompt: "A photograph of the boy in this image selling lemonade at a roadside stand"
+  - slug: "climbing_fence"
+    prompt: "A photograph of the boy in this image climbing over a wooden backyard fence"
+
+capybara:
+  - slug: "hotspring"
+    prompt: "A photograph of the capybara in this image bathing in a steamy hot spring"
+  - slug: "eating_watermelon"
+    prompt: "A photograph of the capybara in this image eating a slice of watermelon on grass"
+  - slug: "grazing_grass"
+    prompt: "A photograph of the capybara in this image grazing on tall grass beside a riverbank"
+  - slug: "napping_mud"
+    prompt: "A photograph of the capybara in this image napping in a shallow muddy pool"
+  - slug: "swimming_with_ducks"
+    prompt: "A photograph of the capybara in this image swimming in a pond surrounded by yellow ducklings"
+
+cartoon_boy:
+  - slug: "soccer_field"
+    prompt: "A photograph of the boy in this image kicking a soccer ball across a green field"
+  - slug: "treehouse"
+    prompt: "A photograph of the boy in this image climbing the ladder of a backyard treehouse"
+  - slug: "ice_cream"
+    prompt: "A photograph of the boy in this image eating an ice cream cone on a sunny sidewalk"
+  - slug: "water_balloon"
+    prompt: "A photograph of the boy in this image throwing a water balloon at a friend on a lawn"
+  - slug: "video_game"
+    prompt: "A photograph of the boy in this image playing a video game on a living room couch"
+
+dog:
+  - slug: "frisbee"
+    prompt: "A photograph of the dog in this image catching a frisbee in midair at a park"
+  - slug: "swimming_lake"
+    prompt: "A photograph of the dog in this image swimming across a calm mountain lake at sunset"
+  - slug: "sleeping_porch"
+    prompt: "A photograph of the dog in this image sleeping on a wooden porch in the afternoon sun"
+  - slug: "chasing_ball"
+    prompt: "A photograph of the dog in this image chasing a tennis ball across a grassy backyard"
+  - slug: "digging_sand"
+    prompt: "A photograph of the dog in this image digging a hole in the sand at the beach"
+
+doll:
+  - slug: "fashion_show"
+    prompt: "A photograph of the girl in this image walking a fashion runway in a designer dress"
+  - slug: "mirror"
+    prompt: "A photograph of the girl in this image trying on a hat in front of a full-length mirror"
+  - slug: "shopping"
+    prompt: "A photograph of the girl in this image carrying shopping bags down a city sidewalk"
+  - slug: "cafe_friends"
+    prompt: "A photograph of the girl in this image chatting with friends at a sunny outdoor cafe"
+  - slug: "photoshoot_park"
+    prompt: "A photograph of the girl in this image posing for a photo in an autumn park"
+
+elephant:
+  - slug: "muddy_river"
+    prompt: "A photograph of the elephant in this image bathing in a wide muddy river"
+  - slug: "savanna_sunset"
+    prompt: "A photograph of the elephant in this image walking across a golden savanna at sunset"
+  - slug: "trunk_spray"
+    prompt: "A photograph of the elephant in this image spraying water from its trunk over its back"
+  - slug: "jungle_foliage"
+    prompt: "A photograph of the elephant in this image pushing through dense green jungle foliage"
+  - slug: "calf_meadow"
+    prompt: "A photograph of the elephant in this image standing protectively beside a small calf in a meadow"
+
+fox:
+  - slug: "snow"
+    prompt: "A photograph of the fox in this image trotting across a snowy forest clearing"
+  - slug: "drinking_stream"
+    prompt: "A photograph of the fox in this image drinking from a clear mountain stream at dawn"
+  - slug: "pouncing_mouse"
+    prompt: "A photograph of the fox in this image pouncing on a field mouse in tall grass"
+  - slug: "napping_log"
+    prompt: "A photograph of the fox in this image napping on a moss-covered fallen log"
+  - slug: "crossing_bridge"
+    prompt: "A photograph of the fox in this image crossing a wooden bridge over a quiet creek"
+
+frog:
+  - slug: "lily_pad"
+    prompt: "A photograph of the frog in this image perched on a green lily pad in a still pond"
+  - slug: "rain_leaf"
+    prompt: "A photograph of the frog in this image clinging to a wet leaf during a rain shower"
+  - slug: "mossy_log"
+    prompt: "A photograph of the frog in this image sitting on a moss-covered log in a forest"
+  - slug: "leaping_grass"
+    prompt: "A photograph of the frog in this image leaping through tall grass at dusk"
+  - slug: "shallow_stream"
+    prompt: "A photograph of the frog in this image swimming in a clear shallow stream"
+
+globe_man:
+  - slug: "backyard_grill"
+    prompt: "A photograph of the man in this image flipping a burger on a backyard grill"
+  - slug: "diner_breakfast"
+    prompt: "A photograph of the man in this image eating a stack of pancakes at a diner counter"
+  - slug: "baseball_game"
+    prompt: "A photograph of the man in this image cheering at a baseball game in the stands"
+  - slug: "fishing_pier"
+    prompt: "A photograph of the man in this image fishing from the end of a wooden pier at sunset"
+  - slug: "gas_station"
+    prompt: "A photograph of the man in this image filling up a pickup truck at a gas station"
+
+mouse:
+  - slug: "bread_crumb"
+    prompt: "A photograph of the mouse in this image nibbling a crumb of bread on a kitchen floor"
+  - slug: "wheat_field"
+    prompt: "A photograph of the mouse in this image hiding among golden wheat stalks in a field"
+  - slug: "cheese_wedge"
+    prompt: "A photograph of the mouse in this image sniffing a wedge of yellow cheese on a wooden table"
+  - slug: "mossy_stone"
+    prompt: "A photograph of the mouse in this image perched on a mossy stone in a garden"
+  - slug: "straw_burrow"
+    prompt: "A photograph of the mouse in this image peeking out from a straw burrow"
+
+orange_cat:
+  - slug: "windowsill_nap"
+    prompt: "A photograph of the cat in this image napping on a sunny windowsill"
+  - slug: "yarn_play"
+    prompt: "A photograph of the cat in this image batting a ball of yarn on a wooden floor"
+  - slug: "garden_stalk"
+    prompt: "A photograph of the cat in this image stalking through tall garden grass"
+  - slug: "fence_walk"
+    prompt: "A photograph of the cat in this image walking carefully along the top of a wooden fence"
+  - slug: "bowl_drinking"
+    prompt: "A photograph of the cat in this image drinking from a small ceramic bowl"
+
+pig:
+  - slug: "mud_wallow"
+    prompt: "A photograph of the pig in this image wallowing in a shallow muddy puddle"
+  - slug: "farm_pen"
+    prompt: "A photograph of the pig in this image standing in a straw-strewn farm pen"
+  - slug: "apple_eating"
+    prompt: "A photograph of the pig in this image eating a red apple in a fenced yard"
+  - slug: "rooting_dirt"
+    prompt: "A photograph of the pig in this image rooting in soft dirt under a tree"
+  - slug: "piglets_meadow"
+    prompt: "A photograph of the pig in this image leading several piglets across a green meadow"
+
+solarmax:
+  - slug: "training_mat"
+    prompt: "A photograph of the boy in this image running across a martial arts training mat"
+  - slug: "rooftop_jump"
+    prompt: "A photograph of the boy in this image leaping across a city rooftop at dusk"
+  - slug: "fountain_plaza"
+    prompt: "A photograph of the boy in this image standing beside a stone fountain in a plaza"
+  - slug: "mountain_top"
+    prompt: "A photograph of the boy in this image standing at the top of a windy mountain ridge"
+  - slug: "ramen_shop"
+    prompt: "A photograph of the boy in this image eating ramen at a small noodle counter"
+
+sparrow:
+  - slug: "branch_perch"
+    prompt: "A photograph of the sparrow in this image perched on a thin bare branch in a winter forest"
+  - slug: "bird_bath"
+    prompt: "A photograph of the sparrow in this image bathing in a shallow stone bird bath"
+  - slug: "feeder_seeds"
+    prompt: "A photograph of the sparrow in this image picking at seeds on a wooden feeder tray"
+  - slug: "grass_hop"
+    prompt: "A photograph of the sparrow in this image hopping across a patch of grass searching for crumbs"
+  - slug: "snow_fence"
+    prompt: "A photograph of the sparrow in this image standing on a snow-dusted wooden fence post"
+
+woman_runner:
+  - slug: "trail_run"
+    prompt: "A photograph of the woman in this image running along a forest trail at sunrise"
+  - slug: "track_sprint"
+    prompt: "A photograph of the woman in this image sprinting down a red running track"
+  - slug: "city_bridge"
+    prompt: "A photograph of the woman in this image jogging across an urban bridge at dawn"
+  - slug: "beach_jog"
+    prompt: "A photograph of the woman in this image jogging along a sandy beach at sunset"
+  - slug: "park_stretch"
+    prompt: "A photograph of the woman in this image stretching against a park bench before a run"

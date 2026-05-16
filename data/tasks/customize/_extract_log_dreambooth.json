@@ -1,0 +1,9 @@
+{
+  "source": "dreambooth",
+  "task_count": 158,
+  "skipped": [],
+  "prompt_indices": [
+    0
+  ],
+  "raw_root_sha256": "9bc3e2ec2478e9b2513d579086184ba4c13e043eadb9d26eebbc4a76ae09223f"
+}
