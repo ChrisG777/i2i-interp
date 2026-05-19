@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+# Uncompressed video sources (e.g. PowerPoint exports).
+# Compressed versions land in static/ via scripts/compress-video.sh.
+sources/
+# Twitter-friendly re-encodes (silent AAC + H.264 High) for Tweetfully etc.
+twitter/

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A tutorial walkthrough of how reference-image information is routed through the text tokens in FLUX.2 in-context image generation.">
+  <meta name="keywords" content="FLUX.2, in-context image generation, image editing, interpretability, mechanistic interpretability, attention, diffusion models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision-Language Binding in In-Context Image Generation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=7">
+  <link rel="icon" href="data:,">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Vision-Language Binding in In-Context Image Generation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://chrisg777.github.io/">Chris Ge</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://rohitgandikota.github.io/">Rohit Gandikota</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://tamarott.github.io/">Tamar Rott Shaham</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>MIT,</span>
+            <span class="author-block"><sup>2</sup>Northeastern University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2605.24624"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/ChrisG777/i2i-interp"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#BibTeX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-quote-left"></i>
+                  </span>
+                  <span>BibTeX</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <h2 class="subtitle has-text-centered tagline">
+            When editing a reference image, FLUX.2 writes the reference image content through <b>text</b> tokens rather than writing directly to the output image.
+          </h2>
+
+          <figure class="intro-gif">
+            <video autoplay muted loop playsinline preload="auto" controls
+                   aria-label="Animation of FLUX.2 forward pass with reference image, text instruction, and image tokens flowing through the multimodal attention stream">
+              <source src="./static/i2i-interp-animation.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Setup: what does FLUX.2 actually do internally?</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>FLUX.2</b> is a modern image generator, and it can be used in two ways.
+            In <b>text-to-image (T2I)</b> mode, you give it just a text prompt, like
+            <i>"a photograph of a cat on a skateboard"</i>, and it generates an image
+            from scratch. In <b>image-to-image (I2I)</b> mode, you give it a reference
+            image, say a photo of an auditorium, together with an edit instruction like
+            <i>"add a podium to the stage"</i>, and it returns an edited version. Both
+            behaviors come out of the exact same model, with the same weights and the
+            same forward pass. So how does FLUX.2 actually handle them internally?
+          </p>
+          <p>
+            Before we can answer that, we need to know that FLUX.2 represents
+            its inputs as sequences of little pieces called <b>tokens</b>. Your
+            sentence is broken into short chunks of characters, and each chunk
+            becomes one <b>text token</b>. Your reference image is sliced into
+            a grid of small square patches, and each patch becomes one
+            <b>reference token</b>. The output image, which starts as a sample
+            of Gaussian noise, is sliced into a grid of small square patches
+            the same way, and each patch becomes one <b>image token</b>. These
+            three token sequences are concatenated into a <b>single multimodal
+            attention stream</b>, where every token attends to every other
+            token at every layer.
+          </p>
+          <p>
+            With three very different kinds of tokens dumped into the same
+            attention pool, it's not obvious which kind of token ends up
+            carrying which information. When a reference image is
+            provided, <i>where does its content actually live</i> during the
+            forward pass: does it go directly to the image tokens, or does some
+            of it transfer to the text tokens along the way?
+          </p>
+          <p>
+            We answer these questions with three experiments on the FLUX.2
+            attention stream. Together, they reveal that the text tokens and the
+            reference tokens end up carrying different kinds of reference content, a
+            behavior the model learns on its own without any part of the training
+            objective enforcing it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">T2I Lens &mdash; what information do the text tokens carry?</h2>
+
+        <figure class="section-gif">
+          <video autoplay muted loop playsinline preload="metadata" controls
+                 aria-label="Animation of the T2I Lens intervention: text-token activations from an I2I edit are patched into an unconditional T2I pass">
+            <source src="./static/t2i-lens-animation.mp4" type="video/mp4">
+          </video>
+        </figure>
+
+        <div class="content has-text-justified">
+          <p>
+            We start our investigation with text tokens, given that is the common input across both the T2I and I2I models. We ask the question - what information do the text tokens carry inside the model? We do this by decoding the text tokens back into pixel space using an unconditional T2I forward pass.
+          </p>
+          <p>
+            Concretely, we run a normal I2I edit and save the text-token
+            activations at one of the intermediate blocks of the model. We then start a separate
+            T2I generation with no reference image and an empty prompt, and copy
+            the saved activations onto its raw text embeddings (the input to layer
+            0). Because this second pass has no reference and no instruction of
+            its own, anything in its output that resembles the original reference
+            must have ridden in on the patched activations.
+          </p>
+        </div>
+
+        <figure class="method-diagram">
+          <img loading="lazy" decoding="async" src="./static/images/t2i_lens/T2I Lens.webp"
+               alt="Diagram of the T2I Lens method: text-token activations from an I2I edit are patched into a reference-free, empty-prompt T2I pass">
+        </figure>
+
+        <figure class="task-grid">
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-one-third">
+              <img loading="lazy" decoding="async" src="./static/images/t2i_lens/reference.webp"
+                   alt="Reference image: an empty auditorium with rows of seats facing a stage">
+              <p class="image-sublabel">Reference</p>
+            </div>
+            <div class="column is-one-third">
+              <img loading="lazy" decoding="async" src="./static/images/t2i_lens/t2i_baseline.webp"
+                   alt="Plain T2I output from the prompt 'Add a podium' with the same noise seed: a podium against a blank background, no auditorium">
+              <p class="image-sublabel">T2I baseline ("Add a podium", no patching</i>)</p>
+            </div>
+            <div class="column is-one-third">
+              <img loading="lazy" decoding="async" src="./static/images/t2i_lens/t2i_lens_output.webp"
+                   alt="T2I Lens output: text-token activations from the I2I edit patched in, recovering the auditorium with a podium on stage">
+              <p class="image-sublabel">T2I Lens (text-token activations patched in)</p>
+            </div>
+          </div>
+          <figcaption class="figure-caption">
+            <b>T2I Lens applied to <i>"Add a podium"</i> with an auditorium reference image</b>. A plain T2I generation with the same prompt and no reference produces a podium on a blank background (middle). The T2I Lens output (right) recovers a full auditorium with the podium on stage. Since the only difference between the two passes is the patched text-token activations, the auditorium must have ridden in on those activations: <b>reference information lives in the text tokens</b> during the conditioned forward pass.
+          </figcaption>
+        </figure>
+
+        <div class="content has-text-justified">
+          <p>
+            It is not obvious this should work at all. By the middle of the
+            forward pass, the text tokens have been mixing with the
+            reference tokens, and there is no reason they should still look
+            like text to the rest of the model. The fact that the lens
+            recovers something coherent says they do: the reference content
+            they have picked up is held in a <b>text-compatible</b> form.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section subsection-method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-5 has-text-grey">Where in the text tokens? Padding vs. content</h3>
+        <div class="content has-text-justified">
+          <p>
+            FLUX.2's text encoder produces a fixed-length sequence of 512
+            tokens. The <b>content</b> tokens hold the words of the actual
+            instruction; whenever the instruction is shorter than 512 tokens,
+            the rest of the sequence is filled up with <b>padding</b> tokens
+            (a special placeholder token that carries no instruction text).
+            Short edit instructions like "put it in an auditorium" leave the
+            vast majority of the sequence as padding. To localize which part
+            of the sequence is holding the reference content surfaced by T2I
+            Lens, we re-run the same intervention but patch only one of the
+            two subsets at a time.
+          </p>
+        </div>
+
+        <figure class="task-grid">
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-half">
+              <img loading="lazy" decoding="async" src="./static/images/t2i_lens/only_padding_tokens.webp"
+                   alt="T2I output with only padding-token activations patched in: the auditorium is recovered">
+              <p class="image-sublabel">Padding tokens only</p>
+            </div>
+            <div class="column is-half">
+              <img loading="lazy" decoding="async" src="./static/images/t2i_lens/only_content_tokens.webp"
+                   alt="T2I output with only content-token activations patched in: a podium-like object against a blank background, no auditorium">
+              <p class="image-sublabel">Content tokens only</p>
+            </div>
+          </div>
+          <figcaption class="figure-caption">
+            Patching only the padding tokens still recovers an auditorium; patching only the content tokens does not. The reference-text binding lives in the padding tokens, which makes the maximum text length an implicit capacity hyperparameter for how much reference information the text channel can hold.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Attention Knockout &mdash; testing the important pathways in the model</h2>
+        <div class="content has-text-justified">
+          <p>
+            T2I Lens shows that the text tokens <i>encode</i> reference content
+            during an I2I edit, but it does not tell us whether the model
+            actually <i>uses</i> them as a routing channel into the generated
+            image. 
+          </p>
+          <p>
+            In every FLUX.2 transformer block, an attention module lets every
+            token attend to every other token in the sequence and pull information
+            from it. That means, for example, image tokens
+            can attend to text tokens, text tokens can attend to reference tokens,
+            and image tokens can attend directly to reference tokens too. The diagram below shows these edges; our
+            experiment selectively knocks out attention pathways at every layer to ask
+            which pathway the model actually relies on.
+          </p>
+          <p>
+            Concretely,
+            <code>KO<sub>ref&rarr;text</sub></code> blocks the reference information from flowing through text tokens to the output image, and <code>KO<sub>ref&rarr;image</sub></code> blocks reference information from flowing directly from the reference tokens to the output image. If a property of the output disappears under
+            one knockout but survives the other, it was reaching the output
+            through the pathway that was cut.
+          </p>
+        </div>
+
+        <figure class="method-diagram">
+          <img loading="lazy" decoding="async" src="./static/images/attention_knockout/Attention Knockout.webp"
+               alt="Diagram of the Attention Knockout method: blocking ref-to-text or ref-to-image attention edges across all layers of an I2I edit">
+        </figure>
+
+        <figure class="task-grid">
+          <div class="columns is-centered is-vcentered">
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/attention_knockout/reference.webp"
+                   alt="Reference image: woman runner in distinctive style">
+              <p class="image-sublabel">Reference</p>
+            </div>
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/attention_knockout/i2i_baseline.webp"
+                   alt="Normal I2I edit output">
+              <p class="image-sublabel">Normal I2I edit</p>
+            </div>
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/attention_knockout/ref_to_text_ko.webp"
+                   alt="Output with ref-to-text attention knocked out">
+              <p class="image-sublabel">Block ref &rarr; text</p>
+            </div>
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/attention_knockout/ref_to_image_ko.webp"
+                   alt="Output with ref-to-image attention knocked out">
+              <p class="image-sublabel">Block ref &rarr; image</p>
+            </div>
+          </div>
+          <figcaption class="figure-caption">
+            <b>Attention Knockout applied to <i>"A photograph of the woman in this image sprinting down a red running track"</i> with an illustrated reference</b>. The normal I2I edit preserves the cartoon style of the reference. Blocking ref&rarr;text changes the <i>style</i> of the output to realistic instead of cartoonish; blocking ref&rarr;image leaves it almost untouched. The style is being routed through the text tokens, not read directly off the reference. 
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section subsection-method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-5 has-text-grey">Does the style and color survive even if we drop the reference?</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our hypothesis is that once the reference has written its style and
+            color into the text tokens, the reference image itself plays no
+            further role in carrying them. We call the point in the forward
+            pass where it finishes that writing the
+            <b>vision-language binding</b>.
+          </p>
+          <p>
+            The <code>KO<sub>ref&rarr;image</sub></code> knockout above only
+            blocked the reference from reaching the generated image directly.
+            But if the reference really stops contributing to the style and
+            color after the vision-language binding, we can be far more
+            aggressive: we keep <code>KO<sub>ref&rarr;image</sub></code> in
+            place up to the binding, so the text tokens stay the reference's
+            only outlet, and past the binding we drop the reference
+            tokens out of the computation entirely, cutting every attention
+            edge into and out of them. If the style still survives, then after
+            the vision-language binding, the text tokens must have carried it
+            to the output on their own.
+          </p>
+        </div>
+
+        <figure class="task-grid">
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-half">
+              <img loading="lazy" decoding="async" src="./static/images/attention_knockout/drop_ref_pre_binding.webp"
+                   alt="Plain T2I generation of the woman on a running track: the illustrated reference style is absent">
+              <p class="image-sublabel">Removing Reference Tokens Pre-Binding</p>
+            </div>
+            <div class="column is-half">
+              <img loading="lazy" decoding="async" src="./static/images/attention_knockout/drop_ref_post_binding.webp"
+                   alt="Output with the reference disconnected after the vision-language binding: the illustrated style still appears">
+              <p class="image-sublabel">Removing Reference Tokens Post-Binding</p>
+            </div>
+          </div>
+          <figcaption class="figure-caption">
+            <b>Dropping the reference image after the vision-language binding.</b> <i>Removing Reference Tokens Pre-Binding</i> drops the reference from the very first layer. The model never binds it at all, so this is a plain T2I generation, and the illustrated style is absent. <i>Removing Reference Tokens Post-Binding</i> is the knockout described above: <code>KO<sub>ref&rarr;image</sub></code> up to the binding, then the reference tokens dropped entirely. The style still comes through, routed through the text tokens.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">I2I &rarr; I2I Patching &mdash; do the text tokens causally transfer content?</h2>
+        <div class="content has-text-justified">
+          <p>
+            T2I Lens and Attention Knockout together tell us that the text
+            tokens absorb reference content and that the model uses them as a
+            routing channel. What remains is to check that the text-token activations
+            themselves <i>causally</i> carry reference-specific properties &mdash; that
+            the property travels with the activations from one run to another.
+          </p>
+          <p>
+            We run two I2I edits side by side, a source and a target, that share
+            the same instruction but use different reference images. We then
+            copy the text-token activations from the source run into the target
+            run at the same intermediate layer. If a property
+            of the source reference appears in the target output, the text
+            tokens were causally carrying that property between the two runs.
+          </p>
+        </div>
+
+        <figure class="method-diagram">
+          <img loading="lazy" decoding="async" src="./static/images/i2i_patching/I2I to I2I patching.webp"
+               alt="Diagram of the I2I-to-I2I Patching method: text-token activations from a source I2I edit are patched into a target I2I edit that shares the instruction but uses a different reference image">
+        </figure>
+
+        <figure class="task-grid">
+          <div class="columns is-centered is-vcentered">
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/i2i_patching/ref_source.webp"
+                   alt="Source reference: solid green color">
+              <p class="image-sublabel">Source reference (solid green)</p>
+            </div>
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/i2i_patching/ref_target.webp"
+                   alt="Target reference: solid yellow color">
+              <p class="image-sublabel">Target reference (solid yellow)</p>
+            </div>
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/i2i_patching/target_baseline.webp"
+                   alt="Target output without patching">
+              <p class="image-sublabel">Target output, no patching</p>
+            </div>
+            <div class="column">
+              <img loading="lazy" decoding="async" src="./static/images/i2i_patching/patched.webp"
+                   alt="Target output with source text tokens patched in">
+              <p class="image-sublabel">Target output, source text tokens patched in</p>
+            </div>
+          </div>
+          <figcaption class="figure-caption">
+            <b>I2I &rarr; I2I Patching on the shared prompt <i>"draw a car in this color"</i></b>. The source run uses a solid green reference; the target run uses a solid yellow reference. Without patching, the target output takes the yellow color from its own reference. With the source run's text-token activations patched in at the same intermediate layer, the target output instead takes on the green of the source, even though the model is still looking at the solid yellow image as its own reference. The color is being causally carried between runs by the text-token activations alone.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            For the full set of experiments, additional reference images and
+            instructions, and quantitative results across all three methods
+            above, see <a href="https://arxiv.org/abs/2605.24624">our paper</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{ge2026visionlanguagebindingincontextimage,
+      title={Vision-Language Binding in In-Context Image Generation},
+      author={Chris Ge and Rohit Gandikota and Antonio Torralba and Tamar Rott Shaham},
+      year={2026},
+      eprint={2605.24624},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.24624},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Template forked from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies project page</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var rate = 1.25;
+    document.querySelectorAll('video').forEach(function (v) {
+      v.playbackRate = rate;
+      v.addEventListener('loadedmetadata', function () { v.playbackRate = rate; });
+      v.addEventListener('play', function () { v.playbackRate = rate; });
+    });
+  })();
+</script>
+
+</body>
+</html>
