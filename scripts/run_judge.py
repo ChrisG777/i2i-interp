@@ -7,17 +7,27 @@ labels / paths / question) to send the VLM, and where to write the CSV.
 Resume semantics: rows already in the CSV with a non-empty ``pass`` field
 are skipped. Re-running is safe.
 
-Two modes:
+Modes:
   --judge NAME   one judge at a time (legacy, useful for re-runs).
   --group NAME   all sibling judges that share an image prefix, run
-                 per-entity-id sequentially so calls 2..N hit Anthropic's
-                 ephemeral prompt cache. Each member still writes to its own
+                 per-entity-id sequentially so calls 2..N hit the provider's
+                 prompt cache (Anthropic ephemeral breakpoints; OpenAI's
+                 automatic prefix cache). Each member still writes to its own
                  CSV with identical wording, columns, and per-row content.
+  --all          every group, then every ungrouped judge.
+  --paper        like --all, restricted to the judges feeding the paper's
+                 four judge tables (``configs.PAPER_JUDGES``).
+
+``--model`` picks the judge VLM (see ``utils.vlm.MODELS``). The default
+Claude model writes the paper CSVs at ``vlm_judge/<judge>.csv``; any other
+model writes side-by-side to ``vlm_judge/<model>/<judge>.csv``.
 
 Usage::
 
     uv run python scripts/run_judge.py --judge ko_style_ref_to_image
     uv run python scripts/run_judge.py --group ko_color --concurrency 10
+    uv run python scripts/run_judge.py --paper --model gpt-5.6-terra  # GPT re-grade
+    uv run python scripts/compare_judges.py --model gpt-5.6-terra     # agreement report
     uv run python scripts/run_judge.py --list
     uv run python scripts/run_judge.py --write-readme  # regenerate vlm_judge/README.md
 """
@@ -30,7 +40,6 @@ import os
 import sys
 from pathlib import Path
 
-import anthropic
 from dotenv import load_dotenv
 
 from scripts.judge import api, csv_io
@@ -38,16 +47,18 @@ from scripts.judge.configs import (
     JUDGE_DIR,
     JUDGE_GROUPS,
     JUDGES,
+    PAPER_JUDGES,
     get,
     get_group,
 )
 from utils import vlm
+from utils.vlm import DEFAULT_MODEL, MODELS, make_vlm
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 async def _judge_one(
-    client: anthropic.AsyncAnthropic,
+    client,
     sem: asyncio.Semaphore,
     cfg,
     entity_id: str,
@@ -59,7 +70,7 @@ async def _judge_one(
         )
     return csv_io.make_row(
         entity_id, pass_=pass_, reason=reason,
-        in_tok=in_tok, out_tok=out_tok, model=api.MODEL_ID,
+        in_tok=in_tok, out_tok=out_tok, model=client.model,
     )
 
 
@@ -67,17 +78,15 @@ async def _run_judge(
     client, cfg, *, concurrency: int, no_retry_errors: bool, limit: int | None,
 ) -> None:
     intended = cfg.entity_ids()
-    on_disk = {p.name for p in cfg.base_dir.iterdir()} if cfg.base_dir.exists() else set()
-    todo = [eid for eid in intended if eid in on_disk]
-    skipped_missing = [eid for eid in intended if eid not in on_disk]
+    present = [eid for eid in intended if cfg.cell_present(eid)]
     print(
-        f"{cfg.name}: {len(todo)} entities present on disk "
-        f"({len(skipped_missing)} not yet generated)"
+        f"{cfg.name}: {len(present)} entities present on disk "
+        f"({len(intended) - len(present)} not yet generated)"
     )
 
-    existing = csv_io.load_existing_rows(cfg.csv_path)
+    existing = csv_io.load_existing_rows(cfg.csv_path_for(client.model))
     todo = [
-        eid for eid in todo
+        eid for eid in present
         if not csv_io.should_skip(existing.get(eid), no_retry_errors)
     ]
     if limit is not None:
@@ -92,7 +101,7 @@ async def _run_judge(
     n_pass = n_fail = n_err = 0
     for fut in asyncio.as_completed(coros):
         row = await fut
-        csv_io.append_row(cfg.csv_path, row)
+        csv_io.append_row(cfg.csv_path_for(client.model), row)
         verdict = row["pass"]
         if verdict == "":
             n_err += 1
@@ -105,12 +114,13 @@ async def _run_judge(
 
 
 async def _judge_one_entity_group(
-    client: anthropic.AsyncAnthropic,
+    client,
     sem: asyncio.Semaphore,
     members: list,
     todo_per_judge: dict[str, set[str]],
     prefix_len: int,
     entity_id: str,
+    group_name: str,
 ) -> list[tuple, ...]:
     """Run every member whose ``todo_per_judge[member.name]`` contains
     ``entity_id``, sequentially, so calls 2..N hit the warm cache. Returns
@@ -132,10 +142,11 @@ async def _judge_one_entity_group(
                 bundle.image_paths,
                 bundle.question,
                 cache_prefix_len=prefix_len,
+                cache_key=f"{group_name}:{entity_id}",
             )
             row = csv_io.make_row(
                 entity_id, pass_=pass_, reason=reason,
-                in_tok=in_tok, out_tok=out_tok, model=api.MODEL_ID,
+                in_tok=in_tok, out_tok=out_tok, model=client.model,
             )
             out.append((cfg, row))
     return out
@@ -143,8 +154,14 @@ async def _judge_one_entity_group(
 
 async def _run_group(
     client, group, *, concurrency: int, no_retry_errors: bool, limit: int | None,
+    only: frozenset[str] | None = None,
 ) -> None:
-    members = [get(name) for name in group.members]
+    members = [
+        get(name) for name in group.members if only is None or name in only
+    ]
+    if not members:
+        print(f"group {group.name}: no members selected")
+        return
 
     # Per-judge resume + on-disk filter — identical to single-judge mode,
     # applied independently to each member. A given entity may need 1..N
@@ -153,14 +170,10 @@ async def _run_group(
     all_eids: set[str] = set()
     for cfg in members:
         intended = cfg.entity_ids()
-        on_disk = (
-            {p.name for p in cfg.base_dir.iterdir()}
-            if cfg.base_dir.exists() else set()
-        )
-        existing = csv_io.load_existing_rows(cfg.csv_path)
+        existing = csv_io.load_existing_rows(cfg.csv_path_for(client.model))
         todo = {
             eid for eid in intended
-            if eid in on_disk
+            if cfg.cell_present(eid)
             and not csv_io.should_skip(existing.get(eid), no_retry_errors)
         }
         todo_per_judge[cfg.name] = todo
@@ -190,6 +203,7 @@ async def _run_group(
     coros = [
         _judge_one_entity_group(
             client, sem, members, todo_per_judge, group.prefix_len, eid,
+            group.name,
         )
         for eid in entity_ids
     ]
@@ -198,7 +212,7 @@ async def _run_group(
     for fut in asyncio.as_completed(coros):
         rows = await fut
         for cfg, row in rows:
-            csv_io.append_row(cfg.csv_path, row)
+            csv_io.append_row(cfg.csv_path_for(client.model), row)
             verdict = row["pass"]
             if verdict == "":
                 tallies[cfg.name]["err"] += 1
@@ -246,7 +260,7 @@ def _write_readme() -> None:
         "<!-- Generated by `uv run python -m scripts.run_judge --write-readme`. Do not edit by hand. -->",
         "# VLM judges for the paper-scale run",
         "",
-        "Each judge resolves an entity to a labeled image bundle, sends one cached system message ([`scripts/judge/api.py::SYSTEM_PROMPT`](../../scripts/judge/api.py)) plus a per-bundle user message, and parses the VLM's single-line JSON reply `{\"pass\": 0|1, \"reason\": \"…\"}`. Per-cell pass rates in the paper tables are pooled directly from `results_v4/vlm_judge/<judge>.csv`.",
+        "Each judge resolves an entity to a labeled image bundle, sends one cached system message ([`scripts/judge/api.py::SYSTEM_PROMPT`](../../scripts/judge/api.py)) plus a per-bundle user message, and parses the VLM's single-line JSON reply `{\"pass\": 0|1, \"reason\": \"…\"}`. Per-cell pass rates in the paper tables are pooled directly from `results_v4/vlm_judge/<judge>.csv`. Re-grades with a non-default model (`--model gpt-5.6-terra`) write side-by-side to `vlm_judge/<model>/<judge>.csv` and never feed the paper's main tables; they back the second-judge appendix tables, rendered via `scripts/build_judge_tables.py --model gpt-5.6-terra`. Compare them against the Claude verdicts with `scripts/compare_judges.py`.",
         "",
         "## System prompt",
         "",
@@ -290,6 +304,16 @@ def main() -> None:
         "--all", action="store_true",
         help="Run every group, then every ungrouped judge, sequentially.",
     )
+    ap.add_argument(
+        "--paper", action="store_true",
+        help="Like --all, restricted to the judges feeding the paper's "
+        "judge tables (PAPER_JUDGES).",
+    )
+    ap.add_argument(
+        "--model", choices=sorted(MODELS), default=DEFAULT_MODEL,
+        help="Judge VLM. Non-default models write CSVs to "
+        "results_v4/vlm_judge/<model>/<judge>.csv.",
+    )
     ap.add_argument("--list", action="store_true", help="List all judges and exit.")
     ap.add_argument(
         "--write-readme", action="store_true",
@@ -303,7 +327,7 @@ def main() -> None:
     )
     ap.add_argument(
         "--verbose-cache", action="store_true",
-        help="Log Anthropic cache_read / cache_creation token counts to stderr.",
+        help="Log cache_read / cache_creation token counts to stderr (Anthropic models only).",
     )
     args = ap.parse_args()
 
@@ -313,22 +337,30 @@ def main() -> None:
     if args.write_readme:
         _write_readme()
         return
-    n_modes = sum(x is not None and x is not False for x in (args.judge, args.group, args.all or None))
+    n_modes = sum(
+        x is not None and x is not False
+        for x in (args.judge, args.group, args.all or None, args.paper or None)
+    )
     assert n_modes == 1, (
-        "Pass exactly one of --judge NAME, --group NAME, or --all "
+        "Pass exactly one of --judge NAME, --group NAME, --all, or --paper "
         "(or --list / --write-readme)."
     )
 
     load_dotenv(REPO_ROOT / ".env")
-    if not os.getenv("ANTHROPIC_API_KEY"):
-        print("ERROR: ANTHROPIC_API_KEY not set. Add it to .env or export it.",
+    key_var = (
+        "ANTHROPIC_API_KEY"
+        if MODELS[args.model].provider == "anthropic"
+        else "OPENAI_API_KEY"
+    )
+    if not os.getenv(key_var):
+        print(f"ERROR: {key_var} not set. Add it to .env or export it.",
               file=sys.stderr)
         sys.exit(1)
 
     if args.verbose_cache:
         vlm.VERBOSE_CACHE = True
 
-    client = anthropic.AsyncAnthropic()
+    client = make_vlm(args.model)
     if args.judge is not None:
         cfg = get(args.judge)
         asyncio.run(_run_judge(
@@ -346,18 +378,26 @@ def main() -> None:
             limit=args.limit,
         ))
     else:
-        # --all: run every group (cache-friendly), then every ungrouped judge.
+        # --all / --paper: run every (selected) group cache-friendly, then
+        # every (selected) ungrouped judge.
+        only = PAPER_JUDGES if args.paper else None
         grouped_names = {name for g in JUDGE_GROUPS for name in g.members}
         for group in JUDGE_GROUPS:
-            print(f"\n=== group: {group.name} ({len(group.members)} judges) ===")
+            selected = [
+                n for n in group.members if only is None or n in only
+            ]
+            if not selected:
+                continue
+            print(f"\n=== group: {group.name} ({len(selected)} judges) ===")
             asyncio.run(_run_group(
                 client, group,
                 concurrency=args.concurrency,
                 no_retry_errors=args.no_retry_errors,
                 limit=args.limit,
+                only=only,
             ))
         for cfg in JUDGES:
-            if cfg.name in grouped_names:
+            if cfg.name in grouped_names or (only is not None and cfg.name not in only):
                 continue
             print(f"\n=== judge: {cfg.name} ===")
             asyncio.run(_run_judge(

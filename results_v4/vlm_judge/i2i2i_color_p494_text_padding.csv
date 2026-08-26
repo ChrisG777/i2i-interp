@@ -1,0 +1,49 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_blue_ball_p494_s4__solid_red_ball_p494_s0,1,"Image 4 is predominantly blue like Image 1, unlike the red Image 3.",claude-opus-4-7,1492,46
+solid_blue_ball_p494_s0__solid_green_ball_p494_s1,1,"Image 4 is blue matching source Image 1, not green like target Image 2/3.",claude-opus-4-7,1492,45
+solid_blue_couch_p494_s4__solid_red_couch_p494_s0,1,"Image 4 sofa is blue matching source, unlike Image 3's red target.",claude-opus-4-7,1492,44
+solid_red_pillow_p494_s0__solid_green_pillow_p494_s1,0,"Image 4 is orange, not red like Image 1 nor green like Image 2; not clearly source color.",claude-opus-4-7,1492,51
+solid_blue_car_p494_s0__solid_green_car_p494_s1,1,"Image 4 is predominantly blue like Image 1, unlike Image 3's green.",claude-opus-4-7,1492,46
+solid_red_couch_p494_s1__solid_blue_couch_p494_s2,1,"Image 4's sofa is red like Image 1, unlike Image 3's blue matching Image 2.",claude-opus-4-7,1492,51
+solid_green_car_p494_s2__solid_red_car_p494_s3,1,"Image 4's car is green matching Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,1492,49
+solid_blue_pillow_p494_s4__solid_red_pillow_p494_s0,1,"Image 4 pillow is blue matching Image 1, not red like Image 2/3.",claude-opus-4-7,1492,46
+solid_green_couch_p494_s3__solid_blue_couch_p494_s4,1,"Image 4's sofa is green, matching Image 1's source color rather than Image 2's blue.",claude-opus-4-7,1492,49
+solid_red_couch_p494_s0__solid_green_couch_p494_s1,1,"Image 4's sofa is predominantly red like Image 1, versus green in Image 3.",claude-opus-4-7,1492,47
+solid_green_pillow_p494_s3__solid_blue_pillow_p494_s4,1,"Image 4 pillow is green matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1492,46
+solid_red_ball_p494_s1__solid_blue_ball_p494_s2,1,"Image 4 is red like Image 1, not blue like Image 2/3.",claude-opus-4-7,1492,42
+solid_blue_hat_p494_s0__solid_green_hat_p494_s1,1,"Image 4 hat is blue matching Image 1, unlike Image 3's green.",claude-opus-4-7,1492,45
+solid_green_car_p494_s3__solid_blue_car_p494_s4,1,"The car in Image 4 is green like Image 1, unlike the blue car in Image 3.",claude-opus-4-7,1492,47
+solid_green_vase_p494_s2__solid_red_vase_p494_s3,1,"Image 4 shows green tones matching Image 1, not the red of Image 2/3.",claude-opus-4-7,1492,46
+solid_blue_car_p494_s4__solid_red_car_p494_s0,1,"Image 4 shows a blue car matching Image 1's blue, unlike Image 3's red matching Image 2.",claude-opus-4-7,1492,55
+solid_green_hat_p494_s2__solid_red_hat_p494_s3,1,"Image 4 hat is green matching Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,1492,50
+solid_red_pillow_p494_s1__solid_blue_pillow_p494_s2,1,"Image 4 pillow is red matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1492,46
+solid_red_car_p494_s0__solid_green_car_p494_s1,1,"Image 4's car and background shifted to red/warm tones matching Image 1, unlike Image 3's green.",claude-opus-4-7,1492,53
+solid_blue_vase_p494_s0__solid_green_vase_p494_s1,1,"Image 4 is predominantly blue matching Image 1, unlike Image 3's green.",claude-opus-4-7,1492,47
+solid_red_hat_p494_s0__solid_green_hat_p494_s1,1,"Image 4 hat is red like Image 1, not green like Image 2/3.",claude-opus-4-7,1492,43
+solid_blue_hat_p494_s4__solid_red_hat_p494_s0,0,"Image 4 is dark red/maroon, closer to Image 2's red than Image 1's blue.",claude-opus-4-7,1492,50
+solid_red_car_p494_s1__solid_blue_car_p494_s2,1,"Image 4's car is red like Image 1, whereas Image 3's car is blue like Image 2.",claude-opus-4-7,1492,50
+solid_green_chair_p494_s2__solid_red_chair_p494_s3,1,"Image 4 background and much of chair is green like Image 1, unlike Image 3's red.",claude-opus-4-7,1492,47
+solid_green_hat_p494_s3__solid_blue_hat_p494_s4,1,"Image 4 hat is predominantly green like Image 1, unlike Image 3's blue.",claude-opus-4-7,1492,48
+solid_red_hat_p494_s1__solid_blue_hat_p494_s2,1,"Image 4's hat is red/orange like Image 1, unlike Image 3's blue hat matching Image 2.",claude-opus-4-7,1492,55
+solid_blue_vase_p494_s4__solid_red_vase_p494_s0,1,"Image 4's vase is blue like Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,1492,50
+solid_red_vase_p494_s0__solid_green_vase_p494_s1,1,"Image 4's background is red like Image 1, unlike Image 3's green background matching Image 2.",claude-opus-4-7,1492,49
+solid_blue_mug_p494_s0__solid_green_mug_p494_s1,1,"Image 4 mug is blue matching Image 1, unlike Image 3's green matching Image 2.",claude-opus-4-7,1492,51
+solid_blue_chair_p494_s0__solid_green_chair_p494_s1,1,"Image 4 background and chair shift toward blue like Image 1, unlike Image 3's green.",claude-opus-4-7,1492,49
+solid_green_vase_p494_s3__solid_blue_vase_p494_s4,1,"Vase in Image 4 is green like Image 1, unlike the blue vase in Image 3.",claude-opus-4-7,1492,49
+solid_green_mug_p494_s2__solid_red_mug_p494_s3,1,"Image 4 shows significant green coloring from source, unlike Image 3's pure red.",claude-opus-4-7,1492,46
+solid_blue_chair_p494_s4__solid_red_chair_p494_s0,1,"Image 4's chair is blue like Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,1492,50
+solid_red_chair_p494_s0__solid_green_chair_p494_s1,1,"Image 4 chair is red like Image 1, not green like Image 2/3.",claude-opus-4-7,1492,43
+solid_green_chair_p494_s3__solid_blue_chair_p494_s4,1,"Image 4 background and chair are green, matching Image 1's source color instead of Image 2's blue.",claude-opus-4-7,1492,50
+solid_green_ball_p494_s2__solid_red_ball_p494_s3,1,"Image 4's background is green matching Image 1, unlike Image 3's red from Image 2.",claude-opus-4-7,1492,48
+solid_red_vase_p494_s1__solid_blue_vase_p494_s2,1,"Image 4's vase and background shifted to red/warm tones matching source, unlike blue Image 3.",claude-opus-4-7,1492,51
+solid_red_mug_p494_s0__solid_green_mug_p494_s1,1,"Image 4 mug is red matching Image 1, not green like Image 2/3.",claude-opus-4-7,1492,44
+solid_red_ball_p494_s0__solid_green_ball_p494_s1,1,"Image 4 sphere is red like Image 1, not green like Images 2 and 3.",claude-opus-4-7,1492,46
+solid_green_mug_p494_s3__solid_blue_mug_p494_s4,1,"Image 4 mug and its influence are green like Image 1, not blue like Image 2/3.",claude-opus-4-7,1492,48
+solid_blue_mug_p494_s4__solid_red_mug_p494_s0,1,"Image 4 shifted to blue/purple tones matching source blue, away from target red.",claude-opus-4-7,1492,45
+solid_red_chair_p494_s1__solid_blue_chair_p494_s2,1,"Image 4 shows red chair and background matching source Image 1, not blue of Image 2.",claude-opus-4-7,1492,47
+solid_blue_couch_p494_s0__solid_green_couch_p494_s1,1,"Image 4 sofa is blue like Image 1, not green like Image 2/3.",claude-opus-4-7,1492,45
+solid_green_ball_p494_s3__solid_blue_ball_p494_s4,1,"Image 4 is green matching Image 1, unlike Image 3 which is blue matching Image 2.",claude-opus-4-7,1492,51
+solid_green_couch_p494_s2__solid_red_couch_p494_s3,1,"Image 4 sofa is green matching Image 1, not red like Image 2.",claude-opus-4-7,1492,43
+solid_green_pillow_p494_s2__solid_red_pillow_p494_s3,1,"Image 4 pillow is green matching Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,1492,51
+solid_red_mug_p494_s1__solid_blue_mug_p494_s2,1,"Image 4 mug is red matching source Image 1, not blue like Image 2/3.",claude-opus-4-7,1492,46
+solid_blue_pillow_p494_s0__solid_green_pillow_p494_s1,1,"Image 4 pillow is predominantly blue/teal, closer to source blue than the target green of Image 3.",claude-opus-4-7,1492,53

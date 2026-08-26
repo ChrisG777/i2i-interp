@@ -86,11 +86,9 @@ uv run python experiments/i2i_to_unconditional/i2i_to_unconditional_patch.py \
     --task-id solid_red_couch \
     --knockout-setting 'image->text' --knockout-side source
 
-# Whole bucket
+# Whole bucket (customize families are named buckets, e.g. style)
 uv run python experiments/i2i_to_unconditional/i2i_to_unconditional_patch.py \
-    --edit-type customize --limit 50
+    --bucket style --limit 50
 ```
-
-[`dump_content_vs_padding_tokens.py`](dump_content_vs_padding_tokens.py) loads only the Qwen3 tokenizer (no diffusion model) and writes a per-task text report listing `all_content` vs. `all_padding` positions — useful before kicking off a `content_vs_padding` sweep.
 
 For the paper-scale sweep across every task family, run [`scripts/reproduce_t2i_lens.py`](../../scripts/reproduce_t2i_lens.py). See [experiments/README.md](../README.md#run--grade--tabulate) for the run → grade → tabulate workflow.

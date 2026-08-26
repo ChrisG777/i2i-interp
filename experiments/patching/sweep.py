@@ -30,7 +30,7 @@ from experiments.patching.utils import (
     extract_category_acts_per_step,
     run_pipeline_with_hooks,
 )
-from utils.flux2_klein import ALL_BLOCK_LABELS, ALL_BLOCK_NAMES, TokenLayout
+from utils.flux2_klein import ALL_BLOCK_LABELS, ALL_BLOCK_NAMES, TokenLayout, block_suffix
 from utils.scoring import create_image_grid
 
 
@@ -50,6 +50,7 @@ def make_patch_pipeline_producer(
     target_ref_image: Optional[Image.Image] = None,
     callback_on_step_end: Optional[Callable] = None,
     text_token_indices: Optional[Sequence[int]] = None,
+    max_sequence_length: Optional[int] = None,
 ) -> ImageProducer:
     """Default producer: patch ``src_act`` at ``dst_name``'s output.
 
@@ -59,7 +60,9 @@ def make_patch_pipeline_producer(
     ``layout`` is the *target*-side token layout — its ``has_ref`` selects
     i2i vs t2i hook shape. ``target_h``/``target_w`` are passed explicitly so
     Flux2KleinPipeline doesn't fall back to its 1024² default when ``image=``
-    is passed without them.
+    is passed without them. ``max_sequence_length`` overrides the Qwen3
+    text-token length (pipeline default 512) so the patched re-run tokenizes
+    at the same length as ``layout.text_seq_len``.
     """
     def producer(src_name: str, dst_name: str, src_act: torch.Tensor) -> Image.Image:
         hook_fn = make_patch_hook(
@@ -76,6 +79,8 @@ def make_patch_pipeline_producer(
         )
         if target_ref_image is not None:
             pipe_kwargs["image"] = target_ref_image
+        if max_sequence_length is not None:
+            pipe_kwargs["max_sequence_length"] = max_sequence_length
         return run_pipeline_with_hooks(
             model,
             [(dst_name, hook_fn)],
@@ -97,6 +102,7 @@ def make_patch_pipeline_producer_multi_step(
     target_ref_image: Optional[Image.Image] = None,
     callback_on_step_end: Optional[Callable] = None,
     text_token_indices: Optional[Sequence[int]] = None,
+    max_sequence_length: Optional[int] = None,
     num_inference_steps: int,
 ) -> ImageProducer:
     """Multi-step variant of :func:`make_patch_pipeline_producer`.
@@ -104,7 +110,9 @@ def make_patch_pipeline_producer_multi_step(
     ``src_act`` passed to the producer is interpreted as a sequence of per-step
     source activations (length == ``num_inference_steps``). The hook closure
     advances an internal step counter on each call so step ``k`` of the target
-    pipeline is patched with ``src_act[k]``.
+    pipeline is patched with ``src_act[k]``. ``max_sequence_length`` overrides
+    the Qwen3 text-token length (pipeline default 512) so the patched re-run
+    tokenizes at the same length as ``layout.text_seq_len``.
     """
     assert num_inference_steps >= 1, (
         f"num_inference_steps must be >= 1, got {num_inference_steps}"
@@ -129,6 +137,8 @@ def make_patch_pipeline_producer_multi_step(
         )
         if target_ref_image is not None:
             pipe_kwargs["image"] = target_ref_image
+        if max_sequence_length is not None:
+            pipe_kwargs["max_sequence_length"] = max_sequence_length
         return run_pipeline_with_hooks(
             model,
             [(dst_name, hook_fn)],
@@ -136,6 +146,64 @@ def make_patch_pipeline_producer_multi_step(
             **pipe_kwargs,
         )
     return producer
+
+
+def run_span_patch(
+    model,
+    source_acts_per_step: Dict[str, list],
+    category: str,
+    *,
+    block_names: Sequence[str],
+    layout: TokenLayout,
+    target_prompt: str,
+    target_seed: int,
+    target_h: int,
+    target_w: int,
+    target_ref_image: Optional[Image.Image] = None,
+    text_token_indices: Optional[Sequence[int]] = None,
+    max_sequence_length: Optional[int] = None,
+    num_inference_steps: int,
+) -> Image.Image:
+    """Patch **several blocks simultaneously** in one pipeline run.
+
+    The sweep producers above patch one block per generated image (a diagonal
+    sweep). This instead registers a hook on *every* block in ``block_names``
+    at once, each replaying that block's own captured source activation, so
+    the patch is sustained across a span of consecutive blocks rather than
+    injected at a single depth. ``run_pipeline_with_hooks`` already accepts a
+    list of ``(layer, hook)`` pairs, so this only has to build them.
+
+    ``source_acts_per_step`` maps layer name -> per-step activation list (the
+    output of :func:`extract_category_acts_per_step`); every name in
+    ``block_names`` must be present.
+    """
+    assert block_names, "block_names must be non-empty"
+    missing = [n for n in block_names if n not in source_acts_per_step]
+    assert not missing, f"no captured source acts for: {missing}"
+
+    pairs = []
+    for name in block_names:
+        acts = source_acts_per_step[name]
+        assert len(acts) == num_inference_steps, (
+            f"Expected {num_inference_steps} per-step acts at {name}, got {len(acts)}"
+        )
+        pairs.append((name, make_patch_hook_multi_step(
+            name, acts, category, layout, text_token_indices=text_token_indices,
+        )))
+
+    generator = torch.Generator(model.device).manual_seed(target_seed)
+    pipe_kwargs = dict(
+        prompt=target_prompt,
+        generator=generator,
+        num_inference_steps=num_inference_steps,
+        height=target_h,
+        width=target_w,
+    )
+    if target_ref_image is not None:
+        pipe_kwargs["image"] = target_ref_image
+    if max_sequence_length is not None:
+        pipe_kwargs["max_sequence_length"] = max_sequence_length
+    return run_pipeline_with_hooks(model, pairs, **pipe_kwargs)
 
 
 def make_input_to_block0_producer(
@@ -285,12 +353,9 @@ def sweep_and_grid(
 
 
 def _block_suffix(block_name: str) -> str:
-    """Convert a block name to a compact filename suffix."""
-    return block_name.replace(
-        "transformer_blocks.", "mm",
-    ).replace(
-        "single_transformer_blocks.", "single",
-    )
+    """Convert a block name to a compact filename suffix. Thin alias for
+    :func:`utils.flux2_klein.block_suffix` (the single home for the convention)."""
+    return block_suffix(block_name)
 
 
 def _block_label_from_name(block_name: str) -> str:

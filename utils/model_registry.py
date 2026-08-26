@@ -7,16 +7,19 @@ from PIL import Image
 from utils.model_base import DiffusionModel
 
 
-MODEL_CHOICES = ("flux2_klein",)
+MODEL_CHOICES = ("flux2_klein", "qwen_image_edit")
 
 _REAL_REF_EXTS = (".png", ".jpg", ".jpeg")
 
 
 def load_model(name: str, **kwargs) -> DiffusionModel:
-    """Load a diffusion model by name. Currently only ``"flux2_klein"``."""
+    """Load a diffusion model by name."""
     if name == "flux2_klein":
         from utils.flux2_klein import Flux2KleinModel
         return Flux2KleinModel(**kwargs)
+    if name == "qwen_image_edit":
+        from utils.qwen_image_edit import QwenImageEditModel
+        return QwenImageEditModel(**kwargs)
     raise ValueError(
         f"Unknown model: {name!r}. Choose from {MODEL_CHOICES}."
     )
@@ -31,16 +34,20 @@ def generate_i2i(
     num_inference_steps: int = 1,
     height: int | None = None,
     width: int | None = None,
+    max_sequence_length: int | None = None,
 ) -> Image.Image:
     """Generate an i2i image. ``height``/``width`` are forwarded when set so
     the output matches the task's intended dims rather than the model's
-    1024² default."""
+    1024² default. ``max_sequence_length`` overrides the Qwen3 text-token
+    sequence length (pipeline default 512) when set."""
     print(f"  Generating i2i image: '{prompt}' (seed={seed})")
     kwargs: dict = {}
     if height is not None:
         kwargs["height"] = height
     if width is not None:
         kwargs["width"] = width
+    if max_sequence_length is not None:
+        kwargs["max_sequence_length"] = max_sequence_length
     return model.generate(
         prompt, seed=seed,
         num_inference_steps=num_inference_steps, image=ref_image,

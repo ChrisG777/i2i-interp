@@ -41,7 +41,7 @@ from scripts.judge.configs import (
     JUDGES_BY_NAME,
     JudgeConfig,
 )
-from utils.flux2_klein import ALL_BLOCK_NAMES
+from utils.flux2_klein import ALL_BLOCK_NAMES, block_suffix
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RESULTS_V4 = REPO_ROOT / "results_v4"
@@ -73,7 +73,11 @@ class JudgeStatus:
 
 
 def _expected_cell_name(j: JudgeConfig) -> str:
-    """Probe the bundle to extract the cell filename (last image path)."""
+    """Cell token for the consistency check. Sweep judges declare an explicit
+    ``cell_name`` (they consume 32 per-block files); everyone else probes the
+    bundle's last image filename."""
+    if j.cell_name is not None:
+        return j.cell_name
     bundle = j.bundle_builder("__PROBE__", j.base_dir)
     return bundle.image_paths[-1].name
 
@@ -93,8 +97,7 @@ def _csv_judged_count(csv_path: Path) -> tuple[int, bool]:
 def status_for(j: JudgeConfig) -> JudgeStatus:
     eids = j.entity_ids()
     expected = len(eids)
-    cell = _expected_cell_name(j)
-    local_cell = sum(1 for eid in eids if (j.base_dir / eid / cell).exists())
+    local_cell = sum(1 for eid in eids if j.cell_present(eid))
     judged, csv_exists = _csv_judged_count(j.csv_path)
     return JudgeStatus(
         name=j.name, expected=expected, local_cell=local_cell,
@@ -145,18 +148,13 @@ _I2I2I_MODE_TO_CELL = {
     "all": "patched.png",
     "padding_only": "patched_text_padding.png",
     "content_only": "patched_text_content.png",
+    "instruction_only": "patched_text_instruction.png",
+    "filler_only": "patched_text_filler.png",
 }
 
 
-def _i2i_unc_block_suffix(block_idx: int) -> str:
-    block_name = ALL_BLOCK_NAMES[block_idx]
-    return block_name.replace(
-        "transformer_blocks.", "mm",
-    ).replace("single_transformer_blocks.", "single")
-
-
 def _i2i_unc_mode_to_cell(mode: str, block_idx: int) -> str | None:
-    suffix = _i2i_unc_block_suffix(block_idx)
+    suffix = block_suffix(ALL_BLOCK_NAMES[block_idx])
     if mode == "all":
         return f"patched_{suffix}.png"
     if mode == "padding_only":
@@ -169,7 +167,14 @@ def _i2i_unc_mode_to_cell(mode: str, block_idx: int) -> str | None:
 def parse_slurm_script(path: Path) -> list[tuple[str, str, str]]:
     """Return ``(experiment, results_subdir, cell_filename)`` triples this
     script will produce. Empty list if the script has no ``--results-subdir``
-    or doesn't match a known experiment."""
+    or doesn't match a known experiment.
+
+    A script may batch several serial invocations (e.g. the padding-ablation
+    family scripts run four cells in one job): every ``--results-subdir``
+    occurrence contributes its own triples. The remaining flags (settings /
+    modes / block range) are parsed once per file — batched invocations are
+    assumed to differ only in subdir + pair list, which holds for every
+    committed script."""
     raw = path.read_text()
     # Normalize shell line continuations so single-flag lists that span
     # multiple lines are recoverable by the regexes.
@@ -178,35 +183,36 @@ def parse_slurm_script(path: Path) -> list[tuple[str, str, str]]:
     if not rel_parts:
         return []
     exp = rel_parts[0]
-    sub_match = _RESULTS_SUBDIR_RE.search(text)
-    if not sub_match:
+    # Ordered + deduped: batched scripts repeat the flag once per invocation.
+    subdirs = list(dict.fromkeys(_RESULTS_SUBDIR_RE.findall(text)))
+    if not subdirs:
         return []
-    subdir = sub_match.group(1)
     triples: list[tuple[str, str, str]] = []
-    if exp == "attention_knockout":
-        m = _KO_SETTINGS_RE.search(text)
-        if not m:
-            return []
-        for name in re.findall(r"'([^']+)'", m.group(1)):
-            triples.append((exp, subdir, _ko_setting_to_cell(name)))
-    elif exp == "i2i_to_i2i_patching":
-        m = _TEXT_MODE_RE.search(text)
-        modes = m.group(1).split() if m else ["all"]
-        for mode in modes:
-            cell = _I2I2I_MODE_TO_CELL.get(mode)
-            if cell:
-                triples.append((exp, subdir, cell))
-    elif exp == "i2i_to_unconditional":
-        br = _BLOCK_RANGE_RE.search(text)
-        if not br:
-            return []
-        block_idx = int(br.group(1))
-        m = _TEXT_MODE_RE.search(text)
-        modes = m.group(1).split() if m else ["all"]
-        for mode in modes:
-            cell = _i2i_unc_mode_to_cell(mode, block_idx)
-            if cell:
-                triples.append((exp, subdir, cell))
+    for subdir in subdirs:
+        if exp == "attention_knockout":
+            m = _KO_SETTINGS_RE.search(text)
+            if not m:
+                return []
+            for name in re.findall(r"'([^']+)'", m.group(1)):
+                triples.append((exp, subdir, _ko_setting_to_cell(name)))
+        elif exp == "i2i_to_i2i_patching":
+            m = _TEXT_MODE_RE.search(text)
+            modes = m.group(1).split() if m else ["all"]
+            for mode in modes:
+                cell = _I2I2I_MODE_TO_CELL.get(mode)
+                if cell:
+                    triples.append((exp, subdir, cell))
+        elif exp == "i2i_to_unconditional":
+            br = _BLOCK_RANGE_RE.search(text)
+            if not br:
+                return []
+            block_idx = int(br.group(1))
+            m = _TEXT_MODE_RE.search(text)
+            modes = m.group(1).split() if m else ["all"]
+            for mode in modes:
+                cell = _i2i_unc_mode_to_cell(mode, block_idx)
+                if cell:
+                    triples.append((exp, subdir, cell))
     return triples
 
 
@@ -214,7 +220,12 @@ def consistency_check() -> int:
     # Judge side: (exp, subdir, cell) -> [judge_names]
     judge_triples: dict[tuple[str, str, str], list[str]] = {}
     for j in JUDGES:
-        rel = j.base_dir.relative_to(RESULTS_V4)
+        try:
+            rel = j.base_dir.relative_to(RESULTS_V4)
+        except ValueError:
+            # Non-klein cells (the Qwen port) generate under results/, not
+            # results_v4/, and have no SLURM triple to reconcile.
+            continue
         parts = rel.parts
         if len(parts) < 2:
             continue

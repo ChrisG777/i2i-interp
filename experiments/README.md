@@ -9,8 +9,21 @@ experiments/
 │
 ├── attention_knockout/      # block cross-modal attention; sweep across blocks
 ├── i2i_to_unconditional/    # patch i2i activations into empty-prompt t2i
-└── i2i_to_i2i_patching/     # patch between two i2i runs varying one modality
+├── i2i_to_i2i_patching/     # patch between two i2i runs varying one modality
+├── repair_amplify/          # inverse intervention: amplify cross-modal attention
+└── qwen_port/               # i2i-to-i2i style patching on Qwen-Image-Edit (second model)
 ```
+
+`repair_amplify` is the inverse of the knockout: it adds a positive bias
+(instead of `-inf`) at the same cross-modal attention entries, boosting
+ref->text or text->image attention on chosen blocks to repair failing i2i
+edits. See [repair_amplify/README.md](repair_amplify/README.md).
+
+`qwen_port` is the paper's second-model appendix experiment: the i2i-to-i2i
+style patching rerun on Qwen-Image-Edit-2511 (the 450 style->real pairs with
+the text band patched at blocks 30-39 of 60), judged by the
+`qwen2511_i2i2i_style_span10` config. See
+[qwen_port/README.md](qwen_port/README.md).
 
 Each priority experiment has the same two-file surface:
 
@@ -38,12 +51,12 @@ Every entry script and launcher imports the same group from [`common/cli.py`](co
 
 ```
 --task-id ID [ID ...]                                      # manual: explicit task IDs
---edit-type {add,remove,customize} [{...} ...]             # batch: full bucket(s)
+--edit-type {add,remove} [{...} ...]                       # batch: full bucket(s)
 --limit N                                                  # cap per --edit-type
 --bucket NAME                                              # full bucket (e.g. solid_color)
 ```
 
-Either `--task-id` or `--edit-type` is required (mutually exclusive). The `manual` bucket is unioned into each `--edit-type` and filtered by edit_type — you get every dataset task plus every manual scene of that type.
+Either `--task-id` or `--edit-type` is required (mutually exclusive). The `manual` bucket is unioned into each `--edit-type` and filtered by edit_type — you get every dataset task plus every manual scene of that type. Only `add` and `remove` are batch-loadable by edit type; the customize axis has no `customize` bucket — its families are separate named buckets, so select them via `--bucket` (e.g. `--bucket style`).
 
 ## Running
 
@@ -73,9 +86,12 @@ Each priority experiment has full / padding-only / content-only sibling variants
    ```bash
    uv run python -m scripts.run_judge --all                              # every group + ungrouped judge
    uv run python -m scripts.run_judge --judge ko_color_ref_to_text_content  # single judge
+   uv run python -m scripts.run_judge --paper --model gpt-5.6-terra      # GPT-5.6 re-grade of paper-table judges
    uv run python -m scripts.run_judge --write-readme                     # refresh judge index
    ```
-3. **Tabulate** by pooling pass rates from `results_v4/vlm_judge/<judge>.csv`.
+3. **Tabulate** via `uv run python -m scripts.build_judge_tables`, which pools pass rates from `results_v4/vlm_judge/<judge>.csv` into the paper's judge tables (text preview + LaTeX between the tex `% AUTO-TABLE` markers).
+
+To double-check the grading with a second model, `--model gpt-5.6-terra` (requires `OPENAI_API_KEY`) writes verdicts side-by-side to `results_v4/vlm_judge/gpt-5.6-terra/<judge>.csv`, and `uv run python scripts/compare_judges.py --model gpt-5.6-terra` prints per-judge pass rates, agreement, Cohen's kappa, and the disagreeing entities against the Claude baseline. `build_judge_tables --model gpt-5.6-terra` (optionally `--agreement`) renders the second-judge appendix tables from those CSVs.
 
 Judge naming: `<family>_<direction>` (full), `<family>_<direction>_padding` / `_text_padding` (padding-only), `<family>_<direction>_content` / `_text_content` (content-only).
 
@@ -106,6 +122,7 @@ results_v4/
 ├── i2i_to_unconditional/<sweep_mode>/<task_id>/
 ├── i2i_to_i2i_patching/<pair_family>/<source>__<target>/
 └── vlm_judge/<judge_name>.csv          # CHECKED IN: small CSV, useful to diff
+    └── <model>/<judge_name>.csv        # non-default judge models (e.g. gpt-5.6-terra re-grade)
 ```
 
 Generation outputs are gitignored under `/results_v4/*` except the judge CSVs — pass rates in the paper tables are pooled directly from those CSVs.
@@ -114,7 +131,7 @@ Generation outputs are gitignored under `/results_v4/*` except the judge CSVs �
 
 [`patching/`](patching/) is the shared hook + sweep utility used by `i2i_to_unconditional/` and `i2i_to_i2i_patching/`. (Attention knockout doesn't use it — that experiment installs additive masks via custom `attn_processor` subclasses instead.) Activation patching is a causal intervention: capture activations from a **source** run, then inject them into a **target** run at specific points to measure what information each component carries.
 
-Per-task token counts come from a `TokenLayout` built by [`utils.flux2_klein.layout_for`](../utils/flux2_klein.py), threaded down by the runner. **MM blocks** return `(txt_stream, img_stream)`:
+Per-task token counts come from a `TokenLayout` (shared type in [`utils/token_layout.py`](../utils/token_layout.py); built by [`utils.flux2_klein.layout_for`](../utils/flux2_klein.py) for klein, [`utils.qwen_image_edit.layout_for`](../utils/qwen_image_edit.py) for Qwen-Image-Edit), threaded down by the runner. **MM blocks** return `(txt_stream, img_stream)`:
 
 ```
 txt_stream:  [text]
@@ -122,7 +139,7 @@ img_stream:  [noise | ref]    # i2i (layout.has_ref)
 img_stream:  [noise]          # t2i
 ```
 
-**Single blocks** return a flat sequence `[text | noise | ref]` (or `[text | noise]` for t2i). `ref` tokens are present only in i2i; `ref_seq_len` matches `noise_seq_len` at 1024² and differs at native dataset resolutions.
+**Single blocks** (klein only) return a flat sequence `[text | noise | ref]` (or `[text | noise]` for t2i). `ref` tokens are present only in i2i; `ref_seq_len` matches `noise_seq_len` at 1024² and differs at native dataset resolutions. Qwen-Image-Edit's 60 dual-stream blocks follow the MM contract above and are all named `transformer_blocks.<i>`, so the same hooks apply; its text band additionally embeds a VL vision-token span (`TokenLayout.vision_start/vision_end`, see [`qwen_port/`](qwen_port/)).
 
 Module entry points (full APIs in the module docstrings):
 

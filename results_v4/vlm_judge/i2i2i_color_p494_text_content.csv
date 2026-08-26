@@ -1,0 +1,49 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_blue_ball_p494_s4__solid_red_ball_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_blue_ball_p494_s0__solid_green_ball_p494_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_blue_couch_p494_s4__solid_red_couch_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_pillow_p494_s0__solid_green_pillow_p494_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1491,40
+solid_blue_car_p494_s0__solid_green_car_p494_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_couch_p494_s1__solid_blue_couch_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_green_car_p494_s2__solid_red_car_p494_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,40
+solid_blue_pillow_p494_s4__solid_red_pillow_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_green_couch_p494_s3__solid_blue_couch_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_red_couch_p494_s0__solid_green_couch_p494_s1,0,"Image 4 sofa remains green, matching Image 2, not red like Image 1.",claude-opus-4-7,1491,45
+solid_green_pillow_p494_s3__solid_blue_pillow_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_red_ball_p494_s1__solid_blue_ball_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_blue_hat_p494_s0__solid_green_hat_p494_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_green_car_p494_s3__solid_blue_car_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_green_vase_p494_s2__solid_red_vase_p494_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,40
+solid_blue_car_p494_s4__solid_red_car_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_green_hat_p494_s2__solid_red_hat_p494_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,40
+solid_red_pillow_p494_s1__solid_blue_pillow_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_red_car_p494_s0__solid_green_car_p494_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1491,40
+solid_blue_vase_p494_s0__solid_green_vase_p494_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_hat_p494_s0__solid_green_hat_p494_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1491,40
+solid_blue_hat_p494_s4__solid_red_hat_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_car_p494_s1__solid_blue_car_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_green_chair_p494_s2__solid_red_chair_p494_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,40
+solid_green_hat_p494_s3__solid_blue_hat_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_red_hat_p494_s1__solid_blue_hat_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_blue_vase_p494_s4__solid_red_vase_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_vase_p494_s0__solid_green_vase_p494_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1491,40
+solid_blue_mug_p494_s0__solid_green_mug_p494_s1,0,"Image 4 mug remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,43
+solid_blue_chair_p494_s0__solid_green_chair_p494_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_green_vase_p494_s3__solid_blue_vase_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_green_mug_p494_s2__solid_red_mug_p494_s3,0,"Image 4 mug remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,42
+solid_blue_chair_p494_s4__solid_red_chair_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_chair_p494_s0__solid_green_chair_p494_s1,0,"Image 4 chair remains green like Image 2; only the frame turned dark, not red like Image 1.",claude-opus-4-7,1491,51
+solid_green_chair_p494_s3__solid_blue_chair_p494_s4,0,"Image 4 remains blue like Image 2, showing no shift toward Image 1's green.",claude-opus-4-7,1491,47
+solid_green_ball_p494_s2__solid_red_ball_p494_s3,0,"Image 4 remains red like Image 2, showing no shift toward the green of Image 1.",claude-opus-4-7,1491,47
+solid_red_vase_p494_s1__solid_blue_vase_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_red_mug_p494_s0__solid_green_mug_p494_s1,0,"Image 4 mug remains green like Image 2, not red like Image 1.",claude-opus-4-7,1491,42
+solid_red_ball_p494_s0__solid_green_ball_p494_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1491,40
+solid_green_mug_p494_s3__solid_blue_mug_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_blue_mug_p494_s4__solid_red_mug_p494_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41
+solid_red_chair_p494_s1__solid_blue_chair_p494_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,41
+solid_blue_couch_p494_s0__solid_green_couch_p494_s1,0,"Image 4 sofa remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,44
+solid_green_ball_p494_s3__solid_blue_ball_p494_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1491,41
+solid_green_couch_p494_s2__solid_red_couch_p494_s3,0,"Image 4 sofa remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,43
+solid_green_pillow_p494_s2__solid_red_pillow_p494_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1491,40
+solid_red_mug_p494_s1__solid_blue_mug_p494_s2,0,"Image 4 mug remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1491,43
+solid_blue_pillow_p494_s0__solid_green_pillow_p494_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1491,41

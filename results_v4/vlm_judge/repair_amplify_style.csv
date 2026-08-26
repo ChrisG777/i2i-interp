@@ -1,0 +1,49 @@
+task_id,cell,pass,reason,model,input_tokens,output_tokens
+customize_property_style_free_sparrow_snow_fence_s0,baseline_4step,0,Background and post appear photographic; only the bird looks illustrated.,claude-opus-4-7,2764,39
+customize_property_style_free_sparrow_snow_fence_s0,amp_text_from_ref_mm7_lam2,0,Background is clearly photographic snowy scene; only the bird is stylized.,claude-opus-4-7,2764,42
+customize_property_style_free_sparrow_snow_fence_s0,amp_text_from_ref_mm5+mm6+mm7_lam2,0,"Background trees, houses, and snow appear photographic despite the stylized bird and fence.",claude-opus-4-7,2764,46
+customize_property_style_free_sparrow_snow_fence_s0,amp_text_from_ref_mm5+mm6+mm7_lam4,1,"Entire image, including bird, fence, and snowy background, is rendered in cartoon/illustrated style.",claude-opus-4-7,2764,52
+customize_property_style_free_sparrow_snow_fence_s0,amp_text_from_ref_mm5+mm6+mm7_lam6,1,"Entire image is cartoon/illustrated with flat colors and outlines, no photographic elements.",claude-opus-4-7,2764,49
+customize_property_style_free_sparrow_snow_fence_s0,amp_image_from_ref_mm7_lam4,0,"The background is clearly a photograph of a snowy fence, only the bird is illustrated.",claude-opus-4-7,2764,46
+customize_property_style_free_sparrow_snow_fence_s2,baseline_4step,0,"Image 2 is a photorealistic photograph of a sparrow, not stylized illustration.",claude-opus-4-7,2764,48
+customize_property_style_free_sparrow_snow_fence_s2,amp_text_from_ref_mm7_lam2,0,Background snow and trees remain photographic; only the bird appears stylized.,claude-opus-4-7,2764,41
+customize_property_style_free_sparrow_snow_fence_s2,amp_text_from_ref_mm5+mm6+mm7_lam2,1,"Entire image, including bird, fence, and snowy background, appears as stylized cartoon illustration.",claude-opus-4-7,2764,50
+customize_property_style_free_sparrow_snow_fence_s2,amp_text_from_ref_mm5+mm6+mm7_lam4,1,"Entire image, including bird, fence, and snowy background, is rendered in cartoon/illustrated style.",claude-opus-4-7,2764,52
+customize_property_style_free_sparrow_snow_fence_s2,amp_text_from_ref_mm5+mm6+mm7_lam6,1,"Entire image is cartoon-styled with flat colors and outlines, no photographic elements.",claude-opus-4-7,2764,47
+customize_property_style_free_sparrow_snow_fence_s2,amp_image_from_ref_mm7_lam4,0,Background is a photographic snowy scene; only the bird is illustrated.,claude-opus-4-7,2764,41
+customize_property_style_free_sparrow_snow_fence_s4,baseline_4step,0,"Image 2 appears photographic, not stylized like the cartoon reference.",claude-opus-4-7,2764,42
+customize_property_style_free_sparrow_snow_fence_s4,amp_text_from_ref_mm7_lam2,0,"The snowy background and fence appear photographic, only the bird is stylized.",claude-opus-4-7,2764,41
+customize_property_style_free_sparrow_snow_fence_s4,amp_text_from_ref_mm5+mm6+mm7_lam2,0,"Background snowy scene appears photographic/blurred realistic, not fully stylized like the reference.",claude-opus-4-7,2764,49
+customize_property_style_free_sparrow_snow_fence_s4,amp_text_from_ref_mm5+mm6+mm7_lam4,1,Entire image is rendered in a cartoon illustration style with outlines and flat shading.,claude-opus-4-7,2764,46
+customize_property_style_free_sparrow_snow_fence_s4,amp_text_from_ref_mm5+mm6+mm7_lam6,1,Entire image is cartoon-style illustration with clean outlines and flat colors.,claude-opus-4-7,2764,44
+customize_property_style_free_sparrow_snow_fence_s4,amp_image_from_ref_mm7_lam4,0,Background and post appear photographic; only the bird has cartoon outlines.,claude-opus-4-7,2764,41
+customize_property_style_free_solarmax_fountain_plaza_s0,baseline_4step,0,"Background buildings, pedestrians, and fountain appear photographic, not stylized like the reference illustration.",claude-opus-4-7,2089,52
+customize_property_style_free_solarmax_fountain_plaza_s0,amp_text_from_ref_mm7_lam2,0,"Background buildings and pedestrians appear photographic, not stylized like the reference illustration.",claude-opus-4-7,2089,47
+customize_property_style_free_solarmax_fountain_plaza_s0,amp_text_from_ref_mm5+mm6+mm7_lam2,0,"Background buildings and pedestrians appear photographic, not stylized like the character.",claude-opus-4-7,2089,43
+customize_property_style_free_solarmax_fountain_plaza_s0,amp_text_from_ref_mm5+mm6+mm7_lam4,1,"Entire image, including background people and buildings, is rendered in a consistent illustrated/anime style.",claude-opus-4-7,2089,49
+customize_property_style_free_solarmax_fountain_plaza_s0,amp_text_from_ref_mm5+mm6+mm7_lam6,1,"Entire image, including background buildings and pedestrians, is rendered in a consistent illustrated/cartoon style.",claude-opus-4-7,2089,55
+customize_property_style_free_solarmax_fountain_plaza_s0,amp_image_from_ref_mm7_lam4,0,"Background buildings, cobblestones, and pedestrians appear photographic, not stylized like the reference illustration.",claude-opus-4-7,2089,54
+customize_property_style_free_solarmax_fountain_plaza_s2,baseline_4step,0,"Background buildings, plaza, and people appear photographic, not stylized like the reference illustration.",claude-opus-4-7,2089,48
+customize_property_style_free_solarmax_fountain_plaza_s2,amp_text_from_ref_mm7_lam2,0,"Background buildings, plaza, and distant people appear photographic, not stylized like the reference.",claude-opus-4-7,2089,47
+customize_property_style_free_solarmax_fountain_plaza_s2,amp_text_from_ref_mm5+mm6+mm7_lam2,0,"Background buildings, plaza, and people appear photographic while the boy is stylized illustration.",claude-opus-4-7,2089,47
+customize_property_style_free_solarmax_fountain_plaza_s2,amp_text_from_ref_mm5+mm6+mm7_lam4,0,"Background buildings and pedestrians appear photographic, not stylized like the character.",claude-opus-4-7,2089,43
+customize_property_style_free_solarmax_fountain_plaza_s2,amp_text_from_ref_mm5+mm6+mm7_lam6,1,"Entire image is rendered in a consistent anime/cartoon illustration style, no photographic elements.",claude-opus-4-7,2089,50
+customize_property_style_free_solarmax_fountain_plaza_s2,amp_image_from_ref_mm7_lam4,0,"Background buildings, plaza, and people appear photographic, not stylized like the reference.",claude-opus-4-7,2089,45
+customize_property_style_free_solarmax_fountain_plaza_s4,baseline_4step,0,"Background architecture and people appear photographic, not stylized to match the illustrated reference.",claude-opus-4-7,2089,45
+customize_property_style_free_solarmax_fountain_plaza_s4,amp_text_from_ref_mm7_lam2,0,"The background architecture, people, and fountain in Image 2 appear photographic, not stylized like the reference.",claude-opus-4-7,2089,51
+customize_property_style_free_solarmax_fountain_plaza_s4,amp_text_from_ref_mm5+mm6+mm7_lam2,0,"Background buildings and pedestrians appear photographic, not stylized like the illustrated subject.",claude-opus-4-7,2089,48
+customize_property_style_free_solarmax_fountain_plaza_s4,amp_text_from_ref_mm5+mm6+mm7_lam4,1,"Entire image is anime/illustration style, no photographic elements.",claude-opus-4-7,2089,38
+customize_property_style_free_solarmax_fountain_plaza_s4,amp_text_from_ref_mm5+mm6+mm7_lam6,1,"Entire image is rendered in a cartoon/anime illustration style, no photographic elements.",claude-opus-4-7,2089,47
+customize_property_style_free_solarmax_fountain_plaza_s4,amp_image_from_ref_mm7_lam4,0,"Background architecture and pedestrians appear photographic, not stylized like the reference illustration.",claude-opus-4-7,2089,47
+customize_property_style_free_orange_cat_garden_stalk_s4,baseline_4step,0,"Image 2 is clearly photographic, not stylized illustration.",claude-opus-4-7,2278,39
+customize_property_style_free_orange_cat_garden_stalk_s4,amp_text_from_ref_mm7_lam2,0,"Background grass and lighting appear photographic, not stylized like the reference illustration.",claude-opus-4-7,2278,44
+customize_property_style_free_orange_cat_garden_stalk_s4,amp_text_from_ref_mm5+mm6+mm7_lam2,1,Entire image is a stylized cartoon illustration with no photographic elements.,claude-opus-4-7,2278,42
+customize_property_style_free_orange_cat_garden_stalk_s4,amp_text_from_ref_mm5+mm6+mm7_lam4,1,Entire image is cartoon/illustrated style matching the reference.,claude-opus-4-7,2278,39
+customize_property_style_free_orange_cat_garden_stalk_s4,amp_text_from_ref_mm5+mm6+mm7_lam6,1,Entire image is a flat cartoon illustration with no photographic elements.,claude-opus-4-7,2278,41
+customize_property_style_free_orange_cat_garden_stalk_s4,amp_image_from_ref_mm7_lam4,0,"Image 2 is photorealistic, not a stylized illustration matching the reference.",claude-opus-4-7,2278,44
+customize_property_style_free_doll_cafe_friends_s1,baseline_4step,0,Only the small girl is stylized; the other people and background appear photographic.,claude-opus-4-7,2129,40
+customize_property_style_free_doll_cafe_friends_s1,amp_text_from_ref_mm7_lam2,0,"The other people and background appear photorealistic, not stylized like the doll character.",claude-opus-4-7,2129,41
+customize_property_style_free_doll_cafe_friends_s1,amp_text_from_ref_mm5+mm6+mm7_lam2,1,Entire image is rendered in a consistent illustrated/stylized cartoon style with no photographic elements.,claude-opus-4-7,2129,52
+customize_property_style_free_doll_cafe_friends_s1,amp_text_from_ref_mm5+mm6+mm7_lam4,1,Entire image is rendered in a consistent cartoon/illustrated style.,claude-opus-4-7,2129,42
+customize_property_style_free_doll_cafe_friends_s1,amp_text_from_ref_mm5+mm6+mm7_lam6,1,Entire image is a consistent cartoon illustration with no photographic elements.,claude-opus-4-7,2129,42
+customize_property_style_free_doll_cafe_friends_s1,amp_image_from_ref_mm7_lam4,0,Only the doll-like girl is stylized; the other people and cafe background appear photographic.,claude-opus-4-7,2129,46

@@ -6,10 +6,13 @@ Three task-selection modes (mutually exclusive, one required):
   Tasks are resolved by their full ID (e.g. ``manual_solid_yellow_couch``,
   ``solid_red_couch``). See :func:`experiments.common.tasks.get_task`.
 
-* ``--edit-type {add,remove,customize} [{...} ...]`` — batch sweep.
+* ``--edit-type {add,remove} [{...} ...]`` — batch sweep.
   Loads every task in the matching dataset bucket plus the manual bucket
   filtered by edit_type. ``--limit N`` caps tasks **per edit-type**, so
   ``--edit-type add remove --limit 50`` gives up to 100 tasks total.
+  Only edit types with a same-named bucket are accepted
+  (``BATCH_EDIT_TYPES``); customize has none — its families are separate
+  named buckets, so select them via ``--bucket`` (e.g. ``--bucket style``).
 
 * ``--bucket NAME`` — load every task in the named bucket as-is. Useful for
   buckets like ``solid_color`` whose tasks all share one edit_type. Combine
@@ -32,7 +35,13 @@ from __future__ import annotations
 import argparse
 from math import ceil
 
-from experiments.common.tasks import BUCKETS, EDIT_TYPES, TaskDefinition, get_task, load_tasks
+from experiments.common.tasks import (
+    BATCH_EDIT_TYPES,
+    BUCKETS,
+    TaskDefinition,
+    get_task,
+    load_tasks,
+)
 
 
 def add_task_selection(parser: argparse.ArgumentParser) -> None:
@@ -46,10 +55,12 @@ def add_task_selection(parser: argparse.ArgumentParser) -> None:
     )
     group.add_argument(
         "--edit-type", type=str, nargs="+", default=None,
-        choices=list(EDIT_TYPES),
+        choices=list(BATCH_EDIT_TYPES),
         help="One or more edit types; loads every task in those buckets "
              "(dataset bucket + manual bucket filtered to that edit_type). "
-             "Mutually exclusive with --task-id and --bucket.",
+             "customize is not batch-loadable (no customize bucket) — select "
+             "its families via --bucket (e.g. --bucket style). Mutually "
+             "exclusive with --task-id and --bucket.",
     )
     group.add_argument(
         "--bucket", type=str, default=None,

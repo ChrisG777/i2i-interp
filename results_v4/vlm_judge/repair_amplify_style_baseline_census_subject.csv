@@ -1,0 +1,131 @@
+task_id,cell,pass,reason,model,input_tokens,output_tokens
+customize_property_style_free_alice_in_wonderland_pond_reflection_s0,baseline_4step,1,"The girl's dress has illustrated linework/shading while her face is photorealistic, showing hybrid stylization.",claude-sonnet-5,1650,52
+customize_property_style_free_alice_in_wonderland_pond_reflection_s1,baseline_4step,1,"The girl is rendered as a line-art illustration with cross-hatching, matching stylized character rendering.",claude-sonnet-5,1650,49
+customize_property_style_free_alice_in_wonderland_pond_reflection_s4,baseline_4step,1,"Girl is rendered as a stylized ink illustration, not a real photo.",claude-sonnet-5,1650,40
+customize_property_style_free_anime_girl_bookstore_s3,baseline_4step,1,"Main subject is rendered in anime/cartoon style, consistent with stylized illustration.",claude-sonnet-5,2526,45
+customize_property_style_free_anime_girl_coffee_shop_s0,baseline_4step,1,"Main subject is rendered in anime/illustrated style, matching stylized reference.",claude-sonnet-5,2526,42
+customize_property_style_free_anime_girl_coffee_shop_s1,baseline_4step,1,Main subject remains anime-style illustrated character with stylized rendering.,claude-sonnet-5,2526,39
+customize_property_style_free_anime_girl_coffee_shop_s2,baseline_4step,1,"Main subject is anime-style illustration, matching stylized rendering criteria.",claude-sonnet-5,2526,41
+customize_property_style_free_anime_girl_studying_tablet_s3,baseline_4step,1,Main subject remains anime-style illustrated character with green eyes and blue hair.,claude-sonnet-5,2526,42
+customize_property_style_free_bald_man_grocery_walk_s0,baseline_4step,1,Character retains cartoon illustration style with bold outlines despite photographic background.,claude-sonnet-5,1650,41
+customize_property_style_free_bald_man_grocery_walk_s1,baseline_4step,1,"Main subject remains a cartoon-style illustrated character, matching stylized rendering.",claude-sonnet-5,1650,44
+customize_property_style_free_boy_pixel_arcade_s2,baseline_4step,1,"Main subject is a cartoon-style child matching Image 1's illustrated look, not photorealistic.",claude-sonnet-5,1650,49
+customize_property_style_free_boy_pixel_bike_alley_s1,baseline_4step,1,"Main subject boy remains cartoon-style with bold outlines and flat colors, matching illustrated style.",claude-sonnet-5,1650,50
+customize_property_style_free_dog_digging_sand_s1,baseline_4step,1,"Dog remains cartoon-style with bold outlines and flat colors, matching stylized reference.",claude-sonnet-5,1650,47
+customize_property_style_free_dog_sleeping_porch_s1,baseline_4step,1,"Dog subject remains cartoon-illustrated with bold outlines, not photorealistic.",claude-sonnet-5,1650,46
+customize_property_style_free_doll_cafe_friends_s0,baseline_4step,1,"The girl retains cartoon-like features, hair, eyes, and dress matching the stylized reference.",claude-sonnet-5,2218,48
+customize_property_style_free_doll_cafe_friends_s1,baseline_4step,1,The girl retains stylized cartoon rendering with large eyes and toy-like features amid photographic background.,claude-sonnet-5,2218,49
+customize_property_style_free_doll_cafe_friends_s2,baseline_4step,1,"The girl retains cartoon-style rendering with stylized eyes, hair, and outfit matching Image 1.",claude-sonnet-5,2218,52
+customize_property_style_free_doll_cafe_friends_s3,baseline_4step,1,The girl retains cartoon 3D-rendered stylization matching the reference character.,claude-sonnet-5,2218,42
+customize_property_style_free_doll_cafe_friends_s4,baseline_4step,1,"Main girl subject remains cartoon-style with stylized proportions, hat, and dress.",claude-sonnet-5,2218,45
+customize_property_style_free_doll_fashion_show_s0,baseline_4step,1,Main subject remains a stylized cartoon doll-like character with exaggerated eyes.,claude-sonnet-5,2218,45
+customize_property_style_free_doll_fashion_show_s1,baseline_4step,1,"Main subject remains a stylized toy-like doll character, not a real photographed person.",claude-sonnet-5,2218,42
+customize_property_style_free_doll_fashion_show_s2,baseline_4step,1,Main subject remains a stylized 3D toy-like doll with cartoon eyes and features.,claude-sonnet-5,2218,46
+customize_property_style_free_doll_fashion_show_s3,baseline_4step,1,"Main subject remains a stylized 3D toy-like doll character, matching reference style.",claude-sonnet-5,2218,43
+customize_property_style_free_doll_fashion_show_s4,baseline_4step,1,Main subject remains a stylized doll-like character with cartoonish eyes and toy rendering.,claude-sonnet-5,2218,47
+customize_property_style_free_doll_mirror_s1,baseline_4step,1,"Main subject is a stylized doll-like cartoon girl, not a real photographed person.",claude-sonnet-5,2218,44
+customize_property_style_free_doll_mirror_s2,baseline_4step,1,"Main subject is a stylized 3D-rendered doll-like girl, not a real photo.",claude-sonnet-5,2218,45
+customize_property_style_free_doll_mirror_s3,baseline_4step,1,"Main subject remains a stylized 3D-toy-like cartoon girl, not a real photo.",claude-sonnet-5,2218,47
+customize_property_style_free_doll_photoshoot_park_s0,baseline_4step,1,"Main subject remains a stylized 3D cartoon-like character, not photorealistic.",claude-sonnet-5,2218,44
+customize_property_style_free_doll_photoshoot_park_s1,baseline_4step,1,Main subject remains a stylized 3D cartoon character with big eyes and toy-like rendering.,claude-sonnet-5,2218,48
+customize_property_style_free_doll_photoshoot_park_s2,baseline_4step,1,"Main subject is a stylized 3D-rendered cartoon girl, not a real photo.",claude-sonnet-5,2218,45
+customize_property_style_free_doll_photoshoot_park_s3,baseline_4step,1,"Main subject remains a stylized 3D cartoon character, matching reference's toy-like rendering.",claude-sonnet-5,2218,48
+customize_property_style_free_doll_photoshoot_park_s4,baseline_4step,1,"Main subject remains a stylized 3D-rendered cartoon girl, not a real photo.",claude-sonnet-5,2218,46
+customize_property_style_free_doll_shopping_s0,baseline_4step,1,The girl remains a stylized 3D-cartoon character with exaggerated eyes and toy-like rendering.,claude-sonnet-5,2218,52
+customize_property_style_free_doll_shopping_s1,baseline_4step,1,"Main subject remains a stylized 3D cartoon character, matching the reference's illustrated toy-like rendering.",claude-sonnet-5,2218,53
+customize_property_style_free_doll_shopping_s2,baseline_4step,1,Main subject retains stylized doll-like 3D cartoon rendering despite photographic background.,claude-sonnet-5,2218,46
+customize_property_style_free_doll_shopping_s3,baseline_4step,1,"Main subject remains a stylized cartoon-like doll character with large eyes, not photorealistic.",claude-sonnet-5,2218,48
+customize_property_style_free_doll_shopping_s4,baseline_4step,1,Main subject remains a stylized cartoon character with large eyes and toy-like rendering.,claude-sonnet-5,2218,45
+customize_property_style_free_elephant_jungle_foliage_s3,baseline_4step,1,"Elephant remains cartoon-style with bold outlines and flat colors, not photorealistic.",claude-sonnet-5,1650,47
+customize_property_style_free_fox_drinking_stream_s1,baseline_4step,0,"The fox in image 2 is rendered photorealistically, not stylized like the reference.",claude-sonnet-5,2124,43
+customize_property_style_free_fox_drinking_stream_s2,baseline_4step,1,"Fox is rendered as detailed painterly illustration, not a real photograph.",claude-sonnet-5,2124,41
+customize_property_style_free_fox_drinking_stream_s4,baseline_4step,0,"The fox in Image 2 is rendered photorealistically, not stylized like Image 1.",claude-sonnet-5,2124,45
+customize_property_style_free_fox_napping_log_s0,baseline_4step,1,"Fox is illustrated with stylized fur shading and outlines, not photorealistic.",claude-sonnet-5,2124,44
+customize_property_style_free_fox_napping_log_s1,baseline_4step,1,"Fox subject retains cartoon/illustrated style with cel-shading, not photorealistic.",claude-sonnet-5,2124,47
+customize_property_style_free_fox_snow_s1,baseline_4step,0,"The fox in image 2 is rendered as a realistic photographic animal, not stylized.",claude-sonnet-5,2124,44
+customize_property_style_free_fox_snow_s2,baseline_4step,0,"The fox in Image 2 is rendered with realistic photographic fur, anatomy, and shading, not stylized.",claude-sonnet-5,2124,53
+customize_property_style_free_fox_snow_s3,baseline_4step,0,"The fox in image 2 is rendered as a realistic photographed animal, not stylized.",claude-sonnet-5,2124,44
+customize_property_style_free_frog_mossy_log_s0,baseline_4step,1,"Frog subject remains illustrated/cartoon-like with clean linework and stylized shading, not photorealistic.",claude-sonnet-5,1650,53
+customize_property_style_free_frog_mossy_log_s1,baseline_4step,1,"Frog subject retains cartoon/illustrated outlines and flat shading, not photorealistic.",claude-sonnet-5,1650,48
+customize_property_style_free_frog_rain_leaf_s0,baseline_4step,0,"The frog subject looks like a realistic photographed frog, not stylized illustration.",claude-sonnet-5,1650,42
+customize_property_style_free_frog_rain_leaf_s1,baseline_4step,1,Frog retains cartoon/illustrated outlines and coloring despite added realistic water droplets.,claude-sonnet-5,1650,48
+customize_property_style_free_frog_rain_leaf_s2,baseline_4step,0,"The frog in Image 2 looks like a realistic photographed frog, not stylized like Image 1.",claude-sonnet-5,1650,48
+customize_property_style_free_frog_rain_leaf_s3,baseline_4step,0,"Frog subject is rendered photorealistically with lifelike texture, not stylized illustration.",claude-sonnet-5,1650,46
+customize_property_style_free_frog_rain_leaf_s4,baseline_4step,0,"The frog subject in image 2 is rendered photorealistically, not stylized like reference.",claude-sonnet-5,1650,44
+customize_property_style_free_globe_man_baseball_game_s1,baseline_4step,0,"Main subject is photorealistic person, not stylized illustration like reference.",claude-sonnet-5,2550,39
+customize_property_style_free_globe_man_baseball_game_s2,baseline_4step,0,"Main subject is a realistically photographed man, no illustrative stylization applied.",claude-sonnet-5,2550,41
+customize_property_style_free_globe_man_baseball_game_s3,baseline_4step,1,Main subject retains illustrated cartoon style with globe torso and stylized shading.,claude-sonnet-5,2550,43
+customize_property_style_free_globe_man_baseball_game_s4,baseline_4step,1,"Main subject is illustrated/stylized with globe belly, not a real photo.",claude-sonnet-5,2550,41
+customize_property_style_free_globe_man_diner_breakfast_s3,baseline_4step,1,"Main subject is rendered in cartoon/comic style with bold outlines, not photorealistic.",claude-sonnet-5,2550,47
+customize_property_style_free_globe_man_fishing_pier_s0,baseline_4step,1,"Main subject is illustrated in a cartoon/painterly style, not photorealistic.",claude-sonnet-5,2550,44
+customize_property_style_free_globe_man_fishing_pier_s1,baseline_4step,1,"Main subject remains a stylized cartoon illustration with globe torso, not photorealistic.",claude-sonnet-5,2550,46
+customize_property_style_free_globe_man_gas_station_s2,baseline_4step,1,"Main subject retains stylized illustration with stippled shading and cartoon-like line art, not photographic.",claude-sonnet-5,2550,49
+customize_property_style_free_globe_man_gas_station_s3,baseline_4step,1,"Main subject retains stylized comic illustration rendering, not photorealistic.",claude-sonnet-5,2550,41
+customize_property_style_free_mouse_bread_crumb_s0,baseline_4step,1,"Mouse retains cartoon outline, flat shading, and stylized features despite photographic background.",claude-sonnet-5,1650,46
+customize_property_style_free_mouse_bread_crumb_s3,baseline_4step,1,"Mouse is clearly a stylized cartoon illustration, not photorealistic.",claude-sonnet-5,1650,43
+customize_property_style_free_mouse_bread_crumb_s4,baseline_4step,1,"Mouse is rendered as a cartoon illustration with clean outlines, not photorealistic.",claude-sonnet-5,1650,47
+customize_property_style_free_mouse_cheese_wedge_s0,baseline_4step,1,"Mouse remains cartoon-style with bold outlines and flat shading, matching stylized reference.",claude-sonnet-5,1650,48
+customize_property_style_free_mouse_cheese_wedge_s1,baseline_4step,1,"Mouse remains a cartoon-style illustration with bold outlines, not a real photo.",claude-sonnet-5,1650,45
+customize_property_style_free_mouse_cheese_wedge_s2,baseline_4step,1,"Mouse remains cartoon-illustrated with bold outlines, not photorealistic.",claude-sonnet-5,1650,45
+customize_property_style_free_mouse_cheese_wedge_s3,baseline_4step,1,"Mouse remains a cartoon-style illustration with bold outlines, not photorealistic.",claude-sonnet-5,1650,46
+customize_property_style_free_mouse_cheese_wedge_s4,baseline_4step,1,"Mouse retains cartoon outline, flat shading, and stylized features, not photorealistic.",claude-sonnet-5,1650,47
+customize_property_style_free_mouse_mossy_stone_s0,baseline_4step,1,"The mouse retains cartoon outlines, flat shading, and toy-like stylization despite photorealistic background.",claude-sonnet-5,1650,52
+customize_property_style_free_mouse_mossy_stone_s1,baseline_4step,1,"Mouse retains cartoon outline, flat shading, and stylized proportions like the reference.",claude-sonnet-5,1650,46
+customize_property_style_free_mouse_mossy_stone_s2,baseline_4step,1,"Mouse retains cartoon outlines, flat coloring, and stylized proportions like Image 1.",claude-sonnet-5,1650,49
+customize_property_style_free_mouse_mossy_stone_s3,baseline_4step,1,Mouse retains cartoon outlines and flat cel-shaded style despite photorealistic background.,claude-sonnet-5,1650,48
+customize_property_style_free_mouse_mossy_stone_s4,baseline_4step,1,"Mouse remains a cartoon-style illustration with bold outlines, matching stylized reference.",claude-sonnet-5,1650,47
+customize_property_style_free_mouse_wheat_field_s0,baseline_4step,1,Mouse remains a flat cartoon illustration matching the stylized reference.,claude-sonnet-5,1650,41
+customize_property_style_free_mouse_wheat_field_s1,baseline_4step,1,"Mouse remains a flat cartoon illustration matching the reference style, unlike the photographic background.",claude-sonnet-5,1650,48
+customize_property_style_free_mouse_wheat_field_s2,baseline_4step,1,Mouse remains a flat cartoon illustration matching the reference style.,claude-sonnet-5,1650,39
+customize_property_style_free_mouse_wheat_field_s3,baseline_4step,1,"Mouse remains flat cartoon illustration style matching reference, not photorealistic.",claude-sonnet-5,1650,44
+customize_property_style_free_mouse_wheat_field_s4,baseline_4step,1,"Mouse retains cartoon outlines, exaggerated eyes, and illustrated style consistent with reference.",claude-sonnet-5,1650,52
+customize_property_style_free_orange_cat_fence_walk_s1,baseline_4step,1,Main subject cat is a stylized cartoon illustration with bold outlines and flat colors.,claude-sonnet-5,2367,46
+customize_property_style_free_orange_cat_fence_walk_s2,baseline_4step,1,"Cat is rendered as a stylized cartoon illustration, not a real photo.",claude-sonnet-5,2367,42
+customize_property_style_free_orange_cat_fence_walk_s3,baseline_4step,1,"Cat in image 2 is a cartoon-style illustration with bold outlines, not photorealistic.",claude-sonnet-5,2367,49
+customize_property_style_free_orange_cat_garden_stalk_s1,baseline_4step,0,"The cat in Image 2 is rendered photorealistically, not in the flat cartoon style of Image 1.",claude-sonnet-5,2367,51
+customize_property_style_free_orange_cat_garden_stalk_s2,baseline_4step,1,Cat's face/body retains flat cartoon coloring and bold outlines despite photorealistic legs/background.,claude-sonnet-5,2367,52
+customize_property_style_free_orange_cat_garden_stalk_s3,baseline_4step,1,"Cat in image 2 retains flat cartoon coloring, bold outlines, and simplified features.",claude-sonnet-5,2367,48
+customize_property_style_free_orange_cat_garden_stalk_s4,baseline_4step,0,"The cat in Image 2 is photorealistic, not stylized or cartoon-like.",claude-sonnet-5,2367,44
+customize_property_style_free_orange_cat_windowsill_nap_s2,baseline_4step,1,"Cat is rendered as detailed anime-style illustration, not a real photo, matching stylization criteria.",claude-sonnet-5,2367,50
+customize_property_style_free_orange_cat_yarn_play_s0,baseline_4step,1,"Cat remains a stylized cartoon illustration with bold outlines, not photorealistic.",claude-sonnet-5,2367,46
+customize_property_style_free_orange_cat_yarn_play_s3,baseline_4step,1,The cat remains a stylized cartoon illustration with bold outlines and simplified features.,claude-sonnet-5,2367,44
+customize_property_style_free_solarmax_fountain_plaza_s0,baseline_4step,1,"Main subject is rendered as a stylized 3D cartoon character, not a real photo.",claude-sonnet-5,2178,44
+customize_property_style_free_solarmax_fountain_plaza_s1,baseline_4step,0,"The boy in image 2 is rendered photorealistically, not as an illustration.",claude-sonnet-5,2178,41
+customize_property_style_free_solarmax_fountain_plaza_s2,baseline_4step,1,"Main subject is a stylized 3D-rendered cartoon character, not a real photo.",claude-sonnet-5,2178,44
+customize_property_style_free_solarmax_fountain_plaza_s3,baseline_4step,1,"Character remains cartoon/anime styled with flat colors, not photorealistic.",claude-sonnet-5,2178,42
+customize_property_style_free_solarmax_fountain_plaza_s4,baseline_4step,0,"The boy in image 2 has realistic photographic skin, face, and hair, not stylized rendering.",claude-sonnet-5,2178,48
+customize_property_style_free_solarmax_mountain_top_s1,baseline_4step,1,"Subject retains cartoon-like proportions, smooth shading, and illustrated style despite photorealistic background.",claude-sonnet-5,2178,52
+customize_property_style_free_solarmax_mountain_top_s2,baseline_4step,1,"Main subject remains anime-style illustrated character, not photorealistic.",claude-sonnet-5,2178,39
+customize_property_style_free_solarmax_ramen_shop_s0,baseline_4step,1,"Main subject remains anime-style illustrated character, not photorealistic.",claude-sonnet-5,2178,39
+customize_property_style_free_solarmax_rooftop_jump_s0,baseline_4step,1,"Main subject remains anime-style illustrated character, not photorealistic.",claude-sonnet-5,2178,39
+customize_property_style_free_solarmax_rooftop_jump_s1,baseline_4step,1,"Main subject remains a stylized anime-style illustrated character, not a real photo.",claude-sonnet-5,2178,42
+customize_property_style_free_solarmax_rooftop_jump_s2,baseline_4step,1,"Main subject remains an anime-style illustrated character, matching stylization criteria.",claude-sonnet-5,2178,42
+customize_property_style_free_solarmax_rooftop_jump_s3,baseline_4step,1,"Character remains anime-style illustrated, not photorealistic.",claude-sonnet-5,2178,36
+customize_property_style_free_solarmax_rooftop_jump_s4,baseline_4step,1,"Main subject remains anime-style illustrated character, not photorealistic.",claude-sonnet-5,2178,39
+customize_property_style_free_solarmax_training_mat_s0,baseline_4step,1,"Main subject is rendered in clear anime cartoon style, matching stylized reference.",claude-sonnet-5,2178,43
+customize_property_style_free_solarmax_training_mat_s2,baseline_4step,1,"Main subject remains anime-style illustrated character, not photorealistic.",claude-sonnet-5,2178,39
+customize_property_style_free_solarmax_training_mat_s3,baseline_4step,1,"Main subject remains a stylized anime cartoon character, not a real photo.",claude-sonnet-5,2178,40
+customize_property_style_free_solarmax_training_mat_s4,baseline_4step,1,"Character remains anime-style illustration with cel-shading, matching stylized rendering of reference.",claude-sonnet-5,2178,46
+customize_property_style_free_sparrow_bird_bath_s0,baseline_4step,0,"The bird in Image 2 is rendered as a realistic photographed sparrow, not stylized.",claude-sonnet-5,1650,47
+customize_property_style_free_sparrow_bird_bath_s1,baseline_4step,0,"The bird in Image 2 is rendered as a realistic photographed sparrow, not stylized.",claude-sonnet-5,1650,47
+customize_property_style_free_sparrow_bird_bath_s2,baseline_4step,0,"The bird in Image 2 is rendered as a realistic photographed bird, not stylized.",claude-sonnet-5,1650,45
+customize_property_style_free_sparrow_bird_bath_s3,baseline_4step,0,"The bird in Image 2 is a realistic photographed sparrow, not stylized like the reference.",claude-sonnet-5,1650,47
+customize_property_style_free_sparrow_bird_bath_s4,baseline_4step,1,"Bird in image 2 has bold outlines and flat cartoon coloring, clearly stylized, not photorealistic.",claude-sonnet-5,1650,55
+customize_property_style_free_sparrow_branch_perch_s0,baseline_4step,0,"The bird in Image 2 looks like a realistic photographed sparrow, not stylized.",claude-sonnet-5,1650,45
+customize_property_style_free_sparrow_branch_perch_s1,baseline_4step,1,"The bird has crisp cartoon-style outlines and flat coloring, distinctly stylized despite realistic background.",claude-sonnet-5,1650,53
+customize_property_style_free_sparrow_branch_perch_s2,baseline_4step,1,"Main subject bird is illustrated with flat colors and outlines, not photorealistic.",claude-sonnet-5,1650,44
+customize_property_style_free_sparrow_branch_perch_s3,baseline_4step,0,"The bird subject looks like a real photographed sparrow, not stylized like reference.",claude-sonnet-5,1650,42
+customize_property_style_free_sparrow_branch_perch_s4,baseline_4step,0,"The bird in Image 2 is photorealistic with natural feather detail, not stylized.",claude-sonnet-5,1650,44
+customize_property_style_free_sparrow_feeder_seeds_s2,baseline_4step,1,"Bird in image 2 is clearly illustrated/cartoon-style with bold outlines and flat coloring, not photographic.",claude-sonnet-5,1650,57
+customize_property_style_free_sparrow_feeder_seeds_s3,baseline_4step,1,Bird has small cartoon-style yellow patches and stylized elements overlaid on realistic form.,claude-sonnet-5,1650,48
+customize_property_style_free_sparrow_feeder_seeds_s4,baseline_4step,1,"Bird has clean outlines and painterly cartoon shading, not a real photo.",claude-sonnet-5,1650,42
+customize_property_style_free_sparrow_snow_fence_s0,baseline_4step,0,"The bird in Image 2 looks like a realistic photographed sparrow, not stylized.",claude-sonnet-5,1650,45
+customize_property_style_free_sparrow_snow_fence_s1,baseline_4step,0,"The bird in Image 2 is a realistic photographed sparrow, not stylized like Image 1.",claude-sonnet-5,1650,48
+customize_property_style_free_sparrow_snow_fence_s2,baseline_4step,0,"The bird in Image 2 is photorealistic, not stylized like the cartoon reference.",claude-sonnet-5,1650,45
+customize_property_style_free_sparrow_snow_fence_s3,baseline_4step,0,"The bird in Image 2 is rendered as a realistic photographed sparrow, not stylized.",claude-sonnet-5,1650,47
+customize_property_style_free_sparrow_snow_fence_s4,baseline_4step,0,"The bird in image 2 is a realistic photographed sparrow, not stylized like image 1.",claude-sonnet-5,1650,46
+customize_property_style_free_woman_runner_city_bridge_s0,baseline_4step,1,"Main subject remains illustrated/cartoon-style, not photorealistic, matching stylized character.",claude-sonnet-5,2610,48
+customize_property_style_free_woman_runner_city_bridge_s1,baseline_4step,0,"The runner is rendered photorealistically, not in a stylized illustration manner.",claude-sonnet-5,2610,41
+customize_property_style_free_woman_runner_city_bridge_s2,baseline_4step,0,"The main subject is rendered as a realistic photographed person, not stylized.",claude-sonnet-5,2610,39
+customize_property_style_free_woman_runner_city_bridge_s3,baseline_4step,0,"The runner in Image 2 is rendered photorealistically, not stylized like the illustration reference.",claude-sonnet-5,2610,47
+customize_property_style_free_woman_runner_city_bridge_s4,baseline_4step,0,"Runner in image 2 is photorealistic, not stylized or illustrated like the reference.",claude-sonnet-5,2610,45

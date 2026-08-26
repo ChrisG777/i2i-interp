@@ -28,12 +28,17 @@ from diffusers.models.transformers.transformer_flux2 import (
     Flux2AttnProcessor,
     Flux2ParallelSelfAttnProcessor,
 )
+from diffusers.models.transformers.transformer_qwenimage import (
+    QwenDoubleStreamAttnProcessor2_0,
+)
 
 
 __all__ = [
     "KnockoutFlux2AttnProcessor",
     "KnockoutFlux2ParallelSelfAttnProcessor",
+    "KnockoutQwenAttnProcessor",
     "install_knockout_processors",
+    "install_qwen_knockout_processors",
     "install_processors_by_factory",
     "restore_processors",
 ]
@@ -121,6 +126,51 @@ class KnockoutFlux2ParallelSelfAttnProcessor(Flux2ParallelSelfAttnProcessor):
         )
 
 
+class KnockoutQwenAttnProcessor(QwenDoubleStreamAttnProcessor2_0):
+    """Qwen-Image-Edit dual-stream processor that injects ``self._mask``.
+
+    The QwenImage transformer builds a joint 2D bool padding mask from
+    ``encoder_hidden_states_mask`` and passes it to every block as
+    ``attention_mask``. When ``_mask`` is None the incoming mask is forwarded
+    untouched, so an installed-but-inactive processor is bit-identical to the
+    stock path (same SDPA kernel selection). When ``_mask`` is set we require
+    the incoming mask to be all-True (batch size 1 — no real padding, so
+    dropping it loses nothing) and substitute the additive knockout mask.
+    """
+
+    def __init__(self, block_name: str):
+        super().__init__()
+        self.block_name = block_name
+        self._mask: torch.Tensor | None = None
+
+    def __call__(
+        self,
+        attn,
+        hidden_states: torch.Tensor,
+        encoder_hidden_states: torch.Tensor | None = None,
+        encoder_hidden_states_mask: torch.Tensor | None = None,
+        attention_mask: torch.Tensor | None = None,
+        image_rotary_emb: torch.Tensor | None = None,
+    ) -> torch.Tensor:
+        if self._mask is None:
+            effective_mask = attention_mask
+        else:
+            if attention_mask is not None:
+                assert attention_mask.dtype == torch.bool and bool(attention_mask.all()), (
+                    f"{self.block_name}: incoming attention_mask has real "
+                    f"padding; knockout substitution would drop it"
+                )
+            effective_mask = self._mask
+        return super().__call__(
+            attn,
+            hidden_states,
+            encoder_hidden_states,
+            encoder_hidden_states_mask,
+            effective_mask,
+            image_rotary_emb,
+        )
+
+
 def install_knockout_processors(transformer) -> tuple[dict[str, object], dict]:
     """Install knockout processors on every block of ``transformer``.
 
@@ -151,6 +201,28 @@ def install_knockout_processors(transformer) -> tuple[dict[str, object], dict]:
             else KnockoutFlux2AttnProcessor
         )
         inst = cls(short)
+        procs_by_block_name[short] = inst
+        return inst
+
+    original = install_processors_by_factory(transformer, factory)
+    return procs_by_block_name, original
+
+
+def install_qwen_knockout_processors(transformer) -> tuple[dict[str, object], dict]:
+    """Qwen-Image-Edit variant of :func:`install_knockout_processors`.
+
+    The QwenImage transformer has only dual-stream blocks, so a single
+    processor class covers every block. Keys of the returned dict match
+    ``utils.qwen_image_edit.ALL_BLOCK_NAMES`` (``"transformer_blocks.<i>"``).
+    """
+    procs_by_block_name: dict[str, object] = {}
+
+    def factory(block_name: str, is_single: bool):
+        assert not is_single, (
+            f"QwenImage transformer should have no single blocks, got {block_name!r}"
+        )
+        short = block_name.removesuffix(".attn")
+        inst = KnockoutQwenAttnProcessor(short)
         procs_by_block_name[short] = inst
         return inst
 

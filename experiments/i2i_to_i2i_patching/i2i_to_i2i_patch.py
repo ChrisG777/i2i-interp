@@ -51,7 +51,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--block-range", type=int, nargs=2, default=None,
         metavar=("FIRST", "LAST"),
         help="Limit the block sweep to block indices [FIRST, LAST] inclusive. "
-             "Default: all 32 blocks. Useful for fixture / smoke runs.",
+             "Default: all 32 blocks. Useful for fixture / smoke runs. With "
+             "--results-subdir, the range must be a single block (B B).",
     )
     parser.add_argument(
         "--shard-index", type=int, default=0,
@@ -75,18 +76,36 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
              f"Default {NUM_INFERENCE_STEPS} (single-step, original behavior).",
     )
     parser.add_argument(
+        "--text-seq-len", type=int, default=512,
+        help="Qwen3 text-token sequence length (max_sequence_length). The "
+             "prompt is padded/truncated to this many tokens. Default 512 "
+             "(model default). Raise it (e.g. 1024) to add padding slots for "
+             "the prompt-length / padding-token ablation.",
+    )
+    parser.add_argument(
         "--text-token-mode", nargs="+",
-        choices=["all", "padding_only", "content_only"], default=["all"],
+        choices=[
+            "all", "padding_only", "content_only",
+            "instruction_only", "filler_only",
+        ],
+        default=["all"],
         help="Which text-token positions to patch. ``all`` patches all 512 "
              "text-token slots (default, original behavior). ``padding_only`` "
              "patches only the Qwen3 padding positions (complement of the "
              "real prompt content). ``content_only`` patches only the content "
-             "positions themselves. Pass any combination to run multiple "
+             "positions themselves. ``instruction_only`` / ``filler_only`` "
+             "split that content span into the original short instruction's "
+             "tokens vs the appended neutral filler's tokens (padding-ablation "
+             "/ longprompt tasks only — they need metadata.short_instruction). "
+             "Pass any combination to run multiple "
              "variants in the same task dir, sharing reference + baselines.",
     )
     args = parser.parse_args(argv)
     assert args.num_inference_steps >= 1, (
         f"--num-inference-steps must be >= 1, got {args.num_inference_steps}"
+    )
+    assert args.text_seq_len > 0, (
+        f"--text-seq-len must be > 0, got {args.text_seq_len}"
     )
     if args.block_range is not None:
         first, last = args.block_range

@@ -3,10 +3,17 @@
 A knockout setting is a ``(sources, destination)`` pair: it blocks
 information flow from any region in ``sources`` to ``destination``.
 Regions are token bands within the joint stream — full categories
-(``"text"``, ``"image"``, ``"ref"``) or text-token subsets
-(``"text[content]"``, ``"text[padding]"``). Category slices come from
-``utils.flux2_klein.get_category_slices``; content/padding subsets
-within text are resolved against a 1D bool mask passed by the caller.
+(``"text"``, ``"image"``, ``"ref"``) or text-token subsets. Category
+slices come from ``utils.token_layout.get_category_slices``. Two subset
+families exist within the text band:
+
+* ``"text[content]"`` / ``"text[padding]"`` — content vs padding
+  positions, resolved against a 1D bool mask passed by the caller
+  (klein's fixed-512 Qwen3 text stream).
+* ``"text[vision]"`` / ``"text[prompt]"`` — the VL vision-token band vs
+  the post-vision prompt band, resolved from the layout itself
+  (``TokenLayout.vision_slice`` / ``prompt_slice``; Qwen-Image-Edit,
+  whose text stream embeds the reference image's vision tokens).
 
 In the attention view, information flows from keys to queries: query
 position ``q`` reads value vectors ``v_k`` weighted by the softmax of
@@ -27,7 +34,7 @@ from typing import Iterable, Literal
 
 import torch
 
-from utils.flux2_klein import TokenLayout, get_category_slices
+from utils.token_layout import TokenLayout, get_category_slices
 
 __all__ = [
     "Category",
@@ -57,29 +64,38 @@ _VALID_CATEGORIES: tuple[Category, ...] = ("text", "image", "ref")
 # and ``"text[padding]"`` mean the text-content / text-padding subsets — the
 # caller resolves which positions are content via the Qwen3 attention mask
 # and passes a single ``text_content_mask`` bool tensor to the builder.
-Region = Literal["text", "image", "ref", "text[content]", "text[padding]"]
+# ``"text[vision]"`` and ``"text[prompt]"`` are the VL vision-token band and
+# the post-vision prompt band, read directly off the layout (requires
+# ``layout.has_vision``).
+Region = Literal[
+    "text", "image", "ref",
+    "text[content]", "text[padding]", "text[vision]", "text[prompt]",
+]
 VALID_REGIONS: tuple[Region, ...] = (
-    "text", "image", "ref", "text[content]", "text[padding]",
+    "text", "image", "ref",
+    "text[content]", "text[padding]", "text[vision]", "text[prompt]",
 )
-_TEXT_SUBSET_REGIONS: frozenset[str] = frozenset({"text[content]", "text[padding]"})
+_TEXT_SUBSET_REGIONS: frozenset[str] = frozenset(
+    {"text[content]", "text[padding]", "text[vision]", "text[prompt]"}
+)
 
 LayerMode = Literal["suffix", "prefix", "individual", "window"]
 LAYER_MODES: tuple[LayerMode, ...] = ("suffix", "prefix", "individual", "window")
 
 
-def _parse_region(region: Region) -> tuple[Category, Literal["content", "padding"] | None]:
+def _parse_region(
+    region: Region,
+) -> tuple[Category, Literal["content", "padding", "vision", "prompt"] | None]:
     """Return ``(base_category, subset_kind)`` for a region string.
 
-    ``subset_kind`` is ``None`` for full categories, ``"content"`` /
-    ``"padding"`` for text subsets. Fails fast on unknown region strings.
+    ``subset_kind`` is ``None`` for full categories and the subset name for
+    text subsets. Fails fast on unknown region strings.
     """
     assert region in VALID_REGIONS, (
         f"Unknown region {region!r}. Valid: {sorted(VALID_REGIONS)}"
     )
-    if region == "text[content]":
-        return ("text", "content")
-    if region == "text[padding]":
-        return ("text", "padding")
+    if region in _TEXT_SUBSET_REGIONS:
+        return ("text", region.removeprefix("text[").removesuffix("]"))  # type: ignore[return-value]
     return (region, None)  # type: ignore[return-value]
 
 
@@ -175,6 +191,14 @@ def _region_indexer(
     assert base == "text", (
         f"Internal error: only text supports subsets, got base={base!r}"
     )
+    if subset in ("vision", "prompt"):
+        # Layout-driven contiguous bands (VL-conditioned models). Returned as
+        # slices, so they always index rectangularly against any other region.
+        assert layout.has_vision, (
+            f"Region {region!r} requires a layout with vision tokens "
+            f"(vision_start/vision_end), got {layout}"
+        )
+        return layout.vision_slice if subset == "vision" else layout.prompt_slice
     assert text_content_mask is not None, (
         f"Region {region!r} requires text_content_mask, got None"
     )
@@ -425,17 +449,25 @@ _TEXT_SUBSET_NAMED_SETTINGS: dict[str, KnockoutSetting] = {
     "ref->text[padding]": KnockoutSetting(("ref",), "text[padding]"),
     "ref->text[content]": KnockoutSetting(("ref",), "text[content]"),
     "text[padding]+ref->image": KnockoutSetting(("text[padding]", "ref"), "image"),
+    # VL-conditioned models (Qwen-Image-Edit): the semantic route runs through
+    # the vision tokens inside the text stream, the appearance route through
+    # the ref latents. These settings cut them separately or together.
+    "text[vision]->image": KnockoutSetting(("text[vision]",), "image"),
+    "text[vision]+ref->image": KnockoutSetting(("text[vision]", "ref"), "image"),
+    "ref->text[vision]": KnockoutSetting(("ref",), "text[vision]"),
+    "ref->text[prompt]": KnockoutSetting(("ref",), "text[prompt]"),
 }
 
 
 def resolve_settings(names: Iterable[str]) -> list[KnockoutSetting]:
     """Look up ``KnockoutSetting`` instances by ``.name`` (e.g. ``"ref->text"``).
 
-    Accepts both the eight base settings in ``KNOCKOUT_SETTINGS`` and the three
-    text-subset named settings (``ref->text[padding]``, ``ref->text[content]``,
-    ``text[padding]+ref->image``). Composites such as ``image<->ref`` (which
-    expand to multiple directives) are NOT handled here — callers that need
-    them should consult ``COMPOSITE_KNOCKOUT_SETTINGS`` directly.
+    Accepts both the eight base settings in ``KNOCKOUT_SETTINGS`` and the
+    text-subset named settings (klein content/padding subsets and the
+    VL vision/prompt subsets — see ``_TEXT_SUBSET_NAMED_SETTINGS``).
+    Composites such as ``image<->ref`` (which expand to multiple directives)
+    are NOT handled here — callers that need them should consult
+    ``COMPOSITE_KNOCKOUT_SETTINGS`` directly.
     """
     by_name = {s.name: s for s in KNOCKOUT_SETTINGS}
     resolved: list[KnockoutSetting] = []

@@ -1,0 +1,451 @@
+task_id,cell,pass,reason,model,input_tokens,output_tokens
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s0,baseline_4step,1,"Image 2 is fully rendered as a colored cartoon illustration, no photographic elements.",claude-sonnet-5,1556,46
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s1,baseline_4step,1,Image 2 is fully cartoon-style illustration with no photographic elements.,claude-sonnet-5,1556,41
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s2,baseline_4step,1,"Image 2 is fully rendered as a colored cartoon illustration, no photographic elements.",claude-sonnet-5,1556,46
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s3,baseline_4step,1,Entire scene is a stylized cartoon illustration with no photographic elements.,claude-sonnet-5,1556,41
+customize_property_style_free_alice_in_wonderland_chasing_rabbit_s4,baseline_4step,1,"Image 2 is fully rendered as a cartoon illustration, no photographic elements.",claude-sonnet-5,1556,44
+customize_property_style_free_alice_in_wonderland_garden_path_s0,baseline_4step,1,"Entire scene, figure and rose garden background, is rendered in cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,53
+customize_property_style_free_alice_in_wonderland_garden_path_s1,baseline_4step,1,"Image 2 is fully rendered as a colored cartoon illustration, no photographic elements.",claude-sonnet-5,1556,46
+customize_property_style_free_alice_in_wonderland_garden_path_s2,baseline_4step,1,"Entire scene, subject and background, rendered in consistent colored cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_alice_in_wonderland_garden_path_s3,baseline_4step,1,Entire image is a stylized pen-and-ink illustration with no photographic elements.,claude-sonnet-5,1556,43
+customize_property_style_free_alice_in_wonderland_garden_path_s4,baseline_4step,1,"Entire image is a black-and-white line illustration, no photographic elements present.",claude-sonnet-5,1556,40
+customize_property_style_free_alice_in_wonderland_pond_reflection_s0,baseline_4step,0,"Background trees, water, and lighting look photographic; only dress is illustrated.",claude-sonnet-5,1556,41
+customize_property_style_free_alice_in_wonderland_pond_reflection_s1,baseline_4step,0,"Background trees, grass, and water reflections have a photographic texture, not fully stylized.",claude-sonnet-5,1556,44
+customize_property_style_free_alice_in_wonderland_pond_reflection_s2,baseline_4step,1,"Entire scene uses consistent ink cross-hatching illustration style, no photographic elements.",claude-sonnet-5,1556,46
+customize_property_style_free_alice_in_wonderland_pond_reflection_s3,baseline_4step,1,"Entire scene, figure and background, rendered as black-and-white line illustration, no photographic elements.",claude-sonnet-5,1556,48
+customize_property_style_free_alice_in_wonderland_pond_reflection_s4,baseline_4step,0,"Background pond, trees, and lighting are photorealistic, only the girl is illustrated.",claude-sonnet-5,1556,45
+customize_property_style_free_alice_in_wonderland_reading_book_s0,baseline_4step,1,"Entire image is line-drawn illustration style, no photographic elements present.",claude-sonnet-5,1556,39
+customize_property_style_free_alice_in_wonderland_reading_book_s1,baseline_4step,1,Entire image is a black-and-white pen illustration matching the reference's style.,claude-sonnet-5,1556,40
+customize_property_style_free_alice_in_wonderland_reading_book_s2,baseline_4step,1,"Entire image, including tree, grass, and girl, is rendered in consistent pen-and-ink illustration style.",claude-sonnet-5,1556,52
+customize_property_style_free_alice_in_wonderland_reading_book_s3,baseline_4step,1,"Entire image is a pen-and-ink style illustration matching the reference medium, no photographic elements.",claude-sonnet-5,1556,48
+customize_property_style_free_alice_in_wonderland_reading_book_s4,baseline_4step,1,"Entire image is a black-and-white line illustration, no photographic elements present.",claude-sonnet-5,1556,40
+customize_property_style_free_alice_in_wonderland_tea_party_s0,baseline_4step,1,"Entire image is line-art illustration style, no photographic elements present.",claude-sonnet-5,1556,37
+customize_property_style_free_alice_in_wonderland_tea_party_s1,baseline_4step,1,"Entire image, subject and background, is rendered in consistent stylized cartoon/illustration form.",claude-sonnet-5,1556,47
+customize_property_style_free_alice_in_wonderland_tea_party_s2,baseline_4step,1,"Entire image, including figure and background trees, is rendered as pen-and-ink style illustration.",claude-sonnet-5,1556,46
+customize_property_style_free_alice_in_wonderland_tea_party_s3,baseline_4step,1,"Entire image, subject and background, is rendered in a consistent stylized cartoon illustration, not photographic.",claude-sonnet-5,1556,51
+customize_property_style_free_alice_in_wonderland_tea_party_s4,baseline_4step,1,"Entire scene, figure and background, is rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,53
+customize_property_style_free_anime_girl_bookstore_s0,baseline_4step,1,"Entire image, subject and bookstore background, is rendered in consistent anime illustration style.",claude-sonnet-5,2432,45
+customize_property_style_free_anime_girl_bookstore_s1,baseline_4step,1,"Both character and bookstore background are rendered in consistent anime/cartoon style, no photographic elements.",claude-sonnet-5,2432,49
+customize_property_style_free_anime_girl_bookstore_s2,baseline_4step,1,"Entire scene, character and bookstore background, is rendered in consistent anime/cartoon style.",claude-sonnet-5,2432,47
+customize_property_style_free_anime_girl_bookstore_s3,baseline_4step,0,"Background and lighting have a semi-realistic rendered look, not matching flat cel-shaded style of reference.",claude-sonnet-5,2432,51
+customize_property_style_free_anime_girl_bookstore_s4,baseline_4step,1,"Entire scene, character and bookstore background, is rendered in consistent anime/cartoon style, not photographic.",claude-sonnet-5,2432,52
+customize_property_style_free_anime_girl_coffee_shop_s0,baseline_4step,0,"Background street scene, car, and side characters look photorealistic, not stylized like the reference.",claude-sonnet-5,2432,44
+customize_property_style_free_anime_girl_coffee_shop_s1,baseline_4step,0,"Background street scene and people look photorealistic, not matching the cartoon style.",claude-sonnet-5,2432,40
+customize_property_style_free_anime_girl_coffee_shop_s2,baseline_4step,0,"Background street scene and car look photorealistic, unlike the flat cel-shaded reference style.",claude-sonnet-5,2432,46
+customize_property_style_free_anime_girl_coffee_shop_s3,baseline_4step,1,"Entire scene, character, and background are rendered in consistent anime illustration style.",claude-sonnet-5,2432,41
+customize_property_style_free_anime_girl_coffee_shop_s4,baseline_4step,1,"Entire image, including background and figures, is rendered in consistent anime/illustration style.",claude-sonnet-5,2432,43
+customize_property_style_free_anime_girl_sketching_park_s0,baseline_4step,1,"Entire scene, character and park background, is rendered in consistent anime/cartoon style, no photographic elements.",claude-sonnet-5,2432,51
+customize_property_style_free_anime_girl_sketching_park_s1,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent anime/cartoon illustration style.",claude-sonnet-5,2432,47
+customize_property_style_free_anime_girl_sketching_park_s2,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon/anime illustration style.",claude-sonnet-5,2432,46
+customize_property_style_free_anime_girl_sketching_park_s3,baseline_4step,1,"Entire scene, character, background, and figures are rendered in consistent anime/cartoon style, not photographic.",claude-sonnet-5,2432,51
+customize_property_style_free_anime_girl_sketching_park_s4,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent flat anime/cartoon style, no photographic elements.",claude-sonnet-5,2432,53
+customize_property_style_free_anime_girl_studying_tablet_s0,baseline_4step,1,"Entire image, subject and background, is rendered in consistent anime/cartoon illustration style.",claude-sonnet-5,2432,46
+customize_property_style_free_anime_girl_studying_tablet_s1,baseline_4step,1,"Entire image, including subject and background, is rendered in consistent anime/cartoon style.",claude-sonnet-5,2432,44
+customize_property_style_free_anime_girl_studying_tablet_s2,baseline_4step,1,"Both subject and background in Image 2 are rendered in consistent anime/illustration style, no photographic elements.",claude-sonnet-5,2432,51
+customize_property_style_free_anime_girl_studying_tablet_s3,baseline_4step,0,"Background and tablet render with photographic lighting/textures, unlike flat cel-shaded style of reference.",claude-sonnet-5,2432,50
+customize_property_style_free_anime_girl_studying_tablet_s4,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent anime/cartoon style, no photographic elements.",claude-sonnet-5,2432,51
+customize_property_style_free_anime_girl_waiting_train_s0,baseline_4step,1,"Entire scene, character and background, is rendered in consistent anime/cartoon illustration style.",claude-sonnet-5,2432,46
+customize_property_style_free_anime_girl_waiting_train_s1,baseline_4step,1,"Entire scene, including background and figures, uses consistent anime-style illustrated rendering.",claude-sonnet-5,2432,45
+customize_property_style_free_anime_girl_waiting_train_s2,baseline_4step,1,"Entire scene, including background and character, is rendered in consistent anime illustration style.",claude-sonnet-5,2432,42
+customize_property_style_free_anime_girl_waiting_train_s3,baseline_4step,1,"Entire scene, including background and character, is rendered in consistent anime illustration style.",claude-sonnet-5,2432,42
+customize_property_style_free_anime_girl_waiting_train_s4,baseline_4step,1,"Entire scene, character and background, is rendered in consistent anime illustration style, not photographic.",claude-sonnet-5,2432,46
+customize_property_style_free_bald_man_coffee_diner_s0,baseline_4step,1,"Entire scene, character, and background rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_bald_man_coffee_diner_s1,baseline_4step,1,"Entire scene, character and background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,49
+customize_property_style_free_bald_man_coffee_diner_s2,baseline_4step,1,"Entire scene, character, and background rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_bald_man_coffee_diner_s3,baseline_4step,1,"Entire scene, character and background rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,41
+customize_property_style_free_bald_man_coffee_diner_s4,baseline_4step,1,"Entire scene, including character, background, and objects, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,48
+customize_property_style_free_bald_man_crossword_porch_s0,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_bald_man_crossword_porch_s1,baseline_4step,1,"Entire scene, character, and background rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_bald_man_crossword_porch_s2,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_bald_man_crossword_porch_s3,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_bald_man_crossword_porch_s4,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_bald_man_garden_pruning_s0,baseline_4step,1,"Entire scene, character, and background are consistently cartoon-illustrated, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_bald_man_garden_pruning_s1,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_bald_man_garden_pruning_s2,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_bald_man_garden_pruning_s3,baseline_4step,1,"Entire image, character and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_bald_man_garden_pruning_s4,baseline_4step,1,"Entire image, subject and garden background, is consistently rendered in cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_bald_man_grocery_walk_s0,baseline_4step,0,"Background street, cars, and buildings are photorealistic, only the man is cartoon style.",claude-sonnet-5,1556,44
+customize_property_style_free_bald_man_grocery_walk_s1,baseline_4step,0,"Background city street, cars, and pedestrians are rendered photorealistically, not cartoon style.",claude-sonnet-5,1556,47
+customize_property_style_free_bald_man_grocery_walk_s2,baseline_4step,1,"Entire scene, character and city background are rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_bald_man_grocery_walk_s3,baseline_4step,1,"Entire image, including character, street, cars, and buildings, is rendered in consistent cartoon style.",claude-sonnet-5,1556,48
+customize_property_style_free_bald_man_grocery_walk_s4,baseline_4step,1,"Entire scene, character, box, vehicles and buildings are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,51
+customize_property_style_free_bald_man_shaving_mirror_s0,baseline_4step,1,"Image 2 is fully rendered in cartoon style, no photographic elements present.",claude-sonnet-5,1556,42
+customize_property_style_free_bald_man_shaving_mirror_s1,baseline_4step,1,"Entire scene, character and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_bald_man_shaving_mirror_s2,baseline_4step,1,"Image 2 is fully cartoon-style with flat colors and bold outlines, no photographic elements.",claude-sonnet-5,1556,49
+customize_property_style_free_bald_man_shaving_mirror_s3,baseline_4step,1,"Entire image, including subject and bathroom background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,48
+customize_property_style_free_bald_man_shaving_mirror_s4,baseline_4step,1,"Entire scene, character and background, is rendered in consistent cartoon illustration style, not photographic.",claude-sonnet-5,1556,48
+customize_property_style_free_boy_pixel_arcade_s0,baseline_4step,1,"Entire scene, boy and arcade background, rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_boy_pixel_arcade_s1,baseline_4step,1,"Entire scene, character and arcade background, is rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_boy_pixel_arcade_s2,baseline_4step,0,Background arcade and people remain photographic while only the boy is cartoon-stylized.,claude-sonnet-5,1556,43
+customize_property_style_free_boy_pixel_arcade_s3,baseline_4step,1,"Entire scene, character and arcade background, are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_boy_pixel_arcade_s4,baseline_4step,1,"Entire scene, character and arcade background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_boy_pixel_bike_alley_s0,baseline_4step,1,"Entire scene, boy and brick alley background, rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_boy_pixel_bike_alley_s1,baseline_4step,0,Background alley is photographic while only the boy is cartoon-stylized.,claude-sonnet-5,1556,39
+customize_property_style_free_boy_pixel_bike_alley_s2,baseline_4step,1,"Entire scene, including boy and alley background, rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_boy_pixel_bike_alley_s3,baseline_4step,1,"Entire scene, including background buildings and character, is stylized cartoon rendering, not photographic.",claude-sonnet-5,1556,47
+customize_property_style_free_boy_pixel_bike_alley_s4,baseline_4step,1,"Entire scene, including buildings and boy, rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_boy_pixel_climbing_fence_s0,baseline_4step,1,"Entire scene, character and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_boy_pixel_climbing_fence_s1,baseline_4step,1,"Entire scene, including background and character, is fully cartoon-styled with no photographic elements.",claude-sonnet-5,1556,45
+customize_property_style_free_boy_pixel_climbing_fence_s2,baseline_4step,1,"Entire scene, including background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_boy_pixel_climbing_fence_s3,baseline_4step,1,"Entire scene, character and background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_boy_pixel_climbing_fence_s4,baseline_4step,1,"Entire scene, character and background, are rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_boy_pixel_selling_lemonade_s0,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_boy_pixel_selling_lemonade_s1,baseline_4step,1,"Entire image, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_boy_pixel_selling_lemonade_s2,baseline_4step,1,"Entire scene, including boy, stand, and background, is rendered in consistent cartoon style.",claude-sonnet-5,1556,46
+customize_property_style_free_boy_pixel_selling_lemonade_s3,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_boy_pixel_selling_lemonade_s4,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_boy_pixel_skateboard_park_s0,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_boy_pixel_skateboard_park_s1,baseline_4step,1,"Entire scene, including background and character, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_boy_pixel_skateboard_park_s2,baseline_4step,1,"Entire scene, character and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_boy_pixel_skateboard_park_s3,baseline_4step,1,"Both character and background are rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_boy_pixel_skateboard_park_s4,baseline_4step,1,"Entire scene, including boy and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_capybara_eating_watermelon_s0,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_capybara_eating_watermelon_s1,baseline_4step,1,"Entire scene, including capybara, watermelon, and grass background, is stylized illustration, not photographic.",claude-sonnet-5,1556,50
+customize_property_style_free_capybara_eating_watermelon_s2,baseline_4step,1,"Both subject and grassy background are fully stylized cartoon illustration, no photographic elements.",claude-sonnet-5,1556,46
+customize_property_style_free_capybara_eating_watermelon_s3,baseline_4step,1,"Entire image, subject and grassy background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_capybara_eating_watermelon_s4,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_capybara_grazing_grass_s0,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_capybara_grazing_grass_s1,baseline_4step,1,"Entire scene, capybara and background, rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,53
+customize_property_style_free_capybara_grazing_grass_s2,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_capybara_grazing_grass_s3,baseline_4step,1,"Entire scene, including capybara and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_capybara_grazing_grass_s4,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon/illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_capybara_hotspring_s0,baseline_4step,1,"Entire scene, capybara and forest background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_capybara_hotspring_s1,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_capybara_hotspring_s2,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_capybara_hotspring_s3,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_capybara_hotspring_s4,baseline_4step,1,"Entire scene, including capybara, water, rocks, and trees, is stylized/cartoon rendered.",claude-sonnet-5,1556,50
+customize_property_style_free_capybara_napping_mud_s0,baseline_4step,1,"Entire scene, including capybara, water, mud, and grass, is rendered in consistent cartoon style.",claude-sonnet-5,1556,50
+customize_property_style_free_capybara_napping_mud_s1,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_capybara_napping_mud_s2,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_capybara_napping_mud_s3,baseline_4step,1,"Entire scene, including capybara and muddy background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,49
+customize_property_style_free_capybara_napping_mud_s4,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_capybara_swimming_with_ducks_s0,baseline_4step,1,"Entire scene, capybara, ducks, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,49
+customize_property_style_free_capybara_swimming_with_ducks_s1,baseline_4step,1,"Entire image, including capybara, ducks, water, and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,52
+customize_property_style_free_capybara_swimming_with_ducks_s2,baseline_4step,1,"Entire scene, capybara, ducks, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,49
+customize_property_style_free_capybara_swimming_with_ducks_s3,baseline_4step,1,"Entire scene, capybara, ducks, and background are all rendered in consistent cartoon style.",claude-sonnet-5,1556,47
+customize_property_style_free_capybara_swimming_with_ducks_s4,baseline_4step,1,"Entire scene, capybara, ducks, and background are uniformly cartoon-style illustration.",claude-sonnet-5,1556,47
+customize_property_style_free_cartoon_boy_ice_cream_s0,baseline_4step,1,"Entire scene, including background buildings and trees, rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,47
+customize_property_style_free_cartoon_boy_ice_cream_s1,baseline_4step,1,"Entire scene, boy, TV, and background are rendered in consistent flat cartoon style, no photographic elements.",claude-sonnet-5,1976,53
+customize_property_style_free_cartoon_boy_ice_cream_s2,baseline_4step,1,"Entire scene, boy, TV, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,47
+customize_property_style_free_cartoon_boy_ice_cream_s3,baseline_4step,1,"Entire scene, including background buildings and cars, is rendered in consistent cartoon style.",claude-sonnet-5,1976,45
+customize_property_style_free_cartoon_boy_ice_cream_s4,baseline_4step,1,"Entire scene, including background, boy, and objects, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,49
+customize_property_style_free_cartoon_boy_soccer_field_s0,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_soccer_field_s1,baseline_4step,1,"Entire image, subject and background, is fully cartoon-style illustration with no photographic elements.",claude-sonnet-5,1976,46
+customize_property_style_free_cartoon_boy_soccer_field_s2,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_soccer_field_s3,baseline_4step,1,"Entire image, subject and background, is rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1976,45
+customize_property_style_free_cartoon_boy_soccer_field_s4,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_treehouse_s0,baseline_4step,1,"Entire scene, character, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_treehouse_s1,baseline_4step,1,"Image 2 is fully rendered in flat cartoon illustration style, no photographic elements.",claude-sonnet-5,1976,46
+customize_property_style_free_cartoon_boy_treehouse_s2,baseline_4step,1,"Image 2 is fully cartoon-style, both subject and background rendered as illustration.",claude-sonnet-5,1976,44
+customize_property_style_free_cartoon_boy_treehouse_s3,baseline_4step,1,"Entire image, including subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,44
+customize_property_style_free_cartoon_boy_treehouse_s4,baseline_4step,1,"Entire scene, boy and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_video_game_s0,baseline_4step,1,"Entire scene, character and background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1976,44
+customize_property_style_free_cartoon_boy_video_game_s1,baseline_4step,1,"Entire image, including boy, furniture, and background, is stylized cartoon illustration, not photographic.",claude-sonnet-5,1976,49
+customize_property_style_free_cartoon_boy_video_game_s2,baseline_4step,1,"Entire scene, character, and background rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,42
+customize_property_style_free_cartoon_boy_video_game_s3,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_video_game_s4,baseline_4step,1,"Entire scene, boy and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,43
+customize_property_style_free_cartoon_boy_water_balloon_s0,baseline_4step,1,"Entire scene, characters and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,44
+customize_property_style_free_cartoon_boy_water_balloon_s1,baseline_4step,1,"Entire scene, characters and background are rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1976,45
+customize_property_style_free_cartoon_boy_water_balloon_s2,baseline_4step,1,"Entire image, including boys, ball, and background, is fully cartoon-style illustration.",claude-sonnet-5,1976,44
+customize_property_style_free_cartoon_boy_water_balloon_s3,baseline_4step,1,"Entire image, including boys, ball, TV, and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,51
+customize_property_style_free_cartoon_boy_water_balloon_s4,baseline_4step,1,"Entire scene, characters and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1976,44
+customize_property_style_free_dog_chasing_ball_s0,baseline_4step,1,"Both dog and background are fully cartoon-style illustrations, no photographic elements.",claude-sonnet-5,1556,43
+customize_property_style_free_dog_chasing_ball_s1,baseline_4step,1,"Entire scene, including dog, ball, trees, and fence, is rendered in consistent cartoon style.",claude-sonnet-5,1556,50
+customize_property_style_free_dog_chasing_ball_s2,baseline_4step,1,"Entire scene, dog and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_dog_chasing_ball_s3,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_dog_chasing_ball_s4,baseline_4step,1,"Entire scene, including dog, ball, and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,49
+customize_property_style_free_dog_digging_sand_s0,baseline_4step,1,"Entire scene, dog and beach background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_dog_digging_sand_s1,baseline_4step,0,"Background beach/ocean/sky looks photorealistic, unlike the flat cartoon style of the dog.",claude-sonnet-5,1556,51
+customize_property_style_free_dog_digging_sand_s2,baseline_4step,1,"Entire image, including dog and beach background, is rendered in consistent cartoon style.",claude-sonnet-5,1556,43
+customize_property_style_free_dog_digging_sand_s3,baseline_4step,1,"Entire scene, including dog and beach background, is rendered in consistent cartoon style.",claude-sonnet-5,1556,44
+customize_property_style_free_dog_digging_sand_s4,baseline_4step,1,"Entire scene, dog and beach background, rendered in consistent flat cartoon style.",claude-sonnet-5,1556,44
+customize_property_style_free_dog_frisbee_s0,baseline_4step,1,"Entire scene, dog and park background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_dog_frisbee_s1,baseline_4step,1,"Entire scene, dog and background, rendered in consistent flat cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_dog_frisbee_s2,baseline_4step,1,"Entire scene, dog and background, is rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_dog_frisbee_s3,baseline_4step,1,"Entire scene, dog and park background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_dog_frisbee_s4,baseline_4step,1,"Entire scene, dog and background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_dog_sleeping_porch_s0,baseline_4step,1,"Both dog and porch background are rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,48
+customize_property_style_free_dog_sleeping_porch_s1,baseline_4step,0,"Background trees, lighting, and lens flare render photorealistically, unlike the flat cartoon style of Image 1.",claude-sonnet-5,1556,54
+customize_property_style_free_dog_sleeping_porch_s2,baseline_4step,1,"Entire scene, dog and wooden porch/background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,50
+customize_property_style_free_dog_sleeping_porch_s3,baseline_4step,1,"Entire scene, dog and background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_dog_sleeping_porch_s4,baseline_4step,1,"Entire scene, dog and background, rendered in consistent painterly cartoon style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_dog_swimming_lake_s0,baseline_4step,1,"Entire scene, dog and background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_dog_swimming_lake_s1,baseline_4step,1,"Entire scene, including dog and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_dog_swimming_lake_s2,baseline_4step,1,"Both dog and mountain/lake background are rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_dog_swimming_lake_s3,baseline_4step,1,"Both dog and background are rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_dog_swimming_lake_s4,baseline_4step,1,"Entire scene, dog and landscape, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,47
+customize_property_style_free_doll_cafe_friends_s0,baseline_4step,0,The adults and background are photorealistic; only the child character is stylized.,claude-sonnet-5,2124,37
+customize_property_style_free_doll_cafe_friends_s1,baseline_4step,0,The adults and background are photorealistic; only the girl is cartoon-styled.,claude-sonnet-5,2124,41
+customize_property_style_free_doll_cafe_friends_s2,baseline_4step,0,The adults and background are photorealistic; only the girl is cartoon-styled.,claude-sonnet-5,2124,41
+customize_property_style_free_doll_cafe_friends_s3,baseline_4step,0,"The four adult humans and background are photorealistic, only the child is cartoon-stylized.",claude-sonnet-5,2124,44
+customize_property_style_free_doll_cafe_friends_s4,baseline_4step,0,"Surrounding adults and background have photorealistic rendering, unlike the flat cartoon style of the reference.",claude-sonnet-5,2124,51
+customize_property_style_free_doll_fashion_show_s0,baseline_4step,0,"The audience and runway background are photorealistic, not stylized illustration.",claude-sonnet-5,2124,38
+customize_property_style_free_doll_fashion_show_s1,baseline_4step,0,"The audience and runway background are photorealistic, not stylized like Image 1.",claude-sonnet-5,2124,40
+customize_property_style_free_doll_fashion_show_s2,baseline_4step,0,"The audience and runway background are photorealistic, not stylized illustration.",claude-sonnet-5,2124,38
+customize_property_style_free_doll_fashion_show_s3,baseline_4step,0,"The audience and runway background are photorealistic, not stylized illustration.",claude-sonnet-5,2124,38
+customize_property_style_free_doll_fashion_show_s4,baseline_4step,0,"Background audience is photorealistic, not stylized illustration.",claude-sonnet-5,2124,35
+customize_property_style_free_doll_mirror_s0,baseline_4step,1,"Entire scene, character and background, rendered in consistent 3D cartoon illustration style, not photographic.",claude-sonnet-5,2124,50
+customize_property_style_free_doll_mirror_s1,baseline_4step,0,"Background room and mirror reflections have photorealistic rendering, not matching the flat illustration style.",claude-sonnet-5,2124,47
+customize_property_style_free_doll_mirror_s2,baseline_4step,0,"Background room, mirror, and lighting look photorealistic rather than illustrated.",claude-sonnet-5,2124,42
+customize_property_style_free_doll_mirror_s3,baseline_4step,0,"Background room, floor, and mirrors appear photorealistic, not stylized illustration.",claude-sonnet-5,2124,44
+customize_property_style_free_doll_mirror_s4,baseline_4step,1,"Character and mirror/background are both rendered in consistent stylized 3D cartoon style, no photographic elements.",claude-sonnet-5,2124,52
+customize_property_style_free_doll_photoshoot_park_s0,baseline_4step,0,"Background trees and leaves are photorealistic, unlike the cartoon character.",claude-sonnet-5,2124,41
+customize_property_style_free_doll_photoshoot_park_s1,baseline_4step,0,"Background trees and leaves are rendered photorealistically, unlike the cartoon subject.",claude-sonnet-5,2124,45
+customize_property_style_free_doll_photoshoot_park_s2,baseline_4step,0,"Background trees, path, and leaves render with photorealistic textures and lighting, not the flat cartoon style.",claude-sonnet-5,2124,51
+customize_property_style_free_doll_photoshoot_park_s3,baseline_4step,0,"Background trees and leaves are photorealistic, unlike the flat cartoon style of the reference.",claude-sonnet-5,2124,47
+customize_property_style_free_doll_photoshoot_park_s4,baseline_4step,0,"Background trees and leaves look photorealistic, not illustrated like the reference.",claude-sonnet-5,2124,41
+customize_property_style_free_doll_shopping_s0,baseline_4step,0,"Background street scene and pedestrians are photorealistic, not stylized illustration.",claude-sonnet-5,2124,42
+customize_property_style_free_doll_shopping_s1,baseline_4step,0,"Background street, cars, and pedestrians are photorealistic, not stylized like the character.",claude-sonnet-5,2124,44
+customize_property_style_free_doll_shopping_s2,baseline_4step,0,"Background street scene with people and cars is photorealistic, not stylized.",claude-sonnet-5,2124,38
+customize_property_style_free_doll_shopping_s3,baseline_4step,0,"Background street, people, and cars are photorealistic, not stylized like the reference.",claude-sonnet-5,2124,41
+customize_property_style_free_doll_shopping_s4,baseline_4step,0,"Background street, people, and cars are photorealistic, not stylized like Image 1.",claude-sonnet-5,2124,42
+customize_property_style_free_elephant_calf_meadow_s0,baseline_4step,1,"Entire image, including background and elephants, is rendered in cartoon illustration style.",claude-sonnet-5,1556,42
+customize_property_style_free_elephant_calf_meadow_s1,baseline_4step,1,"Entire scene, elephants and background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_elephant_calf_meadow_s2,baseline_4step,1,"Entire image, subjects and background, is fully cartoon-style with no photographic elements.",claude-sonnet-5,1556,44
+customize_property_style_free_elephant_calf_meadow_s3,baseline_4step,1,"Entire scene, elephants and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_elephant_calf_meadow_s4,baseline_4step,1,"Entire scene, elephants and background, are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_elephant_jungle_foliage_s0,baseline_4step,1,"Both elephant and jungle background are rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_elephant_jungle_foliage_s1,baseline_4step,1,"Both elephant and jungle background are fully cartoon-style illustrations, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_elephant_jungle_foliage_s2,baseline_4step,1,"Entire image, elephant and jungle background, is rendered in consistent painted/cartoon illustration style.",claude-sonnet-5,1556,50
+customize_property_style_free_elephant_jungle_foliage_s3,baseline_4step,0,Background jungle foliage is photorealistic while only the elephant remains cartoon-styled.,claude-sonnet-5,1556,46
+customize_property_style_free_elephant_jungle_foliage_s4,baseline_4step,1,"Both elephant and jungle background are fully stylized/cartoon, no photographic elements present.",claude-sonnet-5,1556,46
+customize_property_style_free_elephant_muddy_river_s0,baseline_4step,1,"Entire scene, elephant and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_elephant_muddy_river_s1,baseline_4step,1,"Entire scene, including elephant, water, and trees, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,50
+customize_property_style_free_elephant_muddy_river_s2,baseline_4step,1,"Entire scene, elephant and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_elephant_muddy_river_s3,baseline_4step,1,"Entire scene, elephant and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_elephant_muddy_river_s4,baseline_4step,1,"Entire scene, elephant and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_elephant_savanna_sunset_s0,baseline_4step,1,"Entire scene, elephant and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_elephant_savanna_sunset_s1,baseline_4step,1,"Entire scene, elephant and background, is rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_elephant_savanna_sunset_s2,baseline_4step,1,"Entire scene, elephant and background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_elephant_savanna_sunset_s3,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_elephant_savanna_sunset_s4,baseline_4step,1,"Entire image, subject and background, is rendered as stylized cartoon illustration, not photographic.",claude-sonnet-5,1556,47
+customize_property_style_free_elephant_trunk_spray_s0,baseline_4step,1,"Entire image, including elephant and water, is rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,1556,49
+customize_property_style_free_elephant_trunk_spray_s1,baseline_4step,1,"Entire image, including elephant and water splashes, is rendered in consistent cartoon style.",claude-sonnet-5,1556,45
+customize_property_style_free_elephant_trunk_spray_s2,baseline_4step,1,"Entire image is cartoon-style illustration with flat colors and outlines, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_elephant_trunk_spray_s3,baseline_4step,1,"Entire image, including elephant and water splash, is rendered in flat cartoon style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_elephant_trunk_spray_s4,baseline_4step,1,"Entire image, including elephant and water spray, is rendered in flat cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_fox_crossing_bridge_s0,baseline_4step,1,"Entire scene, fox and background, rendered in consistent cartoon illustration style, not photographic.",claude-sonnet-5,2030,48
+customize_property_style_free_fox_crossing_bridge_s1,baseline_4step,1,"Entire scene, fox and background, rendered in consistent painterly cartoon style, no photographic elements.",claude-sonnet-5,2030,50
+customize_property_style_free_fox_crossing_bridge_s2,baseline_4step,1,"Entire scene, fox and forest background, are rendered in consistent cartoon/illustration style.",claude-sonnet-5,2030,47
+customize_property_style_free_fox_crossing_bridge_s3,baseline_4step,1,"Entire scene, fox and forest background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,2030,47
+customize_property_style_free_fox_crossing_bridge_s4,baseline_4step,1,"Entire scene, fox and background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,2030,45
+customize_property_style_free_fox_drinking_stream_s0,baseline_4step,1,"Entire scene, fox and landscape, rendered in consistent stylized illustration, not photographic.",claude-sonnet-5,2030,48
+customize_property_style_free_fox_drinking_stream_s1,baseline_4step,0,"Image 2 is a photorealistic rendering, not a stylized illustration like Image 1.",claude-sonnet-5,2030,46
+customize_property_style_free_fox_drinking_stream_s2,baseline_4step,0,"Image 2 background and fox rendered in semi-realistic digital painting style, not flat cartoon style of reference.",claude-sonnet-5,2030,53
+customize_property_style_free_fox_drinking_stream_s3,baseline_4step,1,"Entire scene, fox and background, rendered in consistent painted illustration style, not photographic.",claude-sonnet-5,2030,46
+customize_property_style_free_fox_drinking_stream_s4,baseline_4step,0,"Image 2 is a photorealistic rendering, not the flat stylized cartoon look of the reference.",claude-sonnet-5,2030,49
+customize_property_style_free_fox_napping_log_s0,baseline_4step,0,"Background trees, moss, and leaves are photorealistic despite the fox being stylized.",claude-sonnet-5,2030,44
+customize_property_style_free_fox_napping_log_s1,baseline_4step,0,"Background forest is photorealistic while only the fox is stylized, not fully illustrated.",claude-sonnet-5,2030,44
+customize_property_style_free_fox_napping_log_s2,baseline_4step,1,"Both fox and forest background are rendered in consistent cartoon/illustration style, not photographic.",claude-sonnet-5,2030,47
+customize_property_style_free_fox_napping_log_s3,baseline_4step,1,"Both fox and forest background are rendered in consistent cartoon/illustrated style, not photographic.",claude-sonnet-5,2030,48
+customize_property_style_free_fox_napping_log_s4,baseline_4step,1,"Entire image, fox and forest background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2030,44
+customize_property_style_free_fox_pouncing_mouse_s0,baseline_4step,1,"Both fox and grassy background are rendered in consistent stylized illustration, not photographic.",claude-sonnet-5,2030,45
+customize_property_style_free_fox_pouncing_mouse_s1,baseline_4step,1,"Entire scene, fox, mouse, and background are rendered in consistent flat cartoon illustration style.",claude-sonnet-5,2030,50
+customize_property_style_free_fox_pouncing_mouse_s2,baseline_4step,1,"Both fox subject and grassy field background are rendered in consistent cartoon illustration style, not photographic.",claude-sonnet-5,2030,50
+customize_property_style_free_fox_pouncing_mouse_s3,baseline_4step,1,"Both fox, mouse, and grassy background are rendered in consistent painted/illustrated cartoon style, no photographic parts.",claude-sonnet-5,2030,58
+customize_property_style_free_fox_pouncing_mouse_s4,baseline_4step,1,"Entire scene, fox, mouse, and grass field are rendered in consistent flat cartoon illustration style.",claude-sonnet-5,2030,52
+customize_property_style_free_fox_snow_s0,baseline_4step,1,"Entire scene, fox and forest, rendered in consistent flat illustrated cartoon style.",claude-sonnet-5,2030,47
+customize_property_style_free_fox_snow_s1,baseline_4step,0,"Image 2 is a photorealistic rendering, not stylized flat illustration like Image 1.",claude-sonnet-5,2030,47
+customize_property_style_free_fox_snow_s2,baseline_4step,0,"Fox and forest are rendered in semi-realistic digital painting style, not flat cartoon style of reference.",claude-sonnet-5,2030,51
+customize_property_style_free_fox_snow_s3,baseline_4step,0,"Image 2 is a photorealistic photo, not stylized illustration like the reference.",claude-sonnet-5,2030,43
+customize_property_style_free_fox_snow_s4,baseline_4step,1,"Both fox and snowy forest background are rendered in consistent stylized illustration, not photographic.",claude-sonnet-5,2030,47
+customize_property_style_free_frog_leaping_grass_s0,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_frog_leaping_grass_s1,baseline_4step,1,"Both frog and grass/sky background are stylized illustration, no photographic elements.",claude-sonnet-5,1556,42
+customize_property_style_free_frog_leaping_grass_s2,baseline_4step,1,"Entire scene, frog and background, rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_frog_leaping_grass_s3,baseline_4step,1,"Entire scene, frog and background, rendered in consistent cartoon/illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_frog_leaping_grass_s4,baseline_4step,1,"Entire scene, frog and background, rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_frog_lily_pad_s0,baseline_4step,1,"Entire scene, frog and pond background, rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,54
+customize_property_style_free_frog_lily_pad_s1,baseline_4step,1,"Entire scene, frog and pond background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,47
+customize_property_style_free_frog_lily_pad_s2,baseline_4step,1,"Entire scene, frog and background, is rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_frog_lily_pad_s3,baseline_4step,1,"Both frog and pond/lily pad background are rendered in flat cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_frog_lily_pad_s4,baseline_4step,1,"Entire scene, frog, lily pad, water and grass are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,51
+customize_property_style_free_frog_mossy_log_s0,baseline_4step,0,"Background forest and moss log are photorealistic, only the frog itself is stylized.",claude-sonnet-5,1556,42
+customize_property_style_free_frog_mossy_log_s1,baseline_4step,0,"Background forest and moss are photorealistic, only frog subject is stylized cartoon.",claude-sonnet-5,1556,44
+customize_property_style_free_frog_mossy_log_s2,baseline_4step,1,"Entire scene, frog and forest background, is rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,48
+customize_property_style_free_frog_mossy_log_s3,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent illustrated cartoon style, not photographic.",claude-sonnet-5,1556,50
+customize_property_style_free_frog_mossy_log_s4,baseline_4step,1,"Both frog and forest background are rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,49
+customize_property_style_free_frog_rain_leaf_s0,baseline_4step,0,"Image 2 is a photorealistic render with realistic water droplets and background, not stylized like Image 1.",claude-sonnet-5,1556,50
+customize_property_style_free_frog_rain_leaf_s1,baseline_4step,0,"Background leaves and rain look photographic, only frog is cartoon-styled.",claude-sonnet-5,1556,41
+customize_property_style_free_frog_rain_leaf_s2,baseline_4step,0,"Image 2 is a photorealistic rendering, not the flat vector illustration style of Image 1.",claude-sonnet-5,1556,48
+customize_property_style_free_frog_rain_leaf_s3,baseline_4step,0,"Image 2 is photorealistic with rain and detailed leaf texture, not stylized like Image 1.",claude-sonnet-5,1556,50
+customize_property_style_free_frog_rain_leaf_s4,baseline_4step,0,"Image 2 is a photorealistic photo, not a stylized illustration like Image 1.",claude-sonnet-5,1556,45
+customize_property_style_free_frog_shallow_stream_s0,baseline_4step,1,"Entire scene, frog and forest/river background, is rendered in consistent stylized illustration, no photographic elements.",claude-sonnet-5,1556,53
+customize_property_style_free_frog_shallow_stream_s1,baseline_4step,1,"Entire scene, including background water and rocks, is stylized/illustrated, not photographic.",claude-sonnet-5,1556,45
+customize_property_style_free_frog_shallow_stream_s2,baseline_4step,1,"Entire scene, frog and background, rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_frog_shallow_stream_s3,baseline_4step,1,"Entire scene, including frog, water, rocks, and trees, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,53
+customize_property_style_free_frog_shallow_stream_s4,baseline_4step,1,"Entire scene, frog and background, rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_globe_man_backyard_grill_s0,baseline_4step,1,"Entire image, subject and background, rendered in consistent cartoon/comic illustration style, not photographic.",claude-sonnet-5,2456,50
+customize_property_style_free_globe_man_backyard_grill_s1,baseline_4step,1,"Entire scene, figure, grill, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,2456,47
+customize_property_style_free_globe_man_backyard_grill_s2,baseline_4step,1,"Entire scene, including background and figure, is rendered in cartoon style, not photographic.",claude-sonnet-5,2456,44
+customize_property_style_free_globe_man_backyard_grill_s3,baseline_4step,1,"Entire image, subject and background, rendered in consistent cartoon illustration style, not photographic.",claude-sonnet-5,2456,47
+customize_property_style_free_globe_man_backyard_grill_s4,baseline_4step,1,"Entire image, including background and figure, is rendered in consistent cartoon/illustration style.",claude-sonnet-5,2456,45
+customize_property_style_free_globe_man_baseball_game_s0,baseline_4step,1,"Entire scene, figures, crowd, and stadium are rendered in consistent cartoon/illustration style.",claude-sonnet-5,2456,51
+customize_property_style_free_globe_man_baseball_game_s1,baseline_4step,0,"Image 2 is a photorealistic photograph, not stylized like the illustration reference.",claude-sonnet-5,2456,44
+customize_property_style_free_globe_man_baseball_game_s2,baseline_4step,0,"Image 2 is a photorealistic photo, not stylized like the illustration reference.",claude-sonnet-5,2456,43
+customize_property_style_free_globe_man_baseball_game_s3,baseline_4step,0,"Background crowd and stadium have photographic textures, not matching flat illustration style.",claude-sonnet-5,2456,42
+customize_property_style_free_globe_man_baseball_game_s4,baseline_4step,0,"Background crowd and stadium look photorealistic, not matching flat illustrated style.",claude-sonnet-5,2456,43
+customize_property_style_free_globe_man_diner_breakfast_s0,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon/illustrated style, no photographic areas.",claude-sonnet-5,2456,52
+customize_property_style_free_globe_man_diner_breakfast_s1,baseline_4step,1,"Entire scene, characters, and background are rendered in consistent cartoon/illustration style, not photographic.",claude-sonnet-5,2456,50
+customize_property_style_free_globe_man_diner_breakfast_s2,baseline_4step,1,"Entire scene, subject, background, and objects are rendered in consistent cartoon/illustration style.",claude-sonnet-5,2456,48
+customize_property_style_free_globe_man_diner_breakfast_s3,baseline_4step,0,"Background diner and side characters look photorealistic, not stylized like Image 1.",claude-sonnet-5,2456,41
+customize_property_style_free_globe_man_diner_breakfast_s4,baseline_4step,1,"Entire scene, subject and background, is rendered in consistent cartoon/illustration style.",claude-sonnet-5,2456,45
+customize_property_style_free_globe_man_fishing_pier_s0,baseline_4step,0,"Sky, water, and figure have painterly/photorealistic rendering, not the flat cartoon ink style of reference.",claude-sonnet-5,2456,54
+customize_property_style_free_globe_man_fishing_pier_s1,baseline_4step,0,"Sky and water background are rendered photorealistically, unlike the flat cartoon reference.",claude-sonnet-5,2456,45
+customize_property_style_free_globe_man_fishing_pier_s2,baseline_4step,1,"Entire image, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2456,42
+customize_property_style_free_globe_man_fishing_pier_s3,baseline_4step,1,"Entire scene, figure, water, and sky rendered as flat-colored line illustration, no photographic elements.",claude-sonnet-5,2456,51
+customize_property_style_free_globe_man_fishing_pier_s4,baseline_4step,1,"Image 2 is fully rendered in cartoon/illustration style, both figure and background.",claude-sonnet-5,2456,44
+customize_property_style_free_globe_man_gas_station_s0,baseline_4step,1,"Entire scene, figure and gas station background, rendered in consistent cartoon/illustrated style.",claude-sonnet-5,2456,48
+customize_property_style_free_globe_man_gas_station_s1,baseline_4step,1,"Entire scene including truck, station, and figure rendered in consistent cartoon illustration style.",claude-sonnet-5,2456,46
+customize_property_style_free_globe_man_gas_station_s2,baseline_4step,0,"The truck and gas station background look photorealistic, not stylized like the reference.",claude-sonnet-5,2456,40
+customize_property_style_free_globe_man_gas_station_s3,baseline_4step,0,"The truck and background scene look photorealistic, not illustrated like Image 1.",claude-sonnet-5,2456,41
+customize_property_style_free_globe_man_gas_station_s4,baseline_4step,1,"Entire scene, including car and background, rendered in consistent cartoon/illustrated style.",claude-sonnet-5,2456,45
+customize_property_style_free_mouse_bread_crumb_s0,baseline_4step,0,Background kitchen is photorealistic while only mouse subject is cartoon-styled.,claude-sonnet-5,1556,44
+customize_property_style_free_mouse_bread_crumb_s1,baseline_4step,1,"Entire scene, including mouse and kitchen background, is rendered in consistent cartoon style.",claude-sonnet-5,1556,47
+customize_property_style_free_mouse_bread_crumb_s2,baseline_4step,1,"Both mouse and kitchen background show consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,48
+customize_property_style_free_mouse_bread_crumb_s3,baseline_4step,0,Background kitchen is photorealistic while only mouse is cartoon-styled.,claude-sonnet-5,1556,42
+customize_property_style_free_mouse_bread_crumb_s4,baseline_4step,0,"Background kitchen and bread are photorealistic, not stylized like Image 1.",claude-sonnet-5,1556,42
+customize_property_style_free_mouse_cheese_wedge_s0,baseline_4step,0,"Background wood table and cheese are photorealistic, not stylized like the mouse.",claude-sonnet-5,1556,42
+customize_property_style_free_mouse_cheese_wedge_s1,baseline_4step,0,Background and cheese are photorealistic while only the mouse is cartoon-style.,claude-sonnet-5,1556,42
+customize_property_style_free_mouse_cheese_wedge_s2,baseline_4step,0,Background is photorealistic while only mouse and cheese are cartoon-styled.,claude-sonnet-5,1556,42
+customize_property_style_free_mouse_cheese_wedge_s3,baseline_4step,0,"Background, table, and cheese are photorealistic while only mouse is cartoon style.",claude-sonnet-5,1556,43
+customize_property_style_free_mouse_cheese_wedge_s4,baseline_4step,0,"The cheese and wooden table/background remain photorealistic, not stylized like the mouse.",claude-sonnet-5,1556,45
+customize_property_style_free_mouse_mossy_stone_s0,baseline_4step,0,"Background garden and moss rock are photorealistic, not illustrated like the mouse.",claude-sonnet-5,1556,43
+customize_property_style_free_mouse_mossy_stone_s1,baseline_4step,0,"Background flowers, rock, and moss are photographic while only the mouse is cartoon style.",claude-sonnet-5,1556,45
+customize_property_style_free_mouse_mossy_stone_s2,baseline_4step,0,"Background garden and stone are photorealistic, only the mouse is cartoon-style.",claude-sonnet-5,1556,43
+customize_property_style_free_mouse_mossy_stone_s3,baseline_4step,0,"Background flowers and moss rock are photorealistic, only the mouse is cartoon-styled.",claude-sonnet-5,1556,47
+customize_property_style_free_mouse_mossy_stone_s4,baseline_4step,0,"Background garden and moss rock are photorealistic, not stylized like the mouse.",claude-sonnet-5,1556,42
+customize_property_style_free_mouse_straw_burrow_s0,baseline_4step,1,Both mouse and straw nest background are rendered in consistent cartoon/illustration style.,claude-sonnet-5,1556,45
+customize_property_style_free_mouse_straw_burrow_s1,baseline_4step,1,"Both mouse and nest background are rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_mouse_straw_burrow_s2,baseline_4step,1,"Both mouse and straw nest background are rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,53
+customize_property_style_free_mouse_straw_burrow_s3,baseline_4step,1,"Both mouse and straw nest background are rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,1556,53
+customize_property_style_free_mouse_straw_burrow_s4,baseline_4step,1,"Both mouse and straw nest background are rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_mouse_wheat_field_s0,baseline_4step,0,Background wheat field is photorealistic; only the mouse is cartoon-styled.,claude-sonnet-5,1556,43
+customize_property_style_free_mouse_wheat_field_s1,baseline_4step,0,Background wheat field is photorealistic while only the mouse is cartoon-styled.,claude-sonnet-5,1556,43
+customize_property_style_free_mouse_wheat_field_s2,baseline_4step,0,Wheat field background is photorealistic while only the mouse is cartoon style.,claude-sonnet-5,1556,41
+customize_property_style_free_mouse_wheat_field_s3,baseline_4step,0,The wheat field background is photorealistic while only the mouse is cartoon-styled.,claude-sonnet-5,1556,43
+customize_property_style_free_mouse_wheat_field_s4,baseline_4step,0,"Wheat field background is rendered photorealistically, unlike the flat cartoon style of the mouse.",claude-sonnet-5,1556,49
+customize_property_style_free_orange_cat_bowl_drinking_s0,baseline_4step,1,"Entire image, including cat and bowl, is stylized cartoon with no photographic elements.",claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_bowl_drinking_s1,baseline_4step,1,"Entire image, including cat and bowl, is rendered in consistent cartoon illustration style.",claude-sonnet-5,2273,46
+customize_property_style_free_orange_cat_bowl_drinking_s2,baseline_4step,1,"Entire image, including cat and bowl, is rendered in consistent flat cartoon style.",claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_bowl_drinking_s3,baseline_4step,1,"Entire image, cat and bowl, is stylized cartoon linework, no photographic elements.",claude-sonnet-5,2273,46
+customize_property_style_free_orange_cat_bowl_drinking_s4,baseline_4step,1,"Entire image, including cat and bowl, is fully cartoon-style with no photographic elements.",claude-sonnet-5,2273,46
+customize_property_style_free_orange_cat_fence_walk_s0,baseline_4step,1,"Entire scene, including cat and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_fence_walk_s1,baseline_4step,0,"Background trees, sky, and fence are photorealistic, not stylized like the cat.",claude-sonnet-5,2273,43
+customize_property_style_free_orange_cat_fence_walk_s2,baseline_4step,0,"Background trees/sky are photorealistic despite cartoon cat, breaking uniform stylization.",claude-sonnet-5,2273,48
+customize_property_style_free_orange_cat_fence_walk_s3,baseline_4step,0,"Background trees/fence have photorealistic rendering, unlike flat cartoon style of reference.",claude-sonnet-5,2273,47
+customize_property_style_free_orange_cat_fence_walk_s4,baseline_4step,1,"Entire image, including cat, fence, and background, is fully stylized cartoon rendering.",claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_garden_stalk_s0,baseline_4step,1,"Both cat and background are fully rendered in a consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,2273,51
+customize_property_style_free_orange_cat_garden_stalk_s1,baseline_4step,0,"Image 2 is a photorealistic photo, not a cartoon illustration like the reference.",claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_garden_stalk_s2,baseline_4step,0,"Background grass and flowers are photorealistic, only the cat is stylized.",claude-sonnet-5,2273,40
+customize_property_style_free_orange_cat_garden_stalk_s3,baseline_4step,0,"Background grass and flowers are photorealistic, only cat is cartoon style.",claude-sonnet-5,2273,41
+customize_property_style_free_orange_cat_garden_stalk_s4,baseline_4step,0,"Image 2 is a photorealistic photograph, not a stylized cartoon illustration.",claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_windowsill_nap_s0,baseline_4step,1,"Both cat and background are rendered in consistent semi-realistic cartoon illustration style, not photographic.",claude-sonnet-5,2273,50
+customize_property_style_free_orange_cat_windowsill_nap_s1,baseline_4step,1,"Entire image, including cat and background, is rendered in cartoon illustration style, no photographic elements.",claude-sonnet-5,2273,48
+customize_property_style_free_orange_cat_windowsill_nap_s2,baseline_4step,0,Background window scene has photographic realism inconsistent with flat cartoon style of reference.,claude-sonnet-5,2273,44
+customize_property_style_free_orange_cat_windowsill_nap_s3,baseline_4step,1,"Entire scene, cat and background, rendered in consistent soft cartoon illustration style, no photographic elements.",claude-sonnet-5,2273,52
+customize_property_style_free_orange_cat_windowsill_nap_s4,baseline_4step,1,"Entire scene, cat and background, rendered in consistent detailed illustrated/anime style, not photographic.",claude-sonnet-5,2273,51
+customize_property_style_free_orange_cat_yarn_play_s0,baseline_4step,0,"Background floor and furniture are rendered photorealistically, not in flat cartoon style.",claude-sonnet-5,2273,44
+customize_property_style_free_orange_cat_yarn_play_s1,baseline_4step,1,"Entire scene, including cat, yarn, and background, is rendered in consistent cartoon style.",claude-sonnet-5,2273,47
+customize_property_style_free_orange_cat_yarn_play_s2,baseline_4step,1,"Both cat and wooden floor background are rendered in consistent cartoon style, no photographic elements.",claude-sonnet-5,2273,48
+customize_property_style_free_orange_cat_yarn_play_s3,baseline_4step,0,The wooden floor background has photorealistic texture and shading unlike flat cartoon style.,claude-sonnet-5,2273,45
+customize_property_style_free_orange_cat_yarn_play_s4,baseline_4step,1,"Entire scene, cat, yarn, and floor are rendered in cartoon/illustrated style, no photographic elements.",claude-sonnet-5,2273,55
+customize_property_style_free_pig_apple_eating_s0,baseline_4step,1,"Entire scene, pig and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_pig_apple_eating_s1,baseline_4step,1,"Entire scene, pig, apple, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,47
+customize_property_style_free_pig_apple_eating_s2,baseline_4step,1,"Entire scene, pig, apple, and background are consistently cartoon-style illustration with no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_pig_apple_eating_s3,baseline_4step,1,"Entire scene, pig, apple, fence, trees, sky are all cartoon-style illustration, no photographic elements.",claude-sonnet-5,1556,55
+customize_property_style_free_pig_apple_eating_s4,baseline_4step,1,"Entire scene, pig, apple, and background are fully cartoon-style, no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_pig_farm_pen_s0,baseline_4step,1,"Entire scene, pig and barn background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_pig_farm_pen_s1,baseline_4step,1,"Both pig and barn background are rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,48
+customize_property_style_free_pig_farm_pen_s2,baseline_4step,1,"Entire scene, pig and barn background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_pig_farm_pen_s3,baseline_4step,1,"Entire scene, pig and barn background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_pig_farm_pen_s4,baseline_4step,1,Both pig and barnyard background are rendered in consistent cartoon illustration style.,claude-sonnet-5,1556,43
+customize_property_style_free_pig_mud_wallow_s0,baseline_4step,1,"Entire image, including background and pig, is fully cartoon-style illustration with no photographic elements.",claude-sonnet-5,1556,47
+customize_property_style_free_pig_mud_wallow_s1,baseline_4step,1,"Entire scene, pig, mud puddle, and background are uniformly cartoon-style with flat colors and outlines.",claude-sonnet-5,1556,54
+customize_property_style_free_pig_mud_wallow_s2,baseline_4step,1,"Entire image, including pig, mud, and background, is stylized cartoon illustration with no photographic elements.",claude-sonnet-5,1556,50
+customize_property_style_free_pig_mud_wallow_s3,baseline_4step,1,"Entire scene, pig, mud puddle, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,50
+customize_property_style_free_pig_mud_wallow_s4,baseline_4step,1,"Entire scene, pig, mud puddle, and grass are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,51
+customize_property_style_free_pig_piglets_meadow_s0,baseline_4step,1,"Entire scene, pigs and background, is rendered in consistent cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,52
+customize_property_style_free_pig_piglets_meadow_s1,baseline_4step,1,"Entire scene, pigs and background, rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_pig_piglets_meadow_s2,baseline_4step,1,"Entire scene, pigs and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_pig_piglets_meadow_s3,baseline_4step,1,"Entire scene, pigs and background, is rendered in consistent flat cartoon illustration style.",claude-sonnet-5,1556,47
+customize_property_style_free_pig_piglets_meadow_s4,baseline_4step,1,"Entire scene, pigs and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_pig_rooting_dirt_s0,baseline_4step,1,"Entire scene, pig, tree, dirt, and background are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,51
+customize_property_style_free_pig_rooting_dirt_s1,baseline_4step,1,"Entire scene, pig, tree, background all rendered in flat cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_pig_rooting_dirt_s2,baseline_4step,1,"Entire scene, pig and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,44
+customize_property_style_free_pig_rooting_dirt_s3,baseline_4step,1,"Entire scene, pig and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_pig_rooting_dirt_s4,baseline_4step,1,"Entire scene, pig and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,43
+customize_property_style_free_solarmax_fountain_plaza_s0,baseline_4step,0,"Background fountain, buildings, and pedestrians are photorealistic, not stylized like the character.",claude-sonnet-5,2084,47
+customize_property_style_free_solarmax_fountain_plaza_s1,baseline_4step,0,"Background plaza, buildings, and people are photorealistic, not stylized illustration.",claude-sonnet-5,2084,43
+customize_property_style_free_solarmax_fountain_plaza_s2,baseline_4step,0,"Background fountain, buildings and pedestrians are photorealistic, not stylized illustration.",claude-sonnet-5,2084,46
+customize_property_style_free_solarmax_fountain_plaza_s3,baseline_4step,0,"Background plaza, fountain, and pedestrians are photorealistic while only the character is cartoon style.",claude-sonnet-5,2084,49
+customize_property_style_free_solarmax_fountain_plaza_s4,baseline_4step,0,"Background buildings, fountain, and bystanders are photorealistic, not stylized illustration.",claude-sonnet-5,2084,46
+customize_property_style_free_solarmax_mountain_top_s0,baseline_4step,1,"Entire scene, including mountains and character, rendered in consistent anime/cartoon style, no photographic elements.",claude-sonnet-5,2084,52
+customize_property_style_free_solarmax_mountain_top_s1,baseline_4step,0,"Background mountains and clouds are photorealistic, not stylized illustration.",claude-sonnet-5,2084,40
+customize_property_style_free_solarmax_mountain_top_s2,baseline_4step,0,"Background mountains have realistic photographic rendering, unlike flat cartoon style of reference.",claude-sonnet-5,2084,46
+customize_property_style_free_solarmax_mountain_top_s3,baseline_4step,1,"Entire scene, character and mountain background, are rendered in consistent anime/cartoon style, no photographic elements.",claude-sonnet-5,2084,53
+customize_property_style_free_solarmax_mountain_top_s4,baseline_4step,1,"Entire image, including background mountains and character, rendered in consistent anime/cartoon style.",claude-sonnet-5,2084,45
+customize_property_style_free_solarmax_ramen_shop_s0,baseline_4step,0,Background restaurant and people are photorealistic while only the boy is stylized.,claude-sonnet-5,2084,40
+customize_property_style_free_solarmax_ramen_shop_s1,baseline_4step,1,"Entire scene, character, and background are rendered in consistent anime/cartoon style, not photographic.",claude-sonnet-5,2084,48
+customize_property_style_free_solarmax_ramen_shop_s2,baseline_4step,1,"Entire scene, character and background, rendered in consistent anime/cartoon illustration style.",claude-sonnet-5,2084,45
+customize_property_style_free_solarmax_ramen_shop_s3,baseline_4step,1,"Entire scene, character and background, rendered in consistent anime/cartoon illustration style.",claude-sonnet-5,2084,45
+customize_property_style_free_solarmax_ramen_shop_s4,baseline_4step,1,"Character and background both rendered in consistent anime/cartoon illustration style, no photographic elements.",claude-sonnet-5,2084,47
+customize_property_style_free_solarmax_rooftop_jump_s0,baseline_4step,0,"Background cityscape and rooftop are photorealistic, contrasting with the cartoon subject.",claude-sonnet-5,2084,47
+customize_property_style_free_solarmax_rooftop_jump_s1,baseline_4step,0,"The cityscape background is photorealistic, contrasting with the cartoon-style character.",claude-sonnet-5,2084,43
+customize_property_style_free_solarmax_rooftop_jump_s2,baseline_4step,0,Background cityscape is photorealistic while only the character is cartoon-styled.,claude-sonnet-5,2084,41
+customize_property_style_free_solarmax_rooftop_jump_s3,baseline_4step,0,"Background cityscape is rendered photorealistically, not matching the flat cartoon style of the subject.",claude-sonnet-5,2084,48
+customize_property_style_free_solarmax_rooftop_jump_s4,baseline_4step,0,"Cityscape background is rendered photorealistically, unlike the flat cartoon style of the reference.",claude-sonnet-5,2084,48
+customize_property_style_free_solarmax_training_mat_s0,baseline_4step,0,"Background (mats, window, room) has photographic realism despite cartoon subject.",claude-sonnet-5,2084,41
+customize_property_style_free_solarmax_training_mat_s1,baseline_4step,1,"Character and background both rendered in consistent anime/cartoon style, no photographic elements.",claude-sonnet-5,2084,44
+customize_property_style_free_solarmax_training_mat_s2,baseline_4step,0,"Background gym room and floor mats are rendered photorealistically, not stylized like the reference.",claude-sonnet-5,2084,45
+customize_property_style_free_solarmax_training_mat_s3,baseline_4step,0,"Background dojo room has photographic textures/lighting, while character is more stylized/cartoon.",claude-sonnet-5,2084,46
+customize_property_style_free_solarmax_training_mat_s4,baseline_4step,0,"Background (gym, clock, punching bag, floor) is photorealistic, not stylized like the character.",claude-sonnet-5,2084,48
+customize_property_style_free_sparrow_bird_bath_s0,baseline_4step,0,"Image 2 is a photorealistic photograph, not stylized like the cartoon reference.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_bird_bath_s1,baseline_4step,0,"Image 2 is a photorealistic photograph, not a stylized cartoon illustration.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_bird_bath_s2,baseline_4step,0,"Image 2 is a photorealistic photo, not stylized like the cartoon reference.",claude-sonnet-5,1556,44
+customize_property_style_free_sparrow_bird_bath_s3,baseline_4step,0,"Image 2 is a realistic photograph, not a stylized illustration.",claude-sonnet-5,1556,39
+customize_property_style_free_sparrow_bird_bath_s4,baseline_4step,0,"Background fountain, flowers and foliage are photorealistic, only the bird is cartoon style.",claude-sonnet-5,1556,47
+customize_property_style_free_sparrow_branch_perch_s0,baseline_4step,0,"Image 2 is a photorealistic photograph, not a stylized cartoon illustration.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_branch_perch_s1,baseline_4step,0,"Background trees and snow are photographic, only the bird is stylized/cartoon.",claude-sonnet-5,1556,42
+customize_property_style_free_sparrow_branch_perch_s2,baseline_4step,0,Background forest and snow remain photographic while only the bird is stylized.,claude-sonnet-5,1556,38
+customize_property_style_free_sparrow_branch_perch_s3,baseline_4step,0,Background trees and snow are photographic; only the bird has cartoon-style outlines.,claude-sonnet-5,1556,43
+customize_property_style_free_sparrow_branch_perch_s4,baseline_4step,0,"Image 2 is a realistic photograph, not a cartoon/illustration like Image 1.",claude-sonnet-5,1556,46
+customize_property_style_free_sparrow_feeder_seeds_s0,baseline_4step,1,"Entire scene, bird and wooden feeder, is rendered in flat cartoon illustration style with bold outlines.",claude-sonnet-5,1556,54
+customize_property_style_free_sparrow_feeder_seeds_s1,baseline_4step,1,"Entire scene, bird and birdhouse, rendered in matching flat cartoon illustration style, no photographic elements.",claude-sonnet-5,1556,55
+customize_property_style_free_sparrow_feeder_seeds_s2,baseline_4step,0,"Background foliage looks photographic/blurred, not stylized like the reference.",claude-sonnet-5,1556,40
+customize_property_style_free_sparrow_feeder_seeds_s3,baseline_4step,0,Bird and feeder background remain photorealistic; only minor cartoon patches overlaid on feathers.,claude-sonnet-5,1556,50
+customize_property_style_free_sparrow_feeder_seeds_s4,baseline_4step,0,"Background trees, grass, and flowers are photorealistic, not stylized like Image 1.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_grass_hop_s0,baseline_4step,1,"Entire scene, bird and grass background, rendered in flat cartoon illustration style, not photographic.",claude-sonnet-5,1556,49
+customize_property_style_free_sparrow_grass_hop_s1,baseline_4step,1,"Entire scene, bird and grass background, is rendered in flat cartoon illustration style.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_grass_hop_s2,baseline_4step,1,"Entire image, bird and grass background, is rendered in consistent cartoon illustration style, not photographic.",claude-sonnet-5,1556,50
+customize_property_style_free_sparrow_grass_hop_s3,baseline_4step,1,"Entire scene, bird and grass background, are rendered in consistent cartoon illustration style.",claude-sonnet-5,1556,46
+customize_property_style_free_sparrow_grass_hop_s4,baseline_4step,1,"Entire image, subject and background, is rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,1556,51
+customize_property_style_free_sparrow_snow_fence_s0,baseline_4step,0,"Image 2 is a photorealistic photograph, not stylized like the cartoon reference.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_snow_fence_s1,baseline_4step,0,"Image 2 is a realistic photograph, not stylized like the cartoon reference.",claude-sonnet-5,1556,43
+customize_property_style_free_sparrow_snow_fence_s2,baseline_4step,0,"Image 2 is a realistic photograph, not a stylized illustration.",claude-sonnet-5,1556,39
+customize_property_style_free_sparrow_snow_fence_s3,baseline_4step,0,"Image 2 is a photorealistic photograph, not a stylized cartoon illustration.",claude-sonnet-5,1556,45
+customize_property_style_free_sparrow_snow_fence_s4,baseline_4step,0,"Image 2 is a photorealistic photograph, not a cartoon illustration like Image 1.",claude-sonnet-5,1556,47
+customize_property_style_free_woman_runner_beach_jog_s0,baseline_4step,1,"Entire image, subject and beach background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,44
+customize_property_style_free_woman_runner_beach_jog_s1,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,2516,51
+customize_property_style_free_woman_runner_beach_jog_s2,baseline_4step,1,"Entire scene, including subject and background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,45
+customize_property_style_free_woman_runner_beach_jog_s3,baseline_4step,1,"Entire scene, figure and background, rendered in consistent painterly cartoon illustration style.",claude-sonnet-5,2516,46
+customize_property_style_free_woman_runner_beach_jog_s4,baseline_4step,1,"Entire image, including subject and beach background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,46
+customize_property_style_free_woman_runner_city_bridge_s0,baseline_4step,0,"Background city and bridge look photorealistic, only the woman is cartoon-styled.",claude-sonnet-5,2516,43
+customize_property_style_free_woman_runner_city_bridge_s1,baseline_4step,0,"Image 2 is a photorealistic photograph, not stylized like Image 1.",claude-sonnet-5,2516,42
+customize_property_style_free_woman_runner_city_bridge_s2,baseline_4step,0,"Image 2 is a photorealistic render, not stylized like the cartoon reference.",claude-sonnet-5,2516,43
+customize_property_style_free_woman_runner_city_bridge_s3,baseline_4step,0,"Image 2 is a photorealistic photograph, not a stylized illustration like Image 1.",claude-sonnet-5,2516,46
+customize_property_style_free_woman_runner_city_bridge_s4,baseline_4step,0,"Image 2 is a photorealistic photograph, not a stylized illustration.",claude-sonnet-5,2516,41
+customize_property_style_free_woman_runner_park_stretch_s0,baseline_4step,1,"Both figure and park background are rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,2516,49
+customize_property_style_free_woman_runner_park_stretch_s1,baseline_4step,1,Both subject and background show consistent cartoon-style rendering with flat colors and outlines.,claude-sonnet-5,2516,45
+customize_property_style_free_woman_runner_park_stretch_s2,baseline_4step,1,"Entire scene, figures, and background are rendered in consistent cartoon/illustration style, not photographic.",claude-sonnet-5,2516,50
+customize_property_style_free_woman_runner_park_stretch_s3,baseline_4step,1,Both character and park background are rendered in consistent cartoon/illustration style.,claude-sonnet-5,2516,40
+customize_property_style_free_woman_runner_park_stretch_s4,baseline_4step,1,"Both subject and background are rendered in consistent cartoon/illustration style, no photographic elements.",claude-sonnet-5,2516,47
+customize_property_style_free_woman_runner_track_sprint_s0,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,43
+customize_property_style_free_woman_runner_track_sprint_s1,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,43
+customize_property_style_free_woman_runner_track_sprint_s2,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,43
+customize_property_style_free_woman_runner_track_sprint_s3,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon/illustration style, not photographic.",claude-sonnet-5,2516,49
+customize_property_style_free_woman_runner_track_sprint_s4,baseline_4step,1,"Entire scene, subject and background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,43
+customize_property_style_free_woman_runner_trail_run_s0,baseline_4step,1,"Entire scene, figure and forest background, rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,45
+customize_property_style_free_woman_runner_trail_run_s1,baseline_4step,1,"Entire image, subject and forest background, rendered in consistent cartoon/illustrated style.",claude-sonnet-5,2516,46
+customize_property_style_free_woman_runner_trail_run_s2,baseline_4step,1,"Entire scene, subject and forest background, is rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,46
+customize_property_style_free_woman_runner_trail_run_s3,baseline_4step,1,"Entire scene, figure and forest, is rendered in consistent cartoon/illustrated style, no photographic elements.",claude-sonnet-5,2516,54
+customize_property_style_free_woman_runner_trail_run_s4,baseline_4step,1,"Entire scene, character and forest background are rendered in consistent cartoon illustration style.",claude-sonnet-5,2516,44

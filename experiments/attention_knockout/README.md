@@ -112,9 +112,10 @@ Setting names are filesystem-sanitised (`ref->text` → `ref_to_text`, `image<->
 uv run python experiments/attention_knockout/knockout_run.py \
     --task-id solid_red_couch
 
-# One task per edit-type, single model load (~20 min on H200)
+# One add + one remove task, single model load (~20 min on H200); customize
+# families are selected via --bucket (e.g. --bucket style)
 uv run python experiments/attention_knockout/knockout_run.py \
-    --edit-type add remove customize --limit 1 \
+    --edit-type add remove --limit 1 \
     --settings 'ref->image' --layer-mode prefix
 
 # Bidirectional ref<->image; single-quote anything containing > or <-

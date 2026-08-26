@@ -1,0 +1,49 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_green_hat_p322_s3__solid_blue_hat_p322_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1492,41
+solid_green_chair_p322_s2__solid_red_chair_p322_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1492,40
+solid_red_hat_p322_s1__solid_blue_hat_p322_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1492,41
+solid_blue_chair_p322_s0__solid_green_chair_p322_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1492,41
+solid_red_chair_p322_s0__solid_green_chair_p322_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1492,40
+solid_green_vase_p322_s2__solid_red_vase_p322_s3,0,"Image 4 vase remains red like Image 2, not green like Image 1.",claude-opus-4-7,1492,42
+solid_blue_mug_p322_s0__solid_green_mug_p322_s1,0,"Image 4 mug remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1492,43
+solid_green_mug_p322_s2__solid_red_mug_p322_s3,0,"Image 4 mug is a muted red/brick, closer to Image 2's red than Image 1's green.",claude-opus-4-7,1492,51
+solid_red_vase_p322_s0__solid_green_vase_p322_s1,0,"Image 4 vase remains green like Image 2, not red like Image 1.",claude-opus-4-7,1492,42
+solid_blue_vase_p322_s4__solid_red_vase_p322_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1492,41
+solid_red_vase_p322_s1__solid_blue_vase_p322_s2,0,"Image 4 vase is blue like Image 2, not red like Image 1.",claude-opus-4-7,1492,42
+solid_green_chair_p322_s3__solid_blue_chair_p322_s4,0,"Image 4 remains predominantly blue like Image 2, only slight green tint on legs, not source green.",claude-opus-4-7,1492,51
+solid_red_mug_p322_s0__solid_green_mug_p322_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1492,40
+solid_blue_mug_p322_s4__solid_red_mug_p322_s0,0,"Image 4 mug remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1492,43
+solid_blue_ball_p322_s0__solid_green_ball_p322_s1,0,"Image 4 remains green, only slightly darker/teal, not blue like Image 1.",claude-opus-4-7,1492,46
+solid_green_vase_p322_s3__solid_blue_vase_p322_s4,0,"Image 4 vase remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1492,43
+solid_green_ball_p322_s2__solid_red_ball_p322_s3,0,"Image 4 is brown/reddish-brown, not green like Image 1; it shifted from red but not toward green.",claude-opus-4-7,1492,54
+solid_blue_chair_p322_s4__solid_red_chair_p322_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1492,41
+solid_red_chair_p322_s1__solid_blue_chair_p322_s2,0,"Image 4 remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1492,41
+solid_green_mug_p322_s3__solid_blue_mug_p322_s4,0,"Image 4 remains predominantly blue like Image 2, with only green tint on rim and handle.",claude-opus-4-7,1492,49
+solid_blue_couch_p322_s0__solid_green_couch_p322_s1,0,"Image 4 remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1492,41
+solid_red_car_p322_s1__solid_blue_car_p322_s2,0,"Image 4 car remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1492,42
+solid_green_couch_p322_s2__solid_red_couch_p322_s3,0,"Image 4 sofa is darker muted red, still closer to red target than green source.",claude-opus-4-7,1492,43
+solid_red_ball_p322_s0__solid_green_ball_p322_s1,0,"Image 4 remains green, only slightly darker; it does not take on the red color of Image 1.",claude-opus-4-7,1492,48
+solid_blue_ball_p322_s4__solid_red_ball_p322_s0,0,"Image 4 remains red (darker), not blue like Image 1.",claude-opus-4-7,1492,39
+solid_green_ball_p322_s3__solid_blue_ball_p322_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1492,41
+solid_green_pillow_p322_s2__solid_red_pillow_p322_s3,0,"Image 4 is brownish-red, not green; it shifted away from red but did not adopt the source green color.",claude-opus-4-7,1492,51
+solid_red_mug_p322_s1__solid_blue_mug_p322_s2,1,"Image 4 shows red tones (right handle, rim) blended with blue, shifting toward source red versus Image 3's pure blue.",claude-opus-4-7,1492,61
+solid_red_couch_p322_s0__solid_green_couch_p322_s1,0,"Image 4 sofa remains green like Image 2, not red like Image 1.",claude-opus-4-7,1492,43
+solid_blue_couch_p322_s4__solid_red_couch_p322_s0,0,"Image 4 sofa remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1492,44
+solid_green_couch_p322_s3__solid_blue_couch_p322_s4,0,"Image 4 sofa remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1492,44
+solid_blue_pillow_p322_s0__solid_green_pillow_p322_s1,0,"Image 4 is teal, closer to green than blue; only slight shift toward source.",claude-opus-4-7,1492,44
+solid_red_ball_p322_s1__solid_blue_ball_p322_s2,0,"Image 4 is purple, a mix, but still closer to blue (Image 2) than red (Image 1).",claude-opus-4-7,1492,53
+solid_blue_car_p322_s0__solid_green_car_p322_s1,0,"Image 4 car remains green like Image 2, only small blue license plate detail appears.",claude-opus-4-7,1492,45
+solid_red_pillow_p322_s0__solid_green_pillow_p322_s1,0,"Image 4 is dark olive green, still closer to Image 2's green than Image 1's red.",claude-opus-4-7,1492,48
+solid_green_car_p322_s2__solid_red_car_p322_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1492,40
+solid_red_couch_p322_s1__solid_blue_couch_p322_s2,0,"Image 4 sofa remains blue like Image 2, not red like Image 1.",claude-opus-4-7,1492,44
+solid_blue_pillow_p322_s4__solid_red_pillow_p322_s0,0,"Image 4 is a muted pinkish-red, closer to Image 2's red than Image 1's blue.",claude-opus-4-7,1492,52
+solid_blue_hat_p322_s0__solid_green_hat_p322_s1,0,"Image 4 remains green, not blue like Image 1.",claude-opus-4-7,1492,36
+solid_green_pillow_p322_s3__solid_blue_pillow_p322_s4,0,"Image 4 is teal, shifted toward green but still predominantly blue, not clearly more like green source than blue target.",claude-opus-4-7,1492,55
+solid_red_car_p322_s0__solid_green_car_p322_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1492,40
+solid_red_pillow_p322_s1__solid_blue_pillow_p322_s2,0,"Image 4 is purple, a mix of red and blue, not predominantly red like Image 1.",claude-opus-4-7,1492,48
+solid_blue_car_p322_s4__solid_red_car_p322_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1492,41
+solid_green_car_p322_s3__solid_blue_car_p322_s4,0,"Image 4 remains blue like Image 2, not green like Image 1.",claude-opus-4-7,1492,41
+solid_red_hat_p322_s0__solid_green_hat_p322_s1,0,"Image 4 remains green like Image 2, not red like Image 1.",claude-opus-4-7,1492,40
+solid_blue_hat_p322_s4__solid_red_hat_p322_s0,0,"Image 4 remains red like Image 2, not blue like Image 1.",claude-opus-4-7,1492,41
+solid_blue_vase_p322_s0__solid_green_vase_p322_s1,0,"Image 4 vase remains green like Image 2, not blue like Image 1.",claude-opus-4-7,1492,43
+solid_green_hat_p322_s2__solid_red_hat_p322_s3,0,"Image 4 remains red like Image 2, not green like Image 1.",claude-opus-4-7,1492,40

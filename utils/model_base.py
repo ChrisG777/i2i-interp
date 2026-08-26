@@ -1,10 +1,14 @@
 """Abstract base class for diffusion model wrappers.
 
-Subclasses (Flux2KleinModel) supply the architecture metadata and the
-``pipe`` / ``transformer`` / ``device`` triple; ``generate()`` is shared.
+Subclasses (Flux2KleinModel, QwenImageEditModel) supply the architecture
+metadata and the ``pipe`` / ``transformer`` / ``device`` triple; the
+generation and activation-capture methods are shared.
 """
 
+from typing import Dict, List, Tuple
+
 import torch
+from baukit.nethook import TraceDict
 from PIL import Image
 
 
@@ -26,7 +30,7 @@ class DiffusionModel:
     num_heads: int             # attention heads per block
     head_dim: int              # dimension per head
     inner_dim: int             # num_heads * head_dim
-    text_seq_len: int          # text token count in the fused sequence
+    text_seq_len: int | None   # fixed text token count, or None if per-task
     has_bias: bool             # whether Linear layers have bias
     has_fused_single_qkv: bool # True if single blocks use a fused to_qkv_mlp_proj
 
@@ -54,3 +58,46 @@ class DiffusionModel:
             **kwargs,
         )
         return output.images[0]
+
+    def capture_activations(
+        self,
+        prompt: str,
+        seed: int,
+        capture_layers: List[str],
+        *,
+        captures_to_cpu: bool = False,
+        **gen_kwargs,
+    ) -> Tuple[Image.Image, Dict[str, list]]:
+        """Generate an image while capturing activations at specified layers.
+
+        Runs ``self.generate(prompt, seed=seed, **gen_kwargs)`` under a baukit
+        ``TraceDict``, so subclass generation defaults/overrides apply to the
+        captured run too.
+
+        Args:
+            captures_to_cpu: If True, move captured tensors to CPU inside the
+                hook to conserve GPU memory when capturing many layers.
+
+        Returns:
+            Tuple of (image, activations_dict) where activations_dict maps
+            layer names to lists of captured outputs (one per forward pass).
+        """
+        captured: Dict[str, list] = {name: [] for name in capture_layers}
+
+        def capture_fn(output, layer):
+            if isinstance(output, tuple):
+                tensors = tuple(o.detach().cpu().clone() if captures_to_cpu else o.detach().clone() for o in output)
+                captured[layer].append(tensors)
+            else:
+                t = output.detach().cpu().clone() if captures_to_cpu else output.detach().clone()
+                captured[layer].append(t)
+            return output
+
+        with TraceDict(
+            self.transformer,
+            layers=capture_layers,
+            edit_output=capture_fn,
+        ):
+            image = self.generate(prompt, seed=seed, **gen_kwargs)
+
+        return image, captured

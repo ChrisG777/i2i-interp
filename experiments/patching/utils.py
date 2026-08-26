@@ -192,9 +192,10 @@ def extract_category_acts_per_step(
 def resolve_content_token_indices(
     pipe,
     instruction_prompt: str,
+    max_length: int = TEXT_SEQ_LEN,
 ) -> List[Tuple[int, str]]:
     """Return ``[(text_token_index, token_string), ...]`` for the instruction's
-    content tokens within the 512-token Qwen3 sequence.
+    content tokens within the ``max_length``-token Qwen3 sequence.
 
     Uses the same chat-template + tokenization path the model sees, and locates
     ``instruction_prompt`` as a contiguous span via ``find_object_text_indices``
@@ -207,8 +208,10 @@ def resolve_content_token_indices(
         f"Instruction prompt must be non-empty to resolve content tokens, "
         f"got {instruction_prompt!r}"
     )
-    token_strings = get_token_strings(pipe, instruction_prompt)
-    indices = find_object_text_indices(pipe, instruction_prompt, instruction_prompt)
+    token_strings = get_token_strings(pipe, instruction_prompt, max_length=max_length)
+    indices = find_object_text_indices(
+        pipe, instruction_prompt, instruction_prompt, max_length=max_length,
+    )
     return [(int(i), token_strings[int(i)]) for i in indices]
 
 
@@ -246,6 +249,7 @@ def find_object_text_indices(
     pipe,
     prompt: str,
     object_phrase: str,
+    max_length: int = TEXT_SEQ_LEN,
 ) -> torch.Tensor:
     """Locate the text-token indices of ``object_phrase`` within ``prompt``.
 
@@ -260,7 +264,7 @@ def find_object_text_indices(
 
     Fails fast if zero matches or more than one match is found.
     """
-    prompt_tokens = get_token_strings(pipe, prompt)  # length TEXT_SEQ_LEN
+    prompt_tokens = get_token_strings(pipe, prompt, max_length=max_length)  # length max_length
 
     def _norm(s: str) -> str:
         return s.strip()

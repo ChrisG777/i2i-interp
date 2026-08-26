@@ -69,6 +69,19 @@ BUCKETS: tuple[str, ...] = (
     "style",
     "dreambench_humans",
     "dreambench_humans_shared",
+    "solid_color_longprompt",
+    "style_longprompt",
+    "solid_color_padding",
+    "style_padding",
+)
+
+# Edit types that are batch-loadable via ``--edit-type`` (bucket name ==
+# edit_type). "customize" is deliberately absent: its task families each live
+# in a named bucket (solid_color, style, dreambench_humans, ...), so customize
+# runs select a family explicitly via ``--bucket`` instead of getting an
+# unreviewable union of every customize family and ablation variant.
+BATCH_EDIT_TYPES: tuple[EditType, ...] = tuple(
+    et for et in EDIT_TYPES if et in BUCKETS
 )
 
 
@@ -234,6 +247,7 @@ __all__ = [
     "EditType",
     "Source",
     "EDIT_TYPES",
+    "BATCH_EDIT_TYPES",
     "BUCKETS",
     "TASKS_ROOT",
     "NUM_INFERENCE_STEPS",

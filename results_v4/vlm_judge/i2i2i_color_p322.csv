@@ -1,0 +1,49 @@
+entity_id,pass,reason,model,input_tokens,output_tokens
+solid_green_hat_p322_s3__solid_blue_hat_p322_s4,1,"Image 4 hat is green matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,45
+solid_green_chair_p322_s2__solid_red_chair_p322_s3,1,"Image 4 chair is green matching Image 1, unlike Image 3's red from Image 2.",claude-opus-4-7,1485,49
+solid_red_hat_p322_s1__solid_blue_hat_p322_s2,1,"Image 4 hat is red, matching Image 1, instead of blue like Image 2/3.",claude-opus-4-7,1485,48
+solid_blue_chair_p322_s0__solid_green_chair_p322_s1,1,"Image 4 chair is blue/teal like source, not green like target.",claude-opus-4-7,1485,39
+solid_red_chair_p322_s0__solid_green_chair_p322_s1,1,"Image 4 chair is red matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,44
+solid_green_vase_p322_s2__solid_red_vase_p322_s3,1,"Image 4 vase is green matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,44
+solid_blue_mug_p322_s0__solid_green_mug_p322_s1,1,"Image 4 mug is blue matching source Image 1, not green like target Image 2/3.",claude-opus-4-7,1485,47
+solid_green_mug_p322_s2__solid_red_mug_p322_s3,1,"Image 4 mug is green, matching Image 1's source color instead of Image 2's red.",claude-opus-4-7,1485,47
+solid_red_vase_p322_s0__solid_green_vase_p322_s1,1,"Image 4 vase is red like Image 1, not green like Images 2/3.",claude-opus-4-7,1485,43
+solid_blue_vase_p322_s4__solid_red_vase_p322_s0,1,"Image 4 vase is blue matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,45
+solid_red_vase_p322_s1__solid_blue_vase_p322_s2,1,"Image 4 vase is red, matching Image 1's source color rather than Image 2's blue.",claude-opus-4-7,1485,48
+solid_green_chair_p322_s3__solid_blue_chair_p322_s4,1,"Image 4 chair is green matching source Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,46
+solid_red_mug_p322_s0__solid_green_mug_p322_s1,1,"Image 4 mug is red matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,44
+solid_blue_mug_p322_s4__solid_red_mug_p322_s0,1,"Image 4 mug is blue matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,45
+solid_blue_ball_p322_s0__solid_green_ball_p322_s1,1,"Image 4 is blue like Image 1, while Image 3 is green like Image 2.",claude-opus-4-7,1485,46
+solid_green_vase_p322_s3__solid_blue_vase_p322_s4,1,"Image 4 vase is green matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,45
+solid_green_ball_p322_s2__solid_red_ball_p322_s3,1,"Image 4 ball is green matching Image 1, not red like Image 2.",claude-opus-4-7,1485,42
+solid_blue_chair_p322_s4__solid_red_chair_p322_s0,1,"Image 4 chair is blue matching Image 1, while Image 3 was red matching Image 2.",claude-opus-4-7,1485,50
+solid_red_chair_p322_s1__solid_blue_chair_p322_s2,1,"Image 4 chair is red like Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,44
+solid_green_mug_p322_s3__solid_blue_mug_p322_s4,1,"Image 4 mug is green matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,45
+solid_blue_couch_p322_s0__solid_green_couch_p322_s1,1,"Image 4 sofa is blue matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,46
+solid_red_car_p322_s1__solid_blue_car_p322_s2,1,"Image 4's car is predominantly red like Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,47
+solid_green_couch_p322_s2__solid_red_couch_p322_s3,1,"Image 4 sofa is green matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,45
+solid_red_ball_p322_s0__solid_green_ball_p322_s1,1,"Image 4 sphere is red, matching Image 1's source color instead of Image 2's green.",claude-opus-4-7,1485,48
+solid_blue_ball_p322_s4__solid_red_ball_p322_s0,1,"Image 4 ball is blue like Image 1, unlike Image 3's red matching Image 2.",claude-opus-4-7,1485,50
+solid_green_ball_p322_s3__solid_blue_ball_p322_s4,1,"Image 4 sphere is green matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,46
+solid_green_pillow_p322_s2__solid_red_pillow_p322_s3,1,"Image 4 pillow is green matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,45
+solid_red_mug_p322_s1__solid_blue_mug_p322_s2,1,"Image 4 mug is red matching source, not blue like target.",claude-opus-4-7,1485,37
+solid_red_couch_p322_s0__solid_green_couch_p322_s1,1,"Image 4 sofa is red matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,45
+solid_blue_couch_p322_s4__solid_red_couch_p322_s0,1,"Image 4 sofa is blue matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,46
+solid_green_couch_p322_s3__solid_blue_couch_p322_s4,1,"Image 4 sofa is green matching Image 1, not blue like Image 2.",claude-opus-4-7,1485,44
+solid_blue_pillow_p322_s0__solid_green_pillow_p322_s1,1,"Image 4 pillow is blue matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,46
+solid_red_ball_p322_s1__solid_blue_ball_p322_s2,1,"Image 4 is red, matching source Image 1, unlike blue Image 3.",claude-opus-4-7,1485,44
+solid_blue_car_p322_s0__solid_green_car_p322_s1,1,"Image 4 car is blue matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,44
+solid_red_pillow_p322_s0__solid_green_pillow_p322_s1,1,"Image 4 pillow is red like Image 1, not green like Image 2/3.",claude-opus-4-7,1485,44
+solid_green_car_p322_s2__solid_red_car_p322_s3,1,"Image 4 car is green matching Image 1, not red like Image 2/3.",claude-opus-4-7,1485,43
+solid_red_couch_p322_s1__solid_blue_couch_p322_s2,1,"Image 4 sofa is red matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,46
+solid_blue_pillow_p322_s4__solid_red_pillow_p322_s0,1,"Image 4 pillow is blue matching Image 1, unlike Image 3 which is red like Image 2.",claude-opus-4-7,1485,53
+solid_blue_hat_p322_s0__solid_green_hat_p322_s1,1,"Image 4 hat is blue matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,45
+solid_green_pillow_p322_s3__solid_blue_pillow_p322_s4,1,"Image 4 pillow is green matching source Image 1, unlike Image 3's blue.",claude-opus-4-7,1485,47
+solid_red_car_p322_s0__solid_green_car_p322_s1,1,"Image 4 car is red matching Image 1, not green like Image 2.",claude-opus-4-7,1485,41
+solid_red_pillow_p322_s1__solid_blue_pillow_p322_s2,1,"Image 4 pillow is red matching Image 1, not blue like Image 2/3.",claude-opus-4-7,1485,46
+solid_blue_car_p322_s4__solid_red_car_p322_s0,1,"Image 4 car is blue matching source Image 1, not red like target Image 2.",claude-opus-4-7,1485,44
+solid_green_car_p322_s3__solid_blue_car_p322_s4,1,"Image 4 car is green matching Image 1, unlike Image 3 which is blue like Image 2.",claude-opus-4-7,1485,51
+solid_red_hat_p322_s0__solid_green_hat_p322_s1,1,"Image 4 hat is red matching Image 1, not green like Image 2/3.",claude-opus-4-7,1485,44
+solid_blue_hat_p322_s4__solid_red_hat_p322_s0,1,"Image 4 shifted to blue/purple, closer to source blue than target red.",claude-opus-4-7,1485,43
+solid_blue_vase_p322_s0__solid_green_vase_p322_s1,1,"Image 4 vase is blue matching Image 1, unlike Image 3's green matching Image 2.",claude-opus-4-7,1485,51
+solid_green_hat_p322_s2__solid_red_hat_p322_s3,1,"Image 4 hat is green matching source Image 1, not red like target Image 2.",claude-opus-4-7,1485,44

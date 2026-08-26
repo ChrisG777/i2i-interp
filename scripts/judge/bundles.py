@@ -42,6 +42,9 @@ class Bundle:
 
 
 Variant = Literal["full", "padding", "content"]
+# i2i->i2i additionally supports the padding-ablation content-span splits
+# (the short instruction's own tokens vs the appended filler's).
+I2I2IVariantName = Literal["full", "padding", "content", "instruction", "filler"]
 
 
 @dataclass(frozen=True)
@@ -76,7 +79,7 @@ class _I2I2IVariant:
     action_clause: str   # interpolated into "Image 4 - same target generation, but {clause} <source-suffix>:"
 
 
-_I2I2I_VARIANTS: dict[Variant, _I2I2IVariant] = {
+_I2I2I_VARIANTS: dict[I2I2IVariantName, _I2I2IVariant] = {
     "full": _I2I2IVariant(
         filename="patched.png",
         action_clause="with text-token activations patched",
@@ -88,6 +91,18 @@ _I2I2I_VARIANTS: dict[Variant, _I2I2IVariant] = {
     "content": _I2I2IVariant(
         filename="patched_text_content.png",
         action_clause="with ONLY the text-content tokens patched",
+    ),
+    # Padding-ablation content-span splits. The clauses stay deliberately
+    # generic ("a subset of the text tokens") so the judge cannot infer which
+    # half it is looking at — the verdicts must stay comparable to the
+    # full/padding/content siblings, which never name a token count either.
+    "instruction": _I2I2IVariant(
+        filename="patched_text_instruction.png",
+        action_clause="with ONLY a subset of the text tokens patched",
+    ),
+    "filler": _I2I2IVariant(
+        filename="patched_text_filler.png",
+        action_clause="with ONLY a subset of the text tokens patched",
     ),
 }
 
@@ -152,7 +167,7 @@ def _i2i_unc_style_text_lens(variant: Variant) -> Callable[[str, Path], Bundle]:
         d = base_dir / entity_id
         return Bundle(
             image_labels=[
-                "Image 1 - style / cartoon reference:",
+                "Image 1 - clipart / cartoon reference:",
                 "Image 2 - clean text-to-image baseline:",
                 f"Image 3 - same generation, but {v.token_phrase} patched from "
                 "a reference-conditioned i2i pass:",
@@ -162,11 +177,11 @@ def _i2i_unc_style_text_lens(variant: Variant) -> Callable[[str, Path], Bundle]:
                 d / f"patched_mm7{v.filename_suffix}.png",
             ],
             question=(
-                "Compared to Image 2, does Image 3 adopt a style / cartoon / "
+                "Compared to Image 2, does Image 3 adopt a clipart / cartoon / "
                 "illustrated / unrealistic style similar to Image 1? Look at the "
-                "subject and the background / rest of the image - style-y style "
+                "subject and the background / rest of the image - clipart-y style "
                 "anywhere in the image counts as evidence. Reply 1 if Image 3 "
-                "looks more style-like / less photographic than Image 2."
+                "looks more clipart-like / less photographic than Image 2."
             ),
         )
     return builder
@@ -297,7 +312,7 @@ def _ko_style_ref_to_text(variant: Variant) -> Callable[[str, Path], Bundle]:
         d = base_dir / entity_id
         return Bundle(
             image_labels=[
-                "Image 1 - style reference:",
+                "Image 1 - clipart reference:",
                 "Image 2 - clean reference-conditioned i2i baseline:",
                 f"Image 3 - same i2i, but {v.label_clause}:",
             ],
@@ -306,7 +321,7 @@ def _ko_style_ref_to_text(variant: Variant) -> Callable[[str, Path], Bundle]:
                 d / v.filename,
             ],
             question=(
-                "Compared to Image 2, has Image 3 LOST the style / cartoon style "
+                "Compared to Image 2, has Image 3 LOST the clipart / cartoon style "
                 "of Image 1 and become more photographic / realistic? Reply 1 if "
                 f"Image 3 became more realistic when {v.setting_name} was blocked."
             ),
@@ -323,7 +338,7 @@ def ko_style_ref_to_image(entity_id: str, base_dir: Path) -> Bundle:
     d = base_dir / entity_id
     return Bundle(
         image_labels=[
-            "Image 1 - style reference:",
+            "Image 1 - clipart reference:",
             "Image 2 - clean reference-conditioned i2i baseline:",
             "Image 3 - same i2i, but with the ref->image attention path completely blocked:",
         ],
@@ -332,10 +347,10 @@ def ko_style_ref_to_image(entity_id: str, base_dir: Path) -> Bundle:
             d / "ref_to_image_full_ko.png",
         ],
         question=(
-            "Compared to Image 2, does Image 3 STILL look style / cartoon-like "
+            "Compared to Image 2, does Image 3 STILL look clipart / cartoon-like "
             "(similar style to Image 1)? Look at the subject and the background "
-            "/ rest of the image - style-y style anywhere in the image counts "
-            "as evidence. Reply 1 if the style style was preserved when "
+            "/ rest of the image - clipart-y style anywhere in the image counts "
+            "as evidence. Reply 1 if the clipart style was preserved when "
             "ref->image was blocked."
         ),
     )
@@ -402,93 +417,138 @@ def ko_dreambench_human_ref_to_image(entity_id: str, base_dir: Path) -> Bundle:
 # ---------------------------------------------------------------------------
 
 
-def _i2i2i_color(variant: Variant) -> Callable[[str, Path], Bundle]:
-    v = _I2I2I_VARIANTS[variant]
-    def builder(entity_id: str, base_dir: Path) -> Bundle:
-        d = base_dir / entity_id
-        return Bundle(
-            image_labels=[
-                "Image 1 - solid color reference for the SOURCE i2i pass:",
-                "Image 2 - solid color reference for the TARGET i2i pass:",
-                "Image 3 - clean i2i generation conditioned on Image 2 (no patching):",
-                f"Image 4 - same target generation, but {v.action_clause} "
-                "from the SOURCE i2i pass:",
-            ],
-            image_paths=[
-                d / "ref_source.png", d / "ref_target.png",
-                d / "target_baseline_4step.png", d / v.filename,
-            ],
-            question=(
-                "Compared to Image 3 (which should show the color of Image 2), "
-                "does Image 4 take on the color of Image 1 (the source) instead? "
-                "Reply 1 if Image 4 is more like Image 1's color than Image 2's."
-            ),
-        )
-    return builder
+# Each family's prompt lives in exactly one place: a ``*_labels_question``
+# helper keyed only on the ``action_clause`` (the phrase describing which text
+# tokens were patched). Both the paper per-pair builders and the layer-sweep
+# builder consume these helpers, so the sweep judge uses the byte-identical
+# paper prompt. The prompt NEVER mentions which block was patched.
 
 
+def i2i2i_color_labels_question(action_clause: str) -> tuple[list[str], str]:
+    return (
+        [
+            "Image 1 - solid color reference for the SOURCE i2i pass:",
+            "Image 2 - solid color reference for the TARGET i2i pass:",
+            "Image 3 - clean i2i generation conditioned on Image 2 (no patching):",
+            f"Image 4 - same target generation, but {action_clause} "
+            "from the SOURCE i2i pass:",
+        ],
+        (
+            "Compared to Image 3 (which should show the color of Image 2), "
+            "does Image 4 take on the color of Image 1 (the source) instead? "
+            "Reply 1 if Image 4 is more like Image 1's color than Image 2's."
+        ),
+    )
+
+
+def i2i2i_style_labels_question(action_clause: str) -> tuple[list[str], str]:
+    return (
+        [
+            "Image 1 - clipart SOURCE reference:",
+            "Image 2 - real-photo TARGET reference (same subject):",
+            "Image 3 - clean i2i generation conditioned on Image 2:",
+            f"Image 4 - same target generation, but {action_clause} "
+            "from the SOURCE clipart i2i pass:",
+        ],
+        (
+            "Compared to Image 3, has Image 4 become MORE clipart / cartoon / "
+            "unrealistic in style (matching Image 1)? Look at the subject and "
+            "the background / rest of the image - clipart-y style anywhere in "
+            "the image counts as evidence. Reply 1 if Image 4 looks more "
+            "clipart-like than Image 3."
+        ),
+    )
+
+
+def i2i2i_dreambench_humans_labels_question(action_clause: str) -> tuple[list[str], str]:
+    return (
+        [
+            "Image 1 - photo of person A (SOURCE i2i reference):",
+            "Image 2 - photo of person B (TARGET i2i reference):",
+            "Image 3 - clean i2i generation conditioned on person B:",
+            f"Image 4 - same target generation, but {action_clause} "
+            "from person A's i2i pass:",
+        ],
+        (
+            "Focus on the person in Image 4. Does the person in Image 4 look "
+            "more like person A (Image 1, the source) than like person B "
+            "(Image 2, the target)? Reply 1 if A's identity transferred over."
+        ),
+    )
+
+
+def _i2i2i_family(
+    labels_question: Callable[[str], tuple[list[str], str]],
+) -> Callable[[I2I2IVariantName], Callable[[str, Path], Bundle]]:
+    """Build the (full / padding / content) per-pair factory for one family.
+    The patched cell is ``base_dir/<entity_id>/<variant filename>`` and the
+    baseline is the flat-layout ``target_baseline_4step.png``."""
+    def factory(variant: I2I2IVariantName) -> Callable[[str, Path], Bundle]:
+        v = _I2I2I_VARIANTS[variant]
+        labels, question = labels_question(v.action_clause)
+        def builder(entity_id: str, base_dir: Path) -> Bundle:
+            d = base_dir / entity_id
+            return Bundle(
+                image_labels=labels,
+                image_paths=[
+                    d / "ref_source.png", d / "ref_target.png",
+                    d / "target_baseline_4step.png", d / v.filename,
+                ],
+                question=question,
+            )
+        return builder
+    return factory
+
+
+_i2i2i_color = _i2i2i_family(i2i2i_color_labels_question)
 i2i2i_color = _i2i2i_color("full")
 i2i2i_color_text_padding = _i2i2i_color("padding")
 i2i2i_color_text_content = _i2i2i_color("content")
+i2i2i_color_text_instruction = _i2i2i_color("instruction")
+i2i2i_color_text_filler = _i2i2i_color("filler")
 
-
-def _i2i2i_style(variant: Variant) -> Callable[[str, Path], Bundle]:
-    v = _I2I2I_VARIANTS[variant]
-    def builder(entity_id: str, base_dir: Path) -> Bundle:
-        d = base_dir / entity_id
-        return Bundle(
-            image_labels=[
-                "Image 1 - style SOURCE reference:",
-                "Image 2 - real-photo TARGET reference (same subject):",
-                "Image 3 - clean i2i generation conditioned on Image 2:",
-                f"Image 4 - same target generation, but {v.action_clause} "
-                "from the SOURCE style i2i pass:",
-            ],
-            image_paths=[
-                d / "ref_source.png", d / "ref_target.png",
-                d / "target_baseline_4step.png", d / v.filename,
-            ],
-            question=(
-                "Compared to Image 3, has Image 4 become MORE style / cartoon / "
-                "unrealistic in style (matching Image 1)? Look at the subject and "
-                "the background / rest of the image - style-y style anywhere in "
-                "the image counts as evidence. Reply 1 if Image 4 looks more "
-                "style-like than Image 3."
-            ),
-        )
-    return builder
-
-
+_i2i2i_style = _i2i2i_family(i2i2i_style_labels_question)
 i2i2i_style = _i2i2i_style("full")
 i2i2i_style_text_padding = _i2i2i_style("padding")
 i2i2i_style_text_content = _i2i2i_style("content")
+i2i2i_style_text_instruction = _i2i2i_style("instruction")
+i2i2i_style_text_filler = _i2i2i_style("filler")
 
-
-def _i2i2i_dreambench_humans(variant: Variant) -> Callable[[str, Path], Bundle]:
-    v = _I2I2I_VARIANTS[variant]
-    def builder(entity_id: str, base_dir: Path) -> Bundle:
-        d = base_dir / entity_id
-        return Bundle(
-            image_labels=[
-                "Image 1 - photo of person A (SOURCE i2i reference):",
-                "Image 2 - photo of person B (TARGET i2i reference):",
-                "Image 3 - clean i2i generation conditioned on person B:",
-                f"Image 4 - same target generation, but {v.action_clause} "
-                "from person A's i2i pass:",
-            ],
-            image_paths=[
-                d / "ref_source.png", d / "ref_target.png",
-                d / "target_baseline_4step.png", d / v.filename,
-            ],
-            question=(
-                "Focus on the person in Image 4. Does the person in Image 4 look "
-                "more like person A (Image 1, the source) than like person B "
-                "(Image 2, the target)? Reply 1 if A's identity transferred over."
-            ),
-        )
-    return builder
-
-
+_i2i2i_dreambench_humans = _i2i2i_family(i2i2i_dreambench_humans_labels_question)
 i2i2i_dreambench_humans = _i2i2i_dreambench_humans("full")
 i2i2i_dreambench_humans_text_padding = _i2i2i_dreambench_humans("padding")
 i2i2i_dreambench_humans_text_content = _i2i2i_dreambench_humans("content")
+
+
+# ---------------------------------------------------------------------------
+# Qwen-Image-Edit-2511 port (experiments/qwen_port e12_span_pairs): the
+# paper's mm7_4step_style_to_real pairs re-run on Qwen with the text band
+# patched over a block span. Same 4-image
+# bundle and BYTE-IDENTICAL labels/question as ``i2i2i_style`` (so verdicts
+# are comparable to the FLUX ones); only the on-disk layout differs — pair
+# dirs are ``<line_idx:03d>_<target_task_id>`` with ``baseline_target.png``
+# and flat ``patched.png``.
+
+def qwen2511_i2i2i_style_builder(pairs_file: Path) -> Callable[[str, Path], Bundle]:
+    labels, question = i2i2i_style_labels_question(
+        _I2I2I_VARIANTS["full"].action_clause
+    )
+    dir_by_entity: dict[str, str] = {}
+
+    def builder(entity_id: str, base_dir: Path) -> Bundle:
+        if not dir_by_entity:
+            from experiments.i2i_to_i2i_patching.pair_io import read_pair_list
+            for i, (src, tgt) in enumerate(read_pair_list(pairs_file)):
+                dir_by_entity[f"{src}__{tgt}"] = f"{i:03d}_{tgt}"
+        # An id not in the pair list (e.g. the README "<ENTITY_ID>" probe)
+        # maps to itself.
+        d = base_dir / dir_by_entity.get(entity_id, entity_id)
+        return Bundle(
+            image_labels=labels,
+            image_paths=[
+                d / "ref_source.png", d / "ref_target.png",
+                d / "baseline_target.png", d / "patched.png",
+            ],
+            question=question,
+        )
+    return builder

@@ -31,8 +31,17 @@ from experiments.patching.sweep import (
     make_patch_pipeline_producer_multi_step,
     sweep_and_grid,
 )
-from experiments.patching.utils import resolve_content_token_indices
-from utils.flux2_klein import ALL_BLOCK_NAMES, Flux2KleinModel, TEXT_SEQ_LEN, layout_for
+from experiments.patching.utils import (
+    find_object_text_indices,
+    resolve_content_token_indices,
+)
+from utils.flux2_klein import (
+    ALL_BLOCK_NAMES,
+    Flux2KleinModel,
+    TEXT_SEQ_LEN,
+    block_suffix,
+    layout_for,
+)
 from utils.model_registry import generate_i2i, load_or_generate_reference, load_real_reference
 
 
@@ -44,11 +53,19 @@ _MODE_SUBDIR: dict[str, str] = {
     "all": "text_tokens",
     "padding_only": "text_padding",
     "content_only": "text_content",
+    # Content-span splits for the padding ablation: the original short
+    # instruction's tokens vs the appended neutral filler's tokens. Require
+    # task metadata["short_instruction"] (set by the padding/longprompt task
+    # builders).
+    "instruction_only": "text_instruction",
+    "filler_only": "text_filler",
 }
 _MODE_FLAT_FILENAME: dict[str, str] = {
     "all": "patched.png",
     "padding_only": "patched_text_padding.png",
     "content_only": "patched_text_content.png",
+    "instruction_only": "patched_text_instruction.png",
+    "filler_only": "patched_text_filler.png",
 }
 
 
@@ -88,10 +105,24 @@ class I2IToI2IRunner(ExperimentRunner):
         assert self.num_inference_steps >= 1, (
             f"--num-inference-steps must be >= 1, got {self.num_inference_steps}"
         )
+        self.text_seq_len: int = int(getattr(extra_args, "text_seq_len", TEXT_SEQ_LEN))
+        assert self.text_seq_len > 0, (
+            f"--text-seq-len must be > 0, got {self.text_seq_len}"
+        )
         if self.is_flat_layout:
             assert self.num_inference_steps == 4, (
                 f"--results-subdir requires --num-inference-steps 4, "
                 f"got {self.num_inference_steps}"
+            )
+        if self.is_flat_layout:
+            # A flat single-block cell flattens one patched.png per mode, so
+            # exactly one block must be selected.
+            assert (
+                extra_args.block_range is not None
+                and extra_args.block_range[0] == extra_args.block_range[1]
+            ), (
+                "a flat-layout single-block cell requires --block-range B B "
+                "(one block)"
             )
         modes = list(getattr(extra_args, "text_token_mode", ["all"]))
         # Dedup while preserving order; assert known names.
@@ -109,6 +140,15 @@ class I2IToI2IRunner(ExperimentRunner):
         raise NotImplementedError(
             "i2i-to-i2i is a pair-based experiment; use run_pair(source, target)"
         )
+
+    def _swept_block_suffixes(self) -> list[str]:
+        """Compact suffixes (``mm7``, ``single9``, …) for the blocks this run
+        sweeps — all 32 unless ``--block-range`` narrowed the slice."""
+        names = (
+            ALL_BLOCK_NAMES if self.block_slice is None
+            else ALL_BLOCK_NAMES[self.block_slice]
+        )
+        return [block_suffix(n) for n in names]
 
     def pair_dir(self, source: TaskDefinition, target: TaskDefinition) -> Path:
         # Use the inherited setting_root() (which respects --results-subdir)
@@ -128,14 +168,23 @@ class I2IToI2IRunner(ExperimentRunner):
         will produce. Used by ``--skip-if-completed`` to skip a pair iff
         every file is already on disk."""
         n = self.num_inference_steps
+        flat = self.is_flat_layout
         files = [
             "ref_source.png",
             "ref_target.png",
-            f"source_i2i_{n}step.png" if self.is_flat_layout else "source.png",
-            f"target_baseline_{n}step.png" if self.is_flat_layout else "target_baseline.png",
+            f"source_i2i_{n}step.png" if flat else "source.png",
+            f"target_baseline_{n}step.png" if flat else "target_baseline.png",
             "target_t2i_clean.png",
         ]
-        files.extend(_MODE_FLAT_FILENAME[m] for m in self.text_token_modes)
+        if flat:
+            files.extend(_MODE_FLAT_FILENAME[m] for m in self.text_token_modes)
+        else:
+            # Nested sweep: each mode writes one patched_<suffix>_to_<suffix>.png
+            # per swept block under its cat_subdir.
+            suffixes = self._swept_block_suffixes()
+            for m in self.text_token_modes:
+                sub = _MODE_SUBDIR[m]
+                files.extend(f"{sub}/patched_{s}_to_{s}.png" for s in suffixes)
         return files
 
     def run_pairs(self, pairs: list[tuple[TaskDefinition, TaskDefinition]]) -> list[Path]:
@@ -188,7 +237,8 @@ class I2IToI2IRunner(ExperimentRunner):
         if not (save_dir / "ref_target.png").exists():
             ref_target.save(save_dir / "ref_target.png")
 
-        # Per-mode skip: only run modes whose flat output is missing.
+        # Per-mode skip: only run modes whose flattened patched.png is missing.
+        # Non-subdir smoke runs always run every mode.
         modes_to_run: list[str] = []
         if self.is_flat_layout:
             for m in self.text_token_modes:
@@ -202,14 +252,6 @@ class I2IToI2IRunner(ExperimentRunner):
         if not modes_to_run:
             print(f"\nAll requested modes already complete: {save_dir}")
             return save_dir
-
-        # Flat layout requires a single block in --block-range so there's
-        # exactly one patched cell to extract at the end.
-        if self.is_flat_layout:
-            assert (
-                self.extra_args.block_range is not None
-                and self.extra_args.block_range[0] == self.extra_args.block_range[1]
-            ), "--results-subdir requires a single-block --block-range"
 
         # Per-pair metadata (sibling of cli_args.json).
         meta_path = save_dir / "task_metadata.json"
@@ -235,6 +277,7 @@ class I2IToI2IRunner(ExperimentRunner):
                         else None
                     ),
                     "num_inference_steps": self.num_inference_steps,
+                    "text_seq_len": self.text_seq_len,
                 },
                 f, indent=2, default=str,
             )
@@ -260,6 +303,7 @@ class I2IToI2IRunner(ExperimentRunner):
             width=source.width,
             image=ref_source,
             captures_to_cpu=True,
+            max_sequence_length=self.text_seq_len,
         )
         source_img_name = (
             f"source_i2i_{n_steps}step.png" if self.is_flat_layout else "source.png"
@@ -280,6 +324,7 @@ class I2IToI2IRunner(ExperimentRunner):
                 self.model, target.instruction, target.noise_seed, ref_target,
                 num_inference_steps=n_steps,
                 height=target.height, width=target.width,
+                max_sequence_length=self.text_seq_len,
             ),
         )
 
@@ -292,13 +337,20 @@ class I2IToI2IRunner(ExperimentRunner):
                 target.instruction, seed=target.noise_seed,
                 num_inference_steps=n_steps,
                 height=target.height, width=target.width,
+                max_sequence_length=self.text_seq_len,
             ),
         )
 
         src_w, src_h = ref_source.size
         tgt_w, tgt_h = ref_target.size
-        source_layout = layout_for(source.height, source.width, ref_h=src_h, ref_w=src_w)
-        target_layout = layout_for(target.height, target.width, ref_h=tgt_h, ref_w=tgt_w)
+        source_layout = layout_for(
+            source.height, source.width, ref_h=src_h, ref_w=src_w,
+            text_seq_len=self.text_seq_len,
+        )
+        target_layout = layout_for(
+            target.height, target.width, ref_h=tgt_h, ref_w=tgt_w,
+            text_seq_len=self.text_seq_len,
+        )
 
         if source.instruction == target.instruction:
             instr_line = f"'{source.instruction}'"
@@ -318,7 +370,10 @@ class I2IToI2IRunner(ExperimentRunner):
         # its own ``cat_subdir`` so they coexist; with --skip-if-completed,
         # only the modes whose flat output is missing reach this loop.
         for mode in modes_to_run:
-            text_token_indices = self._token_indices_for_mode(mode, target.instruction)
+            text_token_indices = self._token_indices_for_mode(
+                mode, target.instruction,
+                short_instruction=target.metadata.get("short_instruction"),
+            )
             cat_subdir = _MODE_SUBDIR[mode]
             print(
                 f"\n[Phase 3:{mode}] Sweeping text tokens "
@@ -333,6 +388,7 @@ class I2IToI2IRunner(ExperimentRunner):
                     target_h=target.height, target_w=target.width,
                     target_ref_image=ref_target,
                     text_token_indices=text_token_indices,
+                    max_sequence_length=self.text_seq_len,
                 )
             else:
                 producer = make_patch_pipeline_producer_multi_step(
@@ -343,6 +399,7 @@ class I2IToI2IRunner(ExperimentRunner):
                     target_h=target.height, target_w=target.width,
                     target_ref_image=ref_target,
                     text_token_indices=text_token_indices,
+                    max_sequence_length=self.text_seq_len,
                     num_inference_steps=n_steps,
                 )
             sweep_and_grid(
@@ -368,23 +425,51 @@ class I2IToI2IRunner(ExperimentRunner):
         return save_dir
 
     def _token_indices_for_mode(
-        self, mode: str, instruction_prompt: str,
+        self, mode: str, instruction_prompt: str, short_instruction: str | None = None,
     ) -> list[int] | None:
         """Resolve the text-token indices to patch for ``mode``. ``None`` means
-        the full 512-token slice (mode == 'all'). For 'padding_only' we return
-        the complement of the Qwen3 content positions; for 'content_only' we
-        return the content positions themselves."""
+        the full ``self.text_seq_len``-token slice (mode == 'all'). For
+        'padding_only' we return the complement of the Qwen3 content positions;
+        for 'content_only' the content positions themselves. 'instruction_only'
+        / 'filler_only' split the content span at the original short
+        instruction (requires ``short_instruction``, i.e. a padding-ablation /
+        longprompt task): the short instruction's own tokens vs the appended
+        neutral-filler tokens."""
         if mode == "all":
             return None
-        assert mode in ("padding_only", "content_only"), (
-            f"Unknown text_token_mode={mode!r}"
+        assert mode in (
+            "padding_only", "content_only", "instruction_only", "filler_only",
+        ), f"Unknown text_token_mode={mode!r}"
+        positions = resolve_content_token_indices(
+            self.model.pipe, instruction_prompt, max_length=self.text_seq_len,
         )
-        positions = resolve_content_token_indices(self.model.pipe, instruction_prompt)
         content = [i for i, _ in positions]
         if mode == "content_only":
             return content
-        cset = set(content)
-        return [i for i in range(TEXT_SEQ_LEN) if i not in cset]
+        if mode == "padding_only":
+            cset = set(content)
+            return [i for i in range(self.text_seq_len) if i not in cset]
+        assert short_instruction and short_instruction.strip(), (
+            f"mode {mode!r} requires the task metadata 'short_instruction' "
+            f"(only padding-ablation / longprompt tasks carry it)"
+        )
+        instr = [int(i) for i in find_object_text_indices(
+            self.model.pipe, instruction_prompt, short_instruction,
+            max_length=self.text_seq_len,
+        )]
+        iset = set(instr)
+        assert iset <= set(content), (
+            "short-instruction span escapes the content span"
+        )
+        if mode == "instruction_only":
+            return instr
+        filler = [i for i in content if i not in iset]
+        assert filler, (
+            f"mode 'filler_only' has no filler tokens: instruction "
+            f"{short_instruction!r} spans the whole content of "
+            f"{instruction_prompt[:60]!r}..."
+        )
+        return filler
 
     # ------------------------------------------------------------------
     # Flat-layout finalization
@@ -410,10 +495,7 @@ class I2IToI2IRunner(ExperimentRunner):
         import shutil
 
         block_idx = self.extra_args.block_range[0]
-        block_name = ALL_BLOCK_NAMES[block_idx]
-        suffix = block_name.replace(
-            "transformer_blocks.", "mm",
-        ).replace("single_transformer_blocks.", "single")
+        suffix = block_suffix(ALL_BLOCK_NAMES[block_idx])
 
         produced = [
             "ref_source.png", "ref_target.png",

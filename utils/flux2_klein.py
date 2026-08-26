@@ -7,13 +7,21 @@ activations via baukit ``TraceDict``.
 
 import math
 import torch
-from dataclasses import dataclass
 from diffusers import Flux2KleinPipeline
-from baukit.nethook import TraceDict
 from typing import List, Tuple, Dict
 from PIL import Image
 
 from utils.model_base import DiffusionModel
+from utils.token_layout import TokenLayout, get_category_slices, seq_len_for_image
+
+# Re-exported for the many existing importers of these names from this module.
+__all__ = [
+    "TokenLayout", "get_category_slices", "layout_for", "effective_ref_dims",
+    "Flux2KleinModel", "ALL_BLOCK_NAMES", "ALL_BLOCK_LABELS", "block_suffix",
+    "block_index_from_suffix", "MODEL_ID", "NUM_MM_BLOCKS", "NUM_SINGLE_BLOCKS",
+    "TEXT_SEQ_LEN", "NOISE_SEQ_LEN", "TOTAL_SEQ_LEN", "TOTAL_SEQ_LEN_T2I",
+    "VAE_PATCH",
+]
 
 
 MODEL_ID = "black-forest-labs/FLUX.2-klein-9B"
@@ -48,51 +56,37 @@ ALL_BLOCK_LABELS = (
 )
 
 
-@dataclass(frozen=True)
-class TokenLayout:
-    """Per-task sequence-length layout for the joint attention sequence.
+def block_suffix(block_name: str) -> str:
+    """Compact filename suffix for a block name: ``transformer_blocks.7`` ->
+    ``mm7``, ``single_transformer_blocks.9`` -> ``single_mm9``. Single home for
+    the convention used in sweep filenames, the i2i / i2i_unc runners, the
+    layer-sweep judge, and the layer-sweep plot.
 
-    The transformer's joint stream is ``[text | noise | ref]`` (i2i) or
-    ``[text | noise]`` (t2i, ``ref_seq_len == 0``). All slicing in the
-    knockout/patching stack reads token counts from a layout instance so
-    different tasks can run at different resolutions without touching the
-    module-level constants.
-    """
+    NB: ``transformer_blocks.`` is a substring of ``single_transformer_blocks.``,
+    so the single-block names become ``single_mm<i>`` (not ``single<i>``). This
+    is the *established on-disk convention* — persisted i2i_to_unconditional
+    artifacts and the hardcoded judge bundles (``patched_single_mm9.png``)
+    depend on it, so do not "tidy" it without renaming every produced file."""
+    return block_name.replace(
+        "transformer_blocks.", "mm",
+    ).replace("single_transformer_blocks.", "single")
 
-    text_seq_len: int
-    noise_seq_len: int
-    ref_seq_len: int  # 0 for t2i
 
-    def __post_init__(self) -> None:
-        assert self.text_seq_len > 0, f"text_seq_len must be positive, got {self.text_seq_len}"
-        assert self.noise_seq_len > 0, f"noise_seq_len must be positive, got {self.noise_seq_len}"
-        assert self.ref_seq_len >= 0, f"ref_seq_len must be >= 0, got {self.ref_seq_len}"
+_SUFFIX_TO_INDEX = {block_suffix(n): i for i, n in enumerate(ALL_BLOCK_NAMES)}
 
-    @property
-    def has_ref(self) -> bool:
-        return self.ref_seq_len > 0
 
-    @property
-    def total_t2i(self) -> int:
-        return self.text_seq_len + self.noise_seq_len
-
-    @property
-    def total_i2i(self) -> int:
-        return self.text_seq_len + self.noise_seq_len + self.ref_seq_len
-
-    @property
-    def total(self) -> int:
-        """Joint-stream length: includes ref tokens iff ``has_ref``."""
-        return self.total_i2i if self.has_ref else self.total_t2i
+def block_index_from_suffix(suffix: str) -> int:
+    """Inverse of :func:`block_suffix`: ``mm7`` -> 7, ``single_mm9`` -> 17 (the
+    global sweep index across all 32 blocks)."""
+    assert suffix in _SUFFIX_TO_INDEX, (
+        f"unknown block suffix {suffix!r}; known: {sorted(_SUFFIX_TO_INDEX)}"
+    )
+    return _SUFFIX_TO_INDEX[suffix]
 
 
 def _seq_len_for_image(h: int, w: int) -> int:
     """Token count for an image of size ``(h, w)`` after the VAE+patchify path."""
-    assert h > 0 and w > 0, f"image size must be positive, got ({h}, {w})"
-    assert h % VAE_PATCH == 0 and w % VAE_PATCH == 0, (
-        f"image size ({h}, {w}) must be a multiple of VAE_PATCH={VAE_PATCH}"
-    )
-    return (h // VAE_PATCH) * (w // VAE_PATCH)
+    return seq_len_for_image(h, w, patch=VAE_PATCH)
 
 
 # Maximum reference-image area accepted by Flux2KleinPipeline before it
@@ -147,27 +141,6 @@ def layout_for(
     return TokenLayout(text_seq_len, noise, ref)
 
 
-def get_category_slices(layout: TokenLayout) -> dict[str, slice]:
-    """Return slices for text, image (noise), and (for i2i) ref categories.
-
-    Operates on the joint stream ``[text | noise | ref]``. For t2i layouts
-    (``ref_seq_len == 0``) the ``"ref"`` key is omitted. Applies to both MM
-    and single blocks.
-    """
-    txt_end = layout.text_seq_len
-    img_end = txt_end + layout.noise_seq_len
-    if layout.ref_seq_len == 0:
-        return {
-            "text": slice(0, txt_end),
-            "image": slice(txt_end, img_end),
-        }
-    return {
-        "text": slice(0, txt_end),
-        "image": slice(txt_end, img_end),
-        "ref": slice(img_end, img_end + layout.ref_seq_len),
-    }
-
-
 class Flux2KleinModel(DiffusionModel):
     """Wrapper for Flux2KleinPipeline with baukit hook-based interventions."""
 
@@ -206,42 +179,16 @@ class Flux2KleinModel(DiffusionModel):
         captures_to_cpu: bool = False,
         **kwargs,
     ) -> Tuple[Image.Image, Dict[str, list]]:
-        """Generate an image while capturing activations at specified layers.
-
-        Args:
-            captures_to_cpu: If True, move captured tensors to CPU inside the
-                hook to conserve GPU memory when capturing many layers.
-
-        Returns:
-            Tuple of (image, activations_dict) where activations_dict maps
-            layer names to lists of captured outputs (one per forward pass).
-        """
-        captured: Dict[str, list] = {name: [] for name in capture_layers}
-
-        def capture_fn(output, layer):
-            if isinstance(output, tuple):
-                tensors = tuple(o.detach().cpu().clone() if captures_to_cpu else o.detach().clone() for o in output)
-                captured[layer].append(tensors)
-            else:
-                t = output.detach().cpu().clone() if captures_to_cpu else output.detach().clone()
-                captured[layer].append(t)
-            return output
-
-        generator = torch.Generator(self.device).manual_seed(seed)
-
-        with TraceDict(
-            self.transformer,
-            layers=capture_layers,
-            edit_output=capture_fn,
-        ):
-            output = self.pipe(
-                prompt=prompt,
-                generator=generator,
-                num_inference_steps=num_inference_steps,
-                height=height,
-                width=width,
-                guidance_scale=guidance_scale,
-                **kwargs,
-            )
-
-        return output.images[0], captured
+        """Klein capture: base implementation with this model's legacy
+        generation defaults (notably ``guidance_scale=1.0``, which differs
+        from ``generate()``'s 0.0 default and is what all existing capture
+        call sites rely on)."""
+        return super().capture_activations(
+            prompt, seed, capture_layers,
+            captures_to_cpu=captures_to_cpu,
+            num_inference_steps=num_inference_steps,
+            height=height,
+            width=width,
+            guidance_scale=guidance_scale,
+            **kwargs,
+        )

@@ -34,18 +34,22 @@ i2i-interp/
 │   ├── i2i_to_unconditional/   # T2I Lens
 │   ├── attention_knockout/     # Attention Knockout
 │   ├── i2i_to_i2i_patching/    # I2I-to-I2I Patching
+│   ├── repair_amplify/         # style transfer repairing application
+│   ├── qwen_port/              # I2I-to-I2I Patching on Qwen-Image-Edit
 │   ├── patching/               # shared hook + sweep framework
-│   └── common/                 # shared task/runner/CLI helpers used by all three experiments
+│   └── common/                 # shared task/runner/CLI helpers used by all experiments
 ├── notebooks/
 │   └── demo.ipynb
 ├── scripts/                    # commands to run + judge all experiments
 │   ├── reproduce_attention_knockout.py
 │   ├── reproduce_t2i_lens.py
 │   ├── reproduce_i2i_to_i2i_patching.py
+│   ├── reproduce_padding_ablation.py
 │   ├── run_judge.py
 │   ├── v4_status.py
+│   ├── human_eval/             # MTurk human validation of the VLM judges
 │   └── judge/
-├── results_v4/vlm_judge/
+├── results_v4/                 # vlm_judge/ verdict CSVs + human_eval/ results
 ├── utils/
 └── tests/
 ```
@@ -60,7 +64,7 @@ cd i2i-interp
 uv sync
 ```
 
-Set `ANTHROPIC_API_KEY` in your environment if you plan to run the VLM judges.
+Set `ANTHROPIC_API_KEY` in your environment if you plan to run the VLM judges (and `OPENAI_API_KEY` for the optional GPT re-grade).
 
 ## Data
 
@@ -81,13 +85,14 @@ To reproduce the **add/remove object** experiments, you must additionally downlo
 
 ### Reproducing the paper
 
-To reproduce the results in the paper for each of the three interventions, run these scripts, which include grading the outputs using VLM as a judge. Results land in `results_v4/vlm_judge/<judge>.csv`.
+To reproduce the results in the paper for each of the three interventions, run these scripts, which include grading the outputs using VLM as a judge and rendering the paper's judge tables (LaTeX + text preview). Verdicts land in `results_v4/vlm_judge/<judge>.csv`.
 
 ```bash
 uv run python scripts/reproduce_attention_knockout.py
 uv run python scripts/reproduce_t2i_lens.py
 uv run python scripts/reproduce_i2i_to_i2i_patching.py
 uv run python -m scripts.run_judge --all
+uv run python scripts/build_judge_tables.py
 ```
 
 Below are the entry points for Attention Knockout, T2I Lens, and I2I-to-I2I Patching:
@@ -120,6 +125,44 @@ uv run python -m experiments.i2i_to_i2i_patching.i2i_to_i2i_patch \
     --block-range 17 17 \
     --num-inference-steps 4
 ```
+
+### Additional experiments
+
+Beyond the three main interventions, the paper's remaining experiments each have their own entry point.
+
+To reproduce the padding token ablation, which re-runs the color and style I2I-to-I2I transfers at four prompt lengths:
+
+```bash
+uv run python scripts/reproduce_padding_ablation.py
+uv run python -m scripts.run_judge --all
+uv run python scripts/plot_padding_ablation.py
+```
+
+To reproduce the second-model experiment, which re-runs the style-transfer I2I-to-I2I pairs on Qwen-Image-Edit:
+
+```bash
+uv run python -m experiments.qwen_port.e12_span_pairs \
+    --start 0 --end 450 --block-lo 29 --block-hi 38 \
+    --out-dir results/qwen_port/e12_span29_38
+uv run python -m scripts.run_judge --judge qwen2511_i2i2i_style_span10
+```
+
+To run the style transfer repairing application, which amplifies cross-modal attention to repair failing edits:
+
+```bash
+uv run python -m experiments.repair_amplify.amplify_run \
+    --task-id solid_green_mug_s2 solid_red_couch_s1 \
+    --blocks single_mm9 --lam 1 2 4 --direction text_from_ref
+```
+
+To double-check the Claude verdicts with GPT-5.6 as a second judge (requires `OPENAI_API_KEY`) and print an agreement report:
+
+```bash
+uv run python -m scripts.run_judge --paper --model gpt-5.6-terra
+uv run python scripts/compare_judges.py --model gpt-5.6-terra
+```
+
+Both judges were additionally validated against human crowdworkers on a reference-diverse subset of the color, style, and human-identity cells; [scripts/human_eval/README.md](scripts/human_eval/README.md) covers the design, sampling, and results.
 
 ### Try your own tasks
 Single task: the simplest way is through the [notebooks/demo.ipynb](notebooks/demo.ipynb). 

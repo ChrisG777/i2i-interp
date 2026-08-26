@@ -12,13 +12,17 @@ Token layouts (driven by ``layout.text_seq_len``/``noise_seq_len``/
     - t2i: ``img_stream = [noise]`` (``layout.has_ref`` is False).
 * Single blocks return ``[text | noise | ref]`` (i2i) or ``[text | noise]``
   (t2i), possibly wrapped in a tuple.
+
+Qwen-Image-Edit's dual-stream blocks return the same ``(txt, img)`` tuple as
+klein's MM blocks and are all named ``transformer_blocks.<i>``, so the
+name-prefix dispatch below routes them to the MM hooks unchanged.
 """
 
 from typing import Dict, Optional, Sequence
 
 import torch
 
-from utils.flux2_klein import TokenLayout
+from utils.token_layout import TokenLayout
 
 
 def make_mm_patch_hook(
